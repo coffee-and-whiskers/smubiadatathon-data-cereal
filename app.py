@@ -38,7 +38,7 @@ HIGHLIGHT_DICT_PATH = os.path.join(BASE_DIR, "highlight_dict")
 # 📌 Fetch document list from Supabase
 def get_documents():
     """Fetches available reports from Supabase."""
-    response = supabase.table("ssot_reports1").select("document_name, title").execute()
+    response = supabase.table("ssot_reports2").select("document_name, title").execute()
 
     if response.data:
         return {doc["document_name"]: doc["title"] for doc in response.data}
@@ -48,7 +48,7 @@ def get_documents():
 # 📌 Fetch full document details
 def get_document_details(doc_id):
     """Fetches full document details from Supabase."""
-    response = supabase.table("ssot_reports1").select("*").eq("document_name", doc_id).execute()
+    response = supabase.table("ssot_reports2").select("*").eq("document_name", doc_id).execute()
     return response.data[0] if response.data else None
 
 # 📌 Load document images for viewing
@@ -326,7 +326,7 @@ def create_timeline(timeline_events):
 # Fetch document counts from Supabase tables
 def fetch_table_counts():
     tables = {
-        "ssot_reports1": "document_name",
+        "ssot_reports2": "document_name",
         "wikileaks": "id",
         "news_excerpts": "excerpt_id"
     }

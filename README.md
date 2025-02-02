@@ -6,6 +6,7 @@ Our goal is to help ISD personnel quickly process and analyze intelligence repor
 For more information on the technical details, refer to the documentation.
 
 ## Setup Instructions
+Make sure you have Python 3.10.X installed before proceeding.
 
 ### 1. Create a Virtual Environment
 Run the following command to create and activate a virtual environment:
@@ -55,6 +56,8 @@ From the root directory, execute:
 ```sh
 streamlit run app.py
 ```
+
+We recommend running the Streamlit app in Wide mode and Light mode!
 
 ### 6. Access Control
 The application supports different levels of access based on tokens:
