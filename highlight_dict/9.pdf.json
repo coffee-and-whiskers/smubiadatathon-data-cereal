@@ -1,0 +1,98 @@
+{
+    "overview": {
+        "investigation": [
+            "irregularities",
+            "potential corruption",
+            "procurement breaches"
+        ],
+        "organization": [
+            "Pristina International Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [
+            "UNMIK"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "UNSCR 1244",
+            "UNMIK Regulation No 1/1999"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "witness interviews",
+            "document reviews"
+        ],
+        "organization": [
+            "UNMIK",
+            "Kosovo Trust Agency (KTA)"
+        ],
+        "company": [],
+        "individual": [
+            "Pristina Airport administrative staff"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "procurement irregularities"
+        ],
+        "organization": [
+            "Pristina International Airport",
+            "Kosovo Trust Agency (KTA)",
+            "Public Enterprise Airport Pristina (PEAP)",
+            "KFOR"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Irregularities in Contract Procurement",
+            "single-source contract",
+            "absence of proper records"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "Competitive tender",
+            "Single-source contract addition",
+            "Documents for financial approval missing"
+        ],
+        "organization": [
+            "KFOR"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "appropriate action regarding contract file management"
+        ],
+        "organization": [
+            "D/SRSG of Pillar IV"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "document_name": "110.pdf",
+    "topics": [
+        {
+            "topic": "International Trade Negotiations",
+            "entities": [
+                "European Union",
+                "Japan",
+                "United States"
+            ]
+        },
+        {
+            "topic": "Agricultural Policy",
+            "entities": [
+                "U.S. domestic supports",
+                "special products",
+                "sensitive products"
+            ]
+        },
+        {
+            "topic": "Diplomatic Strategy",
+            "entities": [
+                "EU Agriculture Commissioner",
+                "Japanese Minister of Agriculture"
+            ]
+        }
+    ]
+}

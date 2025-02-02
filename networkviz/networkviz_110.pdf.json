@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "id": "European Union",
+            "label": "European Union",
+            "type": "organization"
+        },
+        {
+            "id": "Japan",
+            "label": "Japan",
+            "type": "organization"
+        },
+        {
+            "id": "United States",
+            "label": "United States",
+            "type": "organization"
+        },
+        {
+            "id": "Toshikatsu Matsuoka",
+            "label": "Japanese Minister of Agriculture Toshikatsu Matsuoka",
+            "type": "individual"
+        },
+        {
+            "id": "Marianne Fischer-Boel",
+            "label": "EU Agriculture Commissioner Marianne Fischer-Boel",
+            "type": "individual"
+        },
+        {
+            "id": "Doha Round Negotiations",
+            "label": "Doha Round Negotiations",
+            "type": "investigation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "European Union",
+            "target": "Japan",
+            "label": "1. Strategy Sessions",
+            "tooltip": "The EU and Japan are holding strategy sessions to respond to U.S. tactics in the Doha Round negotiations."
+        },
+        {
+            "source": "European Union",
+            "target": "United States",
+            "label": "2. Negotiation Concerns",
+            "tooltip": "The EU is concerned about U.S. tactics in the Doha Round, particularly regarding domestic supports for agriculture."
+        },
+        {
+            "source": "Japan",
+            "target": "United States",
+            "label": "3. Negotiation Concerns",
+            "tooltip": "Japan is strategizing on how to handle U.S. tactics in the Doha Round negotiations."
+        },
+        {
+            "source": "Toshikatsu Matsuoka",
+            "target": "Japan",
+            "label": "4. Leadership Role",
+            "tooltip": "Japanese Minister of Agriculture Toshikatsu Matsuoka is involved in the strategy sessions."
+        },
+        {
+            "source": "Marianne Fischer-Boel",
+            "target": "European Union",
+            "label": "5. Leadership Role",
+            "tooltip": "EU Agriculture Commissioner Marianne Fischer-Boel is involved in the strategy sessions."
+        },
+        {
+            "source": "Doha Round Negotiations",
+            "target": "European Union",
+            "label": "6. Participation",
+            "tooltip": "The EU is a participant in the Doha Round negotiations."
+        },
+        {
+            "source": "Doha Round Negotiations",
+            "target": "Japan",
+            "label": "7. Participation",
+            "tooltip": "Japan is a participant in the Doha Round negotiations."
+        },
+        {
+            "source": "Doha Round Negotiations",
+            "target": "United States",
+            "label": "8. Participation",
+            "tooltip": "The United States is a participant in the Doha Round negotiations."
+        }
+    ],
+    "allegations": {},
+    "violations": {}
+}

@@ -1,0 +1,117 @@
+{
+    "entities": [
+        {
+            "id": "Case 0283/04",
+            "label": "Case 0283/04 - Corruption at Pristina Airport",
+            "type": "investigation"
+        },
+        {
+            "id": "Pristina International Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "PEAP",
+            "label": "PEAP",
+            "type": "organization"
+        },
+        {
+            "id": "Pillar II",
+            "label": "Pillar II",
+            "type": "organization"
+        },
+        {
+            "id": "Pillar IV",
+            "label": "Pillar IV",
+            "type": "organization"
+        },
+        {
+            "id": "KTA",
+            "label": "Kosovo Trust Agency (KTA)",
+            "type": "organization"
+        },
+        {
+            "id": "KFOR",
+            "label": "Kosovo Force (KFOR)",
+            "type": "organization"
+        },
+        {
+            "id": "UNMIK Regulation 1999/24",
+            "label": "UNMIK Regulation 1999/24",
+            "type": "statutory"
+        },
+        {
+            "id": "UN Staff Regulations 1.2 (b)",
+            "label": "UN Staff Regulations 1.2 (b)",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "Staff Rule 110.1",
+            "label": "Staff Rule 110.1",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Pristina International Airport",
+            "target": "Case 0283/04",
+            "label": "1. Subject of Investigation",
+            "tooltip": "Pristina International Airport was the main focus of the corruption investigation."
+        },
+        {
+            "source": "Case 0283/04",
+            "target": "UNMIK Regulation 1999/24",
+            "label": "2. Applicable Law",
+            "tooltip": "The investigation was conducted under the framework of UNMIK Regulation 1999/24."
+        },
+        {
+            "source": "Case 0283/04",
+            "target": "UN Staff Regulations 1.2 (b)",
+            "label": "3. Violation Identified",
+            "tooltip": "The investigation found violations of UN Staff Regulations 1.2 (b)."
+        },
+        {
+            "source": "Case 0283/04",
+            "target": "Staff Rule 110.1",
+            "label": "4. Violation Identified",
+            "tooltip": "Misconduct was identified as per Staff Rule 110.1."
+        },
+        {
+            "source": "Pillar II",
+            "target": "Pristina International Airport",
+            "label": "5. Initial Oversight",
+            "tooltip": "Pillar II initially oversaw operations at Pristina International Airport until June 2002."
+        },
+        {
+            "source": "KTA",
+            "target": "Pristina International Airport",
+            "label": "6. Subsequent Oversight",
+            "tooltip": "Oversight responsibility shifted to KTA and Pillar IV in June 2002."
+        },
+        {
+            "source": "Pillar IV",
+            "target": "Pristina International Airport",
+            "label": "7. Subsequent Oversight",
+            "tooltip": "Pillar IV, along with KTA, took over oversight responsibilities in June 2002."
+        }
+    ],
+    "allegations": {
+        "Pristina International Airport": [
+            "Overcharging of commercial flights for fees.",
+            "Improper accounting of handling and landing fees.",
+            "Requests for corrupt payments for convenient landing slots.",
+            "Corruption arising from de-icing costs.",
+            "Discrepancies in passenger tax charges."
+        ]
+    },
+    "violations": {
+        "UN Staff Regulations 1.2 (b)": [
+            "Staff members failed to uphold the highest standards of efficiency, competence, and integrity."
+        ],
+        "Staff Rule 110.1": [
+            "Misconduct due to failure to observe standards of conduct."
+        ]
+    }
+}

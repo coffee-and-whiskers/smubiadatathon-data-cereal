@@ -1,0 +1,35 @@
+{
+    "document_name": "27.pdf",
+    "topics": [
+        {
+            "topic": "Conflict of Interest",
+            "entities": [
+                "UNEP",
+                "Balkans Task Force",
+                "Post-Conflict Assessment Unit"
+            ]
+        },
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "United Nations Financial Procurement Regulation",
+                "UNEP"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "UNEP",
+                "UNOPS",
+                "ST/AI/1999/7 I I"
+            ]
+        },
+        {
+            "topic": "Improper Representation",
+            "entities": [
+                "UNEP",
+                "UNEP/PCAU Consultant"
+            ]
+        }
+    ]
+}

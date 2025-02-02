@@ -1,0 +1,37 @@
+{
+    "document_name": "8.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina International Airport",
+                "Public Enterprise Airport Pristina (PEAP)",
+                "Vendor 1",
+                "Vendor 2"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "UNMIK Regulation 1999/24",
+                "UN Staff Regulations 1.2 (b)",
+                "UNMIK Finance Administrative Instruction 1999/2"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "Chartered Accountants",
+                "Audit Report",
+                "Department of Transport and Infrastructure (DOTI)"
+            ]
+        },
+        {
+            "topic": "Institutional Transparency",
+            "entities": [
+                "Civil Administration Pillar (Pillar II)",
+                "Military Units of Kosovo Force (KFOR)"
+            ]
+        }
+    ]
+}

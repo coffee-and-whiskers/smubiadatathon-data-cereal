@@ -1,0 +1,116 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "Case_0280_04",
+        "title": "CASE 280/04: Investigation into Allegations of Irregularities in Tender Processes at Pristina Airport",
+        "category": "Investigation",
+        "primary_source": "UNMIK"
+    },
+    "overview": "This report details the investigation into allegations of irregularities during tender processes for procuring cleaning machines at Pristina Airport.",
+    "applicable_laws": [
+        {
+            "regulation_id": "UNMIK Regulation 1999/24",
+            "excerpt": "...the law applicable in Kosovo shall be the regulations promulgated by the Special Representative of the Secretary-General..."
+        },
+        {
+            "regulation_id": "UN Staff Regulations 1.2 (b)",
+            "excerpt": "...\u201cStaff members shall uphold the highest standards of efficiency, competence and integrity\u201d"
+        },
+        {
+            "regulation_id": "UNMIK Finance Administrative Instruction 1999/2",
+            "excerpt": "...\u201cCompetition among and participation in the procurement process shall be maximised.\u201d"
+        },
+        {
+            "regulation_id": "Article 15 1",
+            "excerpt": "Technical specifications and descriptions of the Goods, Works, or Services to be procured shall be carefully prepared to foster fair and open competition among all suppliers."
+        },
+        {
+            "regulation_id": "Article 15.4",
+            "excerpt": "There shall be no requirements or reference in the technical specifications to a particular trademark, brand name... unless there is no sufficiently precise or intelligible way of describing the procurement requirements and 'or equivalent' are included."
+        },
+        {
+            "regulation_id": "Staff Rule 110.1",
+            "excerpt": "Failure by a staff member to comply with obligations under the Charter of the United Nations or to observe the standards of conduct expected may amount to unsatisfactory conduct leading to disciplinary measures."
+        }
+    ],
+    "methodology": {
+        "description": "This investigation was conducted pursuant to Executive Decision No 2003/16 on the establishment of the Investigation Task Force. The ITF investigators conducted an enquiry into the allegations.",
+        "interviews": [
+            "Interviews with persons indicated to be witnesses and persons potentially implicated in the allegations"
+        ],
+        "documents_reviewed": [
+            "Documents obtained from the Pristina Airport administration and from Pillar IV for relevance to the inquiry"
+        ]
+    },
+    "background": {
+        "context": "The investigation was prompted by an audit report concerning the financial statements of Pristina International Airport.",
+        "entities_involved": [
+            "Pristina International Airport",
+            "Chartered Accountants",
+            "Public Enterprise Airport Pristina (PEAP)",
+            "Military Units of Kosovo Force (KFOR)",
+            "Civil Administration Pillar (Pillar II)",
+            "Department of Transport and Infrastructure (DOTI)"
+        ],
+        "timeline": [
+            "2003-02-28: Audit report issued",
+            "2001-01-01;2003-12-31: Period covered by the investigation",
+            "1999-06-10: UN Security Council Resolution 1244",
+            "1999-07-25: UNMIK Regulation No 1/1999"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0280/04",
+        "subject": "Irregularities in tender processes for cleaning machines",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "No proper description of the cabins for cleaning machines in the bid submissions.",
+                "findings": "Bids were opened on 2003-04-18 and later cancelled on 2003-06-06 due to irregularities in cabin descriptions. ITF finds no evidence that the first tender was irregularly cancelled."
+            },
+            {
+                "number": 2,
+                "description": "Tender specifications skewed towards one company by using a specific brochure.",
+                "findings": "Specifications were based on Vendor 1's brochure, ignoring Financial Administration Instruction No. 2/1999."
+            },
+            {
+                "number": 3,
+                "description": "Evaluation of bids raised concerns over cost and potential unfair advantage in the second tender.",
+                "findings": "Vendor 2's bid, despite being expensive, met specifications. Concerns over resemblance to Vendor 1's specifications raised doubts."
+            }
+        ]
+    },
+    "intelligence_summary": {
+        "sources": [
+            "Interviews with Procurement Officers and Engineers at the Airport",
+            "Internet search on Vendor 1's corporate history"
+        ],
+        "key_findings": [
+            "Vendor 1's brochure was used for technical specifications but did not submit a bid.",
+            "Vendor 2 was chosen despite high costs due to specification alignment."
+        ],
+        "assessments": [
+            "Specification process may have inadvertently favored certain vendors.",
+            "High cost of the selected bid raised concerns regarding the procurement process."
+        ],
+        "risks": [
+            "Potential loss of competitive tendering environment.",
+            "Perceived procurement bias could affect institutional transparency."
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Use of Vendor 1's brochure in technical specifications created procurement bias.",
+            "Cancellation of tenders resulted from issues concerning fairness and cost."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "Revise technical specification processes to ensure competitiveness.",
+            "Consider conducting a new tender with neutral specifications.",
+            "Report referral to D/SRSG Pillar IV to avoid biased technical specifications."
+        ]
+    },
+    "related_documents": []
+}

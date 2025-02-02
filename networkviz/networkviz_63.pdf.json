@@ -1,0 +1,136 @@
+{
+    "entities": [
+        {
+            "id": "0425/04",
+            "label": "Case 0425/04 - UNMIL Fuel Cell Investigation",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIL",
+            "label": "United Nations Mission in Liberia (UNMIL)",
+            "type": "organization"
+        },
+        {
+            "id": "Officer 1",
+            "label": "Officer 1",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Officer 2",
+            "label": "Officer 2",
+            "type": "individual"
+        },
+        {
+            "id": "UNMIL Fuel Cell",
+            "label": "UNMIL Fuel Cell",
+            "type": "organization"
+        },
+        {
+            "id": "ID/OIOS",
+            "label": "Investigations Division, Office of Internal Oversight Services (ID/OIOS)",
+            "type": "organization"
+        },
+        {
+            "id": "IAD1/OIOS",
+            "label": "Internal Audit Division, Office of Internal Oversight Services (IAD1/OIOS)",
+            "type": "organization"
+        },
+        {
+            "id": "Bowser Drivers",
+            "label": "Bowser Drivers",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Supervisor",
+            "label": "Supervisor",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Staff Regulation 1.2",
+            "label": "Staff Regulation 1.2",
+            "type": "statutory"
+        },
+        {
+            "id": "ST/IC/1996/29",
+            "label": "ST/IC/1996/29",
+            "type": "statutory"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UNMIL Fuel Cell",
+            "target": "0425/04",
+            "label": "1. Subject of Investigation",
+            "tooltip": "The UNMIL Fuel Cell was the primary focus of the investigation due to fuel mismanagement allegations."
+        },
+        {
+            "source": "ID/OIOS",
+            "target": "0425/04",
+            "label": "2. Investigation Conducted By",
+            "tooltip": "The investigation was conducted by the Investigations Division of the Office of Internal Oversight Services."
+        },
+        {
+            "source": "IAD1/OIOS",
+            "target": "0425/04",
+            "label": "3. Audit Triggered Investigation",
+            "tooltip": "An audit by IAD1/OIOS revealed discrepancies in fuel accounting, leading to the investigation."
+        },
+        {
+            "source": "Officer 1",
+            "target": "0425/04",
+            "label": "4. Alleged Mismanagement",
+            "tooltip": "Officer 1 was alleged to have mismanaged resources, resulting in unaccounted fuel expenses."
+        },
+        {
+            "source": "Bowser Drivers",
+            "target": "0425/04",
+            "label": "5. Alleged Unauthorized Sale",
+            "tooltip": "Bowser drivers were accused of selling fuel to third parties without authorization."
+        },
+        {
+            "source": "Supervisor",
+            "target": "0425/04",
+            "label": "6. Alleged Unauthorized Sale",
+            "tooltip": "The supervisor was accused of involvement in unauthorized fuel sales."
+        },
+        {
+            "source": "UNMIL",
+            "target": "UNMIL Fuel Cell",
+            "label": "7. Oversight Authority",
+            "tooltip": "UNMIL was responsible for overseeing the operations of the Fuel Cell."
+        },
+        {
+            "source": "Staff Regulation 1.2",
+            "target": "Officer 1",
+            "label": "8. Alleged Violation",
+            "tooltip": "Officer 1 was alleged to have violated Staff Regulation 1.2 regarding integrity and use of resources."
+        },
+        {
+            "source": "ST/IC/1996/29",
+            "target": "Bowser Drivers",
+            "label": "9. Alleged Violation",
+            "tooltip": "Bowser drivers allegedly violated ST/IC/1996/29 by using organizational assets for unauthorized purposes."
+        },
+        {
+            "source": "ST/IC/1996/29",
+            "target": "Supervisor",
+            "label": "10. Alleged Violation",
+            "tooltip": "The supervisor allegedly violated ST/IC/1996/29 by allowing unauthorized use of organizational assets."
+        }
+    ],
+    "allegations": {
+        "Officer 1": [
+            "Mismanagement and waste of resources, specifically inability to account for US$500,000 in fuel expenses."
+        ],
+        "Bowser Drivers": [
+            "Selling fuel to third parties without authorization."
+        ],
+        "Supervisor": [
+            "Involvement in unauthorized sale of fuel."
+        ]
+    },
+    "violations": {}
+}

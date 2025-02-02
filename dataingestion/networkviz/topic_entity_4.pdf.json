@@ -1,0 +1,29 @@
+{
+    "document_name": "4.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina International Airport",
+                "Public Enterprise Airport Pristina (PEAP)",
+                "UNMIK",
+                "Vendor 3"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "UNMIK Finance Administrative Instruction 1999/2",
+                "Kosovo Consolidated Budget Funds"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "PEAP Official",
+                "Security Official",
+                "Divisional Manager"
+            ]
+        }
+    ]
+}

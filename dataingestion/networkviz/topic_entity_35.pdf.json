@@ -1,0 +1,28 @@
+{
+    "document_name": "35.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "UNMIK",
+                "ICAA",
+                "KTA",
+                "Pristina Airport"
+            ]
+        },
+        {
+            "topic": "Insurance Procurement",
+            "entities": [
+                "Pristina Airport",
+                "ICAA"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "UNMIK procurement rules",
+                "KTA"
+            ]
+        }
+    ]
+}

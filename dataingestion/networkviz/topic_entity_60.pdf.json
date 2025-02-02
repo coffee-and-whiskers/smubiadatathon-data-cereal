@@ -1,0 +1,23 @@
+{
+    "document_name": "60.pdf",
+    "topics": [
+        {
+            "topic": "Conflict of Interest",
+            "entities": [
+                "United Nations Mission in Liberia (UNMIL)"
+            ]
+        },
+        {
+            "topic": "Abuse of Authority",
+            "entities": [
+                "United Nations Mission in Liberia (UNMIL)"
+            ]
+        },
+        {
+            "topic": "Internal Oversight",
+            "entities": [
+                "Office of Internal Oversight Services"
+            ]
+        }
+    ]
+}

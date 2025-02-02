@@ -1,0 +1,37 @@
+{
+    "document_name": "69.pdf",
+    "topics": [
+        {
+            "topic": "Fraudulent Activities",
+            "entities": [
+                "UNON",
+                "UNICEF/Somalia Support Centre",
+                "UN-SACCO"
+            ]
+        },
+        {
+            "topic": "Loan Procurement Irregularities",
+            "entities": [
+                "UN-SACCO",
+                "UNON staff",
+                "UNICEF staff"
+            ]
+        },
+        {
+            "topic": "Document Misuse",
+            "entities": [
+                "UNICEF",
+                "Official Seal",
+                "Appointment Letters"
+            ]
+        },
+        {
+            "topic": "Internal Controls and Oversight",
+            "entities": [
+                "UNON Management",
+                "UN-SACCO Management",
+                "Audits"
+            ]
+        }
+    ]
+}

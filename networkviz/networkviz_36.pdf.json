@@ -1,0 +1,117 @@
+{
+    "entities": [
+        {
+            "id": "Case 050/04",
+            "label": "Case 050/04 - Alleged Misappropriation of Funds",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Interim Administration Mission in Kosovo",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina International Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Kosovo Trust Agency",
+            "label": "Kosovo Trust Agency",
+            "type": "organization"
+        },
+        {
+            "id": "Public Enterprise Airport Pristina",
+            "label": "Public Enterprise Airport Pristina",
+            "type": "organization"
+        },
+        {
+            "id": "Berlin-based Insurance Company",
+            "label": "Berlin-based Insurance Company",
+            "type": "company"
+        },
+        {
+            "id": "Pristina Airport Manager",
+            "label": "Pristina Airport Manager",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Insurance Company 1",
+            "label": "Insurance Company 1",
+            "type": "company"
+        },
+        {
+            "id": "Insurance Company 2",
+            "label": "Insurance Company 2",
+            "type": "company"
+        },
+        {
+            "id": "UNMIK regulation 1999/2",
+            "label": "UNMIK regulation 1999/2",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UNMIK",
+            "target": "Case 050/04",
+            "label": "1. Investigation Initiated By",
+            "tooltip": "UNMIK initiated the investigation into misappropriation of funds at Pristina Airport."
+        },
+        {
+            "source": "Pristina International Airport",
+            "target": "Pristina Airport Manager",
+            "label": "2. Managed By",
+            "tooltip": "The Pristina Airport Manager was responsible for overseeing operations at Pristina International Airport."
+        },
+        {
+            "source": "Pristina Airport Manager",
+            "target": "Case 050/04",
+            "label": "3. Subject of Investigation",
+            "tooltip": "The manager was investigated for alleged misappropriation of funds."
+        },
+        {
+            "source": "Pristina Airport Manager",
+            "target": "UNMIK regulation 1999/2",
+            "label": "4. Violation of Regulations",
+            "tooltip": "The manager violated procurement regulations by not conducting a tender process."
+        },
+        {
+            "source": "Pristina International Airport",
+            "target": "Berlin-based Insurance Company",
+            "label": "5. Insurance Procurement",
+            "tooltip": "Insurance coverage was procured from a Berlin-based company without a tender process."
+        },
+        {
+            "source": "Insurance Company 1",
+            "target": "Pristina International Airport",
+            "label": "6. Contract Period",
+            "tooltip": "Insurance Company 1 provided coverage from 2003-10-02 to 2004-10-01."
+        },
+        {
+            "source": "Insurance Company 2",
+            "target": "Pristina International Airport",
+            "label": "7. New Insurance Coverage",
+            "tooltip": "Insurance Company 2 commenced coverage on 2004-04-01, leading to double insurance."
+        },
+        {
+            "source": "Case 050/04",
+            "target": "UNMIK regulation 1999/2",
+            "label": "8. Violation Found",
+            "tooltip": "The investigation found violations of the UNMIK regulation 1999/2."
+        }
+    ],
+    "allegations": {
+        "Pristina Airport Manager": [
+            "Failure to invite international tenders for insurance coverage during 2002-2003.",
+            "Double insurance coverage for Pristina Airport starting on 1 April 2004."
+        ]
+    },
+    "violations": {
+        "UNMIK regulation 1999/2": [
+            "Negligence in adhering to competitive tendering as per public procurement guidelines."
+        ]
+    }
+}

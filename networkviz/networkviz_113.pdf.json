@@ -1,0 +1,113 @@
+{
+    "entities": [
+        {
+            "id": "Japan",
+            "label": "Japan",
+            "type": "country"
+        },
+        {
+            "id": "Germany",
+            "label": "Germany",
+            "type": "country"
+        },
+        {
+            "id": "U.S.",
+            "label": "United States",
+            "type": "country"
+        },
+        {
+            "id": "G-8",
+            "label": "Group of Eight (G-8)",
+            "type": "organization"
+        },
+        {
+            "id": "China",
+            "label": "China",
+            "type": "country"
+        },
+        {
+            "id": "India",
+            "label": "India",
+            "type": "country"
+        },
+        {
+            "id": "Brazil",
+            "label": "Brazil",
+            "type": "country"
+        },
+        {
+            "id": "Australia",
+            "label": "Australia",
+            "type": "country"
+        },
+        {
+            "id": "Indonesia",
+            "label": "Indonesia",
+            "type": "country"
+        },
+        {
+            "id": "South Korea",
+            "label": "South Korea",
+            "type": "country"
+        },
+        {
+            "id": "South Africa",
+            "label": "South Africa",
+            "type": "country"
+        },
+        {
+            "id": "Mexico",
+            "label": "Mexico",
+            "type": "country"
+        },
+        {
+            "id": "Masaharu Kono",
+            "label": "Masaharu Kono",
+            "type": "individual"
+        },
+        {
+            "id": "Bernd Pfaffenback",
+            "label": "Bernd Pfaffenback",
+            "type": "individual"
+        },
+        {
+            "id": "Lake Toya Summit",
+            "label": "G-8 Summit at Lake Toya",
+            "type": "event"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Japan",
+            "target": "G-8",
+            "label": "1. Chairing the Summit",
+            "tooltip": "Japan is leading the G-8 summit with a focus on climate change commitments."
+        },
+        {
+            "source": "Japan",
+            "target": "Germany",
+            "label": "2. Exchange on Climate Targets",
+            "tooltip": "Discussion between Japan's Masaharu Kono and Germany's Bernd Pfaffenback on climate change commitments."
+        },
+        {
+            "source": "Germany",
+            "target": "U.S.",
+            "label": "3. Emphasizing Numerical Targets",
+            "tooltip": "Germany stresses the importance of the U.S. accepting numerical climate targets."
+        },
+        {
+            "source": "Japan",
+            "target": "Lake Toya Summit",
+            "label": "4. Hosting the Summit",
+            "tooltip": "Japan is hosting the G-8 summit at Lake Toya in July 2008."
+        },
+        {
+            "source": "G-8",
+            "target": "Emerging Economies",
+            "label": "5. Negotiation Dynamics",
+            "tooltip": "Emerging economies are hesitant to commit beyond the Bali framework."
+        }
+    ],
+    "allegations": {},
+    "violations": {}
+}

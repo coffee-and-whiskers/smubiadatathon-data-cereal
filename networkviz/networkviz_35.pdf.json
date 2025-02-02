@@ -1,0 +1,73 @@
+{
+    "entities": [
+        {
+            "id": "ITF-02-16-04",
+            "label": "Investigation of Alleged Violations of Procurement Procedures - Insurance",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "ICAA",
+            "label": "Icelandic Civil Aviation Administration",
+            "type": "organization"
+        },
+        {
+            "id": "KTA",
+            "label": "Kosovo Trust Agency (KTA)",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Case 02 16/04",
+            "label": "Case 02 16/04 - Alleged Violations of Procurement Procedures",
+            "type": "investigation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "ICAA",
+            "target": "Pristina Airport",
+            "label": "1. Insurance Arranged",
+            "tooltip": "ICAA assisted in obtaining insurance for Pristina Airport starting April 1, 2004."
+        },
+        {
+            "source": "Case 02 16/04",
+            "target": "UNMIK",
+            "label": "2. Investigation Conducted By",
+            "tooltip": "UNMIK conducted the investigation into alleged procurement violations."
+        },
+        {
+            "source": "Case 02 16/04",
+            "target": "KTA",
+            "label": "3. KTA Rules Assessed",
+            "tooltip": "The investigation assessed potential breaches of KTA procurement rules."
+        },
+        {
+            "source": "Case 02 16/04",
+            "target": "Pristina Airport",
+            "label": "4. Subject of Investigation",
+            "tooltip": "Pristina Airport's insurance procurement procedures were the subject of the investigation."
+        },
+        {
+            "source": "Case 02 16/04",
+            "target": "ICAA",
+            "label": "5. ICAA's Role Evaluated",
+            "tooltip": "The investigation evaluated ICAA's involvement in the insurance procurement."
+        }
+    ],
+    "allegations": {
+        "Pristina Airport": [
+            "Possible violation of procurement procedures for insurance.",
+            "Improper collusion or corrupted negotiations during insurance requisitioning."
+        ]
+    },
+    "violations": {}
+}

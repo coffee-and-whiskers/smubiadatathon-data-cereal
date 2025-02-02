@@ -1,0 +1,64 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "ITF_04_06",
+        "title": "CASE 261/04: Alleged Fraud \u2013 Pristina Airport Cargo Department",
+        "category": "Investigation",
+        "timestamp": "2005-01-14 00:00:00",
+        "primary_source": "UNMIK Investigation Task Force"
+    },
+    "overview": "The investigation examines alleged fraudulent activities at Pristina Airport Cargo Department, focusing on discrepancies in invoices, improper charges, and mismanaged financial records. Key areas of concern included incorrect VAT application and missing transaction documentation.",
+    "applicable_laws": [],
+    "methodology": {
+        "description": "The investigation involved reviewing key correspondences, analyzing financial records, and compiling statements from interviews with major stakeholders.",
+        "interviews": [],
+        "documents_reviewed": [
+            "Letter from Cargo Manager dated 2004-05-28",
+            "Invoices for April and subsequent months",
+            "Electronic financial records of Pristina Airport"
+        ]
+    },
+    "background": {
+        "context": "The concerns were initiated by the Airline Cargo Manager's letter which flagged a suspicious invoice related to handling KFOR mail. Pristina Airport managed revenue collection for the Airline, acting as cargo handlers.",
+        "entities_involved": [
+            "Pristina Airport",
+            "Airline",
+            "KFOR",
+            "Investigation Task Force (ITF)"
+        ],
+        "timeline": [
+            "2004-04-01;2004-04-30: Original Invoice issued",
+            "2004-05-28: Letter regarding invoice sent by Cargo Manager",
+            "2004-07-01;2004-07-31: ITF receives complaint"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0261/04",
+        "subject": "Alleged Fraud at Pristina Airport Cargo Department",
+        "financial_details": {},
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Suspected fraudulent conduct within Pristina Airport's Cargo Department, involving unresolved invoice issues and improper fee assessments.",
+                "findings": "It was confirmed that Pristina Airport amended the invoice details, effectively removing VAT, adjusting the fees, and ensuring proper transaction logging. It was noted that the term 'tax payment' on invoices was inaccurately used."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Pristina Airport addressed charges by revising the invoice details.",
+            "Initial fraud concerns were alleviated following the record adjustments.",
+            "No substantial evidence of fraud, loss, or misconduct was discovered."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "Ensure correct terminology is consistently used on invoices.",
+            "Enhance record-keeping and inter-departmental communication protocols.",
+            "Conduct regular audits of financial processes to prevent future discrepancies.",
+            "Amend invoice terminology to replace misleading 'tax payment' wording."
+        ]
+    },
+    "related_documents": []
+}

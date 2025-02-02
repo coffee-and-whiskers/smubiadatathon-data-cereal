@@ -1,0 +1,81 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "ITFReport0262/04",
+        "title": "CASE 262/04: Report on Allegations of Evasion of Pristina Airport Charges",
+        "category": "Investigation",
+        "timestamp": "2004-08-16 00:00:00",
+        "primary_source": "United Nations Interim Administration Mission in Kosovo (UNMIK)"
+    },
+    "overview": "The document investigates allegations of revenue evasion by an airline at Pristina Airport, focusing on check-in procedures, passenger tax collection, and financial recording issues.",
+    "applicable_laws": [],
+    "methodology": {
+        "description": "Collection and review of financial records from Pristina Airport and interviews to gather relevant information.",
+        "interviews": [
+            "Official 1 of the Airline",
+            "Official 2 of the Airline",
+            "Security Officer at Pristina Airport",
+            "Official of the Passenger Handling Services, Pristina Airport",
+            "UNMIK CIVPOL officer"
+        ],
+        "documents_reviewed": [
+            "Records of funds received from the Airline for 2004-01-01;2004-06-30",
+            "Receipts issued by Pristina Airport",
+            "Aircraft Load Sheets for 2004-05-01;2004-06-30",
+            "Receipt book of cash payments for landing and handling",
+            "Price List for Basic Airport Services issued on 2002-01-01",
+            "Management Letter dated 2004-05-01 on the 2003 Financial Audit"
+        ]
+    },
+    "background": {
+        "context": "An airline flying from a European Airport to Pristina is suspected of not paying appropriate airport charges.",
+        "entities_involved": [
+            "The Airline",
+            "Pristina Airport",
+            "European Airport",
+            "Securicor security staff",
+            "Immigration Department",
+            "UK Immigration staff"
+        ],
+        "timeline": [
+            "2004-07-01;2004-07-31: Allegation received by ITF.",
+            "2004-01-01;2004-06-30: Relevant financial records reviewed.",
+            "2004-07-22: Monitoring of Airline\u2019s inward and outward flights occurred."
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0262/04",
+        "subject": "Evasion of Pristina Airport Charges",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Failure to collect all revenues for landing, handling and passenger tax by Pristina Airport from the Airline.",
+                "findings": "No record of passenger tax payments for passengers departing with the Airline. Security and immigration staff are not liable as they didn't use check-in facilities."
+            },
+            {
+                "number": 2,
+                "description": "Non-integration of the automatic checking system with financial reporting.",
+                "findings": "Potential loss of revenue from passenger taxes due to non-integrated systems at Pristina Airport."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "The airline paid all charges levied by Pristina Airport.",
+            "Check-in procedures at Pristina Airport comply with the described process, reducing revenue risk.",
+            "Flight designated as humanitarian subject to review for charge compliance."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "Implement stricter oversight on airport fee collection.",
+            "Ensure integration of the automatic checking system with financial reporting.",
+            "Regular review of flight designation compliance.",
+            "Address the request of the Airline to be granted conventional credit facilities.",
+            "Review and seek to cease the occurrence of cash transactions for standard services.",
+            "Provide a written response to the issues described in the report."
+        ]
+    },
+    "related_documents": []
+}

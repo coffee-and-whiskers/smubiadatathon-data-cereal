@@ -1,0 +1,104 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "UNMIK-0283/04",
+        "title": "CASE 283/04: UNMIK Investigation Report on Pristina Airport Case",
+        "category": "Investigation",
+        "timestamp": "2004-06-15T14:00:00Z",
+        "primary_source": "UNMIK Investigation Task Force"
+    },
+    "overview": "This document presents the investigation findings regarding allegations of theft and corruption at Pristina Airport, covering improper handling of fees and the solicitation of illicit payments in exchange for favorable landing slots.",
+    "applicable_laws": [
+        {
+            "regulation_id": "UNMIK Regulation 1999/24",
+            "excerpt": "The law applicable in Kosovo... as promulgated by the Special Representative."
+        },
+        {
+            "regulation_id": "UN Staff Regulations 1.2 (b)",
+            "excerpt": "Staff members shall uphold the highest standards of efficiency, competence and integrity."
+        },
+        {
+            "regulation_id": "Staff Rule 110.1",
+            "excerpt": "Failure by a staff member to comply... may lead to disciplinary measures."
+        }
+    ],
+    "methodology": {
+        "description": "The investigation was conducted pursuant to Executive Decision No 2003/16 on the establishment of the Investigation Task Force. It involved interviews with witnesses and implicated persons, and analysis of documents from Pristina Airport administration and Pillar IV.",
+        "documents_reviewed": [
+            "Documents from Pristina Airport administration",
+            "Documents from Pillar IV"
+        ]
+    },
+    "background": {
+        "context": "Investigation into alleged corruption and irregularities in handling and landing fees at Pristina International Airport.",
+        "entities_involved": [
+            "Pristina International Airport",
+            "PEAP",
+            "Pillar II",
+            "Pillar IV",
+            "KTA",
+            "KFOR"
+        ],
+        "timeline": [
+            "2001;2003: Investigation period",
+            "2002-06-30: Responsibility shifted from Pillar II to KTA and Pillar IV",
+            "2004-04-01: Pristina Airport handed over to civilian jurisdiction"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0283/04",
+        "subject": "Allegations of corruption at Pristina International Airport",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Overcharging of commercial flights for fees.",
+                "findings": "Evidence suggests widespread overcharging practices."
+            },
+            {
+                "number": 2,
+                "description": "Improper accounting of handling and landing fees.",
+                "findings": "Instances where funds were not properly accounted."
+            },
+            {
+                "number": 3,
+                "description": "Requests for corrupt payments for convenient landing slots.",
+                "findings": "Indications of solicitation and acceptance of illicit payments."
+            },
+            {
+                "number": 4,
+                "description": "Corruption arising from de-icing costs levied on passenger aircraft during 2001.",
+                "findings": "De-icing requests added to landing fees costs, with inconsistencies noted."
+            },
+            {
+                "number": 5,
+                "description": "Discrepancies in passenger tax charges.",
+                "findings": "Discrepancies noted between charged passenger tax and actual income."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Substantial evidence of financial irregularities and corruption.",
+            "Discrepancy in passenger tax and account figures."
+        ],
+        "violations": [
+            {
+                "regulation_id": "UN Staff Regulations 1.2 (b)",
+                "excerpt": "Staff members shall uphold the highest standards."
+            },
+            {
+                "regulation_id": "Staff Rule 110.1",
+                "excerpt": "Misconduct due to failure to observe standards of conduct."
+            }
+        ]
+    },
+    "recommendations": {
+        "actions": [
+            "Improvement of financial oversight mechanisms at Pristina Airport.",
+            "Enhance staff training on compliance and ethical standards.",
+            "Initiate disciplinary measures against identified individuals.",
+            "Prepare official requests to airlines for cooperation."
+        ]
+    },
+    "related_documents": []
+}

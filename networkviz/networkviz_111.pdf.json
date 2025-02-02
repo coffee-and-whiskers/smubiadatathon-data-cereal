@@ -1,0 +1,78 @@
+{
+    "entities": [
+        {
+            "id": "Meeting_2023_10_22",
+            "label": "Meeting on 2023-10-22",
+            "type": "investigation"
+        },
+        {
+            "id": "Angela_Merkel",
+            "label": "German Chancellor Angela Merkel",
+            "type": "individual"
+        },
+        {
+            "id": "Nicolas_Sarkozy",
+            "label": "French President Nicolas Sarkozy",
+            "type": "individual"
+        },
+        {
+            "id": "Silvio_Berlusconi",
+            "label": "Italian Prime Minister Silvio Berlusconi",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Valentino_Valentini",
+            "label": "Valentino Valentini",
+            "type": "individual"
+        },
+        {
+            "id": "Herman_Van_Rompuy",
+            "label": "EU Council President Herman Van Rompuy",
+            "type": "individual"
+        },
+        {
+            "id": "Italy_Financial_Situation",
+            "label": "Italian Financial Situation",
+            "type": "investigation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Meeting_2023_10_22",
+            "target": "Angela_Merkel",
+            "label": "1. Attended Meeting",
+            "tooltip": "Angela Merkel participated in the meeting discussing Italy's financial situation."
+        },
+        {
+            "source": "Meeting_2023_10_22",
+            "target": "Nicolas_Sarkozy",
+            "label": "2. Attended Meeting",
+            "tooltip": "Nicolas Sarkozy participated in the meeting discussing Italy's financial situation."
+        },
+        {
+            "source": "Meeting_2023_10_22",
+            "target": "Silvio_Berlusconi",
+            "label": "3. Attended Meeting",
+            "tooltip": "Silvio Berlusconi participated in the meeting discussing Italy's financial situation."
+        },
+        {
+            "source": "Meeting_2023_10_22",
+            "target": "Italy_Financial_Situation",
+            "label": "4. Focus of Discussion",
+            "tooltip": "The meeting focused on addressing the Italian financial situation."
+        },
+        {
+            "source": "Italy_Financial_Situation",
+            "target": "Silvio_Berlusconi",
+            "label": "5. Urged for Economic Measures",
+            "tooltip": "EU leaders urged Berlusconi to implement economic measures to stabilize Italy's financial situation."
+        }
+    ],
+    "allegations": {
+        "Silvio_Berlusconi": [
+            "Pressured by EU leaders to address financial challenges effectively."
+        ]
+    },
+    "violations": {}
+}

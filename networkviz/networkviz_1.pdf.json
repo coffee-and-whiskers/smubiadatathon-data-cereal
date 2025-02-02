@@ -1,0 +1,93 @@
+{
+    "entities": [
+        {
+            "id": "Case 286/04",
+            "label": "Case 286/04 - Pristina Airport Tender Irregularities",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina International Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Vendor 3",
+            "label": "Vendor 3 - Supermarket in Prizren",
+            "type": "company",
+            "outline": "allegation"
+        },
+        {
+            "id": "Vendor 4",
+            "label": "Vendor 4 - Non-existent Vendor",
+            "type": "company",
+            "outline": "allegation"
+        },
+        {
+            "id": "Kosovo Organised Crime Bureau",
+            "label": "Kosovo Organised Crime Bureau (KOCB)",
+            "type": "organization"
+        },
+        {
+            "id": "Finance Admin Instruction 1999/2",
+            "label": "Finance Admin Instruction 1999/2",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Pristina International Airport",
+            "target": "Case 286/04",
+            "label": "1. Subject of Investigation",
+            "tooltip": "Pristina International Airport was the focus of the investigation due to tender irregularities."
+        },
+        {
+            "source": "UNMIK",
+            "target": "Case 286/04",
+            "label": "2. Investigation Conducted By",
+            "tooltip": "UNMIK initiated the investigation into the tender irregularities at Pristina International Airport."
+        },
+        {
+            "source": "Case 286/04",
+            "target": "Vendor 3",
+            "label": "3. Allegation of Misrepresentation",
+            "tooltip": "Vendor 3 was found to be a supermarket in Prizren, not a legitimate bidder in the tenders."
+        },
+        {
+            "source": "Case 286/04",
+            "target": "Vendor 4",
+            "label": "4. Allegation of Non-existence",
+            "tooltip": "Vendor 4 was found not to exist, raising concerns about tender legitimacy."
+        },
+        {
+            "source": "Kosovo Organised Crime Bureau",
+            "target": "Case 286/04",
+            "label": "5. Consultation and Support",
+            "tooltip": "The Kosovo Organised Crime Bureau was consulted during the investigation."
+        },
+        {
+            "source": "Case 286/04",
+            "target": "Finance Admin Instruction 1999/2",
+            "label": "6. Violation of Procurement Rules",
+            "tooltip": "The investigation identified breaches of procurement rules outlined in Finance Admin Instruction 1999/2."
+        }
+    ],
+    "allegations": {
+        "Vendor 3": [
+            "Misrepresented as a legitimate bidder in the airport tenders."
+        ],
+        "Vendor 4": [
+            "Non-existent entity falsely presented as a bidder in the tenders."
+        ]
+    },
+    "violations": {
+        "Finance Admin Instruction 1999/2": [
+            "Breach of procurement rules due to misrepresentation of vendors."
+        ]
+    }
+}

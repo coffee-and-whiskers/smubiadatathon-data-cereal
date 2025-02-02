@@ -1,0 +1,54 @@
+{
+    "metadata": {
+        "classification_level": "SECRET//COMINT//NOFORN",
+        "document_id": "",
+        "title": "NSA Global SIGINT Highlights: Japanese to State Goal of Reducing Carbon Emissions by Half by 2050",
+        "category": "Intelligence Report",
+        "timestamp": "2015-07-31",
+        "primary_source": "National Security Agency (NSA)"
+    },
+    "overview": "This NSA report provides insights into plans by the Japanese government, led by Prime Minister Shinzo Abe, to significantly reduce carbon emissions by half by 2050. These plans were intercepted through intelligence from Japanese ministries and reveal strategic communication decisions prior to a meeting with the US President.",
+    "applicable_laws": [],
+    "background": {
+        "context": "This report details a secret intelligence intercept by the NSA concerning Japan's internal discussions on environmental policy prior to Prime Minister Abe's visit to Washington, DC.",
+        "entities_involved": [
+            "Japanese Ministry of Economy, Trade and Industry",
+            "Japanese Ministry of Foreign Affairs",
+            "Prime Minister Shinzo Abe",
+            "National Security Agency (NSA)",
+            "United States",
+            "President George W. Bush"
+        ],
+        "timeline": [
+            "2007-04-26;2007-04-27: Preparation for Prime Minister Shinzo Abe's visit to Washington",
+            "2007: Japanese Ministry of Economy, Trade, and Industry (METI) pushes principles on climate change",
+            "2007: Decision at Prime Minister's residence to state carbon reduction goal at summit with US"
+        ]
+    },
+    "investigation_details": {
+        "subject": "Japanese Government's Carbon Emissions Plan",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Japan considered not informing the US of their carbon emissions reduction plan.",
+                "findings": "NSA intercepted communications revealed Japan's plan and decision to initially withhold it from the US."
+            }
+        ]
+    },
+    "intelligence_summary": {
+        "sources": [
+            "Intelligence Intercepts by NSA"
+        ],
+        "key_findings": [
+            "Japan planned to reduce carbon emissions significantly by 2050.",
+            "Japan initially opted against informing the US of these plans but later reconsidered."
+        ],
+        "assessments": [
+            "The decision was likely influenced by potential opposition from the Bush administration."
+        ],
+        "risks": []
+    },
+    "related_documents": [
+        "https://wikileaks.org/nsa-japan"
+    ]
+}

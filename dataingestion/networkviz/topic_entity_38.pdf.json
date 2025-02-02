@@ -1,0 +1,38 @@
+{
+    "document_name": "38.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina Airport",
+                "Kosovo Trust Agency",
+                "Bid Evaluation Committee"
+            ]
+        },
+        {
+            "topic": "Bribery and Corruption",
+            "entities": [
+                "Procurement Officer",
+                "Finance Officer",
+                "Vendor 2"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "United Nations Interim Administration Mission in Kosovo",
+                "Article 343",
+                "Article 344",
+                "2/1999 Section 4.3.2"
+            ]
+        },
+        {
+            "topic": "Conflict of Interest",
+            "entities": [
+                "Procurement Officer",
+                "Finance Officer",
+                "Vendor 1"
+            ]
+        }
+    ]
+}

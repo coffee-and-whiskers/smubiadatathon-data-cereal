@@ -1,0 +1,105 @@
+{
+    "entities": [
+        {
+            "id": "NSA",
+            "label": "National Security Agency",
+            "type": "organization"
+        },
+        {
+            "id": "Japanese Government",
+            "label": "Japanese Government",
+            "type": "organization"
+        },
+        {
+            "id": "Ministry of Economy Trade and Industry",
+            "label": "Ministry of Economy Trade and Industry",
+            "type": "organization"
+        },
+        {
+            "id": "Ministry of Foreign Affairs",
+            "label": "Ministry of Foreign Affairs",
+            "type": "organization"
+        },
+        {
+            "id": "Ministry of Finance",
+            "label": "Ministry of Finance",
+            "type": "organization"
+        },
+        {
+            "id": "Ministry of Environment",
+            "label": "Ministry of Environment",
+            "type": "organization"
+        },
+        {
+            "id": "Nobutaka Machimura",
+            "label": "Chief Cabinet Secretary Nobutaka Machimura",
+            "type": "individual"
+        },
+        {
+            "id": "G-8 Summit 2008",
+            "label": "G-8 Summit 2008",
+            "type": "investigation"
+        },
+        {
+            "id": "SIGINT Operations",
+            "label": "SIGINT Operations",
+            "type": "statutory"
+        }
+    ],
+    "edges": [
+        {
+            "source": "NSA",
+            "target": "Japanese Government",
+            "label": "1. Intelligence Gathering",
+            "tooltip": "NSA conducted SIGINT operations to intercept communications within the Japanese Government."
+        },
+        {
+            "source": "Japanese Government",
+            "target": "G-8 Summit 2008",
+            "label": "2. Climate Policy Proposal",
+            "tooltip": "The Japanese Government aimed to propose a sectoral approach to emission reductions at the G-8 Summit."
+        },
+        {
+            "source": "Nobutaka Machimura",
+            "target": "Japanese Government",
+            "label": "3. Leadership Role",
+            "tooltip": "Chief Cabinet Secretary Nobutaka Machimura was involved in strategizing Japan's climate policy goals."
+        },
+        {
+            "source": "NSA",
+            "target": "SIGINT Operations",
+            "label": "4. Methodology Used",
+            "tooltip": "NSA utilized SIGINT operations to gather intelligence on Japanese climate policy strategies."
+        },
+        {
+            "source": "Ministry of Economy Trade and Industry",
+            "target": "Japanese Government",
+            "label": "5. Involvement in Climate Agenda",
+            "tooltip": "The Ministry of Economy Trade and Industry was involved in formulating Japan's climate policy."
+        },
+        {
+            "source": "Ministry of Foreign Affairs",
+            "target": "Japanese Government",
+            "label": "6. Involvement in Climate Agenda",
+            "tooltip": "The Ministry of Foreign Affairs was involved in formulating Japan's climate policy."
+        },
+        {
+            "source": "Ministry of Finance",
+            "target": "Japanese Government",
+            "label": "7. Involvement in Climate Agenda",
+            "tooltip": "The Ministry of Finance was involved in formulating Japan's climate policy."
+        },
+        {
+            "source": "Ministry of Environment",
+            "target": "Japanese Government",
+            "label": "8. Involvement in Climate Agenda",
+            "tooltip": "The Ministry of Environment was involved in formulating Japan's climate policy."
+        }
+    ],
+    "allegations": {
+        "NSA": [
+            "Interception of confidential Japanese G-8 proposals on climate change."
+        ]
+    },
+    "violations": {}
+}

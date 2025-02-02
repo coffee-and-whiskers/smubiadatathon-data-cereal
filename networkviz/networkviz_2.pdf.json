@@ -1,0 +1,203 @@
+{
+    "entities": [
+        {
+            "id": "ITF",
+            "label": "Investigation Task Force Kosovo",
+            "type": "organization"
+        },
+        {
+            "id": "ATCS",
+            "label": "Air Traffic Control Services",
+            "type": "organization",
+            "outline": "allegation"
+        },
+        {
+            "id": "Prishtina_Airport",
+            "label": "Prishtina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "KTA",
+            "label": "Kosovo Trust Agency",
+            "type": "organization"
+        },
+        {
+            "id": "UNMIK_Pillar_IV",
+            "label": "UNMIK Pillar IV",
+            "type": "organization"
+        },
+        {
+            "id": "EU",
+            "label": "European Union",
+            "type": "organization"
+        },
+        {
+            "id": "Public_Enterprise_Airport_Prishtina",
+            "label": "Public Enterprise Airport Prishtina",
+            "type": "organization"
+        },
+        {
+            "id": "Chartered_Accountants",
+            "label": "Chartered Accountants",
+            "type": "organization"
+        },
+        {
+            "id": "Division_Manager",
+            "label": "Division Manager",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "ATCS_Official",
+            "label": "ATCS Official",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Finance_Officer_1",
+            "label": "Finance Officer 1",
+            "type": "individual"
+        },
+        {
+            "id": "Finance_Officer_2",
+            "label": "Finance Officer 2",
+            "type": "individual"
+        },
+        {
+            "id": "Official_1_Prishtina_Airport",
+            "label": "Official 1 at Prishtina Airport",
+            "type": "individual"
+        },
+        {
+            "id": "Official_2_Prishtina_Airport",
+            "label": "Official 2 at Prishtina Airport",
+            "type": "individual"
+        },
+        {
+            "id": "Official_4",
+            "label": "Official 4",
+            "type": "individual"
+        },
+        {
+            "id": "UNSCR_1244_1999",
+            "label": "UNSCR 1244 (1999)",
+            "type": "statutory"
+        },
+        {
+            "id": "UNMIK_Regulation_1999_1",
+            "label": "UNMIK Regulation No. 1999/1",
+            "type": "statutory"
+        },
+        {
+            "id": "UNMIK_Regulation_2001_27",
+            "label": "UNMIK Regulation No. 2001/27",
+            "type": "statutory"
+        },
+        {
+            "id": "Case_0049_04",
+            "label": "Case 0049-04 - Financial Irregularities",
+            "type": "investigation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Chartered_Accountants",
+            "target": "Case_0049_04",
+            "label": "1. Forensic Audit Triggered Investigation",
+            "tooltip": "The forensic audit report by Chartered Accountants identified issues that led to the investigation."
+        },
+        {
+            "source": "ITF",
+            "target": "Case_0049_04",
+            "label": "2. Investigation Conducted By",
+            "tooltip": "Investigation Task Force Kosovo conducted the investigation into financial irregularities."
+        },
+        {
+            "source": "Case_0049_04",
+            "target": "ATCS",
+            "label": "3. Subject of Investigation",
+            "tooltip": "The investigation focused on financial irregularities in cash withdrawals from ATCS accounts."
+        },
+        {
+            "source": "ATCS",
+            "target": "Division_Manager",
+            "label": "4. Management Oversight",
+            "tooltip": "The Division Manager was responsible for overseeing financial operations at ATCS."
+        },
+        {
+            "source": "ATCS",
+            "target": "ATCS_Official",
+            "label": "5. Financial Mismanagement",
+            "tooltip": "The ATCS Official was involved in financial mismanagement and lack of oversight."
+        },
+        {
+            "source": "Finance_Officer_1",
+            "target": "ATCS",
+            "label": "6. Reported Documentation Issues",
+            "tooltip": "Finance Officer 1 identified lack of necessary expenditure documentation."
+        },
+        {
+            "source": "Finance_Officer_2",
+            "target": "ATCS",
+            "label": "7. Highlighted Financial Software Deficiency",
+            "tooltip": "Finance Officer 2 noted the absence of advanced financial software at ATCS."
+        },
+        {
+            "source": "KTA",
+            "target": "UNMIK_Pillar_IV",
+            "label": "8. Oversight Authority",
+            "tooltip": "KTA under UNMIK Pillar IV was responsible for oversight of financial operations."
+        },
+        {
+            "source": "UNMIK_Pillar_IV",
+            "target": "Prishtina_Airport",
+            "label": "9. Oversight Responsibility",
+            "tooltip": "UNMIK Pillar IV was responsible for ensuring compliance at Prishtina Airport."
+        },
+        {
+            "source": "Case_0049_04",
+            "target": "UNSCR_1244_1999",
+            "label": "10. Legal Framework",
+            "tooltip": "The investigation was conducted under the framework of UNSCR 1244 (1999)."
+        },
+        {
+            "source": "Case_0049_04",
+            "target": "UNMIK_Regulation_1999_1",
+            "label": "11. Legal Authority",
+            "tooltip": "The investigation was authorized under UNMIK Regulation No. 1999/1."
+        },
+        {
+            "source": "Case_0049_04",
+            "target": "UNMIK_Regulation_2001_27",
+            "label": "12. Employment Law Considerations",
+            "tooltip": "The investigation considered employment law under UNMIK Regulation No. 2001/27."
+        },
+        {
+            "source": "ATCS_Official",
+            "target": "Case_0049_04",
+            "label": "13. Allegations of Misappropriation",
+            "tooltip": "The ATCS Official was alleged to have misappropriated funds."
+        },
+        {
+            "source": "Division_Manager",
+            "target": "Case_0049_04",
+            "label": "14. Allegations of Negligence",
+            "tooltip": "The Division Manager was alleged to have neglected financial oversight responsibilities."
+        }
+    ],
+    "allegations": {
+        "ATCS": [
+            "Irregular cash withdrawals and lack of documentation.",
+            "Disorganized financial management and inadequate documentation."
+        ],
+        "Division_Manager": [
+            "Failure to oversee financial operations effectively.",
+            "Ignored fraud potential as mentioned in the forensic audit."
+        ],
+        "ATCS_Official": [
+            "Self-certification of expenses without documentation.",
+            "Misappropriation of funds for non-business-related expenses."
+        ]
+    },
+    "violations": {}
+}

@@ -1,0 +1,125 @@
+{
+    "overview": {
+        "investigation": [
+            "irregularities",
+            "corruption",
+            "audit"
+        ],
+        "organization": [
+            "Pristina International Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "UNMIK Regulation 1999/24",
+            "UN Staff Regulations 1.2 (b)",
+            "UNMIK Finance Administrative Instruction 1999/2"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "investigation",
+            "enquiries",
+            "interviews",
+            "review of documents"
+        ],
+        "organization": [
+            "Pristina Airport Administration",
+            "Pillar IV"
+        ],
+        "company": [],
+        "individual": [
+            "Witnesses",
+            "Potentially implicated individuals"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "investigation",
+            "audit report"
+        ],
+        "organization": [
+            "Pristina International Airport",
+            "UNMIK Office of the Legal Adviser",
+            "Public Enterprise Airport Pristina",
+            "Military Units of the Kosovo Force",
+            "Civil Administration Pillar"
+        ],
+        "company": [
+            "Evaluation Company"
+        ],
+        "individual": [
+            "DOTI Official 2",
+            "DOTI Official 3",
+            "CPE Procurement Officer"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Irregularities",
+            "allegations",
+            "findings"
+        ],
+        "organization": [
+            "UNMIK Legal Adviser"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "UNMIK Finance Regulation 1999/2",
+            "Article 23.3"
+        ]
+    },
+    "conclusion": {
+        "investigation": [
+            "compromised",
+            "breaches",
+            "violations"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "UNMIK Finance Administrative Instruction 1999/2"
+        ]
+    },
+    "recommendations": {
+        "investigation": [
+            "Review",
+            "Ensure",
+            "Revise",
+            "Refer",
+            "Independent evaluations"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "UNMIK",
+            "DPKO"
+        ],
+        "company": [],
+        "individual": [
+            "DOTI Official 2"
+        ],
+        "statutory": [
+            "UNMIK Public Procurement Regulation No 2004/3"
+        ]
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

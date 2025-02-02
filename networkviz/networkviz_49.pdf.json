@@ -1,0 +1,115 @@
+{
+    "entities": [
+        {
+            "id": "INV-KOS-2023-AL-054",
+            "label": "Investigation INV-KOS-2023-AL-054",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Interim Administration Mission in Kosovo",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina Airport",
+            "label": "Pristina Airport",
+            "type": "organization"
+        },
+        {
+            "id": "PEAP",
+            "label": "PEAP",
+            "type": "organization"
+        },
+        {
+            "id": "KTA",
+            "label": "Kosovo Trust Agency (KTA)",
+            "type": "organization"
+        },
+        {
+            "id": "Company 1",
+            "label": "Company 1",
+            "type": "company",
+            "outline": "allegation"
+        },
+        {
+            "id": "Divisional Manager",
+            "label": "Divisional Manager",
+            "type": "individual"
+        },
+        {
+            "id": "PEAP Official",
+            "label": "PEAP Official",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Article 344",
+            "label": "Article 344 of the Provisional Criminal Code of Kosovo",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "INV-KOS-2023-AL-054",
+            "target": "UNMIK",
+            "label": "1. Investigation Conducted By",
+            "tooltip": "UNMIK is conducting the investigation into the bribery allegations."
+        },
+        {
+            "source": "INV-KOS-2023-AL-054",
+            "target": "Pristina Airport",
+            "label": "2. Investigation Target",
+            "tooltip": "The investigation focuses on alleged bribery at Pristina Airport."
+        },
+        {
+            "source": "INV-KOS-2023-AL-054",
+            "target": "PEAP",
+            "label": "3. Involvement in Allegation",
+            "tooltip": "PEAP is involved in the bribery allegation as the location where the envelope was found."
+        },
+        {
+            "source": "INV-KOS-2023-AL-054",
+            "target": "KTA",
+            "label": "4. Interview Conducted",
+            "tooltip": "KTA Procurement Specialist was interviewed as part of the investigation."
+        },
+        {
+            "source": "INV-KOS-2023-AL-054",
+            "target": "Company 1",
+            "label": "5. Alleged Bribery Connection",
+            "tooltip": "Company 1 is allegedly linked to the bribery through a procurement contract."
+        },
+        {
+            "source": "INV-KOS-2023-AL-054",
+            "target": "Divisional Manager",
+            "label": "6. Reported Incident",
+            "tooltip": "The Divisional Manager reported the bribery incident to UNMIK Police."
+        },
+        {
+            "source": "INV-KOS-2023-AL-054",
+            "target": "PEAP Official",
+            "label": "7. Alleged Recipient",
+            "tooltip": "The PEAP Official is alleged to have been the target of the bribery attempt."
+        },
+        {
+            "source": "INV-KOS-2023-AL-054",
+            "target": "Article 344",
+            "label": "8. Possible Violation",
+            "tooltip": "The investigation involves a possible violation of Article 344 due to attempted bribery."
+        }
+    ],
+    "allegations": {
+        "Company 1": [
+            "Linked to the bribery through securing a procurement contract."
+        ],
+        "PEAP Official": [
+            "Alleged target of the bribery attempt involving \u20ac5200."
+        ]
+    },
+    "violations": {
+        "Article 344": [
+            "Possible violation due to attempted bribery and corruption."
+        ]
+    }
+}

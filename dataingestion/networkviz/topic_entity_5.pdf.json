@@ -1,0 +1,34 @@
+{
+    "document_name": "5.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina International Airport",
+                "UNMIK",
+                "Pillar IV"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "Divisional Manager of Airports Sector KTA",
+                "Kosovo Consolidated Budget Funds"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "UNMIK Regulation 1999/24",
+                "UNMIK Finance Administrative Instruction 1999/2"
+            ]
+        },
+        {
+            "topic": "Contract Management",
+            "entities": [
+                "Air Traffic Control",
+                "Rescue Fire Fighting services"
+            ]
+        }
+    ]
+}

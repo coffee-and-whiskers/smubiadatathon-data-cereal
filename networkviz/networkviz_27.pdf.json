@@ -1,0 +1,137 @@
+{
+    "entities": [
+        {
+            "id": "Case 0374103",
+            "label": "Case 0374103 - Misconduct Allegations in UNEP PCAU",
+            "type": "investigation"
+        },
+        {
+            "id": "UNEP",
+            "label": "United Nations Environment Programme (UNEP)",
+            "type": "organization"
+        },
+        {
+            "id": "UNOPS",
+            "label": "United Nations Office for Project Services (UNOPS)",
+            "type": "organization"
+        },
+        {
+            "id": "UNEP Staff Member 1",
+            "label": "UNEP Staff Member 1",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "UNEP Staff Member 2",
+            "label": "UNEP Staff Member 2",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "UNEP/PCAU Consultant",
+            "label": "UNEP/PCAU Consultant",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Balkans Task Force (BTF)",
+            "label": "Balkans Task Force (BTF)",
+            "type": "organization"
+        },
+        {
+            "id": "Post-Conflict Assessment Unit (PCAU)",
+            "label": "Post-Conflict Assessment Unit (PCAU)",
+            "type": "organization"
+        },
+        {
+            "id": "ST/AI/1999/7 I I",
+            "label": "ST/AI/1999/7 I I",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "Procurement Regulation 1.2",
+            "label": "United Nations Financial Procurement Regulation 1.2",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Case 0374103",
+            "target": "UNEP",
+            "label": "1. Investigation Conducted By",
+            "tooltip": "UNEP was involved in the investigation of misconduct within its PCAU."
+        },
+        {
+            "source": "Case 0374103",
+            "target": "UNOPS",
+            "label": "2. Investigation Involved",
+            "tooltip": "UNOPS was mentioned in the context of deviation from UN rules."
+        },
+        {
+            "source": "UNEP Staff Member 1",
+            "target": "Balkans Task Force (BTF)",
+            "label": "3. Employment Relationship",
+            "tooltip": "UNEP Staff Member 1 was involved with BTF during the period of alleged misconduct."
+        },
+        {
+            "source": "UNEP Staff Member 2",
+            "target": "Post-Conflict Assessment Unit (PCAU)",
+            "label": "4. Employment Relationship",
+            "tooltip": "UNEP Staff Member 2 was appointed to PCAU."
+        },
+        {
+            "source": "UNEP Staff Member 1",
+            "target": "UNEP/PCAU Consultant",
+            "label": "5. Alleged Kickback Scheme",
+            "tooltip": "Allegations of a kickback scheme involving consultancy fees."
+        },
+        {
+            "source": "UNEP Staff Member 1",
+            "target": "UNEP Staff Member 2",
+            "label": "6. Alleged Conflict of Interest",
+            "tooltip": "Allegations of maintaining relationships with former company."
+        },
+        {
+            "source": "UNEP Staff Member 1",
+            "target": "ST/AI/1999/7 I I",
+            "label": "7. Violation Found",
+            "tooltip": "Breach of UN regulations by representing UNEP in seminars."
+        },
+        {
+            "source": "UNEP/PCAU Consultant",
+            "target": "ST/AI/1999/7 I I",
+            "label": "8. Violation Found",
+            "tooltip": "Breach of UN regulations by representing UNEP in seminars."
+        },
+        {
+            "source": "UNEP",
+            "target": "Procurement Regulation 1.2",
+            "label": "9. Violation Found",
+            "tooltip": "Contracts awarded without competitive bidding, violating procurement regulations."
+        }
+    ],
+    "allegations": {
+        "UNEP Staff Member 1": [
+            "Maintained a relationship with a former company, suggesting a conflict of interest.",
+            "Demanded a kickback of consultancy fees."
+        ],
+        "UNEP Staff Member 2": [
+            "Maintained a relationship with a former company, suggesting a conflict of interest.",
+            "Shared in kickback of consultancy fees."
+        ],
+        "UNEP/PCAU Consultant": [
+            "Shared in kickback of consultancy fees.",
+            "Improper representation of UNEP in seminars."
+        ]
+    },
+    "violations": {
+        "ST/AI/1999/7 I I": [
+            "Consultants performed functions of staff members and had representative responsibilities."
+        ],
+        "Procurement Regulation 1.2": [
+            "Contracts awarded without competitive bidding, affecting fairness and transparency."
+        ]
+    }
+}

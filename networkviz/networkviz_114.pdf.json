@@ -1,0 +1,73 @@
+{
+    "entities": [
+        {
+            "id": "UNSYG_Ban_Ki_moon",
+            "label": "UN Secretary-General Ban Ki-moon",
+            "type": "individual"
+        },
+        {
+            "id": "Angela_Merkel",
+            "label": "German Chancellor Angela Merkel",
+            "type": "individual"
+        },
+        {
+            "id": "EU",
+            "label": "European Union",
+            "type": "organization"
+        },
+        {
+            "id": "EU_Summit_Brussels",
+            "label": "EU Summit in Brussels",
+            "type": "organization"
+        },
+        {
+            "id": "UN_Climate_Change_Conference",
+            "label": "UN Climate Change Conference",
+            "type": "organization"
+        },
+        {
+            "id": "Poznan_Conference",
+            "label": "UN Climate Change Conference in Poznan",
+            "type": "organization"
+        },
+        {
+            "id": "Copenhagen_Conference",
+            "label": "UN Climate Change Conference in Copenhagen",
+            "type": "organization"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UNSYG_Ban_Ki_moon",
+            "target": "Angela_Merkel",
+            "label": "1. Discussion on Climate Leadership",
+            "tooltip": "Ban Ki-moon and Angela Merkel discussed the importance of EU leadership in climate negotiations."
+        },
+        {
+            "source": "EU",
+            "target": "EU_Summit_Brussels",
+            "label": "2. Summit Influence",
+            "tooltip": "The EU Summit in Brussels is pivotal for influencing climate talks in Poznan and Copenhagen."
+        },
+        {
+            "source": "EU_Summit_Brussels",
+            "target": "Poznan_Conference",
+            "label": "3. Influence on Poznan",
+            "tooltip": "The EU Summit in Brussels influenced the UN Climate Change Conference in Poznan."
+        },
+        {
+            "source": "EU_Summit_Brussels",
+            "target": "Copenhagen_Conference",
+            "label": "4. Influence on Copenhagen",
+            "tooltip": "The EU Summit in Brussels influenced the UN Climate Change Conference in Copenhagen."
+        },
+        {
+            "source": "EU",
+            "target": "UN_Climate_Change_Conference",
+            "label": "5. Leadership Role",
+            "tooltip": "The EU's leadership role is crucial for global climate negotiations."
+        }
+    ],
+    "allegations": {},
+    "violations": {}
+}

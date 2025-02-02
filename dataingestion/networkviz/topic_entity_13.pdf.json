@@ -1,0 +1,27 @@
+{
+    "document_name": "13.pdf",
+    "topics": [
+        {
+            "topic": "Employment Bribery",
+            "entities": [
+                "Pristina Airport",
+                "Officials",
+                "Non Staff Members"
+            ]
+        },
+        {
+            "topic": "Judicial Investigations",
+            "entities": [
+                "Department of Justice",
+                "Kosovo Police Service"
+            ]
+        },
+        {
+            "topic": "Administrative Recommendations",
+            "entities": [
+                "UNMIK Pillar IV",
+                "Investigation Task Force"
+            ]
+        }
+    ]
+}

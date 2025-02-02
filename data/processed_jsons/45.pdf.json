@@ -1,0 +1,81 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "Case 287/04",
+        "title": "CASE 287/04: Pristina Airport \u2013 Alleged Administrative Irregularity Regarding an X-RAY Tender",
+        "category": "Investigation",
+        "timestamp": "2004-10-26 00:00:00",
+        "primary_source": "UNMIK Investigation Task Force"
+    },
+    "overview": "This investigation report examines an alleged administrative irregularity regarding an X-ray tender at Pristina Airport (Case 287/04) under UNMIK. Issues arose due to the contract being signed prematurely before obtaining the necessary capital approval.",
+    "applicable_laws": [
+        {
+            "excerpt": "Finance Administration Instruction 1999/2 (UNMIK)"
+        },
+        {
+            "excerpt": "Assembly of Kosovo \u2013 Law on Public Financial Management and Accountability 2003/2"
+        },
+        {
+            "excerpt": "Assembly of Kosovo \u2013 Law on Public Procurement in Kosovo 2003/17"
+        }
+    ],
+    "methodology": {
+        "description": "The investigation involved conducting interviews, reviewing documents, and analyzing pertinent procurement and financial regulations.",
+        "interviews": [
+            "Divisional Manager on 2004-06-23",
+            "KTA Finance Official",
+            "KTA Internal Auditor 2"
+        ],
+        "documents_reviewed": [
+            "X-Ray Contract documents",
+            "Capital Expenditure Approval records"
+        ]
+    },
+    "background": {
+        "context": "On 2003-03-07, Pristina Airport launched an international tender for X-ray equipment. The contract was awarded on 2003-04-04 to a vendor that met all technical requirements but was not the lowest bidder. Administrative process concerns arose during the contract finalization without prior capital expenditure approval.",
+        "entities_involved": [
+            "Pristina Airport",
+            "Kosovo Trust Agency (KTA)",
+            "UNMIK",
+            "Vendor"
+        ],
+        "timeline": [
+            "2003-03-07: Tender launched",
+            "2003-04-04: Contract awarded",
+            "2003-04-10: Contract concluded with Vendor",
+            "2003-05-29: Divisional Manager signed the contract",
+            "2003-06-19: Capital Expenditure approval date;2003-06-20: Official sign-off"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "287/04",
+        "subject": "Administrative irregularities regarding X-ray Tender at Pristina Airport",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Contract signed prior to formal capital expenditure approval.",
+                "findings": "Evidence indicates that the contract was signed before the capital expenditure request was approved by KTA, but no compensable damages were found."
+            },
+            {
+                "number": 2,
+                "description": "Letter of Notification signed before obtaining necessary approvals.",
+                "findings": "The Divisional Manager signed the notification before obtaining KTA's formal Capital Expenditure approval."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "The signing by the Divisional Manager prior to formal approval was a minor administrative irregularity.",
+            "No financial loss to Pristina Airport or KTA was discovered."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "Ensure adequate training for airport staff involved in procurement activities.",
+            "Airport staff must strictly adhere to all applicable Procurement Regulations.",
+            "Written approval must be obtained prior to signing contract-related documentation for capital expenditures."
+        ]
+    },
+    "related_documents": []
+}

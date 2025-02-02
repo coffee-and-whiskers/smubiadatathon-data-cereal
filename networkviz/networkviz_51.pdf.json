@@ -1,0 +1,138 @@
+{
+    "entities": [
+        {
+            "id": "0192/04",
+            "label": "Case 0192/04 - Fraud Allegations at Pristina Airport",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina Airport",
+            "label": "Pristina Airport",
+            "type": "organization",
+            "outline": "allegation"
+        },
+        {
+            "id": "Cargo Department",
+            "label": "Cargo Department at Pristina Airport",
+            "type": "organization",
+            "outline": "allegation"
+        },
+        {
+            "id": "Company",
+            "label": "Company led by four partners",
+            "type": "company"
+        },
+        {
+            "id": "Customs Service",
+            "label": "Customs Service",
+            "type": "organization"
+        },
+        {
+            "id": "Official 1",
+            "label": "Pristina Airport Official 1",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Official 2",
+            "label": "Pristina Airport Official 2",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "KCC Article 215",
+            "label": "KCC Article 215 - Fraud in Service",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "KCC Article 219",
+            "label": "KCC Article 219 - Embezzlement",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Pristina Airport",
+            "target": "Cargo Department",
+            "label": "1. Alleged Fraudulent Activities",
+            "tooltip": "The Cargo Department at Pristina Airport was involved in unauthorized payments for handling and storage of goods."
+        },
+        {
+            "source": "UNMIK",
+            "target": "0192/04",
+            "label": "2. Investigation Conducted By",
+            "tooltip": "UNMIK Investigation Task Force conducted the investigation on fraud allegations."
+        },
+        {
+            "source": "0192/04",
+            "target": "Pristina Airport",
+            "label": "3. Subject of Investigation",
+            "tooltip": "The investigation focused on fraudulent activities at Pristina Airport."
+        },
+        {
+            "source": "Cargo Department",
+            "target": "Official 1",
+            "label": "4. Fraudulent Collection",
+            "tooltip": "Official 1 illegally collected \u20ac8,000, unrecorded in official accounts."
+        },
+        {
+            "source": "Cargo Department",
+            "target": "Official 2",
+            "label": "5. Unexplained Omissions",
+            "tooltip": "Official 2 failed to document \u20ac32,000 in storage fees."
+        },
+        {
+            "source": "0192/04",
+            "target": "KCC Article 215",
+            "label": "6. Violation Found",
+            "tooltip": "The investigation concluded that the activities violated KCC Article 215 - Fraud in Service."
+        },
+        {
+            "source": "0192/04",
+            "target": "KCC Article 219",
+            "label": "7. Violation Found",
+            "tooltip": "The investigation concluded that the activities violated KCC Article 219 - Embezzlement."
+        },
+        {
+            "source": "Company",
+            "target": "Pristina Airport",
+            "label": "8. Business Interaction",
+            "tooltip": "The company led by four partners was involved in transactions with Pristina Airport."
+        },
+        {
+            "source": "Customs Service",
+            "target": "Pristina Airport",
+            "label": "9. Regulatory Oversight",
+            "tooltip": "Customs Service was involved in the oversight of importation processes at Pristina Airport."
+        }
+    ],
+    "allegations": {
+        "Pristina Airport": [
+            "Involvement in unauthorized payments for handling and storage of goods."
+        ],
+        "Cargo Department": [
+            "Fraudulent financial practices and illegal payment solicitation."
+        ],
+        "Official 1": [
+            "Illegally collected \u20ac8,000 unrecorded in official accounts."
+        ],
+        "Official 2": [
+            "Failed to document \u20ac32,000 in storage fees."
+        ]
+    },
+    "violations": {
+        "KCC Article 215": [
+            "Fraud in Service"
+        ],
+        "KCC Article 219": [
+            "Embezzlement"
+        ]
+    }
+}

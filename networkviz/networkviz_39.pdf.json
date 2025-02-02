@@ -1,0 +1,111 @@
+{
+    "entities": [
+        {
+            "id": "case_0280_04",
+            "label": "Case 0280/04 - Tender Irregularities",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina International Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Chartered Accountants",
+            "label": "Chartered Accountants (Audit)",
+            "type": "organization"
+        },
+        {
+            "id": "DOTI_Official_1",
+            "label": "DOTI Official (Left UNMIK 2002-06-30)",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Tender_Process",
+            "label": "Tender Process for Cleaning Machines",
+            "type": "company",
+            "outline": "allegation"
+        },
+        {
+            "id": "UNMIK_Finance_Administrative_Instruction_1999_2",
+            "label": "UNMIK Finance Administrative Instruction 1999/2",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "UN_Staff_Regulations_1_2_b",
+            "label": "UN Staff Regulations 1.2 (b)",
+            "type": "statutory"
+        },
+        {
+            "id": "Staff_Rule_110_1",
+            "label": "Staff Rule 110.1",
+            "type": "statutory"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Pristina International Airport",
+            "target": "Chartered Accountants",
+            "label": "1. Audit Conducted",
+            "tooltip": "Financial audit was conducted at Pristina International Airport to review procurement processes."
+        },
+        {
+            "source": "Chartered Accountants",
+            "target": "case_0280_04",
+            "label": "2. Audit Triggered Investigation",
+            "tooltip": "The audit found irregularities, leading to an official investigation (Case 0280/04)."
+        },
+        {
+            "source": "case_0280_04",
+            "target": "UNMIK",
+            "label": "3. Investigation Conducted By",
+            "tooltip": "UNMIK initiated the formal investigation based on audit findings."
+        },
+        {
+            "source": "UNMIK",
+            "target": "Pristina International Airport",
+            "label": "4. Oversight Authority",
+            "tooltip": "UNMIK was responsible for overseeing compliance at Pristina International Airport."
+        },
+        {
+            "source": "Pristina International Airport",
+            "target": "Tender_Process",
+            "label": "5. Procurement Involved",
+            "tooltip": "The airport managed the tendering process for cleaning machines, which raised concerns about favoritism."
+        },
+        {
+            "source": "Tender_Process",
+            "target": "DOTI_Official_1",
+            "label": "6. Irregularities Identified",
+            "tooltip": "DOTI Official 1 was linked to irregularities in the tender process, including bid manipulation."
+        },
+        {
+            "source": "case_0280_04",
+            "target": "UNMIK_Finance_Administrative_Instruction_1999_2",
+            "label": "7. Violation Found",
+            "tooltip": "The investigation concluded that the procurement process violated UNMIK Finance Administrative Instruction 1999/2."
+        }
+    ],
+    "allegations": {
+        "DOTI_Official_1": [
+            "Potential involvement in irregularities during procurement.",
+            "Resigned from UNMIK before the investigation concluded."
+        ],
+        "Tender_Process": [
+            "The first tender was canceled due to non-specific machine cabin descriptions.",
+            "Second tender specifications copied from a supplier\u2019s brochure, giving unfair advantage."
+        ]
+    },
+    "violations": {
+        "UNMIK_Finance_Administrative_Instruction_1999_2": [
+            "Technical specifications should be drawn up with a view to fair competition and not unduly favor any particular supplier."
+        ]
+    }
+}

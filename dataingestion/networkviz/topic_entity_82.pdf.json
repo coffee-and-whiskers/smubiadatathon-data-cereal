@@ -1,0 +1,35 @@
+{
+    "document_name": "82.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "DPKO CITS",
+                "TCIL",
+                "La Cresta",
+                "Thunderbird LLC"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "UN Rules",
+                "Procurement Department"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "OIOS Procurement Task Force",
+                "Audit Report"
+            ]
+        },
+        {
+            "topic": "Vendor Communication",
+            "entities": [
+                "Walter Cabrera",
+                "Procurement Department Officials"
+            ]
+        }
+    ]
+}

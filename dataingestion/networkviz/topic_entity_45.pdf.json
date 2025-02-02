@@ -1,0 +1,29 @@
+{
+    "document_name": "45.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina Airport",
+                "Kosovo Trust Agency (KTA)",
+                "UNMIK"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "Capital Expenditure Approval",
+                "KTA Finance Official",
+                "KTA Internal Auditor"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "Law on Public Procurement in Kosovo",
+                "Finance Administration Instruction",
+                "Law on Public Financial Management and Accountability"
+            ]
+        }
+    ]
+}

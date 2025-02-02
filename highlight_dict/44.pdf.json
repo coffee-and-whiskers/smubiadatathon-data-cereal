@@ -1,0 +1,109 @@
+{
+    "overview": {
+        "investigation": [
+            "administrative irregularities",
+            "procurement process",
+            "irregular tendering procedures"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Financial Agreement 1999/2",
+            "Procurement Regulation"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "Review of procurement files",
+            "document analysis"
+        ],
+        "organization": [],
+        "company": [
+            "Vendor 2 Representative",
+            "Vendor 1 Sales Manager"
+        ],
+        "individual": [
+            "PEAP Official",
+            "Airport Engineer"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "Single Source Procurement",
+            "tender was held"
+        ],
+        "organization": [
+            "Pristina Airport Management"
+        ],
+        "company": [
+            "Vendor 1",
+            "Vendor 2"
+        ],
+        "individual": [
+            "PEAP Official"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "case_number: 0278/04",
+            "Pristina Airport FIDS Tender Irregularity",
+            "allegations"
+        ],
+        "organization": [],
+        "company": [
+            "Vendor 2 Representative",
+            "Vendor 2"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "Unauthorized individuals' involvement",
+            "Unclear reasons",
+            "advantage in the tender process"
+        ],
+        "organization": [],
+        "company": [
+            "Vendor 1",
+            "Vendor 2"
+        ],
+        "individual": [
+            "PEAP official"
+        ],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "should receive adequate training",
+            "adhere to Procurement Regulations"
+        ],
+        "organization": [
+            "Airport staff"
+        ],
+        "company": [],
+        "individual": [
+            "PEAP Official"
+        ],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "metadata": {
+        "classification_level": "UNCLASSIFIED",
+        "document_id": "CASE 285/04: UNIKOS-ITF-286-04",
+        "title": "UNMIK Investigation Report: Pristina Airport Tender Irregularities Case 286/04",
+        "category": "Investigation",
+        "timestamp": "2004-12-13",
+        "primary_source": "UNMIK Investigation Task Force"
+    },
+    "overview": "The investigation focuses on the reported non-existence of Vendors 3 and 4 in Pristina Airport tenders. Vendor 4 was found not to exist and Vendor 3 was identified as a supermarket in Prizren, indicating irregularities in the tender process.",
+    "applicable_laws": [
+        {
+            "regulation_id": "1999/2",
+            "excerpt": "Procurement Regulation in force at the time",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "The investigation involved interviews and consultations with the Kosovo Organised Crime Bureau (KOCB) and legal entities, as well as a review of ITF case documents related to the allegations.",
+        "interviews": [],
+        "documents_reviewed": [
+            "ITF case no. 286/04 documents"
+        ]
+    },
+    "background": {
+        "context": "Investigation into suspected misrepresentation of Vendors 3 and 4 in Pristina Airport tenders to determine their existence and participation legitimacy.",
+        "entities_involved": [
+            "Vendor 3",
+            "Vendor 4"
+        ],
+        "timeline": [
+            "2004-10;2004-12: ITF submits case 286/04",
+            "2004-12-01: Contact with the International Prosecutor for legal assessment"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "286/04",
+        "subject": "Pristina Airport Tender Irregularities",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Doubts were raised regarding the existence of Vendors 3 and 4 participating in tenders.",
+                "findings": "Vendor 4 does not exist in Pristina, and Vendor 3 is confirmed to be a supermarket in Prizren, not a legitimate bidder in the airport tenders."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Vendors 3 and 4 do not legitimately exist as competitors in the tenders.",
+            "This case represents an administrative irregularity with breaches of procurement rules."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "Provide procurement training to airport staff to adhere to regulations.",
+            "Ensure fair competition and verify the legitimacy of bidding companies."
+        ]
+    },
+    "related_documents": []
+}

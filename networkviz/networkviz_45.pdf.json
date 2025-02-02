@@ -1,0 +1,107 @@
+{
+    "entities": [
+        {
+            "id": "Case 287/04",
+            "label": "Case 287/04 - X-Ray Tender Irregularities",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina Airport",
+            "label": "Pristina Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Kosovo Trust Agency (KTA)",
+            "label": "Kosovo Trust Agency (KTA)",
+            "type": "organization"
+        },
+        {
+            "id": "Vendor",
+            "label": "Vendor",
+            "type": "company"
+        },
+        {
+            "id": "Divisional Manager",
+            "label": "Divisional Manager",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Finance Administration Instruction 1999/2",
+            "label": "Finance Administration Instruction 1999/2",
+            "type": "statutory"
+        },
+        {
+            "id": "Law on Public Financial Management and Accountability 2003/2",
+            "label": "Law on Public Financial Management and Accountability 2003/2",
+            "type": "statutory"
+        },
+        {
+            "id": "Law on Public Procurement in Kosovo 2003/17",
+            "label": "Law on Public Procurement in Kosovo 2003/17",
+            "type": "statutory"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Pristina Airport",
+            "target": "Vendor",
+            "label": "1. Contract Awarded",
+            "tooltip": "Contract for X-ray equipment awarded to Vendor on 2003-04-04."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "Divisional Manager",
+            "label": "2. Contract Signed",
+            "tooltip": "Divisional Manager signed the contract before capital expenditure approval."
+        },
+        {
+            "source": "Divisional Manager",
+            "target": "Kosovo Trust Agency (KTA)",
+            "label": "3. Premature Notification",
+            "tooltip": "Divisional Manager signed notification before obtaining KTA's formal approval."
+        },
+        {
+            "source": "Case 287/04",
+            "target": "Pristina Airport",
+            "label": "4. Investigation Subject",
+            "tooltip": "Investigation focused on administrative irregularities at Pristina Airport."
+        },
+        {
+            "source": "Case 287/04",
+            "target": "UNMIK",
+            "label": "5. Investigation Conducted By",
+            "tooltip": "UNMIK conducted the investigation into the irregularities."
+        },
+        {
+            "source": "Case 287/04",
+            "target": "Finance Administration Instruction 1999/2",
+            "label": "6. Applicable Law",
+            "tooltip": "Investigation referenced Finance Administration Instruction 1999/2."
+        },
+        {
+            "source": "Case 287/04",
+            "target": "Law on Public Financial Management and Accountability 2003/2",
+            "label": "7. Applicable Law",
+            "tooltip": "Investigation referenced Law on Public Financial Management and Accountability 2003/2."
+        },
+        {
+            "source": "Case 287/04",
+            "target": "Law on Public Procurement in Kosovo 2003/17",
+            "label": "8. Applicable Law",
+            "tooltip": "Investigation referenced Law on Public Procurement in Kosovo 2003/17."
+        }
+    ],
+    "allegations": {
+        "Divisional Manager": [
+            "Signed contract prior to formal capital expenditure approval.",
+            "Signed notification letter before obtaining necessary approvals."
+        ]
+    },
+    "violations": {}
+}

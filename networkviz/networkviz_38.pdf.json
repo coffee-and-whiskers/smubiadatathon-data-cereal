@@ -1,0 +1,158 @@
+{
+    "entities": [
+        {
+            "id": "ITF0462/04",
+            "label": "Case 0462/04 - Bribery and Favouritism in Procurement",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Interim Administration Mission in Kosovo",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina Airport",
+            "label": "Pristina Airport",
+            "type": "organization"
+        },
+        {
+            "id": "KTA",
+            "label": "Kosovo Trust Agency",
+            "type": "organization"
+        },
+        {
+            "id": "Procurement Officer 1",
+            "label": "Procurement Officer 1",
+            "type": "individual"
+        },
+        {
+            "id": "Finance Officer",
+            "label": "Finance Officer",
+            "type": "individual"
+        },
+        {
+            "id": "Vendor 1",
+            "label": "Vendor 1",
+            "type": "company"
+        },
+        {
+            "id": "Vendor 2",
+            "label": "Vendor 2",
+            "type": "company"
+        },
+        {
+            "id": "Article 343",
+            "label": "Article 343 - Accepting Bribes",
+            "type": "statutory"
+        },
+        {
+            "id": "Article 344",
+            "label": "Article 344 - Giving Bribes",
+            "type": "statutory"
+        },
+        {
+            "id": "2/1999 Section 4.3.2",
+            "label": "2/1999 Section 4.3.2 - Avoidance of Conflicts of Interest and Corruption",
+            "type": "statutory"
+        },
+        {
+            "id": "2/1999 Section 4.1",
+            "label": "2/1999 Section 4.1 - Full and Fair Competition",
+            "type": "statutory"
+        },
+        {
+            "id": "2/1999 Section 23.9",
+            "label": "2/1999 Section 23.9 - Examination and Evaluation of Tenders",
+            "type": "statutory"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UNMIK",
+            "target": "ITF0462/04",
+            "label": "1. Investigation Conducted By",
+            "tooltip": "UNMIK conducted the investigation on bribery and favoritism in procurement at Pristina Airport."
+        },
+        {
+            "source": "KTA",
+            "target": "ITF0462/04",
+            "label": "2. Reported By",
+            "tooltip": "The Kosovo Trust Agency's Internal Audit Unit reported the allegations leading to the investigation."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "ITF0462/04",
+            "label": "3. Subject of Investigation",
+            "tooltip": "The investigation focused on procurement processes at Pristina Airport."
+        },
+        {
+            "source": "Procurement Officer 1",
+            "target": "ITF0462/04",
+            "label": "4. Allegations Against",
+            "tooltip": "Procurement Officer 1 was alleged to have accepted bribes and shown favoritism."
+        },
+        {
+            "source": "Finance Officer",
+            "target": "ITF0462/04",
+            "label": "5. Allegations Against",
+            "tooltip": "Finance Officer was alleged to have accepted bribes."
+        },
+        {
+            "source": "Vendor 1",
+            "target": "ITF0462/04",
+            "label": "6. Complainant",
+            "tooltip": "Vendor 1 Manager filed a complaint leading to the investigation."
+        },
+        {
+            "source": "Vendor 2",
+            "target": "ITF0462/04",
+            "label": "7. Alleged Beneficiary",
+            "tooltip": "Vendor 2 was allegedly favored in the procurement process."
+        },
+        {
+            "source": "ITF0462/04",
+            "target": "Article 343",
+            "label": "8. Applicable Law",
+            "tooltip": "The investigation considered potential violations of Article 343 regarding accepting bribes."
+        },
+        {
+            "source": "ITF0462/04",
+            "target": "Article 344",
+            "label": "9. Applicable Law",
+            "tooltip": "The investigation considered potential violations of Article 344 regarding giving bribes."
+        },
+        {
+            "source": "ITF0462/04",
+            "target": "2/1999 Section 4.3.2",
+            "label": "10. Applicable Law",
+            "tooltip": "The investigation considered potential violations of Section 4.3.2 regarding conflicts of interest and corruption."
+        },
+        {
+            "source": "ITF0462/04",
+            "target": "2/1999 Section 4.1",
+            "label": "11. Applicable Law",
+            "tooltip": "The investigation considered potential violations of Section 4.1 regarding full and fair competition."
+        },
+        {
+            "source": "ITF0462/04",
+            "target": "2/1999 Section 23.9",
+            "label": "12. Applicable Law",
+            "tooltip": "The investigation considered potential violations of Section 23.9 regarding examination and evaluation of tenders."
+        }
+    ],
+    "allegations": {
+        "Procurement Officer 1": [
+            "Allegedly accepted bribes from Vendor 2.",
+            "Allegedly favored Vendor 2 in the tender process.",
+            "Allegedly replaced a Bid Evaluation Committee member.",
+            "Inappropriately included the Finance Officer in the Bid Evaluation Committee."
+        ],
+        "Finance Officer": [
+            "Allegedly accepted bribes from Vendor 2."
+        ],
+        "Vendor 1": [
+            "Manager allegedly threatened Procurement Officer 1."
+        ]
+    },
+    "violations": {}
+}

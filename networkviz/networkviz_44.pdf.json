@@ -1,0 +1,89 @@
+{
+    "entities": [
+        {
+            "id": "UNMIK_0278_04",
+            "label": "Case 0278/04 - Pristina Airport FIDS Tender Irregularity",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Interim Administration Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina Airport",
+            "label": "Pristina Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Vendor 1",
+            "label": "Vendor 1",
+            "type": "company"
+        },
+        {
+            "id": "Vendor 2",
+            "label": "Vendor 2",
+            "type": "company",
+            "outline": "allegation"
+        },
+        {
+            "id": "PEAP Official",
+            "label": "PEAP Official",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Financial Agreement 1999/2",
+            "label": "Financial Agreement 1999/2",
+            "type": "statutory"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Pristina Airport",
+            "target": "Vendor 1",
+            "label": "1. Initial Procurement Selection",
+            "tooltip": "Vendor 1 was initially selected for FIDS due to their previous provision."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "Vendor 2",
+            "label": "2. Subsequent Tender Winner",
+            "tooltip": "Vendor 2 won the tender for FIDS cabling after Vendor 1 was unable to handle it."
+        },
+        {
+            "source": "UNMIK_0278_04",
+            "target": "Vendor 2",
+            "label": "3. Allegation of Irregular Involvement",
+            "tooltip": "Vendor 2 Representative was involved in recommending and justifying procurement decisions."
+        },
+        {
+            "source": "UNMIK_0278_04",
+            "target": "PEAP Official",
+            "label": "4. Management Failure Allegation",
+            "tooltip": "PEAP Official did not fulfill management requirements for handling sensitive airport matters."
+        },
+        {
+            "source": "UNMIK_0278_04",
+            "target": "Financial Agreement 1999/2",
+            "label": "5. Applicable Regulation",
+            "tooltip": "Financial Agreement 1999/2 was the procurement regulation applicable during the investigation."
+        },
+        {
+            "source": "UNMIK",
+            "target": "UNMIK_0278_04",
+            "label": "6. Investigation Conducted By",
+            "tooltip": "UNMIK conducted the investigation into the FIDS tender irregularity."
+        }
+    ],
+    "allegations": {
+        "Vendor 2": [
+            "Involvement of Vendor 2 Representative in recommending procurement decisions.",
+            "Vendor 2 Representative's involvement provided a competitive advantage in the tender."
+        ],
+        "PEAP Official": [
+            "Did not fulfill management requirements for handling sensitive airport matters."
+        ]
+    },
+    "violations": {}
+}

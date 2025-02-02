@@ -1,0 +1,95 @@
+{
+    "entities": [
+        {
+            "id": "NSA",
+            "label": "National Security Agency",
+            "type": "organization"
+        },
+        {
+            "id": "Japanese Government",
+            "label": "Japanese Government",
+            "type": "organization"
+        },
+        {
+            "id": "IEA",
+            "label": "International Energy Agency",
+            "type": "organization"
+        },
+        {
+            "id": "EU",
+            "label": "European Union",
+            "type": "organization"
+        },
+        {
+            "id": "METI",
+            "label": "Ministry of Economy Trade and Industry (METI)",
+            "type": "organization"
+        },
+        {
+            "id": "Masakazu Toyoda",
+            "label": "Masakazu Toyoda",
+            "type": "individual"
+        },
+        {
+            "id": "Fatih Birol",
+            "label": "Fatih Birol",
+            "type": "individual"
+        },
+        {
+            "id": "Sectoral Approach",
+            "label": "Sectoral Approach to Carbon Emission Reductions",
+            "type": "investigation",
+            "outline": "allegation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "NSA",
+            "target": "Japanese Government",
+            "label": "1. Intelligence Intercepts",
+            "tooltip": "NSA derived intelligence from intercepts of Japanese officials discussing climate strategies."
+        },
+        {
+            "source": "Japanese Government",
+            "target": "Sectoral Approach",
+            "label": "2. Promotion of Approach",
+            "tooltip": "Japanese officials are promoting the sectoral approach despite international criticism."
+        },
+        {
+            "source": "IEA",
+            "target": "Japanese Government",
+            "label": "3. Criticism Issued",
+            "tooltip": "Fatih Birol of the IEA issued warnings about the sectoral approach."
+        },
+        {
+            "source": "EU",
+            "target": "Japanese Government",
+            "label": "4. Criticism Issued",
+            "tooltip": "The European Union criticized Japan's sectoral approach."
+        },
+        {
+            "source": "Masakazu Toyoda",
+            "target": "Sectoral Approach",
+            "label": "5. Advocacy",
+            "tooltip": "Masakazu Toyoda discussed the strategic benefits of the sectoral approach."
+        },
+        {
+            "source": "Fatih Birol",
+            "target": "Sectoral Approach",
+            "label": "6. Warning",
+            "tooltip": "Fatih Birol warned Japan about potential misinterpretations of their efforts."
+        },
+        {
+            "source": "METI",
+            "target": "Sectoral Approach",
+            "label": "7. Involvement",
+            "tooltip": "METI is involved in the promotion of the sectoral approach."
+        }
+    ],
+    "allegations": {
+        "Sectoral Approach": [
+            "Criticized by the IEA and EU for potential misinterpretations and strategic implications."
+        ]
+    },
+    "violations": {}
+}

@@ -1,0 +1,35 @@
+{
+    "document_name": "49.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "UNMIK",
+                "PEAP",
+                "KTA"
+            ]
+        },
+        {
+            "topic": "Bribery and Corruption",
+            "entities": [
+                "Pristina Airport",
+                "Article 344",
+                "Company 1"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "Provisional Criminal Code of Kosovo",
+                "Article 344"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "\u20ac5200",
+                "Procurement Contract"
+            ]
+        }
+    ]
+}

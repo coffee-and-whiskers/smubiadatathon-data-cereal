@@ -1,0 +1,78 @@
+{
+    "entities": [
+        {
+            "id": "NSA",
+            "label": "National Security Agency",
+            "type": "organization"
+        },
+        {
+            "id": "French Ambassador",
+            "label": "French Ambassador",
+            "type": "individual"
+        },
+        {
+            "id": "Jean-David Levitte",
+            "label": "Jean-David Levitte",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "U.S. Congress",
+            "label": "U.S. Congress",
+            "type": "organization"
+        },
+        {
+            "id": "UN Oil-for-food program",
+            "label": "UN Oil-for-food program",
+            "type": "organization"
+        },
+        {
+            "id": "Iraq Survey Group",
+            "label": "Iraq Survey Group",
+            "type": "organization"
+        },
+        {
+            "id": "Case 3/OO/27079-04",
+            "label": "Case 3/OO/27079-04 - Interception of French Ambassador's Communications",
+            "type": "investigation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "NSA",
+            "target": "Case 3/OO/27079-04",
+            "label": "1. Conducted Interception",
+            "tooltip": "NSA intercepted communications of the French Ambassador."
+        },
+        {
+            "source": "French Ambassador",
+            "target": "Jean-David Levitte",
+            "label": "2. Identity of Ambassador",
+            "tooltip": "Jean-David Levitte is the French Ambassador whose communications were intercepted."
+        },
+        {
+            "source": "Jean-David Levitte",
+            "target": "U.S. Congress",
+            "label": "3. Planned Exposure",
+            "tooltip": "Jean-David Levitte planned to expose alleged U.S. firm involvement to the U.S. Congress."
+        },
+        {
+            "source": "Jean-David Levitte",
+            "target": "UN Oil-for-food program",
+            "label": "4. Alleged Profiteering",
+            "tooltip": "Allegations that U.S. firms profited from the UN Oil-for-food program."
+        },
+        {
+            "source": "Iraq Survey Group",
+            "target": "French Ambassador",
+            "label": "5. Report Criticism",
+            "tooltip": "The Iraq Survey Group report named French companies, leading to criticism from the French Ambassador."
+        }
+    ],
+    "allegations": {
+        "Jean-David Levitte": [
+            "Allegation that French companies acted as subsidiaries of U.S. firms, benefiting from the UN Oil-for-food program."
+        ]
+    },
+    "violations": {}
+}

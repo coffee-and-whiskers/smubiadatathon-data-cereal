@@ -1,0 +1,104 @@
+{
+    "overview": {
+        "investigation": [
+            "investigation",
+            "irregularities"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [
+            "Vendor 3",
+            "Vendor 4"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Procurement Regulation",
+            "1999/2"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "investigation",
+            "allegations"
+        ],
+        "organization": [
+            "Kosovo Organised Crime Bureau",
+            "KOCB"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "Investigation"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [
+            "Vendor 3",
+            "Vendor 4"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "case 286/04",
+            "allegations",
+            "findings"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [
+            "Vendor 3",
+            "Vendor 4"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "findings",
+            "irregularity"
+        ],
+        "organization": [],
+        "company": [
+            "Vendors 3 and 4"
+        ],
+        "individual": [],
+        "statutory": [
+            "breaches of procurement rules"
+        ]
+    },
+    "recommendations": {
+        "investigation": [],
+        "organization": [
+            "airport staff"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "procurement training",
+            "regulations",
+            "verify the legitimacy"
+        ]
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

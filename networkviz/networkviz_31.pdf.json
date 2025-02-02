@@ -1,0 +1,80 @@
+{
+    "entities": [
+        {
+            "id": "UNMIK-0283-04-INV01",
+            "label": "Investigation into Allegations of Theft and Corruption at Pristina Airport",
+            "type": "investigation"
+        },
+        {
+            "id": "Pristina International Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "UNMIK-1999-24",
+            "label": "Regulation UNMIK-1999-24",
+            "type": "statutory"
+        },
+        {
+            "id": "UN-Staff Regulation 1.2 (b)",
+            "label": "UN-Staff Regulation 1.2 (b)",
+            "type": "statutory"
+        },
+        {
+            "id": "UN-Staff Rule 110.1",
+            "label": "UN-Staff Rule 110.1",
+            "type": "statutory"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UNMIK",
+            "target": "Pristina International Airport",
+            "label": "1. Oversight Authority",
+            "tooltip": "UNMIK was responsible for overseeing operations and compliance at Pristina International Airport."
+        },
+        {
+            "source": "Pristina International Airport",
+            "target": "UNMIK-0283-04-INV01",
+            "label": "2. Subject of Investigation",
+            "tooltip": "Pristina International Airport was the subject of investigation for alleged corruption and financial irregularities."
+        },
+        {
+            "source": "UNMIK-0283-04-INV01",
+            "target": "UNMIK",
+            "label": "3. Investigation Conducted By",
+            "tooltip": "The investigation was conducted by UNMIK as part of their oversight responsibilities."
+        },
+        {
+            "source": "UNMIK-0283-04-INV01",
+            "target": "UNMIK-1999-24",
+            "label": "4. Applicable Law",
+            "tooltip": "The investigation referenced Regulation UNMIK-1999-24 as part of the legal framework."
+        },
+        {
+            "source": "UNMIK-0283-04-INV01",
+            "target": "UN-Staff Regulation 1.2 (b)",
+            "label": "5. Applicable Law",
+            "tooltip": "The investigation referenced UN-Staff Regulation 1.2 (b) regarding staff conduct."
+        },
+        {
+            "source": "UNMIK-0283-04-INV01",
+            "target": "UN-Staff Rule 110.1",
+            "label": "6. Applicable Law",
+            "tooltip": "The investigation referenced UN-Staff Rule 110.1 concerning misconduct."
+        }
+    ],
+    "allegations": {
+        "Pristina International Airport": [
+            "Overcharging commercial flights for handling and landing fees.",
+            "Failure to account for monies paid for handling and landing services.",
+            "Requesting or receiving corrupt payments for allocating convenient landing slots."
+        ]
+    },
+    "violations": {}
+}

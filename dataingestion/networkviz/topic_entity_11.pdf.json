@@ -1,0 +1,40 @@
+{
+    "document_name": "11.pdf",
+    "topics": [
+        {
+            "topic": "Corruption and Financial Irregularities",
+            "entities": [
+                "Pristina International Airport",
+                "PEAP",
+                "Pillar II",
+                "Pillar IV",
+                "KTA",
+                "KFOR"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "UNMIK Regulation 1999/24",
+                "UN Staff Regulations 1.2 (b)",
+                "Staff Rule 110.1"
+            ]
+        },
+        {
+            "topic": "Procurement and Fee Handling",
+            "entities": [
+                "Commercial Flights",
+                "Handling and Landing Fees",
+                "Passenger Tax"
+            ]
+        },
+        {
+            "topic": "Ethical Standards and Compliance",
+            "entities": [
+                "UN Staff",
+                "Financial Oversight",
+                "Disciplinary Measures"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "document_name": "16.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "UNMIK",
+                "Directorate of Rural Affairs",
+                "Vendors"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "UN Financial Rules and Regulations",
+                "UNMIK Finance Administrative Instruction 2/1999"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "Technical Specifications",
+                "Bid Evaluation Process"
+            ]
+        }
+    ]
+}

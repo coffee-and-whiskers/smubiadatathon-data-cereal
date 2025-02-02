@@ -1,0 +1,81 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "UNMIK_0278_04",
+        "title": "CASE 278/04: Investigation Report on Pristina Airport FIDS Tender Irregularity",
+        "category": "Investigation",
+        "timestamp": "2004-11-22",
+        "primary_source": "United Nations Interim Administration Mission in Kosovo (UNMIK)"
+    },
+    "overview": "The report investigates administrative irregularities in the procurement process for the Flat Information Display System (FIDS) at Pristina Airport, highlighting potential conflicts of interest and irregular tendering procedures.",
+    "applicable_laws": [
+        {
+            "regulation_id": "Financial Agreement 1999/2",
+            "excerpt": "Procurement Regulation applicable during the time of the investigation."
+        }
+    ],
+    "methodology": {
+        "description": "Review of procurement files and document analysis.",
+        "interviews": [
+            "Vendor 2 Representative on 2004-08-31;2004-09-14",
+            "PEAP Official on 2004-09-09",
+            "Airport Engineer on 2004-10-11",
+            "Vendor 1 Sales Manager on 2004-08-30"
+        ],
+        "documents_reviewed": [
+            "Procurement file for FIDS supply",
+            "Notes of recommendation and justification for FIDS purchase"
+        ]
+    },
+    "background": {
+        "context": "The Single Source Procurement for FIDS at Pristina Airport began on 2002-10-17, necessitated by the expansion of the Passenger Terminal Building. Vendor 1 was initially selected due to their previous provision, but due to an inability to handle cabling, a subsequent tender was held, won by Vendor 2.",
+        "entities_involved": [
+            "Vendor 1",
+            "Vendor 2",
+            "Pristina Airport Management",
+            "PEAP Official"
+        ],
+        "timeline": [
+            "2002-10-17: Single Source Procurement initiated.",
+            "2002-12-13: Capital Expenditure approved, and contract signed.",
+            "2004-03-01;2004-03-31: Tender for FIDS cabling commenced, Vendor 2 won.",
+            "2004-08-31: Vendor 2 Representative interviewed.",
+            "2004-09-14: Vendor 2 Representative interviewed again.",
+            "2004-09-09: PEAP Official interviewed.",
+            "2004-10-11: Airport Engineer interviewed."
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0278/04",
+        "subject": "Pristina Airport FIDS Tender Irregularity",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "An official from a non-Airport related company was involved in recommending and justifying procurement decisions.",
+                "findings": "The Vendor 2 Representative, not employed by the Airport, drafted two notes recommending FIDS purchase."
+            },
+            {
+                "number": 2,
+                "description": "Vendor 2 Representative was involved in preparing and subsequently participating in the FIDS cabling tender.",
+                "findings": "This involvement provided Vendor 2 a competitive advantage, acknowledged by the Vendor 2 Representative."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Unauthorized individuals' involvement in procurement recommendations.",
+            "Unclear reasons for Vendor 1 not completing the FIDS cabling.",
+            "Vendor 2's advantage in the tender process due to prior involvement.",
+            "PEAP official did not fulfill management requirements for handling sensitive airport matters."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "PEAP Official should be replaced by a highly qualified manager meeting international management standards.",
+            "Airport staff responsible for procurement should receive adequate training and adhere to Procurement Regulations.",
+            "Companies or agencies involved in procurement preparation should be excluded from related tenders."
+        ]
+    },
+    "related_documents": []
+}

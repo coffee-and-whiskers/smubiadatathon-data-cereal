@@ -1,0 +1,28 @@
+{
+    "document_name": "39.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina International Airport",
+                "UNMIK",
+                "Chartered Accountants"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "UNMIK Regulation 1999/24",
+                "UN Staff Regulations 1.2 (b)",
+                "UNMIK Finance Administrative Instruction 1999/2"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "Audit report",
+                "Pristina International Airport"
+            ]
+        }
+    ]
+}

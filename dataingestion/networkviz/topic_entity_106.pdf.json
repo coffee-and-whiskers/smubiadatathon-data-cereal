@@ -1,0 +1,29 @@
+{
+    "document_name": "106.pdf",
+    "topics": [
+        {
+            "topic": "Climate Change Policy",
+            "entities": [
+                "Japanese Government",
+                "International Energy Agency",
+                "European Union",
+                "Ministry of Economy Trade and Industry (METI)"
+            ]
+        },
+        {
+            "topic": "International Relations",
+            "entities": [
+                "National Security Agency",
+                "Japanese Government",
+                "European Union"
+            ]
+        },
+        {
+            "topic": "Economic Implications of Environmental Policies",
+            "entities": [
+                "Japanese Government",
+                "European Union"
+            ]
+        }
+    ]
+}

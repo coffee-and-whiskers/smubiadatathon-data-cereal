@@ -1,0 +1,109 @@
+{
+    "overview": {
+        "investigation": [
+            "allegations of revenue evasion"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [
+            "airline"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "methodology": {
+        "investigation": [
+            "Collection and review of financial records",
+            "interviews to gather relevant information"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [
+            "The Airline"
+        ],
+        "individual": [
+            "Official 1 of the Airline",
+            "Official 2 of the Airline",
+            "Security Officer at Pristina Airport",
+            "Official of the Passenger Handling Services, Pristina Airport",
+            "UNMIK CIVPOL officer"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "suspected of not paying appropriate airport charges"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "European Airport",
+            "Securicor security staff",
+            "Immigration Department",
+            "UK Immigration staff"
+        ],
+        "company": [
+            "The Airline"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Evasion of Pristina Airport Charges",
+            "Failure to collect all revenues",
+            "Non-integration of the automatic checking system"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [
+            "The Airline"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "reducing revenue risk"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [
+            "The airline"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "Implement stricter oversight",
+            "Ensure integration of the automatic checking system",
+            "Regular review of flight designation compliance"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [
+            "the Airline"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

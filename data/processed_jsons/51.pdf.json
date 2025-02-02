@@ -1,0 +1,142 @@
+{
+    "metadata": {
+        "classification_level": "Highly Confidential",
+        "document_id": "UNMIK-KOS-0192-04",
+        "title": "CASE 192/04: Investigation Report on Allegation of Fraud at Pristina Airport",
+        "category": "Investigation",
+        "timestamp": "2004-07-22T00:00:00Z",
+        "primary_source": "UNMIK Investigation Task Force"
+    },
+    "overview": "This investigation report summarizes the findings from the Investigation Task Force on the allegations of fraudulent activities involving the Cargo Department at Pristina Airport. The focus of the case is on unauthorized payments for the handling and storage of goods, which were not properly documented in the official records.",
+    "applicable_laws": [
+        {
+            "regulation_id": "KCC Article 215, (1) and (2)",
+            "excerpt": "Fraud in Service",
+            "link": ""
+        },
+        {
+            "regulation_id": "PCCK Article 341 (1) and (2)",
+            "excerpt": "Equivalent to Fraud in Office",
+            "link": ""
+        },
+        {
+            "regulation_id": "Article 22 of Criminal Code of SFRY",
+            "excerpt": "Complicity",
+            "link": ""
+        },
+        {
+            "regulation_id": "PCCK Article 23",
+            "excerpt": "Equivalent to Co-Perpetration",
+            "link": ""
+        },
+        {
+            "regulation_id": "KCC Article 219 (1) and (3)",
+            "excerpt": "Embezzlement",
+            "link": ""
+        },
+        {
+            "regulation_id": "PCCK Article 340 (1) and (3)",
+            "excerpt": "Equivalent to Misappropriation in Office",
+            "link": ""
+        },
+        {
+            "regulation_id": "PCCK Article 339 para. 1 and 3",
+            "excerpt": "Abusing Official Position of Authority",
+            "link": ""
+        },
+        {
+            "regulation_id": "Article 210 (1) and (3)",
+            "excerpt": "Equivalent to Abuse of Office",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "The investigation involved conducting interviews with key stakeholders and examining financial records and transaction documents associated with the alleged fraud.",
+        "interviews": [
+            "Company Representative",
+            "Pristina Airport Officials",
+            "Partner 4"
+        ],
+        "documents_reviewed": [
+            "Cargo Department receipts",
+            "Company financial records",
+            "Finance Officer's tariff list"
+        ]
+    },
+    "background": {
+        "context": "The investigation targeted fraudulent financial practices within the Cargo Department at Pristina Airport, specifically illegal payments for importation and storage services.",
+        "entities_involved": [
+            "Pristina Airport",
+            "Company led by four partners",
+            "Customs Service"
+        ],
+        "timeline": [
+            "2003-12-26: Consignment of LED Display equipment arrived",
+            "2004-03-15: Merchandise cleared and payments completed",
+            "2004-07-22: Case referred to Department of Justice"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0192/04",
+        "subject": "Fraud allegations at Pristina Airport Cargo Department",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Improper payment solicitation for goods importation and storage.",
+                "findings": "An official illegally collected \u20ac8,000.00, unrecorded in the official accounts."
+            },
+            {
+                "number": 2,
+                "description": "Failure to document \u20ac32,000.00 in storage fees.",
+                "findings": "Interview with Official 2 revealed unexplained omissions in payment records."
+            },
+            {
+                "number": 3,
+                "description": "Abuse of official position by neglecting to collect storage fees.",
+                "findings": "Officials neglected their duties, resulting in significant revenue loss for the airport."
+            }
+        ]
+    },
+    "intelligence_summary": {
+        "sources": [
+            "Internal UNMIK reports",
+            "Company Representative statements",
+            "Interview with Partner 4"
+        ],
+        "key_findings": [
+            "Evidence of significant financial misconduct was discovered"
+        ],
+        "assessments": [
+            "Funds were mismanaged and unaccounted for"
+        ],
+        "risks": [
+            "Potential reputational damage to Pristina Airport and the involved company"
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Fraud of \u20ac8,000.00 by a Pristina Airport official was substantiated",
+            "Sufficient evidence exists for potential judicial proceedings"
+        ],
+        "violations": [
+            {
+                "regulation_id": "KCC Article 215, (1) and (2)",
+                "excerpt": "Fraud in Service",
+                "link": ""
+            },
+            {
+                "regulation_id": "KCC Article 219 (1) and (3)",
+                "excerpt": "Embezzlement",
+                "link": ""
+            }
+        ]
+    },
+    "recommendations": {
+        "actions": [
+            "UNMIK Pillar IV should refrain from administrative actions against Officials 1 and 2 until the Department of Justice resolves their cases (IV04/192/01).",
+            "Appropriate disciplinary measures should be considered for Official 1 if not criminally charged (IV04/192/02).",
+            "Appropriate disciplinary measures should be considered for Official 2 if not criminally charged (IV04/192/03)."
+        ]
+    },
+    "related_documents": []
+}

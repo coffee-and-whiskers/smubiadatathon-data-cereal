@@ -1,0 +1,78 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "UNMIK-0281-04",
+        "title": "CASE 281/04: Investigation of Contractual Irregularities at Pristina Airport",
+        "category": "Investigation",
+        "primary_source": "United Nations Interim Administration Mission in Kosovo"
+    },
+    "overview": "The investigation report details irregularities concerning the addition of a single-source contract at Pristina International Airport post the award of a larger contract, highlighting potential corruption and procurement breaches.",
+    "applicable_laws": [
+        {
+            "regulation_id": "UNSCR 1244",
+            "excerpt": "Resolution mandating UNMIK to administer Kosovo, including state-owned assets.",
+            "link": ""
+        },
+        {
+            "regulation_id": "UNMIK Regulation No 1/1999",
+            "excerpt": "Regulation establishing UNMIK's administrative duties in Kosovo.",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "The investigation was conducted under UNMIK Executive Decision No 2003/16, through witness interviews and document reviews.",
+        "interviews": [
+            "Pristina Airport administrative staff",
+            "Kosovo Trust Agency (KTA) officials"
+        ],
+        "documents_reviewed": [
+            "Audit report of Pristina International Airport, 2003-02-28",
+            "Procurement records from Pristina Airport administration"
+        ]
+    },
+    "background": {
+        "context": "The case centers around added contracts and procurement irregularities at a state-controlled airport under UNMIK administration.",
+        "entities_involved": [
+            "Pristina International Airport",
+            "Kosovo Trust Agency (KTA)",
+            "Public Enterprise Airport Pristina (PEAP)"
+        ],
+        "timeline": [
+            "2001;2003: Maintenance by PEAP in cooperation with KFOR under Yugoslavian law",
+            "2002-07-01: Administrative control shifted to KTA",
+            "2003-02-28: Audit report issued",
+            "2004-04-01: Pristina Airport handed over to civilian jurisdiction under ICAO regulations"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0281/04",
+        "subject": "Irregularities in Contract Procurement",
+        "financial_details": {},
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Addition of a single-source contract for one container following a larger contract.",
+                "findings": "Absence of proper records and financial approval documents for the main contract."
+            },
+            {
+                "number": 2,
+                "description": "Competitive tender for the supply of new containers and services held.",
+                "findings": "Main contract awarded to the lowest bidder, but subsequent single-source contract lacked justification documents."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Competitive tender for the main contract appears justified.",
+            "Single-source contract addition justified based on KFOR documentation.",
+            "Documents for financial approval missing."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "Refer matter to the D/SRSG of Pillar IV for appropriate action regarding contract file management."
+        ]
+    },
+    "related_documents": []
+}

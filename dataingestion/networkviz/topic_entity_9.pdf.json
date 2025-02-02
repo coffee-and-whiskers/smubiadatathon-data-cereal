@@ -1,0 +1,27 @@
+{
+    "document_name": "9.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina International Airport",
+                "Kosovo Trust Agency (KTA)",
+                "Public Enterprise Airport Pristina (PEAP)"
+            ]
+        },
+        {
+            "topic": "Regulatory Oversight",
+            "entities": [
+                "UNSCR 1244",
+                "UNMIK Regulation No 1/1999"
+            ]
+        },
+        {
+            "topic": "Contract Management",
+            "entities": [
+                "Single-source contract",
+                "Competitive tender"
+            ]
+        }
+    ]
+}

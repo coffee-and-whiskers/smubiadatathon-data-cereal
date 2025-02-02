@@ -1,0 +1,119 @@
+{
+    "entities": [
+        {
+            "id": "Case 0374/04",
+            "label": "Case 0374/04 - PDA Procurement Irregularities",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "DRA",
+            "label": "Directorate of Rural Affairs",
+            "type": "organization"
+        },
+        {
+            "id": "PRIO",
+            "label": "Policy Review and Internal Oversight Unit",
+            "type": "organization"
+        },
+        {
+            "id": "EAR",
+            "label": "European Agency for Reconstruction",
+            "type": "organization"
+        },
+        {
+            "id": "Logistics Officer",
+            "label": "Logistics Officer of DRA",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Vendor 1",
+            "label": "Vendor 1",
+            "type": "company",
+            "outline": "allegation"
+        },
+        {
+            "id": "Vendor 2",
+            "label": "Vendor 2",
+            "type": "company"
+        },
+        {
+            "id": "Vendor 3",
+            "label": "Vendor 3",
+            "type": "company"
+        },
+        {
+            "id": "Vendor 4",
+            "label": "Vendor 4",
+            "type": "company"
+        },
+        {
+            "id": "UN Financial Rules and Regulations",
+            "label": "UN Financial Rules and Regulations",
+            "type": "statutory"
+        },
+        {
+            "id": "UNMIK Finance Administrative Instruction 2/1999",
+            "label": "UNMIK Finance Administrative Instruction 2/1999",
+            "type": "statutory"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UNMIK",
+            "target": "DRA",
+            "label": "1. Oversight of Procurement",
+            "tooltip": "UNMIK oversaw the procurement process conducted by the Directorate of Rural Affairs."
+        },
+        {
+            "source": "Case 0374/04",
+            "target": "DRA",
+            "label": "2. Investigation Target",
+            "tooltip": "The investigation focused on procurement irregularities within the Directorate of Rural Affairs."
+        },
+        {
+            "source": "Case 0374/04",
+            "target": "Logistics Officer",
+            "label": "3. Alleged Misconduct",
+            "tooltip": "The logistics officer was involved in disqualifying vendors based on price ceilings."
+        },
+        {
+            "source": "Case 0374/04",
+            "target": "Vendor 1",
+            "label": "4. Bid Non-compliance",
+            "tooltip": "Vendor 1's bid did not meet the required technical specifications."
+        },
+        {
+            "source": "Case 0374/04",
+            "target": "Vendor 4",
+            "label": "5. Selection Controversy",
+            "tooltip": "Vendor 4 was selected despite other vendors offering lower bids."
+        },
+        {
+            "source": "Case 0374/04",
+            "target": "UN Financial Rules and Regulations",
+            "label": "6. Governing Regulations",
+            "tooltip": "The investigation assessed compliance with UN Financial Rules and Regulations."
+        },
+        {
+            "source": "Case 0374/04",
+            "target": "UNMIK Finance Administrative Instruction 2/1999",
+            "label": "7. Governing Regulations",
+            "tooltip": "The investigation assessed compliance with UNMIK Finance Administrative Instruction 2/1999."
+        }
+    ],
+    "allegations": {
+        "Logistics Officer": [
+            "Disqualified vendors for exceeding price ceiling without proper justification."
+        ],
+        "Vendor 1": [
+            "Bid did not meet environmental sealing feature requirements."
+        ]
+    },
+    "violations": {}
+}

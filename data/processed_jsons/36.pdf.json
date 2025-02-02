@@ -1,0 +1,80 @@
+{
+    "metadata": {
+        "classification_level": "UNCLASSIFIED",
+        "document_id": "ITF_kh_04_03",
+        "title": "CASE 050/04: Alleged Misappropriation of Funds \u2013 Manager",
+        "category": "Investigation",
+        "timestamp": "2004-12-03",
+        "primary_source": "United Nations Interim Administration Mission in Kosovo"
+    },
+    "overview": "The investigation focuses on administrative irregularities concerning insurance coverage procurement at Pristina Airport between 2001 and 2003, which may have led to misuse of public funds.",
+    "applicable_laws": [
+        {
+            "regulation_id": "UNMIK regulation 1999/2",
+            "excerpt": "Finance Administration Instruction on Public Procurement using Kosovo Consolidated Funds",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "Investigative methods included reviewing comprehensive documentation and analyzing procurement procedures.",
+        "interviews": [
+            "Interview with suspect (Manager)"
+        ],
+        "documents_reviewed": [
+            "Documentation from Kosovo Trust Agency",
+            "Documents from Public Enterprise Airport Pristina",
+            "UNMIK Pillar II documentation"
+        ]
+    },
+    "background": {
+        "context": "The investigation pertains to misappropriation involving insurance procurement irregularities at Pristina Airport.",
+        "entities_involved": [
+            "United Nations Interim Administration Mission in Kosovo",
+            "Berlin-based Insurance Company",
+            "Pristina International Airport",
+            "Kosovo Trust Agency",
+            "Public Enterprise Airport Pristina"
+        ],
+        "timeline": [
+            "2001;2003: Events related to insurance coverage",
+            "2003-10-02;2004-10-01: Contract period with Insurance Company 1",
+            "2004-04-01: Commencement of new insurance coverage by Insurance Company 2"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "050/04",
+        "subject": "Alleged misappropriation of funds by Pristina Airport Manager",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Failure to invite international tenders for insurance coverage during 2002-2003.",
+                "findings": "The Manager concluded the contract without a tender process, violating procurement regulations."
+            },
+            {
+                "number": 2,
+                "description": "Double insurance coverage for Pristina Airport starting on 1 April 2004.",
+                "findings": "Evidence of overlapping insurance policies was found, leading to financial losses."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Failure to conduct a tendering process violates finance administration instructions.",
+            "Potential misappropriation of funds requires review by the Department of Justice."
+        ],
+        "violations": [
+            {
+                "regulation_id": "UNMIK regulation 1999/2",
+                "excerpt": "Negligence in adhering to competitive tendering as per public procurement guidelines.",
+                "link": ""
+            }
+        ]
+    },
+    "recommendations": {
+        "actions": [
+            "Review the matter by the Department of Justice for legal violations.",
+            "Implement stricter controls and audits for future insurance procurements."
+        ]
+    },
+    "related_documents": []
+}

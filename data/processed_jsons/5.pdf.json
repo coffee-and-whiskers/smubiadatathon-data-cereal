@@ -1,0 +1,100 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "0276/04",
+        "title": "CASE 276/04: Investigation of Alleged Irregularities in Pristina Airport Contracts",
+        "category": "Investigation",
+        "timestamp": "2003-02-28",
+        "primary_source": "United Nations Interim Administration Mission in Kosovo (UNMIK)"
+    },
+    "overview": "This investigation report outlines alleged irregularities in contracts related to construction and procurement activities for Air Traffic Control and Rescue Fire Fighting services at Pristina International Airport. The key focus areas include unauthorized additional work orders and breaches of procurement procedures.",
+    "applicable_laws": [
+        {
+            "regulation_id": "UNMIK Regulation 1999/24",
+            "excerpt": "The law applicable in Kosovo shall be the regulations promulgated by the SRSG and the law in force in Kosovo on 22 March 1989.",
+            "link": ""
+        },
+        {
+            "regulation_id": "UN Staff Regulations 1.2 (b)",
+            "excerpt": "Staff members shall uphold the highest standards of efficiency, competence, and integrity.",
+            "link": ""
+        },
+        {
+            "regulation_id": "UNMIK Finance Administrative Instruction 1999/2",
+            "excerpt": "When the total estimated value of the contract does not exceed \u20ac25,000, the Authorising Officer of the requesting entity may authorize.",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "This investigation was conducted pursuant to Executive Decision No 2003/16 on the establishment of the Investigation Task Force. The ITF investigators carried out an enquiry through interviews with witnesses and implicated persons and by analysing relevant documents obtained from the Pristina Airport administration and Pillar IV.",
+        "interviews": [],
+        "documents_reviewed": [
+            "Documents from Pristina Airport administration",
+            "Documents from Pillar IV"
+        ]
+    },
+    "background": {
+        "context": "Following an audit by Chartered Accountants, an investigation was launched into potential corruption and irregularities in contracts at Pristina International Airport.",
+        "entities_involved": [
+            "Chartered Accountants",
+            "Pristina International Airport",
+            "Divisional Manager of Airports Sector KTA",
+            "Pillar II of UNMIK",
+            "Department of Transport and Infrastructure",
+            "KFOR Military Units"
+        ],
+        "timeline": [
+            "2001;2003: Duration of investigation period",
+            "2002-06-30: End of DOTI Official 1 tenure",
+            "2003-02-28: Audit report published",
+            "2002-07-01: Transfer of Airport administration to KTA and Pillar IV",
+            "2004-04-01: Pristina International Airport handed to civilian jurisdiction under ICAO regulations"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0276/04",
+        "subject": "Alleged Irregularities in Pristina Airport Contracts",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Addition of extra work amounting to \u20ac25,935.74 without supporting documentation.",
+                "findings": "No documents indicating nature or authorization of extra works."
+            },
+            {
+                "number": 2,
+                "description": "Authorization of the Annex Agreement exceeding \u20ac25,000 without proper authorization.",
+                "findings": "The Divisional Manager authorized the Annex Agreement despite exceeding authorization limits."
+            },
+            {
+                "number": 3,
+                "description": "Addition of extra work of \u20ac1,390 in the Annex without proper documentation or authorization.",
+                "findings": "No supporting documentation indicating nature or authorization of the extra work."
+            },
+            {
+                "number": 4,
+                "description": "It is alleged that the Divisional Manager failed to secure funding approval prior to authorizing expenditure for the Annex Agreement to construct a fire-fighters office and maintenance offices.",
+                "findings": "A capital expenditure approval showed the contract exceeded authorization limits and was already completed before financial approval was sought."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "There is no supporting documentation or appropriate authorization for the extra works in the sum of \u20ac25,935.74 arising from the main contract.",
+            "The same is applicable to the extra works in the sum of \u20ac1,390 relating to the Annex Agreement for construction of a fire-fighters office and maintenance offices."
+        ],
+        "violations": [
+            {
+                "regulation_id": "UNMIK Finance Administrative Instruction 1999/2",
+                "excerpt": "This is contrary to Article 8.2 on Public Procurement using Kosovo Consolidated Budget Funds.",
+                "link": ""
+            }
+        ]
+    },
+    "recommendations": {
+        "actions": [
+            "It is recommended that UNMIK (Pillar IV) should place a copy of this report on the personnel file of the Divisional Manager for future reference.",
+            "UNMIK Pillar IV should take appropriate action against ATCS Official 2 for failing to ensure that the extra work was adequately documented and authorized."
+        ]
+    },
+    "related_documents": []
+}

@@ -1,0 +1,105 @@
+{
+    "overview": {
+        "investigation": [
+            "alleged fraudulent activities",
+            "discrepancies in invoices",
+            "improper charges",
+            "mismanaged financial records"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "incorrect VAT application",
+            "missing transaction documentation"
+        ]
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "methodology": {
+        "investigation": [
+            "reviewing key correspondences",
+            "analyzing financial records",
+            "compiling statements from interviews"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "suspicious invoice",
+            "flagged"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "Airline",
+            "KFOR",
+            "Investigation Task Force (ITF)"
+        ],
+        "company": [],
+        "individual": [
+            "Cargo Manager"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Suspected fraudulent conduct",
+            "unresolved invoice issues",
+            "improper fee assessments"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "amended the invoice details",
+            "removing VAT",
+            "adjusting the fees",
+            "proper transaction logging",
+            "inaccurately used"
+        ]
+    },
+    "conclusion": {
+        "investigation": [
+            "Initial fraud concerns",
+            "No substantial evidence of fraud"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "Enhance record-keeping",
+            "Conduct regular audits"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "correct terminology",
+            "replace misleading 'tax payment' wording"
+        ]
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

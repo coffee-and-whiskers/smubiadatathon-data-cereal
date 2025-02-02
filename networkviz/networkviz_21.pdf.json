@@ -1,0 +1,159 @@
+{
+    "entities": [
+        {
+            "id": "Case 0580/03",
+            "label": "Case 0580/03 - Control Failures at UNDP Bratislava",
+            "type": "investigation"
+        },
+        {
+            "id": "UNDP",
+            "label": "United Nations Development Programme (UNDP)",
+            "type": "organization"
+        },
+        {
+            "id": "UNHQ",
+            "label": "United Nations Headquarters (UNHQ)",
+            "type": "organization"
+        },
+        {
+            "id": "UNON",
+            "label": "United Nations Office at Nairobi (UNON)",
+            "type": "organization"
+        },
+        {
+            "id": "UNDP Bratislava",
+            "label": "UNDP Bratislava",
+            "type": "organization",
+            "outline": "allegation"
+        },
+        {
+            "id": "The Consultant",
+            "label": "The Consultant",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Ozone Secretariat",
+            "label": "Ozone Secretariat",
+            "type": "organization"
+        },
+        {
+            "id": "UNEP",
+            "label": "United Nations Environment Programme (UNEP)",
+            "type": "organization"
+        },
+        {
+            "id": "Staff Rule 101.2(g)",
+            "label": "Staff Rule 101.2(g)",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "Staff Regulation 1.2 (b)",
+            "label": "Staff Regulation 1.2 (b)",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "Staff Regulation 1.2 (g)",
+            "label": "Staff Regulation 1.2 (g)",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "Staff Regulation 1.2 (i)",
+            "label": "Staff Regulation 1.2 (i)",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "Fraud under Slovakian Criminal Code, 1961: Article 250",
+            "label": "Fraud under Slovakian Criminal Code, 1961: Article 250",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UNDP Bratislava",
+            "target": "Case 0580/03",
+            "label": "1. Subject of Investigation",
+            "tooltip": "UNDP Bratislava was investigated for control failures leading to fraud."
+        },
+        {
+            "source": "UNON",
+            "target": "UNDP Bratislava",
+            "label": "2. Financial Discrepancy Noted",
+            "tooltip": "UNON Finance noticed outstanding IOV and unreconciled payments linked to UNDP Bratislava."
+        },
+        {
+            "source": "UNDP Bratislava",
+            "target": "The Consultant",
+            "label": "3. Fraudulent Payments",
+            "tooltip": "The Consultant received fraudulent payments for travel, facilitated by UNDP Bratislava."
+        },
+        {
+            "source": "UNEP",
+            "target": "UNDP Bratislava",
+            "label": "4. Verification of Forged Faxes",
+            "tooltip": "UNEP confirmed that fax instructions for disbursements were forged."
+        },
+        {
+            "source": "Case 0580/03",
+            "target": "Staff Rule 101.2(g)",
+            "label": "5. Violation Identified",
+            "tooltip": "Violation of Staff Rule 101.2(g) due to document manipulation."
+        },
+        {
+            "source": "Case 0580/03",
+            "target": "Staff Regulation 1.2 (b)",
+            "label": "6. Violation Identified",
+            "tooltip": "Violation of Staff Regulation 1.2 (b) due to lack of integrity."
+        },
+        {
+            "source": "Case 0580/03",
+            "target": "Staff Regulation 1.2 (g)",
+            "label": "7. Violation Identified",
+            "tooltip": "Violation of Staff Regulation 1.2 (g) due to misuse of office for private gain."
+        },
+        {
+            "source": "Case 0580/03",
+            "target": "Staff Regulation 1.2 (i)",
+            "label": "8. Violation Identified",
+            "tooltip": "Violation of Staff Regulation 1.2 (i) due to unauthorized communication of information."
+        },
+        {
+            "source": "Case 0580/03",
+            "target": "Fraud under Slovakian Criminal Code, 1961: Article 250",
+            "label": "9. Violation Identified",
+            "tooltip": "Fraudulent activities breached Slovakian Criminal Code Article 250."
+        }
+    ],
+    "allegations": {
+        "UNDP Bratislava": [
+            "Cheque fraud involving falsified documents.",
+            "Forgery of fax instructions for disbursements.",
+            "Facilitation of fraudulent disbursement processes."
+        ],
+        "The Consultant": [
+            "Received fraudulent payments for travel to Johannesburg and Monrovia."
+        ]
+    },
+    "violations": {
+        "Staff Rule 101.2(g)": [
+            "Intentional alteration or destruction of official documents."
+        ],
+        "Staff Regulation 1.2 (b)": [
+            "Failure to uphold standards of efficiency, competence, and integrity."
+        ],
+        "Staff Regulation 1.2 (g)": [
+            "Use of office for private gain."
+        ],
+        "Staff Regulation 1.2 (i)": [
+            "Unauthorized communication of official information."
+        ],
+        "Fraud under Slovakian Criminal Code, 1961: Article 250": [
+            "Fraud causing harm to property or enrichment through deceit."
+        ]
+    }
+}

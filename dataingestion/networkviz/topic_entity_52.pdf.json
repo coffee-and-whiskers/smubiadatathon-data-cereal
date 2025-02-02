@@ -1,0 +1,37 @@
+{
+    "document_name": "52.pdf",
+    "topics": [
+        {
+            "topic": "Financial Management and Oversight",
+            "entities": [
+                "UNMIK Bank Account",
+                "Pristina Airport",
+                "Air BP"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "Provisional Criminal Code of Kosovo",
+                "Abusing Official Position",
+                "Misappropriation in Office",
+                "Fraud in Office"
+            ]
+        },
+        {
+            "topic": "Contractual Disputes",
+            "entities": [
+                "UNMIK",
+                "Provisional Institutions of Self-Government (PISG)",
+                "Air BP"
+            ]
+        },
+        {
+            "topic": "Ownership and Legal Disputes",
+            "entities": [
+                "UNMIK",
+                "Pristina Airport"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,127 @@
+{
+    "entities": [
+        {
+            "id": "Case 0282/04",
+            "label": "Case 0282/04 - Cargo Apron Procurement Irregularities",
+            "type": "investigation"
+        },
+        {
+            "id": "Pristina International Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Chartered Accountants",
+            "label": "Chartered Accountants (Audit)",
+            "type": "organization"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Interim Administration Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "UNMIK Office of Legal Adviser",
+            "label": "UNMIK Office of Legal Adviser",
+            "type": "organization"
+        },
+        {
+            "id": "Public Enterprise Airport Pristina (PEAP)",
+            "label": "Public Enterprise Airport Pristina (PEAP)",
+            "type": "organization"
+        },
+        {
+            "id": "Kosovo Force (KFOR)",
+            "label": "Military Units of the Kosovo Force (KFOR)",
+            "type": "organization"
+        },
+        {
+            "id": "Kosovo Trust Agency (KTA)",
+            "label": "Kosovo Trust Agency (KTA)",
+            "type": "organization"
+        },
+        {
+            "id": "Pillar IV Administration",
+            "label": "Pillar IV Administration",
+            "type": "organization"
+        },
+        {
+            "id": "DOTI Official 2",
+            "label": "DOTI Official 2",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "UNMIK Regulation 1999/24",
+            "label": "UNMIK Regulation 1999/24",
+            "type": "statutory"
+        },
+        {
+            "id": "UN Staff Regulations 1.2 (b)",
+            "label": "UN Staff Regulations 1.2 (b)",
+            "type": "statutory"
+        },
+        {
+            "id": "UNMIK Finance Administrative Instruction 1999/2",
+            "label": "UNMIK Finance Administrative Instruction 1999/2",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Chartered Accountants",
+            "target": "Pristina International Airport",
+            "label": "1. Audit Conducted",
+            "tooltip": "Chartered Accountants conducted an audit at Pristina International Airport, highlighting potential irregularities."
+        },
+        {
+            "source": "Chartered Accountants",
+            "target": "Case 0282/04",
+            "label": "2. Audit Triggered Investigation",
+            "tooltip": "The audit findings led to the initiation of an investigation (Case 0282/04) into procurement activities."
+        },
+        {
+            "source": "Case 0282/04",
+            "target": "UNMIK",
+            "label": "3. Investigation Conducted By",
+            "tooltip": "UNMIK conducted the investigation based on the audit findings."
+        },
+        {
+            "source": "UNMIK",
+            "target": "Pristina International Airport",
+            "label": "4. Oversight Authority",
+            "tooltip": "UNMIK was responsible for overseeing compliance at Pristina International Airport."
+        },
+        {
+            "source": "Pristina International Airport",
+            "target": "UNMIK Office of Legal Adviser",
+            "label": "5. Contract Clearance Omission",
+            "tooltip": "Contracts were not submitted to the UNMIK Office of Legal Adviser for clearance, violating procedures."
+        },
+        {
+            "source": "Pristina International Airport",
+            "target": "DOTI Official 2",
+            "label": "6. Role Conflict Identified",
+            "tooltip": "DOTI Official 2 confirmed the conflict of role in the bid opening and technical evaluation committees."
+        },
+        {
+            "source": "Case 0282/04",
+            "target": "UNMIK Finance Administrative Instruction 1999/2",
+            "label": "7. Violation Found",
+            "tooltip": "The investigation found violations of the UNMIK Finance Administrative Instruction 1999/2."
+        }
+    ],
+    "allegations": {
+        "DOTI Official 2": [
+            "Confirmed involvement in role conflict within procurement committees."
+        ]
+    },
+    "violations": {
+        "UNMIK Finance Administrative Instruction 1999/2": [
+            "Tender specifications did not comply with Article 23.3.",
+            "Conflict of role in procurement committees.",
+            "Contracts not cleared by the legal adviser."
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "document_name": "15.pdf",
+    "topics": [
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "Pristina Airport",
+                "Airline",
+                "KFOR"
+            ]
+        },
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina Airport Cargo Department"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "VAT Application",
+                "Transaction Documentation"
+            ]
+        }
+    ]
+}

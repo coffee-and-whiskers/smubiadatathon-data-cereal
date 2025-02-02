@@ -1,0 +1,72 @@
+{
+    "overview": {
+        "investigation": [
+            "intercepted",
+            "intelligence"
+        ],
+        "organization": [
+            "NSA",
+            "Japanese government",
+            "Japanese ministries"
+        ],
+        "company": [],
+        "individual": [
+            "Prime Minister Shinzo Abe",
+            "US President"
+        ],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "secret intelligence intercept"
+        ],
+        "organization": [
+            "National Security Agency",
+            "Japanese Ministry of Economy, Trade and Industry",
+            "Japanese Ministry of Foreign Affairs"
+        ],
+        "company": [],
+        "individual": [
+            "Prime Minister Shinzo Abe",
+            "President George W. Bush"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "NSA intercepted communications"
+        ],
+        "organization": [
+            "Japanese Government"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "intelligence_summary": {
+        "investigation": [
+            "Intelligence Intercepts"
+        ],
+        "organization": [
+            "NSA",
+            "Bush administration"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "overview": {
+        "investigation": [
+            "interception of French Ambassador's communications"
+        ],
+        "organization": [
+            "National Security Agency",
+            "UN Oil-for-food program",
+            "Iraq Survey Group"
+        ],
+        "company": [],
+        "individual": [
+            "French Ambassador",
+            "Jean-David Levitte"
+        ],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "methodology": {
+        "investigation": [
+            "Signals Intelligence (SIGINT) collection method"
+        ],
+        "organization": [
+            "NSA"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "intercepted communications"
+        ],
+        "organization": [
+            "NSA",
+            "U.S. Congress",
+            "UN Oil-for-food program",
+            "Iraq Survey Group"
+        ],
+        "company": [],
+        "individual": [
+            "French Ambassador",
+            "Jean-David Levitte"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Case 3/OO/27079-04 - Interception of French Ambassador's Communications"
+        ],
+        "organization": [
+            "UN Oil-for-food program"
+        ],
+        "company": [],
+        "individual": [
+            "French Ambassador"
+        ],
+        "statutory": []
+    },
+    "intelligence_summary": {
+        "investigation": [],
+        "organization": [
+            "NSA"
+        ],
+        "company": [],
+        "individual": [
+            "Ambassador Levitte"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [],
+        "organization": [
+            "NSA"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

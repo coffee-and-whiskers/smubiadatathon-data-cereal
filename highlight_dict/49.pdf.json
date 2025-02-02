@@ -1,0 +1,117 @@
+{
+    "overview": {
+        "investigation": [
+            "ongoing investigation",
+            "alleged bribery"
+        ],
+        "organization": [
+            "UNMIK",
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [
+            "Divisional Manager"
+        ],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [
+            "case concerns",
+            "allegation"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Article 344 of the Provisional Criminal Code of Kosovo"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "investigation involved",
+            "comprehensive review"
+        ],
+        "organization": [
+            "KTA",
+            "PEAP"
+        ],
+        "company": [],
+        "individual": [
+            "KTA Procurement Specialist",
+            "PEAP Official",
+            "Divisional Manager"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "efforts to locate the police report"
+        ],
+        "organization": [
+            "UNMIK",
+            "PEAP",
+            "KTA"
+        ],
+        "company": [
+            "Company 1"
+        ],
+        "individual": [
+            "Divisional Manager",
+            "PEAP Official"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Bribery allegation",
+            "investigated",
+            "enquiries"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "PEAP"
+        ],
+        "company": [
+            "Company 1"
+        ],
+        "individual": [
+            "PEAP Official"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "corrupt payment attempt",
+            "investigation continues"
+        ],
+        "organization": [
+            "UNMIK"
+        ],
+        "company": [],
+        "individual": [
+            "PEAP Official"
+        ],
+        "statutory": [
+            "Article 344"
+        ]
+    },
+    "recommendations": {
+        "investigation": [
+            "Enhance monitoring",
+            "stricter compliance controls"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

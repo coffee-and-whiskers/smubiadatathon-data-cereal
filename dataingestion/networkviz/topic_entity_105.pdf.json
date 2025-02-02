@@ -1,0 +1,26 @@
+{
+    "document_name": "105.pdf",
+    "topics": [
+        {
+            "topic": "Environmental Policy",
+            "entities": [
+                "Japanese Ministry of Economy, Trade and Industry",
+                "Prime Minister Shinzo Abe"
+            ]
+        },
+        {
+            "topic": "International Relations",
+            "entities": [
+                "Japanese Ministry of Foreign Affairs",
+                "United States",
+                "President George W. Bush"
+            ]
+        },
+        {
+            "topic": "Intelligence Gathering",
+            "entities": [
+                "National Security Agency (NSA)"
+            ]
+        }
+    ]
+}

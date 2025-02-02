@@ -1,0 +1,33 @@
+{
+    "document_name": "89.pdf",
+    "topics": [
+        {
+            "topic": "Bilateral Intelligence Cooperation",
+            "entities": [
+                "French Government",
+                "U.S. Government"
+            ]
+        },
+        {
+            "topic": "Military Commitments",
+            "entities": [
+                "French Military",
+                "U.S. Military",
+                "Afghanistan"
+            ]
+        },
+        {
+            "topic": "Defense Contracts",
+            "entities": [
+                "EADS",
+                "U.S. Military"
+            ]
+        },
+        {
+            "topic": "Trademark Disputes",
+            "entities": [
+                "Pernod Ricard"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "INV-KOS-2023-AL-054",
+        "title": "CASE 218/04: Allegation of Possible Bribery at Pristina Airport",
+        "category": "Investigation",
+        "timestamp": "2023-10-23T12:00:00Z",
+        "primary_source": "United Nations Interim Administration Mission in Kosovo"
+    },
+    "overview": "This document details the ongoing investigation into alleged bribery involving UNMIK at Pristina Airport. The inquiry was prompted by a Divisional Manager's report of a \u20ac5200 bribe linked to a procurement contract, with the funds yet unfound.",
+    "applicable_laws": [
+        {
+            "regulation_id": "Article 344",
+            "excerpt": "This case concerns an allegation of attempted bribery and corruption as cited in Article 344 of the Provisional Criminal Code of Kosovo.",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "Conducted under Executive Decision No 2003/16, the investigation involved interviews with key personnel and a comprehensive review of relevant documents.",
+        "interviews": [
+            "KTA Procurement Specialist",
+            "PEAP Official",
+            "Divisional Manager",
+            "Two current Border Boundary Police investigators",
+            "Regional Crime Squad Pristina Region officials"
+        ],
+        "documents_reviewed": [
+            "Letter from the Divisional Manager to the UNMIK Police Officer, dated 2002-10-11",
+            "File note from the PEAP Official, dated 2002-10-08",
+            "Interoffice memorandum, dated 2002-09-26",
+            "Assigned officer\u2019s report draft from 2004"
+        ]
+    },
+    "background": {
+        "context": "In October 2002, an envelope allegedly containing \u20ac5200 was left at the PEAP office after a meeting about a procurement contract. The funds remain untraced, and efforts to locate the police report are ongoing.",
+        "entities_involved": [
+            "UNMIK",
+            "PEAP",
+            "KTA",
+            "Company 1"
+        ],
+        "timeline": [
+            "2002-09-15;2002-09-30: Divisional Manager away from the Airport",
+            "2002-10-04: Meeting in the PEAP Official's office",
+            "2002-10-08: Envelope found with \u20ac5200",
+            "2002-10-11: Incident reported to UNMIK Police",
+            "2002-09-27;2004-09-27: Letter sent to UNMIK Police Officer 2 regarding investigation status"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0218/04",
+        "subject": "Bribery allegation at Pristina Airport",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "An envelope containing \u20ac5200 was reportedly left in a PEAP office, possibly linked to a procurement contract.",
+                "findings": "The \u20ac5200 is not a typical round sum. The company identified as 'escavator' corresponds with Company 1, which secured the car park contract."
+            },
+            {
+                "number": 2,
+                "description": "A former Engineer accused the PEAP Official of accepting documents post-bid closure.",
+                "findings": "Addressed in ITF Case No. 0274/04."
+            },
+            {
+                "number": 3,
+                "description": "The missing \u20ac5200 is still being investigated with no trace found.",
+                "findings": "Extensive enquiries by current Border Boundary Police were fruitless in tracing the police report or the money."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Evidence suggests a corrupt payment attempt targeting the PEAP Official occurred in October 2002.",
+            "Identity or motive behind the payment remains unidentified.",
+            "The UNMIK police's investigation, started over two years ago, continues.",
+            "The ITF case is closed to avoid hindering the judicial process."
+        ],
+        "violations": [
+            {
+                "regulation_id": "Article 344",
+                "excerpt": "Possible violation due to attempted bribery and corruption.",
+                "link": ""
+            }
+        ]
+    },
+    "recommendations": {
+        "actions": [
+            "Enhance monitoring of procurement processes at Pristina Airport.",
+            "Implement stricter compliance controls for bid submissions.",
+            "Establish a robust follow-up system to promptly track any financial irregularities."
+        ]
+    },
+    "related_documents": []
+}

@@ -1,0 +1,75 @@
+{
+    "metadata": {
+        "classification_level": "STRICTLY CONFIDENTIAL",
+        "document_id": "0425/04",
+        "title": "CASE 425/04: REPORT OF INVESTIGATION",
+        "category": "Investigation",
+        "timestamp": "2006-02-07",
+        "primary_source": "Office of Internal Oversight Services, Investigations Division"
+    },
+    "overview": "The investigation focuses on alleged mismanagement by the UNMIL Fuel Cell Officer, examining unaccounted fuel expenses and potential unauthorized sale of fuel by staff.",
+    "applicable_laws": [
+        {
+            "regulation_id": "Staff Regulation 1.2",
+            "excerpt": "Staff members shall uphold the highest standards of ... integrity. The concept of integrity includes ... impartiality, fairness, honesty ... in all matters affecting their work and status.",
+            "link": ""
+        },
+        {
+            "regulation_id": "ST/IC/1996/29",
+            "excerpt": "Staff members shall use the property and assets of the Organization only for official purposes and shall exercise reasonable care when utilizing such property and assets.",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "ID/OIOS conducted interviews with concerned parties excluding Officer 1 and reviewed all relevant documentation.",
+        "interviews": [],
+        "documents_reviewed": []
+    },
+    "background": {
+        "context": "UNMIL was established by the Security Council to support peacekeeping in Liberia. The Officer in question was previously with MONUC and helped establish the Fuel Cell at UNMIL.",
+        "entities_involved": [
+            "Officer 1",
+            "Officer 2",
+            "UNMIL Fuel Cell",
+            "ID/OIOS",
+            "IAD1/OIOS"
+        ],
+        "timeline": [
+            "2003-08-01;2004-03-31: Discrepancy in fuel accounting",
+            "2003-09-19: UNMIL established",
+            "2004-01-01;2004-02-29: Audit conducted",
+            "2004-06-30: Officer 1 left the position",
+            "2004-07-08: Officer 2 took over"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0425/04",
+        "subject": "Officer of the UNMIL Fuel Cell",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Mismanagement and waste of resources, specifically inability to account for US$500,000 in fuel expenses.",
+                "findings": "An audit discovered 290,066 gallons of fuel valued at US$455,404 were unaccounted for; however, no evidence was found linking Officer 1 personally to the discrepancy."
+            },
+            {
+                "number": 2,
+                "description": "Allegations against bowser drivers and supervisor for selling fuel to third parties.",
+                "findings": "UNMIL\u2019s Special Investigation Unit found credible evidence against bowser drivers and their supervisor, leading to their dismissal."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "The complainant was unable to provide evidence implicating Officer 1 in the US$500,000 discrepancy.",
+            "Officer 1\u2019s involvement in the Fuel Cell issues could not be substantiated."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "UNMIL accepted 16 out of 17 recommendations from IAD/OIOS regarding fuel management improvements.",
+            "DPKO should record this case as unsubstantiated and inform Officer 1 that he is cleared of any wrongdoing (ID Rec. No. IV04/425/01)."
+        ]
+    },
+    "related_documents": []
+}

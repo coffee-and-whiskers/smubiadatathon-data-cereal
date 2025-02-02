@@ -1,0 +1,101 @@
+{
+    "overview": {
+        "investigation": [
+            "investigation",
+            "allegations",
+            "bribery",
+            "kickbacks",
+            "Investigation Task Force"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [
+            "non-staff members",
+            "officials"
+        ],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "allegations",
+            "bribery"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "Kosovo Police Service",
+            "Department of Justice"
+        ],
+        "company": [],
+        "individual": [
+            "Non Staff member 1",
+            "Non Staff member 2",
+            "Non Staff member 3",
+            "Official 1",
+            "Official 2's Secretary",
+            "Non Staff member 4",
+            "Non Staff member 5",
+            "KPS Officer 2"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "case_number",
+            "allegations",
+            "Kickbacks"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [
+            "Non Staff member 1",
+            "Non Staff member 5",
+            "Non Staff member 4"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "bribery",
+            "referred to the Department of Justice"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "Department of Justice"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "ITF",
+            "judicial process"
+        ],
+        "organization": [
+            "UNMIK Pillar IV",
+            "airport staff",
+            "Department of Justice"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

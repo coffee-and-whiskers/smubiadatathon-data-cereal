@@ -1,0 +1,119 @@
+{
+    "overview": {
+        "investigation": [
+            "alleged mismanagement",
+            "unaccounted fuel expenses",
+            "unauthorized sale of fuel"
+        ],
+        "organization": [
+            "UNMIL Fuel Cell"
+        ],
+        "company": [],
+        "individual": [
+            "Officer"
+        ],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [
+            "Organization"
+        ],
+        "company": [],
+        "individual": [
+            "Staff members"
+        ],
+        "statutory": [
+            "Staff Regulation 1.2",
+            "ST/IC/1996/29"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "conducted interviews",
+            "reviewed documentation"
+        ],
+        "organization": [
+            "ID/OIOS"
+        ],
+        "company": [],
+        "individual": [
+            "Officer 1"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "Discrepancy in fuel accounting",
+            "Audit conducted"
+        ],
+        "organization": [
+            "UNMIL",
+            "MONUC",
+            "Fuel Cell",
+            "ID/OIOS",
+            "IAD1/OIOS"
+        ],
+        "company": [],
+        "individual": [
+            "Officer 1",
+            "Officer 2"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Mismanagement",
+            "waste of resources",
+            "unaccounted for",
+            "selling fuel to third parties"
+        ],
+        "organization": [
+            "UNMIL",
+            "Special Investigation Unit"
+        ],
+        "company": [],
+        "individual": [
+            "Officer 1",
+            "bowser drivers",
+            "supervisor"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "unable to provide evidence",
+            "involvement could not be substantiated"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [
+            "Officer 1"
+        ],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "recommendations",
+            "unsubstantiated",
+            "cleared of any wrongdoing"
+        ],
+        "organization": [
+            "UNMIL",
+            "IAD/OIOS",
+            "DPKO"
+        ],
+        "company": [],
+        "individual": [
+            "Officer 1"
+        ],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

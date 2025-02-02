@@ -1,0 +1,110 @@
+{
+    "metadata": {
+        "classification_level": "Unclassified",
+        "document_id": "",
+        "title": "CASE 282/04: Investigation Report on Procurement Irregularities at Pristina Airport",
+        "category": "Investigation",
+        "timestamp": "",
+        "primary_source": "United Nations Interim Administration Mission in Kosovo"
+    },
+    "overview": "This investigation report documents irregular procurement activities concerning the extension of the Cargo Apron at Pristina International Airport.",
+    "applicable_laws": [
+        {
+            "regulation_id": "UNMIK Regulation 1999/24",
+            "excerpt": "The law applicable in Kosovo shall be those promulgated by the Special Representative of the Secretary-General and the law in force on 22 March 1989.",
+            "link": ""
+        },
+        {
+            "regulation_id": "UN Staff Regulations 1.2 (b)",
+            "excerpt": "Staff members shall uphold the highest standards of efficiency, competence, and integrity.",
+            "link": ""
+        },
+        {
+            "regulation_id": "UNMIK Finance Administrative Instruction 1999/2",
+            "excerpt": "Competition among and participation in the procurement process shall be maximized.",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "Review of audit reports and procurement procedures.",
+        "interviews": [
+            "Interviews with witnesses and persons potentially implicated in the allegations"
+        ],
+        "documents_reviewed": [
+            "Audit report dated 2003-02-28",
+            "Procurement records from Pristina International Airport",
+            "Documents from Pristina Airport administration",
+            "Documents from Pillar IV",
+            "Tender documents including preliminary designs from the Evaluation Company"
+        ]
+    },
+    "background": {
+        "context": "An audit report conducted by Chartered Accountants highlighted potential irregularities, initiating an investigation into procurement activities at Pristina International Airport.",
+        "entities_involved": [
+            "Pristina International Airport",
+            "UNMIK Office of Legal Adviser",
+            "Public Enterprise Airport Pristina (PEAP)",
+            "Military Units of the Kosovo Force (KFOR)",
+            "Kosovo Trust Agency (KTA)",
+            "Pillar IV Administration"
+        ],
+        "timeline": [
+            "2003-02-28: Audit report issued on Pristina International Airport's financial statements.",
+            "2001;2003: Maintenance by PEAP in cooperation with KFOR",
+            ";2002-06-30: Administration by UNMIK's Civil Administration Pillar (Pillar II)",
+            "2004-04-01: Airport administration transferred to civilian jurisdiction under ICAO.",
+            "2002-07-01: Responsibility transferred from Pillar II to KTA and Pillar IV"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0282/04",
+        "subject": "Irregularities in the procurement for the Cargo Apron extension at Pristina Airport",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Tender specifications for the cargo apron did not comply with Article 23.3 of the UNMIK Finance Administrative Instruction 1999/2.",
+                "findings": "Tender documents were based on summary documents without clear instructions on drawings and plans, corroborated by the evaluation report dated 2001-08-02."
+            },
+            {
+                "number": 2,
+                "description": "Three members of the bid opening committee were also part of the technical evaluation committee.",
+                "findings": "Conflict of role in violation of procurement regulations, supported by official confirmation by DOTI Official 2."
+            },
+            {
+                "number": 3,
+                "description": "The contract was not submitted to the UNMIK Office of Legal Adviser for clearance.",
+                "findings": "Confirmed by an interoffice memorandum dated 2001-09-24."
+            },
+            {
+                "number": 4,
+                "description": "Vendor was allowed to certify its work per the contract requirements.",
+                "findings": "Vendor self-produced test results, potentially breaching oversight requirements, as indicated by an interoffice memorandum and a letter dated 2001-06-27."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Several procurement irregularities identified contravening established guidelines.",
+            "Evidence of role conflicts and oversight lapses in the procurement process."
+        ],
+        "violations": [
+            {
+                "regulation_id": "UNMIK Finance Regulation 1999/2",
+                "excerpt": "",
+                "link": ""
+            }
+        ]
+    },
+    "recommendations": {
+        "actions": [
+            "Strengthen oversight mechanisms for procurement processes.",
+            "Ensure separation of committees involved in procurement procedures.",
+            "Establish a mandatory review protocol by legal advisers for significant contracts.",
+            "Ensure all contracts are referred for legal advice before signing to reduce liability issues and avoid recurrences.",
+            "Ensure staff compliance with the UNMIK Public Procurement Regulation No 2004/3.",
+            "Ensure evaluations are conducted by a qualified independent entity.",
+            "Take appropriate action concerning DOTI Official 2."
+        ]
+    },
+    "related_documents": []
+}

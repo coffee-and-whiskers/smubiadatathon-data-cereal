@@ -1,0 +1,110 @@
+{
+    "metadata": {
+        "classification_level": "STRICTLY CONFIDENTIAL",
+        "document_id": "ECA-INV-2001-001",
+        "title": "CASE 202/01: Report of Investigation",
+        "category": "Investigation",
+        "timestamp": "2001-11-16 00:00:00",
+        "primary_source": "Office of Internal Oversight Services"
+    },
+    "overview": "This report investigates the alleged misappropriation of US$12,000 intended as Daily Subsistence Allowance (DSA) for five conference participants by a staff member of the Economic Commission for Africa (ECA) in Seychelles. Additional documentation revealed complex handling of funds totaling US$49,000. The ACGD Officer was involved in handling various cash sums for expenses and DSA payments, with bank and UNDP staff witnessing transactions.",
+    "applicable_laws": [
+        {
+            "regulation_id": "Staff Regulation 1.2 (g)",
+            "excerpt": "Staff members shall not use their office or knowledge gained from their official functions for private gain.",
+            "link": ""
+        },
+        {
+            "regulation_id": "Financial Rule 104.9 (ST/SGB/2003/7)",
+            "excerpt": "Officials to whom cash advances are issued shall be held personally accountable and financially liable.",
+            "link": ""
+        },
+        {
+            "regulation_id": "Financial Rule 104.10 (ST/SGB/2003/7)",
+            "excerpt": "Disbursements shall be recorded in the accounts as at the date on which they are made.",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "The investigation involved reviewing initial complaints, conducting preliminary investigations, and onsite evaluations during an ECA mission.",
+        "interviews": [
+            "ACGD Officer",
+            "ECA's Official 1",
+            "Other staff members",
+            "Participant 3"
+        ],
+        "documents_reviewed": [
+            "Complaint document",
+            "Initial investigation report",
+            "Personnel records",
+            "Bank records",
+            "List of participants for the Seychelles conference",
+            "Cancelled PT.8 forms"
+        ]
+    },
+    "background": {
+        "context": "An investigation into the allegations that a staff member from ECA misappropriated funds designated for DSA for a conference in Seychelles.",
+        "entities_involved": [
+            "Economic Commission for Africa (ECA)",
+            "African Centre for Gender Development (ACGD)"
+        ],
+        "timeline": [
+            "2001: ID/OIOS receives complaint",
+            "2001-01-01;2005-12-31: Preliminary investigation and onsite evaluation during ECA mission",
+            "1999-02-15;1999-02-18: Conference at Berjaja Mahe Beach Resort Hotel, Victoria, Seychelles",
+            "2000-02-17: Inter-office memorandum questioning DSA payment",
+            "2000-03-08: Confirmation letter from Official 7 in Mauritius"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0202/01",
+        "subject": "Unnamed ECA Staff Member",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Misappropriation of US$12,000 in DSA for conference participants in Seychelles.",
+                "findings": "Further analysis found US$49,000 was meant for DSA and expenses, with discrepancies in payments. Cancelling of PT.8 forms and potential bank employee tampering noted."
+            },
+            {
+                "number": 2,
+                "description": "Handling of DSA by ACGD Officer and Barclays representatives.",
+                "findings": "Significant sums handled by ACGD Officer, with DSA distributed by bank officials and UNDP Liaison Officer present. Conflicting accounts about PT.8 forms and attendance issues were found."
+            },
+            {
+                "number": 3,
+                "description": "Discrepancies in attendee registration and DSA distribution during the conference.",
+                "findings": "Participant 3 did not attend, and Barclays possibly paid some attendees. Discrepancies existed in attendance records and DSA totals."
+            },
+            {
+                "number": 4,
+                "description": "Potential unrecorded funds and acknowledgment of misappropriation by the ACGD Officer.",
+                "findings": "ACGD Officer initially denied full sum receipt, later acknowledged receipt of US$22,000 and additional US$28,627, as confirmed by bank records."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "The ACGD Officer failed to account for US$3,011, besides his claims against Barclays.",
+            "The Officer admitted receiving a significant amount of funds and acknowledged discrepancies in processing."
+        ],
+        "violations": [
+            {
+                "regulation_id": "Staff Regulation 1.2 (g)",
+                "excerpt": "Staff members shall not use their office or knowledge gained from their official functions for private gain.",
+                "link": ""
+            },
+            {
+                "regulation_id": "Financial Rule 104.9 (ST/SGB/2003/7)",
+                "excerpt": "Officials to whom cash advances are issued shall be held personally accountable and financially liable.",
+                "link": ""
+            }
+        ]
+    },
+    "recommendations": {
+        "actions": [
+            "Appropriate action be taken against the ACGD Officer for breaching Financial Rule 104.9 and 104.10 (b) and (c).",
+            "ECA management review its cash disbursement practices to identify additional gaps and learn lessons to avoid similar future problems."
+        ]
+    },
+    "related_documents": []
+}

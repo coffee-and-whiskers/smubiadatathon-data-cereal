@@ -1,0 +1,106 @@
+{
+    "overview": {
+        "investigation": [
+            "investigation report",
+            "alleged misconduct"
+        ],
+        "organization": [
+            "Post-Conflict Assessment Unit",
+            "UNEP"
+        ],
+        "company": [],
+        "individual": [
+            "staff members"
+        ],
+        "statutory": [
+            "conflict of interest",
+            "kickbacks",
+            "improper representation"
+        ]
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [
+            "Organization"
+        ],
+        "company": [],
+        "individual": [
+            "Consultants"
+        ],
+        "statutory": [
+            "United Nations Financial Procurement Regulation 1.2",
+            "ST/AI/1999/7 I I",
+            "best value for money",
+            "fairness",
+            "integrity",
+            "transparency",
+            "effective international competition"
+        ]
+    },
+    "background": {
+        "investigation": [
+            "alleged misconduct"
+        ],
+        "organization": [
+            "Office of Internal Oversight Services",
+            "Balkans Task Force",
+            "Post-Conflict Assessment Unit"
+        ],
+        "company": [],
+        "individual": [
+            "UNEP Staff Member 1",
+            "UNEP Staff Member 2",
+            "UNEP/PCAU Consultant"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Misconduct Allegations",
+            "case_number",
+            "allegations"
+        ],
+        "organization": [
+            "BTF",
+            "PCAU"
+        ],
+        "company": [
+            "former company"
+        ],
+        "individual": [
+            "UNEP Staff Member 1",
+            "UNEP Staff Member 2",
+            "UNEP/PCAU Consultant"
+        ],
+        "statutory": [
+            "conflict of interest",
+            "kickback",
+            "breach of UN regulations"
+        ]
+    },
+    "conclusion": {
+        "investigation": [
+            "findings",
+            "violations"
+        ],
+        "organization": [
+            "UNEP",
+            "UNOPS"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "ST/AI/1999/7 I I",
+            "Procurement Regulation 1.2",
+            "fairness",
+            "transparency"
+        ]
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

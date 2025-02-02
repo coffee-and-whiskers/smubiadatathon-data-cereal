@@ -1,0 +1,26 @@
+{
+    "document_name": "108.pdf",
+    "topics": [
+        {
+            "topic": "Trade Disputes",
+            "entities": [
+                "Japanese Ministry of Agriculture, Forestry and Fisheries",
+                "US Department of Agriculture"
+            ]
+        },
+        {
+            "topic": "Diplomatic Relations",
+            "entities": [
+                "National Security Agency",
+                "Japanese Ministry of Agriculture, Forestry and Fisheries"
+            ]
+        },
+        {
+            "topic": "Intelligence Interception",
+            "entities": [
+                "National Security Agency",
+                "NSA Intelligence Intercepts"
+            ]
+        }
+    ]
+}

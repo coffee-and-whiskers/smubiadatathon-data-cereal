@@ -1,0 +1,149 @@
+{
+    "entities": [
+        {
+            "id": "ECA",
+            "label": "Economic Commission for Africa",
+            "type": "organization"
+        },
+        {
+            "id": "ACGD",
+            "label": "African Centre for Gender Development",
+            "type": "organization"
+        },
+        {
+            "id": "Unnamed ECA Staff Member",
+            "label": "Unnamed ECA Staff Member",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "ACGD Officer",
+            "label": "ACGD Officer",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Barclays",
+            "label": "Barclays Bank",
+            "type": "organization"
+        },
+        {
+            "id": "UNDP Liaison Officer",
+            "label": "UNDP Liaison Officer",
+            "type": "individual"
+        },
+        {
+            "id": "Participant 3",
+            "label": "Participant 3",
+            "type": "individual"
+        },
+        {
+            "id": "Staff Regulation 1.2 (g)",
+            "label": "Staff Regulation 1.2 (g)",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "Financial Rule 104.9",
+            "label": "Financial Rule 104.9 (ST/SGB/2003/7)",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "Financial Rule 104.10",
+            "label": "Financial Rule 104.10 (ST/SGB/2003/7)",
+            "type": "statutory"
+        },
+        {
+            "id": "Case 0202/01",
+            "label": "Case 0202/01 - Misappropriation of Funds",
+            "type": "investigation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "ECA",
+            "target": "ACGD",
+            "label": "1. Organizational Unit",
+            "tooltip": "The African Centre for Gender Development is a part of the Economic Commission for Africa."
+        },
+        {
+            "source": "ACGD",
+            "target": "Unnamed ECA Staff Member",
+            "label": "2. Employment",
+            "tooltip": "The unnamed staff member is employed under the African Centre for Gender Development."
+        },
+        {
+            "source": "Case 0202/01",
+            "target": "Unnamed ECA Staff Member",
+            "label": "3. Subject of Investigation",
+            "tooltip": "The investigation focuses on the alleged misappropriation of funds by the unnamed staff member."
+        },
+        {
+            "source": "Case 0202/01",
+            "target": "ACGD Officer",
+            "label": "4. Involvement in Fund Handling",
+            "tooltip": "The ACGD Officer was involved in handling and distributing funds for the conference."
+        },
+        {
+            "source": "Case 0202/01",
+            "target": "Barclays",
+            "label": "5. Bank Involvement",
+            "tooltip": "Barclays was involved in the distribution of funds for the conference."
+        },
+        {
+            "source": "Barclays",
+            "target": "ACGD Officer",
+            "label": "6. Fund Distribution",
+            "tooltip": "Barclays representatives were involved in distributing DSA funds with the ACGD Officer."
+        },
+        {
+            "source": "Case 0202/01",
+            "target": "Participant 3",
+            "label": "7. Attendance Discrepancy",
+            "tooltip": "Participant 3 was noted in discrepancies regarding attendance and DSA distribution."
+        },
+        {
+            "source": "Case 0202/01",
+            "target": "Staff Regulation 1.2 (g)",
+            "label": "8. Violation Identified",
+            "tooltip": "The investigation found a violation of Staff Regulation 1.2 (g) by the ACGD Officer."
+        },
+        {
+            "source": "Case 0202/01",
+            "target": "Financial Rule 104.9",
+            "label": "9. Violation Identified",
+            "tooltip": "The investigation found a violation of Financial Rule 104.9 by the ACGD Officer."
+        },
+        {
+            "source": "Case 0202/01",
+            "target": "Financial Rule 104.10",
+            "label": "10. Financial Accountability",
+            "tooltip": "The investigation reviewed compliance with Financial Rule 104.10 regarding disbursement recording."
+        },
+        {
+            "source": "UNDP Liaison Officer",
+            "target": "Case 0202/01",
+            "label": "11. Witness to Transactions",
+            "tooltip": "The UNDP Liaison Officer was present during some of the fund transactions."
+        }
+    ],
+    "allegations": {
+        "Unnamed ECA Staff Member": [
+            "Misappropriation of US$12,000 in DSA for conference participants.",
+            "Handling of US$49,000 with discrepancies in payments."
+        ],
+        "ACGD Officer": [
+            "Involvement in handling significant sums for DSA and expenses.",
+            "Acknowledged receipt of unrecorded funds totaling US$50,627."
+        ]
+    },
+    "violations": {
+        "Staff Regulation 1.2 (g)": [
+            "Staff members shall not use their office or knowledge gained from their official functions for private gain."
+        ],
+        "Financial Rule 104.9": [
+            "Officials to whom cash advances are issued shall be held personally accountable and financially liable."
+        ]
+    }
+}

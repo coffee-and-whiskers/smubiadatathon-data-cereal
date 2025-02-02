@@ -1,0 +1,34 @@
+{
+    "document_name": "43.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina International Airport",
+                "UNMIK Finance Administrative Instruction 1999/2",
+                "UNMIK Regulation 1999/24"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "UNMIK Legal Adviser",
+                "UN Staff Regulations 1.2 (b)"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "Public Enterprise Airport Pristina (PEAP)",
+                "CPE Procurement Officer"
+            ]
+        },
+        {
+            "topic": "Conflict of Interest",
+            "entities": [
+                "Vendor Self-Certification",
+                "Tender Evaluation Committees"
+            ]
+        }
+    ]
+}

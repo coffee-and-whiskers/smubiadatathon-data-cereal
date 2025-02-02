@@ -1,0 +1,122 @@
+{
+    "overview": {
+        "investigation": [
+            "alleged violations",
+            "findings",
+            "breach"
+        ],
+        "organization": [
+            "UNMIK",
+            "KTA",
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "procurement procedures"
+        ]
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "methodology": {
+        "investigation": [
+            "alleged violations",
+            "document analysis"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "ICAA",
+            "KTA"
+        ],
+        "company": [],
+        "individual": [
+            "staff member"
+        ],
+        "statutory": [
+            "procurement procedures"
+        ]
+    },
+    "background": {
+        "investigation": [
+            "possible violations"
+        ],
+        "organization": [
+            "UNMIK",
+            "ICAA",
+            "KTA",
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "insurance procurement"
+        ]
+    },
+    "investigation_details": {
+        "investigation": [
+            "alleged violations",
+            "allegations",
+            "findings"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "UNMIK",
+            "ICAA"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "procurement procedures"
+        ]
+    },
+    "intelligence_summary": {
+        "investigation": [
+            "key findings",
+            "assessments"
+        ],
+        "organization": [
+            "KTA",
+            "UNMIK"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "procurement rules"
+        ]
+    },
+    "conclusion": {
+        "investigation": [
+            "findings",
+            "investigation concluded"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "procurement rules"
+        ]
+    },
+    "recommendations": {
+        "investigation": [
+            "actions"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "insurance procedures"
+        ]
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

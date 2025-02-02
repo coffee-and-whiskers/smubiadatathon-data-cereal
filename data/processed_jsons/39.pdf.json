@@ -1,0 +1,93 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "case_0280_04",
+        "title": "CASE 280/04: Investigation into Tender Irregularities at Pristina Airport",
+        "category": "Investigation",
+        "timestamp": "2003-07-09T00:00:00Z",
+        "primary_source": "UNMIK"
+    },
+    "overview": "This report investigates allegations of irregularities and corruption in tender processes for supplying cleaning machines to Pristina Airport.",
+    "applicable_laws": [
+        {
+            "regulation_id": "UNMIK Regulation 1999/24",
+            "excerpt": "The regulations promulgated by the Special Representative of the Secretary-General (SRSG) and subsidiary instruments issued pursuant to those regulations; and The Law in force in Kosovo on 22 March 1989.",
+            "link": ""
+        },
+        {
+            "regulation_id": "UN Staff Regulations 1.2 (b)",
+            "excerpt": "Staff members shall uphold the highest standards of efficiency, competence, and integrity.",
+            "link": ""
+        },
+        {
+            "regulation_id": "UNMIK Finance Administrative Instruction 1999/2",
+            "excerpt": "Article 4 1 \": \"Competition among and participation in the procurement process shall be maximized.\" Article 4.1.1 : \"All suppliers and contractors and their tenders shall be treated fairly, equally, and non-discriminatorily, without favoritism or prejudice and each tender shall be judged on its merits.\"",
+            "link": ""
+        },
+        {
+            "regulation_id": "None",
+            "excerpt": "Article 15 1 : \"Technical specifications and descriptions of the goods, works, or services to be procured shall be carefully prepared to foster fair and open competition among all suppliers.\" Article 15.4 : \"There shall be no requirements or reference in the technical specifications to a particular trademark, brand name, patent, design, type, origin, producer or service provider unless (a) there is no sufficiently precise or intelligible way of describing the procurement requirements and (b) qualifying words, such as \\\"or equivalent\\\" are included in such requirement or reference.\"",
+            "link": ""
+        },
+        {
+            "regulation_id": "Staff Rule 110.1",
+            "excerpt": "Misconduct: \"Failure by a staff member to comply with his or her obligations under the Charter of the United Nations, the Staff Regulations and the Staff Rules or other relevant administrative issuances, or to observe the standards of conduct expected of an international civil servant, may amount to unsatisfactory conduct within the meaning of staff regulation 10.2, leading to the institution of disciplinary measures for misconduct.\"",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "The investigation was conducted pursuant to Executive Decision No 2003/16 on the establishment of the Investigation Task Force. ITF investigators conducted interviews with witnesses and individuals potentially implicated, and analyzed documents obtained from Pristina Airport administration and Pillar IV.",
+        "interviews": [],
+        "documents_reviewed": []
+    },
+    "background": {
+        "context": "An audit report into the financial statements of Pristina International Airport prompted an investigation into alleged irregularities during procurement and contract processes.",
+        "entities_involved": [
+            "Pristina International Airport",
+            "Chartered Accountants",
+            "UNMIK"
+        ],
+        "timeline": [
+            "2003-02-28: Audit report initiating investigation",
+            "2001;2003: Investigation regarding tender processes at Pristina International Airport",
+            "2002-06-30: DOTI Official 1 left UNMIK"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0280/04",
+        "subject": "Irregularities in tender processes for cleaning machines",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "No proper description of the cabins for the cleaning machines was included by companies submitting bids in the first tender.",
+                "findings": "The tender was cancelled due to unspecified cabins; however, evidence showed at least two companies provided adequate descriptions."
+            },
+            {
+                "number": 2,
+                "description": "Tender specifications for both tenders were taken from the brochure of one of the companies submitting a tender, giving it an unfair advantage.",
+                "findings": "Specifications favored one company by mirroring its product brochure, influencing the tender outcome."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "The first tender for cleaning machines was cancelled due to deficiencies in the bids and the advantage given to a company by using its brochure specifications.",
+            "The decision to cancel the first tender was justified due to concerns of unfair advantage by using brochure specifications.",
+            "The second tender was not finalized due to potential issues with offer pricing and specification advantages.",
+            "Insufficient evidence exists to determine if the use of a company brochure was intentional corruption or ignorance."
+        ],
+        "violations": [
+            {
+                "regulation_id": "UNMIK Finance Administrative Instruction 1999/2",
+                "excerpt": "Article 15.1 \": \"Technical specifications shall be drawn up with a view to fair competition and not unduly favor any particular supplier.\"",
+                "link": ""
+            }
+        ]
+    },
+    "recommendations": {
+        "actions": [
+            "Refer the report to D/SRSG Pillar IV for actions to prevent misuse of technical specifications favoring specific companies."
+        ]
+    },
+    "related_documents": []
+}

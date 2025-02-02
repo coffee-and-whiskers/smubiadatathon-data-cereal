@@ -1,0 +1,123 @@
+{
+    "overview": {
+        "investigation": [
+            "procurement process",
+            "allegations",
+            "discrepancies in bid evaluations"
+        ],
+        "organization": [
+            "Pristina International Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "UNMIK Finance Administrative Instruction 1999/2",
+            "Article 24 of UNMIK Finance Administrative Instruction 1999/2"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "investigation",
+            "interviews",
+            "document reviews"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "Pillar IV administration"
+        ],
+        "company": [],
+        "individual": [
+            "Security Official",
+            "PEAP Official",
+            "Divisional Manager"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "irregularities",
+            "procurement procedures"
+        ],
+        "organization": [
+            "Pristina International Airport",
+            "Public Enterprise Airport Pristina (PEAP)",
+            "Kosovo Force (KFOR)",
+            "UNMIK"
+        ],
+        "company": [
+            "Vendor 1",
+            "Vendor 2",
+            "Vendor 3"
+        ],
+        "individual": [
+            "Security Official",
+            "Divisional Manager",
+            "PEAP Official"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "case_number",
+            "irregular procurement",
+            "allegations",
+            "findings"
+        ],
+        "organization": [],
+        "company": [
+            "Vendor 1",
+            "Vendor 2",
+            "Vendor 3"
+        ],
+        "individual": [
+            "Security Official",
+            "PEAP Official",
+            "Divisional Manager"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "findings",
+            "violations"
+        ],
+        "organization": [],
+        "company": [
+            "Vendor 3"
+        ],
+        "individual": [
+            "PEAP Official"
+        ],
+        "statutory": [
+            "UNMIK Finance Administrative Instruction 1999/2",
+            "Article 24 of UNMIK Finance Administrative Instruction 1999/2"
+        ]
+    },
+    "recommendations": {
+        "investigation": [
+            "comprehensive review",
+            "enforce strict protocol",
+            "examine procurement authorisations"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [
+            "PEAP Official"
+        ],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "entities": [
+        {
+            "id": "ITFReport0262/04",
+            "label": "Report on Allegations of Evasion of Pristina Airport Charges",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Interim Administration Mission in Kosovo",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina Airport",
+            "label": "Pristina Airport",
+            "type": "organization"
+        },
+        {
+            "id": "The Airline",
+            "label": "The Airline",
+            "type": "company",
+            "outline": "allegation"
+        },
+        {
+            "id": "European Airport",
+            "label": "European Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Securicor",
+            "label": "Securicor Security Staff",
+            "type": "organization"
+        },
+        {
+            "id": "Immigration Department",
+            "label": "Immigration Department",
+            "type": "organization"
+        },
+        {
+            "id": "UK Immigration",
+            "label": "UK Immigration Staff",
+            "type": "organization"
+        },
+        {
+            "id": "Official 1",
+            "label": "Official 1 of the Airline",
+            "type": "individual"
+        },
+        {
+            "id": "Official 2",
+            "label": "Official 2 of the Airline",
+            "type": "individual"
+        },
+        {
+            "id": "Security Officer",
+            "label": "Security Officer at Pristina Airport",
+            "type": "individual"
+        },
+        {
+            "id": "Passenger Handling Services",
+            "label": "Official of the Passenger Handling Services, Pristina Airport",
+            "type": "individual"
+        },
+        {
+            "id": "CIVPOL Officer",
+            "label": "UNMIK CIVPOL officer",
+            "type": "individual"
+        }
+    ],
+    "edges": [
+        {
+            "source": "ITFReport0262/04",
+            "target": "UNMIK",
+            "label": "1. Investigation Conducted By",
+            "tooltip": "The investigation was conducted by UNMIK."
+        },
+        {
+            "source": "ITFReport0262/04",
+            "target": "Pristina Airport",
+            "label": "2. Subject of Investigation",
+            "tooltip": "Pristina Airport's revenue collection procedures were under investigation."
+        },
+        {
+            "source": "ITFReport0262/04",
+            "target": "The Airline",
+            "label": "3. Alleged Evasion",
+            "tooltip": "The Airline was alleged to have evaded airport charges."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "The Airline",
+            "label": "4. Revenue Collection Dispute",
+            "tooltip": "Dispute over the collection of landing, handling, and passenger taxes."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "Securicor",
+            "label": "5. Security Involvement",
+            "tooltip": "Securicor staff were involved in security checks but not liable for revenue collection."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "Immigration Department",
+            "label": "6. Immigration Oversight",
+            "tooltip": "Immigration Department staff were involved in passenger processing."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "UK Immigration",
+            "label": "7. International Coordination",
+            "tooltip": "UK Immigration staff were involved in processing international passengers."
+        },
+        {
+            "source": "The Airline",
+            "target": "European Airport",
+            "label": "8. Flight Route",
+            "tooltip": "The Airline operated flights between a European Airport and Pristina."
+        }
+    ],
+    "allegations": {
+        "The Airline": [
+            "Failure to collect all revenues for landing, handling, and passenger tax.",
+            "Non-integration of the automatic checking system with financial reporting."
+        ]
+    },
+    "violations": {}
+}

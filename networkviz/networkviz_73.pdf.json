@@ -1,0 +1,110 @@
+{
+    "entities": [
+        {
+            "id": "0575/03",
+            "label": "Case 0575/03 - Satellite Link Misconduct",
+            "type": "investigation"
+        },
+        {
+            "id": "UNON",
+            "label": "United Nations Office at Nairobi (UNON)",
+            "type": "organization"
+        },
+        {
+            "id": "ITS",
+            "label": "Information Technology Services (ITS)",
+            "type": "organization"
+        },
+        {
+            "id": "UNPOS",
+            "label": "United Nations Political Office for Somalia (UNPOS)",
+            "type": "organization"
+        },
+        {
+            "id": "RSG",
+            "label": "Representative of the Secretary General",
+            "type": "individual"
+        },
+        {
+            "id": "UNON/ITS Staff Member",
+            "label": "UNON/ITS Staff Member",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Regulation 1.2",
+            "label": "Staff Regulation 1.2",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "Regulation 101.2",
+            "label": "Staff Regulation 101.2",
+            "type": "statutory"
+        },
+        {
+            "id": "Regulation 5.12",
+            "label": "Financial Regulation 5.12",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UNON/ITS Staff Member",
+            "target": "0575/03",
+            "label": "1. Subject of Investigation",
+            "tooltip": "The staff member was investigated for misconduct related to satellite link installation."
+        },
+        {
+            "source": "UNON",
+            "target": "0575/03",
+            "label": "2. Investigation Conducted By",
+            "tooltip": "UNON was responsible for conducting the investigation into the misconduct."
+        },
+        {
+            "source": "UNPOS",
+            "target": "0575/03",
+            "label": "3. Formal Complaint Filed",
+            "tooltip": "UNPOS filed a formal complaint leading to the investigation."
+        },
+        {
+            "source": "UNON/ITS Staff Member",
+            "target": "UNPOS",
+            "label": "4. Solicitation of Funds",
+            "tooltip": "The staff member solicited funds from UNPOS under false pretenses."
+        },
+        {
+            "source": "UNON/ITS Staff Member",
+            "target": "Regulation 1.2",
+            "label": "5. Violation of Integrity Standards",
+            "tooltip": "The staff member breached integrity standards by accepting payments without authorization."
+        },
+        {
+            "source": "UNON/ITS Staff Member",
+            "target": "Regulation 5.12",
+            "label": "6. Unauthorized Financial Transactions",
+            "tooltip": "The staff member conducted unauthorized financial transactions, violating financial regulations."
+        },
+        {
+            "source": "UNON",
+            "target": "RSG",
+            "label": "7. Report Findings Shared",
+            "tooltip": "UNON shared the findings of the investigation with the Representative of the Secretary General."
+        }
+    ],
+    "allegations": {
+        "UNON/ITS Staff Member": [
+            "Engaged in arranging an extension of the satellite link for monetary gain.",
+            "Accepted payments under false pretenses without authorization."
+        ]
+    },
+    "violations": {
+        "Regulation 1.2": [
+            "Breach of integrity standards by failing to provide service after receiving payment."
+        ],
+        "Regulation 5.12": [
+            "Undertaking unauthorized financial transactions."
+        ]
+    }
+}

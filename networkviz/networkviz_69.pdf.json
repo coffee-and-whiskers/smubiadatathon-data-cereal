@@ -1,0 +1,84 @@
+{
+    "entities": [
+        {
+            "id": "ID CASE NO. 0050/05",
+            "label": "Case 0050/05 - Fraudulent Conduct Investigation",
+            "type": "investigation"
+        },
+        {
+            "id": "UNON",
+            "label": "United Nations Office at Nairobi (UNON)",
+            "type": "organization"
+        },
+        {
+            "id": "UN-SACCO",
+            "label": "United Nations Savings and Credit Cooperative (UN-SACCO)",
+            "type": "organization"
+        },
+        {
+            "id": "UNICEF/Somalia Support Centre",
+            "label": "UNICEF/Somalia Support Centre",
+            "type": "organization"
+        },
+        {
+            "id": "UNICEF Staff",
+            "label": "UNICEF Staff",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Senior UNEP Manager",
+            "label": "Senior UNEP Manager",
+            "type": "individual",
+            "outline": "allegation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UNICEF/Somalia Support Centre",
+            "target": "ID CASE NO. 0050/05",
+            "label": "1. Investigation Initiated",
+            "tooltip": "Investigation into fraudulent conduct was prompted by activities at UNICEF/Somalia Support Centre."
+        },
+        {
+            "source": "UNON",
+            "target": "ID CASE NO. 0050/05",
+            "label": "2. Subject of Investigation",
+            "tooltip": "UNON staff were investigated for fraudulent conduct involving loan applications."
+        },
+        {
+            "source": "UN-SACCO",
+            "target": "ID CASE NO. 0050/05",
+            "label": "3. Loan Application Review",
+            "tooltip": "UN-SACCO loan files were reviewed during the investigation."
+        },
+        {
+            "source": "UNICEF Staff",
+            "target": "ID CASE NO. 0050/05",
+            "label": "4. Alleged Misconduct",
+            "tooltip": "UNICEF staff were alleged to have misused official letterhead and seal to secure loans."
+        },
+        {
+            "source": "Senior UNEP Manager",
+            "target": "ID CASE NO. 0050/05",
+            "label": "5. Alleged Involvement",
+            "tooltip": "Senior UNEP Manager was involved in writing letters that could imply contract extensions."
+        },
+        {
+            "source": "UNICEF Staff",
+            "target": "UN-SACCO",
+            "label": "6. Fraudulent Letters Accepted",
+            "tooltip": "UNICEF staff produced fraudulent letters accepted by UN-SACCO management."
+        }
+    ],
+    "allegations": {
+        "UNICEF Staff": [
+            "Misuse of official letterhead and seal to secure loans.",
+            "Produced fraudulent letters of appointment."
+        ],
+        "Senior UNEP Manager": [
+            "Involved in writing letters that may imply contract extensions for loan purposes."
+        ]
+    },
+    "violations": {}
+}

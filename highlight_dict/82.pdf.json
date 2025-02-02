@@ -1,0 +1,109 @@
+{
+    "overview": {
+        "investigation": [
+            "investigative report",
+            "case PD/155/02",
+            "misconduct",
+            "allegations"
+        ],
+        "organization": [
+            "DPKO CITS division"
+        ],
+        "company": [
+            "TCIL",
+            "La Cresta"
+        ],
+        "individual": [
+            "Mr. Walter Cabrera"
+        ],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Regulation 1.2(i)",
+            "Prohibition against improper communication of proprietary information"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "audit report findings",
+            "interviews",
+            "forensic data recovery"
+        ],
+        "organization": [
+            "procurement department"
+        ],
+        "company": [
+            "Thunderbird LLC",
+            "TCIL"
+        ],
+        "individual": [
+            "Mr. Walter Cabrera"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "potential fraudulent activities",
+            "investigation scrutinized"
+        ],
+        "organization": [
+            "DPKO CITS",
+            "PD",
+            "CITS",
+            "ITSD"
+        ],
+        "company": [
+            "TCIL",
+            "La Cresta"
+        ],
+        "individual": [
+            "Walter Cabrera"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "case_number: PTF/026/06",
+            "allegations",
+            "findings"
+        ],
+        "organization": [
+            "DPKO",
+            "PD"
+        ],
+        "company": [
+            "Thunderbird LLC",
+            "TCIL",
+            "La Cresta"
+        ],
+        "individual": [
+            "Mr. Walter Cabrera",
+            "Mr. Bahel"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "No substantive evidence",
+            "incomplete procurement documentation"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [
+            "Mr. Cabrera"
+        ],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

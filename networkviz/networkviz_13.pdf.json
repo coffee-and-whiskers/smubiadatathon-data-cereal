@@ -1,0 +1,148 @@
+{
+    "entities": [
+        {
+            "id": "IV04-377",
+            "label": "Case 377/04 - Allegations of Bribes/Kickbacks for Employment",
+            "type": "investigation"
+        },
+        {
+            "id": "Pristina Airport",
+            "label": "Pristina Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Non Staff member 1",
+            "label": "Non Staff member 1",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Non Staff member 2",
+            "label": "Non Staff member 2",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Non Staff member 3",
+            "label": "Non Staff member 3",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Non Staff member 4",
+            "label": "Non Staff member 4",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Non Staff member 5",
+            "label": "Non Staff member 5",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Official 1",
+            "label": "Official 1",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Official 1's daughter",
+            "label": "Official 1's daughter",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Official 2's Secretary",
+            "label": "Official 2's Secretary",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Kosovo Police Service",
+            "label": "Kosovo Police Service",
+            "type": "organization"
+        },
+        {
+            "id": "KPS Officer 2",
+            "label": "KPS Officer 2",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Department of Justice",
+            "label": "Department of Justice",
+            "type": "organization"
+        },
+        {
+            "id": "Investigation Task Force",
+            "label": "Investigation Task Force",
+            "type": "organization"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Non Staff member 1",
+            "target": "Official 1",
+            "label": "1. Alleged Meeting",
+            "tooltip": "Non Staff member 1 allegedly met with Official 1 to discuss employment opportunities at Pristina Airport."
+        },
+        {
+            "source": "Non Staff member 1",
+            "target": "Official 1's daughter",
+            "label": "2. Payment Made",
+            "tooltip": "Non Staff member 1 was contacted by Official 1's daughter and payments were made at Restaurant 1 in Hajvali."
+        },
+        {
+            "source": "Non Staff member 5",
+            "target": "Non Staff member 4",
+            "label": "3. Job Offer for Fee",
+            "tooltip": "Non Staff member 5 offered to secure a job for Non Staff member 4 at Pristina Airport for a fee of \u20ac3,000.00."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "Kosovo Police Service",
+            "label": "4. Initial Report",
+            "tooltip": "The bribery allegations were initially reported to the Kosovo Police Service."
+        },
+        {
+            "source": "Kosovo Police Service",
+            "target": "Department of Justice",
+            "label": "5. Case Referred",
+            "tooltip": "The case was referred to the Department of Justice for further judicial investigation."
+        },
+        {
+            "source": "Investigation Task Force",
+            "target": "IV04-377",
+            "label": "6. Investigation Conducted",
+            "tooltip": "The Investigation Task Force conducted the investigation into the bribery allegations."
+        }
+    ],
+    "allegations": {
+        "Non Staff member 1": [
+            "Paid significant sums to officials in exchange for prospective employment."
+        ],
+        "Non Staff member 2": [
+            "Involved in the bribery scheme to secure employment."
+        ],
+        "Non Staff member 3": [
+            "Involved in the bribery scheme to secure employment."
+        ],
+        "Non Staff member 4": [
+            "Offered a job at Pristina Airport for a fee by Non Staff member 5."
+        ],
+        "Non Staff member 5": [
+            "Facilitated bribery by offering jobs for a fee."
+        ],
+        "Official 1": [
+            "Involved in accepting bribes for employment opportunities."
+        ],
+        "Official 2's Secretary": [
+            "Involved in facilitating the bribery process."
+        ],
+        "KPS Officer 2": [
+            "Involved in the bribery scheme."
+        ]
+    },
+    "violations": {}
+}

@@ -1,0 +1,130 @@
+{
+    "entities": [
+        {
+            "id": "Case 0570/03",
+            "label": "Case 0570/03 - Misconduct Investigation at ECA",
+            "type": "investigation"
+        },
+        {
+            "id": "UN OIOS",
+            "label": "United Nations Office of Internal Oversight Services",
+            "type": "organization"
+        },
+        {
+            "id": "ECA",
+            "label": "Economic Commission for Africa",
+            "type": "organization",
+            "outline": "allegation"
+        },
+        {
+            "id": "Hiwot Abebe",
+            "label": "Pseudonym 'Hiwot Abebe'",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Ambassador John Negroponte",
+            "label": "Ambassador John Negroponte",
+            "type": "individual"
+        },
+        {
+            "id": "US Government Officials",
+            "label": "US Government Officials",
+            "type": "organization"
+        },
+        {
+            "id": "Senator John Kerry",
+            "label": "Senator John Kerry",
+            "type": "individual"
+        },
+        {
+            "id": "Senator Dodd",
+            "label": "Senator Dodd",
+            "type": "individual"
+        },
+        {
+            "id": "Mr. Oluwatete Olokodana",
+            "label": "Mr. Oluwatete Olokodana",
+            "type": "individual"
+        },
+        {
+            "id": "Mr. Vintzislav Stokykov",
+            "label": "Mr. Vintzislav Stokykov",
+            "type": "individual"
+        },
+        {
+            "id": "Mr. Dickson Mzumara",
+            "label": "Mr. Dickson Mzumara",
+            "type": "individual"
+        },
+        {
+            "id": "Mr. Ali Todaro",
+            "label": "Mr. Ali Todaro",
+            "type": "individual"
+        },
+        {
+            "id": "Regulation 1.2(i)",
+            "label": "Regulation 1.2(i)",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UN OIOS",
+            "target": "Case 0570/03",
+            "label": "1. Investigation Conducted By",
+            "tooltip": "The investigation was conducted by the UN OIOS regarding misconduct at ECA."
+        },
+        {
+            "source": "Case 0570/03",
+            "target": "ECA",
+            "label": "2. Subject of Investigation",
+            "tooltip": "The investigation focused on allegations of misconduct by a staff member at ECA."
+        },
+        {
+            "source": "Hiwot Abebe",
+            "target": "US Government Officials",
+            "label": "3. Alleged Misconduct Communication",
+            "tooltip": "Emails involving pseudonym 'Hiwot Abebe' were sent to US Government Officials."
+        },
+        {
+            "source": "ECA",
+            "target": "Regulation 1.2(i)",
+            "label": "4. Potential Violation",
+            "tooltip": "The staff member's actions potentially violated Regulation 1.2(i) regarding unauthorized information dissemination."
+        },
+        {
+            "source": "Hiwot Abebe",
+            "target": "Ambassador John Negroponte",
+            "label": "5. Email Communication",
+            "tooltip": "Emails were sent to Ambassador Negroponte, contrary to UN policies."
+        },
+        {
+            "source": "Hiwot Abebe",
+            "target": "Mr. Dickson Mzumara",
+            "label": "6. Communication Confirmation",
+            "tooltip": "Mr. Mzumara confirmed communication regarding grievances with US officials."
+        },
+        {
+            "source": "Case 0570/03",
+            "target": "Mr. Ali Todaro",
+            "label": "7. Denied Allegations",
+            "tooltip": "Mr. Todaro denied accusations of sexual harassment."
+        }
+    ],
+    "allegations": {
+        "ECA": [
+            "Inappropriate communication with external parties.",
+            "Misconduct involving unauthorized information sharing."
+        ],
+        "Hiwot Abebe": [
+            "Emails sent to US officials alleging misconduct within ECA."
+        ]
+    },
+    "violations": {
+        "Regulation 1.2(i)": [
+            "Unauthorized communication of non-public information to external parties."
+        ]
+    }
+}

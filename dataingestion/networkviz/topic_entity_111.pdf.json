@@ -1,0 +1,30 @@
+{
+    "document_name": "111.pdf",
+    "topics": [
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "Italy",
+                "European Union",
+                "Financial Stability"
+            ]
+        },
+        {
+            "topic": "Economic Policy",
+            "entities": [
+                "Debt Management",
+                "Economic Measures",
+                "Productivity Concerns"
+            ]
+        },
+        {
+            "topic": "International Relations",
+            "entities": [
+                "Germany",
+                "France",
+                "Italy",
+                "EU Leaders"
+            ]
+        }
+    ]
+}

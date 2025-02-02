@@ -1,0 +1,36 @@
+{
+    "document_name": "91.pdf",
+    "topics": [
+        {
+            "topic": "Intelligence Operations",
+            "entities": [
+                "NSA",
+                "Signals Intelligence (SIGINT)"
+            ]
+        },
+        {
+            "topic": "International Diplomatic Relations",
+            "entities": [
+                "French Ambassador",
+                "Jean-David Levitte",
+                "U.S. Congress",
+                "France",
+                "United States"
+            ]
+        },
+        {
+            "topic": "Regulatory and Compliance Issues",
+            "entities": [
+                "UN Oil-for-food program",
+                "Iraq Survey Group"
+            ]
+        },
+        {
+            "topic": "Corporate Ethics and Accountability",
+            "entities": [
+                "U.S. firms",
+                "French companies"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "id": "UNMIK-0281-04",
+            "label": "Investigation of Contractual Irregularities at Pristina Airport",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Interim Administration Mission in Kosovo",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina International Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Kosovo Trust Agency",
+            "label": "Kosovo Trust Agency (KTA)",
+            "type": "organization"
+        },
+        {
+            "id": "Public Enterprise Airport Pristina",
+            "label": "Public Enterprise Airport Pristina (PEAP)",
+            "type": "organization"
+        },
+        {
+            "id": "UNSCR 1244",
+            "label": "UNSCR 1244",
+            "type": "statutory"
+        },
+        {
+            "id": "UNMIK Regulation No 1/1999",
+            "label": "UNMIK Regulation No 1/1999",
+            "type": "statutory"
+        },
+        {
+            "id": "KFOR",
+            "label": "KFOR",
+            "type": "organization"
+        },
+        {
+            "id": "D/SRSG of Pillar IV",
+            "label": "D/SRSG of Pillar IV",
+            "type": "individual"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UNMIK",
+            "target": "UNMIK-0281-04",
+            "label": "1. Investigation Conducted By",
+            "tooltip": "UNMIK conducted the investigation into contractual irregularities at Pristina Airport."
+        },
+        {
+            "source": "Pristina International Airport",
+            "target": "UNMIK-0281-04",
+            "label": "2. Subject of Investigation",
+            "tooltip": "The investigation focused on procurement irregularities at Pristina International Airport."
+        },
+        {
+            "source": "Kosovo Trust Agency",
+            "target": "Pristina International Airport",
+            "label": "3. Administrative Control",
+            "tooltip": "Administrative control of Pristina International Airport was shifted to KTA on 2002-07-01."
+        },
+        {
+            "source": "Public Enterprise Airport Pristina",
+            "target": "Pristina International Airport",
+            "label": "4. Maintenance Cooperation",
+            "tooltip": "PEAP maintained the airport in cooperation with KFOR under Yugoslavian law from 2001 to 2003."
+        },
+        {
+            "source": "UNSCR 1244",
+            "target": "UNMIK",
+            "label": "5. Mandate",
+            "tooltip": "UNSCR 1244 mandated UNMIK to administer Kosovo, including state-owned assets."
+        },
+        {
+            "source": "UNMIK Regulation No 1/1999",
+            "target": "UNMIK",
+            "label": "6. Administrative Duties",
+            "tooltip": "UNMIK Regulation No 1/1999 established UNMIK's administrative duties in Kosovo."
+        },
+        {
+            "source": "KFOR",
+            "target": "Pristina International Airport",
+            "label": "7. Maintenance Partner",
+            "tooltip": "KFOR was involved in the maintenance of Pristina International Airport alongside PEAP."
+        },
+        {
+            "source": "UNMIK-0281-04",
+            "target": "D/SRSG of Pillar IV",
+            "label": "8. Recommendation for Action",
+            "tooltip": "The investigation recommended referring the matter to the D/SRSG of Pillar IV for contract file management."
+        }
+    ],
+    "allegations": {
+        "Pristina International Airport": [
+            "Addition of a single-source contract for one container following a larger contract.",
+            "Absence of proper records and financial approval documents for the main contract."
+        ]
+    },
+    "violations": {}
+}

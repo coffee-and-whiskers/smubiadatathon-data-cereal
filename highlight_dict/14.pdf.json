@@ -1,0 +1,124 @@
+{
+    "overview": {
+        "investigation": [
+            "UNMIK Investigation Task Force",
+            "allegations of procurement irregularities"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Article 343 - Accepting Bribes",
+            "Article 344 - Giving Bribes",
+            "Section 4.3.2 - Avoidance of Conflicts of Interest and Corruption",
+            "Section 4.1 - Full and Fair Competition",
+            "Section 23.9 - Examination and Evaluation of Tenders",
+            "Article 161 - Threat",
+            "Finance Administration Instruction No. 2/1999"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "internal audit memo",
+            "reviewing complaint letters",
+            "interviewing involved parties"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [
+            "Vendor 1",
+            "Vendor 2"
+        ],
+        "individual": [
+            "Procurement Officer 1",
+            "Vendor 1 Manager",
+            "Vendor 2 Employee",
+            "Vendor 2 Manager",
+            "Vendor 2 Director",
+            "Pristina Airport Official",
+            "Procurement Officer 2",
+            "Pristina Airport Civil Engineer"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "memorandum from the Internal Audit Unit"
+        ],
+        "organization": [
+            "Internal Audit Unit of the Kosovo Trust Agency",
+            "Pristina Airport"
+        ],
+        "company": [
+            "Vendor 1",
+            "Vendor 2",
+            "Vendor 3"
+        ],
+        "individual": [
+            "Procurement Officer 1",
+            "Finance Officer",
+            "Former Kosovo Minister"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Allegations of Bribery and Favoritism"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [
+            "Vendor 2"
+        ],
+        "individual": [
+            "Procurement Officer 1",
+            "Finance Officer",
+            "Vendor 1 Manager"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "allegations of bribery",
+            "tender process favoritism",
+            "threats"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "current investigations"
+        ],
+        "organization": [
+            "Department of Justice",
+            "Financial Investigation Unit"
+        ],
+        "company": [],
+        "individual": [
+            "Procurement Officer 1",
+            "Finance Officer"
+        ],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

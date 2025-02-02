@@ -1,0 +1,116 @@
+{
+    "overview": {
+        "investigation": [
+            "investigation report"
+        ],
+        "organization": [
+            "United Nations Interim Administration Mission in Kosovo",
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Article 343 - Accepting Bribes",
+            "Article 344 - Giving Bribes",
+            "2/1999 Section 4.3.2 - Avoidance of Conflicts of Interest and Corruption",
+            "2/1999 Section 4.1 - Full and Fair Competition",
+            "2/1999 Section 23.9 - Examination and Evaluation of Tenders"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "interviews",
+            "review of procurement documents"
+        ],
+        "organization": [],
+        "company": [
+            "Vendor 1",
+            "Vendor 2"
+        ],
+        "individual": [
+            "Procurement Officer 1",
+            "Finance Officer",
+            "Vendor 1 Manager",
+            "Vendor 2 Representative"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "allegations of bribery",
+            "procedural violations"
+        ],
+        "organization": [
+            "Kosovo Trust Agency",
+            "Pristina Airport"
+        ],
+        "company": [
+            "Vendor 1",
+            "Vendor 2"
+        ],
+        "individual": [
+            "Procurement Officer 1",
+            "Finance Officer"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "case_number",
+            "allegations"
+        ],
+        "organization": [],
+        "company": [
+            "Vendor 1",
+            "Vendor 2"
+        ],
+        "individual": [
+            "Procurement Officer 1",
+            "Finance Officer"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "No bribery or inappropriate conduct"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [
+            "Procurement Officer 1",
+            "Finance Officer"
+        ],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "ITF did not find any wrongdoing"
+        ],
+        "organization": [
+            "UNMIK Pillar IV",
+            "KTA Internal Audit Unit",
+            "Department of Justice",
+            "Financial Investigation Unit"
+        ],
+        "company": [],
+        "individual": [
+            "Procurement Officer 1",
+            "Finance Officer"
+        ],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

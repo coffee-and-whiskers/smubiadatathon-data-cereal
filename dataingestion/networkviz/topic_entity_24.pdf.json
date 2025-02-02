@@ -1,0 +1,27 @@
+{
+    "document_name": "24.pdf",
+    "topics": [
+        {
+            "topic": "Information Sharing and Misconduct",
+            "entities": [
+                "Economic Commission for Africa (ECA)",
+                "US Government Officials",
+                "Ambassador John Negroponte"
+            ]
+        },
+        {
+            "topic": "Sexual Harassment Allegations",
+            "entities": [
+                "Mr. Ali Todaro",
+                "Mr. Mzumara"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "United Nations Office of Internal Oversight Services",
+                "Office of Legal Affairs (OLA)"
+            ]
+        }
+    ]
+}

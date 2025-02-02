@@ -1,0 +1,52 @@
+{
+    "entities": [
+        {
+            "id": "Case 0093/04",
+            "label": "Case 0093/04 - Conflict of Interest Allegations",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIL",
+            "label": "United Nations Mission in Liberia (UNMIL)",
+            "type": "organization"
+        },
+        {
+            "id": "Senior Official 1",
+            "label": "Senior Official 1",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "OIOS",
+            "label": "Office of Internal Oversight Services",
+            "type": "organization"
+        }
+    ],
+    "edges": [
+        {
+            "source": "OIOS",
+            "target": "Case 0093/04",
+            "label": "1. Investigation Conducted",
+            "tooltip": "The Office of Internal Oversight Services conducted the investigation into the allegations."
+        },
+        {
+            "source": "Case 0093/04",
+            "target": "UNMIL",
+            "label": "2. Investigation Target",
+            "tooltip": "The investigation focused on allegations concerning a Senior Official at UNMIL."
+        },
+        {
+            "source": "Case 0093/04",
+            "target": "Senior Official 1",
+            "label": "3. Allegations Against",
+            "tooltip": "The case involved allegations of conflict of interest and abuse of authority by Senior Official 1."
+        }
+    ],
+    "allegations": {
+        "Senior Official 1": [
+            "Involvement in business dealings with a businessman in Liberia.",
+            "Abuse of authority for personal or third-party benefit."
+        ]
+    },
+    "violations": {}
+}

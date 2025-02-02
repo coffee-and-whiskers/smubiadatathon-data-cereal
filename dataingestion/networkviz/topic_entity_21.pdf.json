@@ -1,0 +1,48 @@
+{
+    "document_name": "21.pdf",
+    "topics": [
+        {
+            "topic": "Fraud and Forgery",
+            "entities": [
+                "UNDP Bratislava",
+                "Cheque Fraud",
+                "Falsified Documents",
+                "Forgery of Fax Instructions"
+            ]
+        },
+        {
+            "topic": "Control Failures",
+            "entities": [
+                "UNDP Bratislava",
+                "Control Systems",
+                "Finance Department"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "Staff Rule 101.2(g)",
+                "Staff Regulation 1.2 (b)",
+                "Staff Regulation 1.2 (g)",
+                "Staff Regulation 1.2 (i)",
+                "Slovakian Criminal Code Article 250"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "UNON Finance",
+                "Voucher Records",
+                "Payment Verification"
+            ]
+        },
+        {
+            "topic": "Recommendations for Process Improvement",
+            "entities": [
+                "Verification and Payment Procedures",
+                "Atlas Electronic Payment System",
+                "Intranet Website for Travel Claims"
+            ]
+        }
+    ]
+}

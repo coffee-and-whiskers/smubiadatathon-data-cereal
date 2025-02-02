@@ -1,0 +1,61 @@
+{
+    "entities": [
+        {
+            "id": "Z-3/OO/515570-09",
+            "label": "Case Z-3/OO/515570-09 - Trade Dispute: Import of US Cherries",
+            "type": "investigation"
+        },
+        {
+            "id": "NSA",
+            "label": "National Security Agency",
+            "type": "organization"
+        },
+        {
+            "id": "Japanese Ministry of Agriculture, Forestry and Fisheries",
+            "label": "Japanese Ministry of Agriculture, Forestry and Fisheries",
+            "type": "organization"
+        },
+        {
+            "id": "US Department of Agriculture",
+            "label": "US Department of Agriculture",
+            "type": "organization"
+        },
+        {
+            "id": "WikiLeaks",
+            "label": "WikiLeaks",
+            "type": "organization"
+        }
+    ],
+    "edges": [
+        {
+            "source": "NSA",
+            "target": "Japanese Ministry of Agriculture, Forestry and Fisheries",
+            "label": "1. Intercepted Communications",
+            "tooltip": "NSA intercepted communications within the Japanese Ministry to gain insights into their trade negotiation strategies."
+        },
+        {
+            "source": "Japanese Ministry of Agriculture, Forestry and Fisheries",
+            "target": "US Department of Agriculture",
+            "label": "2. Trade Negotiation",
+            "tooltip": "The Japanese Ministry was involved in trade negotiations with the US Department of Agriculture over cherry imports."
+        },
+        {
+            "source": "NSA",
+            "target": "Z-3/OO/515570-09",
+            "label": "3. Investigation Conducted",
+            "tooltip": "NSA conducted an investigation into the trade dispute concerning US cherry imports."
+        },
+        {
+            "source": "WikiLeaks",
+            "target": "NSA",
+            "label": "4. Source of Information",
+            "tooltip": "WikiLeaks was one of the sources for the intelligence summary."
+        }
+    ],
+    "allegations": {
+        "NSA": [
+            "Interception of communications to gain insights into Japan's trade negotiation strategies."
+        ]
+    },
+    "violations": {}
+}

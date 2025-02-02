@@ -1,0 +1,96 @@
+{
+    "entities": [
+        {
+            "id": "wikileaks_nsa_france_2015",
+            "label": "Global SIGINT Highlights Report",
+            "type": "investigation"
+        },
+        {
+            "id": "NSA",
+            "label": "National Security Agency",
+            "type": "organization"
+        },
+        {
+            "id": "Nicolas Sarkozy",
+            "label": "Nicolas Sarkozy",
+            "type": "individual"
+        },
+        {
+            "id": "Barack Obama",
+            "label": "Barack Obama",
+            "type": "individual"
+        },
+        {
+            "id": "Pierre Vimont",
+            "label": "Pierre Vimont",
+            "type": "individual"
+        },
+        {
+            "id": "Jean-David Levitte",
+            "label": "Jean-David Levitte",
+            "type": "individual"
+        },
+        {
+            "id": "EADS",
+            "label": "EADS",
+            "type": "company"
+        },
+        {
+            "id": "Pernod Ricard",
+            "label": "Pernod Ricard",
+            "type": "company"
+        }
+    ],
+    "edges": [
+        {
+            "source": "NSA",
+            "target": "wikileaks_nsa_france_2015",
+            "label": "1. Report Compiled By",
+            "tooltip": "The NSA compiled the report based on SIGINT intercepts."
+        },
+        {
+            "source": "wikileaks_nsa_france_2015",
+            "target": "Nicolas Sarkozy",
+            "label": "2. Subject of Intercept",
+            "tooltip": "The report includes intercepted communications involving Nicolas Sarkozy."
+        },
+        {
+            "source": "wikileaks_nsa_france_2015",
+            "target": "Barack Obama",
+            "label": "3. Subject of Intercept",
+            "tooltip": "The report includes intercepted communications involving Barack Obama."
+        },
+        {
+            "source": "wikileaks_nsa_france_2015",
+            "target": "Pierre Vimont",
+            "label": "4. Subject of Intercept",
+            "tooltip": "The report includes intercepted communications involving Pierre Vimont."
+        },
+        {
+            "source": "wikileaks_nsa_france_2015",
+            "target": "Jean-David Levitte",
+            "label": "5. Subject of Intercept",
+            "tooltip": "The report includes intercepted communications involving Jean-David Levitte."
+        },
+        {
+            "source": "Nicolas Sarkozy",
+            "target": "Barack Obama",
+            "label": "6. Planned Discussions",
+            "tooltip": "Sarkozy planned to discuss intelligence cooperation and military commitments with Obama."
+        },
+        {
+            "source": "EADS",
+            "target": "wikileaks_nsa_france_2015",
+            "label": "7. Contract Prospect",
+            "tooltip": "EADS was discussed in relation to a tanker aircraft contract with the U.S. military."
+        },
+        {
+            "source": "Pernod Ricard",
+            "target": "wikileaks_nsa_france_2015",
+            "label": "8. Trademark Dispute",
+            "tooltip": "Pernod Ricard was involved in a trademark dispute requiring intervention."
+        }
+    ],
+    "allegations": {},
+    "violations": {}
+}

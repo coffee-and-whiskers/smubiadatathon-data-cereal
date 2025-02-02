@@ -1,0 +1,101 @@
+{
+    "overview": {
+        "investigation": [
+            "Investigation Report",
+            "alleged corruption"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Regulation UNMIK-1999-24",
+            "UN-Staff Regulation 1.2 (b)",
+            "UN-Staff Rule 110.1"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "investigation was conducted",
+            "Interviews were conducted"
+        ],
+        "organization": [
+            "Pristina Airport administration",
+            "Pillar IV"
+        ],
+        "company": [],
+        "individual": [
+            "Person indicated to be witness",
+            "Person potentially implicated"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "financial irregularities"
+        ],
+        "organization": [
+            "Pristina International Airport",
+            "UNMIK"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Corruption Case",
+            "allegations",
+            "findings"
+        ],
+        "organization": [
+            "Pristina International Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "intelligence_summary": {
+        "investigation": [
+            "Financial irregularities",
+            "alleged corruption"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "allegations were investigated"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

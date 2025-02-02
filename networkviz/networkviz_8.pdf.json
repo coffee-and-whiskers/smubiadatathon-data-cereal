@@ -1,0 +1,144 @@
+{
+    "entities": [
+        {
+            "id": "Case_0280_04",
+            "label": "Case 0280/04 - Tender Irregularities",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina_International_Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Chartered_Accountants",
+            "label": "Chartered Accountants (Audit)",
+            "type": "organization"
+        },
+        {
+            "id": "PEAP",
+            "label": "Public Enterprise Airport Pristina (PEAP)",
+            "type": "organization"
+        },
+        {
+            "id": "KFOR",
+            "label": "Military Units of Kosovo Force (KFOR)",
+            "type": "organization"
+        },
+        {
+            "id": "Pillar_II",
+            "label": "Civil Administration Pillar (Pillar II)",
+            "type": "organization"
+        },
+        {
+            "id": "DOTI",
+            "label": "Department of Transport and Infrastructure (DOTI)",
+            "type": "organization"
+        },
+        {
+            "id": "Vendor_1",
+            "label": "Vendor 1",
+            "type": "company",
+            "outline": "allegation"
+        },
+        {
+            "id": "Vendor_2",
+            "label": "Vendor 2",
+            "type": "company",
+            "outline": "allegation"
+        },
+        {
+            "id": "UNMIK_Regulation_1999_24",
+            "label": "UNMIK Regulation 1999/24",
+            "type": "statutory"
+        },
+        {
+            "id": "UN_Staff_Regulations_1_2_b",
+            "label": "UN Staff Regulations 1.2 (b)",
+            "type": "statutory"
+        },
+        {
+            "id": "Finance_Admin_Instruction_1999_2",
+            "label": "UNMIK Finance Administrative Instruction 1999/2",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "Article_15_1",
+            "label": "Article 15 1",
+            "type": "statutory"
+        },
+        {
+            "id": "Article_15_4",
+            "label": "Article 15.4",
+            "type": "statutory"
+        },
+        {
+            "id": "Staff_Rule_110_1",
+            "label": "Staff Rule 110.1",
+            "type": "statutory"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Pristina_International_Airport",
+            "target": "Chartered_Accountants",
+            "label": "1. Audit Conducted",
+            "tooltip": "Financial audit was conducted at Pristina International Airport to review procurement processes."
+        },
+        {
+            "source": "Chartered_Accountants",
+            "target": "Case_0280_04",
+            "label": "2. Audit Triggered Investigation",
+            "tooltip": "The audit found irregularities, leading to an official investigation (Case 0280/04)."
+        },
+        {
+            "source": "Case_0280_04",
+            "target": "UNMIK",
+            "label": "3. Investigation Conducted By",
+            "tooltip": "UNMIK initiated the formal investigation based on audit findings."
+        },
+        {
+            "source": "UNMIK",
+            "target": "Pristina_International_Airport",
+            "label": "4. Oversight Authority",
+            "tooltip": "UNMIK was responsible for overseeing compliance at Pristina International Airport."
+        },
+        {
+            "source": "Pristina_International_Airport",
+            "target": "Vendor_1",
+            "label": "5. Specification Source",
+            "tooltip": "Vendor 1's brochure was used for technical specifications, raising concerns of bias."
+        },
+        {
+            "source": "Pristina_International_Airport",
+            "target": "Vendor_2",
+            "label": "6. Bid Evaluation",
+            "tooltip": "Vendor 2 was chosen despite high costs due to specification alignment."
+        },
+        {
+            "source": "Case_0280_04",
+            "target": "Finance_Admin_Instruction_1999_2",
+            "label": "7. Violation Found",
+            "tooltip": "The investigation concluded that the procurement process violated Finance Admin Instruction 1999/2."
+        }
+    ],
+    "allegations": {
+        "Vendor_1": [
+            "Technical specifications were based on Vendor 1's brochure, potentially skewing the process."
+        ],
+        "Vendor_2": [
+            "Vendor 2's bid met specifications but raised concerns over cost and potential unfair advantage."
+        ]
+    },
+    "violations": {
+        "Finance_Admin_Instruction_1999_2": [
+            "The procurement process did not maximize competition as required."
+        ]
+    }
+}

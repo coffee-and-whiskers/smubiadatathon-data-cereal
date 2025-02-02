@@ -1,0 +1,116 @@
+{
+    "entities": [
+        {
+            "id": "0276/04",
+            "label": "Case 0276/04 - Alleged Irregularities in Pristina Airport Contracts",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Interim Administration Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina International Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Chartered Accountants",
+            "label": "Chartered Accountants (Audit)",
+            "type": "organization"
+        },
+        {
+            "id": "Divisional Manager",
+            "label": "Divisional Manager of Airports Sector KTA",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Pillar IV",
+            "label": "Pillar IV of UNMIK",
+            "type": "organization"
+        },
+        {
+            "id": "Department of Transport and Infrastructure",
+            "label": "Department of Transport and Infrastructure",
+            "type": "organization"
+        },
+        {
+            "id": "KFOR Military Units",
+            "label": "KFOR Military Units",
+            "type": "organization"
+        },
+        {
+            "id": "UNMIK Regulation 1999/24",
+            "label": "UNMIK Regulation 1999/24",
+            "type": "statutory"
+        },
+        {
+            "id": "UN Staff Regulations 1.2 (b)",
+            "label": "UN Staff Regulations 1.2 (b)",
+            "type": "statutory"
+        },
+        {
+            "id": "UNMIK Finance Administrative Instruction 1999/2",
+            "label": "UNMIK Finance Administrative Instruction 1999/2",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Pristina International Airport",
+            "target": "Chartered Accountants",
+            "label": "1. Audit Conducted",
+            "tooltip": "Chartered Accountants conducted an audit at Pristina International Airport, uncovering potential irregularities."
+        },
+        {
+            "source": "Chartered Accountants",
+            "target": "0276/04",
+            "label": "2. Audit Triggered Investigation",
+            "tooltip": "The audit findings led to the initiation of an investigation (Case 0276/04)."
+        },
+        {
+            "source": "0276/04",
+            "target": "UNMIK",
+            "label": "3. Investigation Conducted By",
+            "tooltip": "UNMIK conducted the investigation into the alleged irregularities."
+        },
+        {
+            "source": "UNMIK",
+            "target": "Pristina International Airport",
+            "label": "4. Oversight Authority",
+            "tooltip": "UNMIK was responsible for overseeing compliance at Pristina International Airport."
+        },
+        {
+            "source": "0276/04",
+            "target": "Divisional Manager",
+            "label": "5. Allegations Against",
+            "tooltip": "The Divisional Manager was implicated in unauthorized contract authorizations."
+        },
+        {
+            "source": "0276/04",
+            "target": "UNMIK Finance Administrative Instruction 1999/2",
+            "label": "6. Violation Found",
+            "tooltip": "The investigation found violations of the UNMIK Finance Administrative Instruction 1999/2."
+        },
+        {
+            "source": "Pillar IV",
+            "target": "Pristina International Airport",
+            "label": "7. Administrative Transfer",
+            "tooltip": "Administration of Pristina International Airport was transferred to KTA and Pillar IV."
+        }
+    ],
+    "allegations": {
+        "Divisional Manager": [
+            "Authorized additional work orders without proper documentation.",
+            "Failed to secure funding approval prior to authorizing expenditure."
+        ]
+    },
+    "violations": {
+        "UNMIK Finance Administrative Instruction 1999/2": [
+            "Unauthorized expenditure exceeding \u20ac25,000 without proper authorization."
+        ]
+    }
+}

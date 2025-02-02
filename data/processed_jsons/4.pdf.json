@@ -1,0 +1,110 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "Case_0275_04_A8",
+        "title": "CASE 275/04: Supplementary Investigation into Procurement Irregularities at Pristina Airport - Allegation 8",
+        "category": "Investigation",
+        "primary_source": "United Nations Interim Administration Mission in Kosovo"
+    },
+    "overview": "Allegation 8 concerns the procurement process for uniforms at Pristina International Airport. It involves allegations of circumventing tender procedures and discrepancies in bid evaluations for both summer and winter uniform contracts.",
+    "applicable_laws": [
+        {
+            "regulation_id": "UNMIK Finance Administrative Instruction 1999/2",
+            "excerpt": "Competition and participation in the procurement process shall be maximized."
+        },
+        {
+            "regulation_id": "Article 24 of UNMIK Finance Administrative Instruction 1999/2",
+            "excerpt": "Breach of public procurement procedures using Kosovo Consolidated Budget Funds."
+        }
+    ],
+    "methodology": {
+        "description": "The investigation was conducted following Executive Decision No 2003/16, via interviews with relevant individuals and document reviews from Pristina Airport and Pillar IV administration.",
+        "interviews": [
+            "Security Official",
+            "PEAP Official",
+            "Divisional Manager"
+        ],
+        "documents_reviewed": [
+            "Contracts and routing slips for winter uniforms",
+            "Bid evaluation report dated 2002-12-06",
+            "Two memos requesting T-shirts dated 2003-07-01 and 2003-08-01"
+        ]
+    },
+    "background": {
+        "context": "The procurement procedures for uniforms at Pristina International Airport, a state-owned enterprise under UNMIK administration, are under review due to irregularities. Between 2001 and 2003, the airport was maintained by PEAP in collaboration with KFOR. The period involved several administrative transitions impacting procurement methods.",
+        "entities_involved": [
+            "Pristina International Airport",
+            "Public Enterprise Airport Pristina (PEAP)",
+            "Kosovo Force (KFOR)",
+            "UNMIK",
+            "Vendor 1",
+            "Vendor 2",
+            "Vendor 3",
+            "Security Official",
+            "Divisional Manager",
+            "PEAP Official"
+        ],
+        "timeline": [
+            "2001;2003: Period of investigation related to procurement irregularities",
+            "2002-12-06: Bid evaluation report for winter uniforms",
+            "2003-01-10: Alleged signing of the capital expenditure approval for winter uniforms",
+            "2003-07-01: First memo requesting T-shirts",
+            "2003-08-01: Second memo requesting T-shirts"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0275/04",
+        "subject": "Irregular procurement of uniforms without tender process",
+        "financial_details": {},
+        "allegations": [
+            {
+                "number": 8,
+                "description": "Orders for t-shirts allegedly made to avoid competitive bidding, with authorized purchases without a tender being undocumented.",
+                "findings": "Security Official's statements and memos suggest potential tender bypassing, indicating PEAP Official's involvement by placing separate orders to Vendor 3 below the \u20ac1250 single source threshold."
+            },
+            {
+                "number": 9,
+                "description": "Vendor 3 accepted for winter uniforms at a significantly higher price than other vendors.",
+                "findings": "Vendor 3's bid of \u20ac157,060 exceeded those of Vendor 1 and Vendor 2, despite assurances of quality. The lack of documentation hampers evaluation verification."
+            },
+            {
+                "number": 10,
+                "description": "Conflicting contract and approval dates cause uncertainty in expenditure authorization.",
+                "findings": "Discrepancies in the timing of signatures and notifications on Vendor 3's contract raise issues, with the benefit of the doubt extended to the Divisional Manager."
+            },
+            {
+                "number": 11,
+                "description": "Evidence suggests orders for T-shirts split to stay below single source procurement threshold, violating procurement regulations.",
+                "findings": "Despite explanations from PEAP Official, evidence from Security Official confirms order splitting occurred to circumvent \u20ac1250 threshold for single source procurement."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Orders were strategically split to bypass tender requirements, allegedly authorized by PEAP Official without proper documentation.",
+            "Vendor 3's successful bid for winter uniforms raises suspicion due to significant pricing discrepancies.",
+            "Ambiguous timing in contract approval suggests oversight or misconduct but is not conclusively intentional.",
+            "Order splitting for T-shirts to avoid competitive procurement represents a breach of public procurement policy."
+        ],
+        "violations": [
+            {
+                "regulation_id": "UNMIK Finance Administrative Instruction 1999/2",
+                "excerpt": "Competition and participation in the procurement process shall be maximized."
+            },
+            {
+                "regulation_id": "Article 24 of UNMIK Finance Administrative Instruction 1999/2",
+                "excerpt": "Breach of public procurement procedures using Kosovo Consolidated Budget Funds."
+            }
+        ]
+    },
+    "recommendations": {
+        "actions": [
+            "Conduct a comprehensive review of bidding processes for uniforms.",
+            "Enforce strict protocol on tender procedures with clear documentation.",
+            "Examine procurement authorisations to ensure accountability in future transactions.",
+            "Take appropriate action against the PEAP Official.",
+            "Review procedures for contract signing and dating to ensure clarity in execution."
+        ]
+    },
+    "related_documents": []
+}

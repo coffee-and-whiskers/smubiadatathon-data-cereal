@@ -1,0 +1,98 @@
+{
+    "overview": {
+        "investigation": [
+            "interception of communications",
+            "trade dispute"
+        ],
+        "organization": [
+            "National Security Agency",
+            "Japanese Ministry of Agriculture, Forestry and Fisheries"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "methodology": {
+        "investigation": [
+            "intelligence intercepts"
+        ],
+        "organization": [
+            "Japanese Ministry of Agriculture, Forestry and Fisheries"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "trade dispute",
+            "monitored communication channels"
+        ],
+        "organization": [
+            "National Security Agency",
+            "Japanese Ministry of Agriculture, Forestry and Fisheries",
+            "US Department of Agriculture"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Case Z-3/OO/515570-09",
+            "Trade Dispute: Import of US Cherries",
+            "interception of communications"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "intelligence_summary": {
+        "investigation": [
+            "NSA Intelligence Intercepts"
+        ],
+        "organization": [
+            "WikiLeaks"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "politicization of the cherry import dispute"
+        ],
+        "organization": [
+            "Japanese Ministry"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "back channels"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [
+            "https://wikileaks.org/nsa-japan"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "document_name": "14.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina Airport",
+                "Vendor 1",
+                "Vendor 2",
+                "Vendor 3"
+            ]
+        },
+        {
+            "topic": "Bribery Allegations",
+            "entities": [
+                "Procurement Officer",
+                "Finance Officer"
+            ]
+        },
+        {
+            "topic": "Favoritism in Tender Processes",
+            "entities": [
+                "Bid Evaluation Committee",
+                "Vendor 2"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "Article 343",
+                "Article 344",
+                "Section 4.3.2",
+                "Section 4.1",
+                "Section 23.9",
+                "Article 161"
+            ]
+        },
+        {
+            "topic": "Internal Controls and Audits",
+            "entities": [
+                "Internal Audit Unit",
+                "Kosovo Trust Agency"
+            ]
+        }
+    ]
+}

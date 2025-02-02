@@ -1,0 +1,110 @@
+{
+    "overview": {
+        "investigation": [
+            "fraudulent conduct",
+            "investigation",
+            "findings",
+            "recommendations"
+        ],
+        "organization": [
+            "UNON",
+            "UNICEF/Somalia Support Centre"
+        ],
+        "company": [
+            "UN-SACCO"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "methodology": {
+        "investigation": [
+            "interviews",
+            "document reviews",
+            "criteria"
+        ],
+        "organization": [
+            "UNICEF",
+            "UN-SACCO",
+            "UNON"
+        ],
+        "company": [],
+        "individual": [
+            "Senior UNICEF Managers"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "allegations",
+            "investigation request",
+            "investigative steps"
+        ],
+        "organization": [
+            "UNON",
+            "UN-SACCO",
+            "UNICEF/Somalia Support Centre"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "fraudulent conduct",
+            "allegations",
+            "findings",
+            "interviews"
+        ],
+        "organization": [
+            "UNON",
+            "UN-SACCO",
+            "UNICEF"
+        ],
+        "company": [],
+        "individual": [
+            "Senior UNEP Manager",
+            "UNICEF staff"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "findings"
+        ],
+        "organization": [
+            "UNON",
+            "UN-SACCO"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "controls",
+            "audits",
+            "confirm"
+        ],
+        "organization": [
+            "UNON",
+            "UN-SACCO"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

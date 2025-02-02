@@ -1,0 +1,35 @@
+{
+    "document_name": "26.pdf",
+    "topics": [
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "Economic Commission for Africa (ECA)",
+                "African Centre for Gender Development (ACGD)"
+            ]
+        },
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Daily Subsistence Allowance (DSA)",
+                "Barclays"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "Staff Regulation 1.2 (g)",
+                "Financial Rule 104.9",
+                "Financial Rule 104.10"
+            ]
+        },
+        {
+            "topic": "Misappropriation of Funds",
+            "entities": [
+                "ACGD Officer",
+                "Bank Records",
+                "UNDP Liaison Officer"
+            ]
+        }
+    ]
+}

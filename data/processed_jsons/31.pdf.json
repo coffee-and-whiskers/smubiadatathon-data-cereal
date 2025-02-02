@@ -1,0 +1,96 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "UNMIK-0283-04-INV01",
+        "title": "CASE 283/04: Investigation into Allegations of Theft and Corruption at Pristina Airport",
+        "category": "Investigation",
+        "timestamp": "2004-04-15",
+        "primary_source": "UN Interim Administration Mission in Kosovo"
+    },
+    "overview": "Investigation Report on alleged corruption in handling, landing fees, and de-icing costs at Pristina Airport, including specific allegations regarding overcharging, unaccounted collections, and corrupt payments linked to landing slots.",
+    "applicable_laws": [
+        {
+            "regulation_id": "UNMIK-1999-24",
+            "excerpt": "Regulations promulgated by the Special Representative of the Secretary General and subsidiary instruments issued pursuant to those regulations; and The Law in force in Kosovo on 22 March 1989.",
+            "link": ""
+        },
+        {
+            "regulation_id": "UN-Staff Regulation 1.2 (b)",
+            "excerpt": "Staff members shall uphold the highest standards of efficiency, competence and integrity.",
+            "link": ""
+        },
+        {
+            "regulation_id": "UN-Staff Rule 110.1",
+            "excerpt": "Misconduct definition and consequences.",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "This investigation was conducted pursuant to Executive Decision No 2003/16 on the establishment of the Investigation Task Force. Interviews were conducted, and documents were obtained and analyzed from the Pristina Airport administration and Pillar IV.",
+        "interviews": [
+            "Person indicated to be witness",
+            "Person potentially implicated"
+        ],
+        "documents_reviewed": [
+            "Documents from Pristina Airport administration",
+            "Documents from Pillar IV"
+        ]
+    },
+    "background": {
+        "context": "The case stems from financial irregularities discovered in Pristina Airport's operation with implications involving UN staff and local employees.",
+        "entities_involved": [
+            "Pristina International Airport",
+            "UNMIK"
+        ],
+        "timeline": [
+            "2003-02-28: Audit report issued",
+            "2004-04-15: Investigation report completed",
+            "2001-01-01;2003-12-31: Maintenance by Public Enterprise Airport Pristina and KFOR",
+            "2002-06-30: Administration transition from Pillar II to KTA and Pillar IV",
+            "2004-04-01: Handover to civilian jurisdiction under ICAO regulations"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0283/04",
+        "subject": "Pristina International Airport Corruption Case",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Overcharging commercial flights for handling and landing fees.",
+                "findings": "Calculations suggested fees collected matched official accounts, though the integrity of data is uncertain. Differences in costs were noted among airlines."
+            },
+            {
+                "number": 2,
+                "description": "Failure to account for monies paid for handling and landing services.",
+                "findings": "Receipt records incomplete, raising questions about accountability and consistent overcharging risks."
+            },
+            {
+                "number": 3,
+                "description": "Requesting or receiving corrupt payments for allocating convenient landing slots.",
+                "findings": "Lack of documented criteria for slot allocations suggests potential for manipulative practices."
+            }
+        ]
+    },
+    "intelligence_summary": {
+        "sources": [],
+        "key_findings": [
+            "Financial irregularities prompted an investigation.",
+            "Multiple incidents of alleged corruption in airport operations."
+        ],
+        "assessments": [],
+        "risks": []
+    },
+    "conclusion": {
+        "findings": [
+            "Three main allegations were investigated relating to operational corruption at Pristina Airport."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "Implement stricter audit and oversight mechanisms.",
+            "Review staff training on integrity and ethical conduct."
+        ]
+    },
+    "related_documents": []
+}

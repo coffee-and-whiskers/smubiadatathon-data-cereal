@@ -1,0 +1,111 @@
+{
+    "overview": {
+        "investigation": [
+            "investigation",
+            "procurement discrepancies"
+        ],
+        "organization": [
+            "UNMIK",
+            "Directorate of Rural Affairs"
+        ],
+        "company": [
+            "Personal Digital Assistants (PDAs)"
+        ],
+        "individual": [],
+        "statutory": [
+            "UN procurement policies"
+        ]
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "UN Financial Rules and Regulations",
+            "UNMIK Finance Administrative Instruction 2/1999"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "investigators",
+            "interviews",
+            "analyzed"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [
+            "key witnesses",
+            "alleged subjects"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "allegations",
+            "irregularities"
+        ],
+        "organization": [
+            "UNMIK",
+            "Directorate of Rural Affairs",
+            "Policy Review and Internal Oversight Unit",
+            "European Agency for Reconstruction"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "case_number",
+            "allegations",
+            "findings"
+        ],
+        "organization": [
+            "Directorate of Rural Affairs"
+        ],
+        "company": [
+            "Vendor 1",
+            "Vendor 2",
+            "Vendor 3",
+            "Vendor 4"
+        ],
+        "individual": [
+            "logistics officer of the DRA"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "findings",
+            "discrepancies"
+        ],
+        "organization": [],
+        "company": [
+            "Vendor 4"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "investigation results"
+        ],
+        "organization": [
+            "DRA"
+        ],
+        "company": [],
+        "individual": [
+            "DRA employee 2",
+            "logistics officer 1"
+        ],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

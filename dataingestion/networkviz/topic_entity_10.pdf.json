@@ -1,0 +1,36 @@
+{
+    "document_name": "10.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina International Airport",
+                "UNMIK Finance Administrative Instruction 1999/2",
+                "UNMIK Office of Legal Adviser",
+                "Public Enterprise Airport Pristina (PEAP)"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "UNMIK Regulation 1999/24",
+                "UN Staff Regulations 1.2 (b)"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "Audit report",
+                "Kosovo Trust Agency (KTA)",
+                "Pillar IV Administration"
+            ]
+        },
+        {
+            "topic": "Conflict of Interest",
+            "entities": [
+                "Bid opening committee",
+                "Technical evaluation committee"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "entities": [
+        {
+            "id": "INV-0282-04",
+            "label": "Investigation Task Force: Irregularities in Pristina Airport Procurement",
+            "type": "investigation"
+        },
+        {
+            "id": "Pristina International Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Interim Administration Mission in Kosovo",
+            "type": "organization"
+        },
+        {
+            "id": "PEAP",
+            "label": "Public Enterprise Airport Pristina",
+            "type": "organization"
+        },
+        {
+            "id": "KFOR",
+            "label": "Military Units of the Kosovo Force",
+            "type": "organization"
+        },
+        {
+            "id": "Pillar II",
+            "label": "Civil Administration Pillar",
+            "type": "organization"
+        },
+        {
+            "id": "DOTI Official 2",
+            "label": "DOTI Official 2",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "DOTI Official 3",
+            "label": "DOTI Official 3",
+            "type": "individual"
+        },
+        {
+            "id": "Evaluation Company",
+            "label": "Evaluation Company",
+            "type": "company"
+        },
+        {
+            "id": "CPE Procurement Officer",
+            "label": "CPE Procurement Officer",
+            "type": "individual"
+        },
+        {
+            "id": "UNMIK Regulation 1999/24",
+            "label": "UNMIK Regulation 1999/24",
+            "type": "statutory"
+        },
+        {
+            "id": "UN Staff Regulations 1.2 (b)",
+            "label": "UN Staff Regulations 1.2 (b)",
+            "type": "statutory"
+        },
+        {
+            "id": "UNMIK Finance Administrative Instruction 1999/2",
+            "label": "UNMIK Finance Administrative Instruction 1999/2",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Pristina International Airport",
+            "target": "UNMIK",
+            "label": "1. Oversight Authority",
+            "tooltip": "UNMIK was responsible for overseeing procurement processes at Pristina International Airport."
+        },
+        {
+            "source": "INV-0282-04",
+            "target": "Pristina International Airport",
+            "label": "2. Investigation Subject",
+            "tooltip": "The investigation focused on procurement irregularities at Pristina International Airport."
+        },
+        {
+            "source": "INV-0282-04",
+            "target": "UNMIK",
+            "label": "3. Investigation Conducted By",
+            "tooltip": "The investigation was conducted by UNMIK."
+        },
+        {
+            "source": "INV-0282-04",
+            "target": "DOTI Official 2",
+            "label": "4. Allegations Against",
+            "tooltip": "DOTI Official 2 was implicated in the investigation for procurement irregularities."
+        },
+        {
+            "source": "INV-0282-04",
+            "target": "UNMIK Finance Administrative Instruction 1999/2",
+            "label": "5. Violation Found",
+            "tooltip": "The investigation found violations of the UNMIK Finance Administrative Instruction 1999/2."
+        },
+        {
+            "source": "INV-0282-04",
+            "target": "PEAP",
+            "label": "6. Entity Involved",
+            "tooltip": "Public Enterprise Airport Pristina was involved in the procurement process under investigation."
+        },
+        {
+            "source": "INV-0282-04",
+            "target": "KFOR",
+            "label": "7. Entity Involved",
+            "tooltip": "Military Units of the Kosovo Force were noted in the investigation context."
+        },
+        {
+            "source": "INV-0282-04",
+            "target": "Pillar II",
+            "label": "8. Entity Involved",
+            "tooltip": "Civil Administration Pillar was involved in the investigation context."
+        },
+        {
+            "source": "INV-0282-04",
+            "target": "Evaluation Company",
+            "label": "9. Entity Involved",
+            "tooltip": "Evaluation Company was involved in the technical evaluation of tenders."
+        },
+        {
+            "source": "INV-0282-04",
+            "target": "CPE Procurement Officer",
+            "label": "10. Entity Involved",
+            "tooltip": "CPE Procurement Officer was involved in the procurement process under investigation."
+        }
+    ],
+    "allegations": {
+        "DOTI Official 2": [
+            "Involvement in procurement irregularities at Pristina International Airport."
+        ]
+    },
+    "violations": {
+        "UNMIK Finance Administrative Instruction 1999/2": [
+            "Infractions noted in unclear tender specifications and committee involvement."
+        ]
+    }
+}

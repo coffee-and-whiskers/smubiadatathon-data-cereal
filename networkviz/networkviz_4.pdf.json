@@ -1,0 +1,145 @@
+{
+    "entities": [
+        {
+            "id": "Case_0275_04_A8",
+            "label": "Case 0275/04 - Procurement Irregularities at Pristina Airport",
+            "type": "investigation"
+        },
+        {
+            "id": "Pristina_International_Airport",
+            "label": "Pristina International Airport",
+            "type": "organization"
+        },
+        {
+            "id": "PEAP",
+            "label": "Public Enterprise Airport Pristina (PEAP)",
+            "type": "organization",
+            "outline": "allegation"
+        },
+        {
+            "id": "KFOR",
+            "label": "Kosovo Force (KFOR)",
+            "type": "organization"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Interim Administration Mission in Kosovo",
+            "type": "organization"
+        },
+        {
+            "id": "Vendor_1",
+            "label": "Vendor 1",
+            "type": "company"
+        },
+        {
+            "id": "Vendor_2",
+            "label": "Vendor 2",
+            "type": "company"
+        },
+        {
+            "id": "Vendor_3",
+            "label": "Vendor 3",
+            "type": "company",
+            "outline": "allegation"
+        },
+        {
+            "id": "Security_Official",
+            "label": "Security Official",
+            "type": "individual"
+        },
+        {
+            "id": "Divisional_Manager",
+            "label": "Divisional Manager",
+            "type": "individual"
+        },
+        {
+            "id": "PEAP_Official",
+            "label": "PEAP Official",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "UNMIK_Finance_Instruction_1999_2",
+            "label": "UNMIK Finance Administrative Instruction 1999/2",
+            "type": "statutory",
+            "outline": "violation"
+        },
+        {
+            "id": "Article_24_UNMIK_Finance_Instruction_1999_2",
+            "label": "Article 24 of UNMIK Finance Administrative Instruction 1999/2",
+            "type": "statutory",
+            "outline": "violation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Pristina_International_Airport",
+            "target": "PEAP",
+            "label": "1. Managed by",
+            "tooltip": "Pristina International Airport was maintained by PEAP under UNMIK administration."
+        },
+        {
+            "source": "PEAP",
+            "target": "Case_0275_04_A8",
+            "label": "2. Involvement in Investigation",
+            "tooltip": "PEAP was involved in the procurement irregularities investigation."
+        },
+        {
+            "source": "UNMIK",
+            "target": "Case_0275_04_A8",
+            "label": "3. Investigation Conducted By",
+            "tooltip": "UNMIK conducted the investigation into procurement irregularities."
+        },
+        {
+            "source": "Vendor_3",
+            "target": "Case_0275_04_A8",
+            "label": "4. Allegation of Overpricing",
+            "tooltip": "Vendor 3's bid for winter uniforms was significantly higher than others."
+        },
+        {
+            "source": "Security_Official",
+            "target": "PEAP_Official",
+            "label": "5. Testimony Against",
+            "tooltip": "Security Official provided statements suggesting PEAP Official's involvement in tender bypassing."
+        },
+        {
+            "source": "PEAP_Official",
+            "target": "Case_0275_04_A8",
+            "label": "6. Alleged Tender Bypassing",
+            "tooltip": "PEAP Official allegedly authorized orders to avoid competitive bidding."
+        },
+        {
+            "source": "Case_0275_04_A8",
+            "target": "UNMIK_Finance_Instruction_1999_2",
+            "label": "7. Violation Identified",
+            "tooltip": "The investigation found breaches of procurement regulations."
+        },
+        {
+            "source": "Case_0275_04_A8",
+            "target": "Article_24_UNMIK_Finance_Instruction_1999_2",
+            "label": "8. Violation Identified",
+            "tooltip": "Breach of public procurement procedures using Kosovo Consolidated Budget Funds."
+        }
+    ],
+    "allegations": {
+        "PEAP": [
+            "Involvement in irregular procurement processes.",
+            "Orders split to avoid tender requirements."
+        ],
+        "Vendor_3": [
+            "Accepted for winter uniforms at a higher price than other vendors."
+        ],
+        "PEAP_Official": [
+            "Authorized purchases without a tender being documented.",
+            "Involved in order splitting to stay below single source threshold."
+        ]
+    },
+    "violations": {
+        "UNMIK_Finance_Instruction_1999_2": [
+            "Competition and participation in the procurement process shall be maximized."
+        ],
+        "Article_24_UNMIK_Finance_Instruction_1999_2": [
+            "Breach of public procurement procedures using Kosovo Consolidated Budget Funds."
+        ]
+    }
+}

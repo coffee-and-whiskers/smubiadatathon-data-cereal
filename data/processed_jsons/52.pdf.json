@@ -1,0 +1,76 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "ITF_INV_2023_345",
+        "title": "CASE 221/04: UNMIK Bank Account Investigation Final Report",
+        "category": "Investigation",
+        "timestamp": "2023-10-04 10:00:00",
+        "primary_source": "United Nations Interim Administration Mission in Kosovo"
+    },
+    "overview": "This document provides the final investigation report by the UNMIK Investigation Task Force on alleged irregularities associated with the UNMIK bank account. A conflict regarding the rightful ownership of funds generated from a contract with Air BP for Pristina Airport was identified. However, the investigation found no illegal activities concerning the account management.",
+    "applicable_laws": [
+        {
+            "regulation_id": "339",
+            "excerpt": "Abusing Official Position of Authority under the Provisional Criminal Code of Kosovo.",
+            "link": ""
+        },
+        {
+            "regulation_id": "340",
+            "excerpt": "Misappropriation in Office under the Provisional Criminal Code of Kosovo.",
+            "link": ""
+        },
+        {
+            "regulation_id": "341",
+            "excerpt": "Fraud in Office under the Provisional Criminal Code of Kosovo.",
+            "link": ""
+        }
+    ],
+    "background": {
+        "context": "Investigations focused on unresolved legal ownership and management of funds in the UNMIK bank account linked to the airport operations in Pristina.",
+        "entities_involved": [
+            "United Nations Interim Administration Mission in Kosovo (UNMIK)",
+            "Provisional Institutions of Self-Government (PISG)",
+            "Pristina Airport",
+            "Air BP"
+        ],
+        "timeline": [
+            "2001-07-13;2001-07-20: UNMIK and the Company signed a contract for aviation fuel and refueling services.",
+            "2001-10-11: UNMIK Bank Account was opened at a Bank in Pristina.",
+            "2002-04-17: First payment to the UNMIK Bank Account via International Money Transfer (\u20ac 45,105.23).",
+            "2003-02-01;2003-02-28: Forensic audit report by Chartered Accountants highlighted alleged irregularities.",
+            "2004-03-03: Contract amendment to supply additional aviation fuel and refueling services.",
+            "2004-07-14: Staff reassignments and notifications regarding account signatories.",
+            "2005-01-24: Latest payment made to account (\u20ac 8,578.42), balance: \u20ac 537,536.90 as of 2005-03-04."
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0221/04",
+        "subject": "Dispute and Alleged Mismanagement of Funds in UNMIK Bank Account",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Irregular ownership and management of funds originating from Pristina Airport.",
+                "findings": "No illegal withdrawals found; money derived from legal operations."
+            },
+            {
+                "number": 2,
+                "description": "Disputed legal ownership of funds with no resolution, affecting airport operations.",
+                "findings": "\u20ac537,536.90 remains in the account without interest accrual; investigation confirms legitimate business origins of funds."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Funds generated through legitimate business dealings with Air BP.",
+            "No unauthorized transactions noted; only bank charges were deducted."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "UNMIK Pillar 4 - KTA should resolve ownership disputes promptly.",
+            "Examine deposit options to generate interest or redirect funds to operations benefiting UNMIK."
+        ]
+    },
+    "related_documents": []
+}

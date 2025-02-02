@@ -1,0 +1,103 @@
+{
+    "entities": [
+        {
+            "id": "PTF/026/06",
+            "label": "Case PTF/026/06 - Investigation of Walter Cabrera",
+            "type": "investigation"
+        },
+        {
+            "id": "Walter Cabrera",
+            "label": "Mr. Walter Cabrera",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "DPKO CITS",
+            "label": "Department of Peacekeeping Operations - Communications and Information Technology Section",
+            "type": "organization"
+        },
+        {
+            "id": "TCIL",
+            "label": "TCIL",
+            "type": "company"
+        },
+        {
+            "id": "La Cresta",
+            "label": "La Cresta",
+            "type": "company"
+        },
+        {
+            "id": "Thunderbird LLC",
+            "label": "Thunderbird LLC",
+            "type": "company"
+        },
+        {
+            "id": "PD",
+            "label": "Procurement Division",
+            "type": "organization"
+        },
+        {
+            "id": "ITSD",
+            "label": "Information Technology Services Division",
+            "type": "organization"
+        },
+        {
+            "id": "1.2(i)",
+            "label": "Regulation 1.2(i) - Prohibition against improper communication of proprietary information",
+            "type": "statutory"
+        }
+    ],
+    "edges": [
+        {
+            "source": "PTF/026/06",
+            "target": "Walter Cabrera",
+            "label": "1. Subject of Investigation",
+            "tooltip": "Mr. Walter Cabrera was investigated for potential misconduct in the procurement process."
+        },
+        {
+            "source": "PTF/026/06",
+            "target": "DPKO CITS",
+            "label": "2. Involvement in Procurement",
+            "tooltip": "The investigation focused on the procurement processes within DPKO CITS."
+        },
+        {
+            "source": "Walter Cabrera",
+            "target": "TCIL",
+            "label": "3. Alleged Favoritism",
+            "tooltip": "Allegations included potential favoritism towards TCIL in the procurement process."
+        },
+        {
+            "source": "Walter Cabrera",
+            "target": "La Cresta",
+            "label": "4. Bid Resubmission Request",
+            "tooltip": "Mr. Cabrera requested resubmission from La Cresta to meet bid requirements."
+        },
+        {
+            "source": "Walter Cabrera",
+            "target": "Thunderbird LLC",
+            "label": "5. Expedited Approval Allegation",
+            "tooltip": "Alleged expedited approval request for Thunderbird LLC without proper documentation."
+        },
+        {
+            "source": "Walter Cabrera",
+            "target": "PD",
+            "label": "6. Communication with Procurement Division",
+            "tooltip": "Maintained dialogue with PD regarding procurement decisions."
+        },
+        {
+            "source": "PTF/026/06",
+            "target": "1.2(i)",
+            "label": "7. Applicable Regulation",
+            "tooltip": "The investigation considered potential violations of Regulation 1.2(i)."
+        }
+    ],
+    "allegations": {
+        "Walter Cabrera": [
+            "Expedited approval request for Thunderbird LLC without proper documentation.",
+            "Distorted communication to cancel the initial bid for laptops.",
+            "Improper handling of bid clarification and resubmission request to La Cresta.",
+            "Involvement in bid cancellation and re-bidding despite La Cresta's compliant status."
+        ]
+    },
+    "violations": {}
+}

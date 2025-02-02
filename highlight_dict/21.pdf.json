@@ -1,0 +1,113 @@
+{
+    "overview": {
+        "investigation": [
+            "investigation report",
+            "case ID 0580/03"
+        ],
+        "organization": [
+            "United Nations",
+            "Office of Internal Oversight Services"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Staff Rule 101.2(g)",
+            "Staff Regulation 1.2 (b)",
+            "Staff Regulation 1.2 (g)",
+            "Staff Regulation 1.2 (i)",
+            "Fraud under Slovakian Criminal Code, 1961: Article 250"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "investigation",
+            "reviewing financial records",
+            "interviews"
+        ],
+        "organization": [
+            "UNON",
+            "UNDP Bratislava"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [],
+        "organization": [
+            "UNDP",
+            "UNHQ",
+            "UNON",
+            "UNDP Bratislava",
+            "Ozone Secretariat",
+            "UNEP"
+        ],
+        "company": [],
+        "individual": [
+            "The Consultant"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "case_number: 0580/03",
+            "Control Failures at UNDP Bratislava",
+            "allegations",
+            "findings"
+        ],
+        "organization": [
+            "UNDP Bratislava",
+            "UNON",
+            "UNEP"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "findings",
+            "fraud facilitation"
+        ],
+        "organization": [
+            "UNDP Bratislava"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Staff Rule 101.2(g)",
+            "Staff Regulation 1.2 (b)",
+            "Staff Regulation 1.2 (g)",
+            "Staff Regulation 1.2 (i)",
+            "Fraud under Slovakian Criminal Code, 1961: Article 250"
+        ]
+    },
+    "recommendations": {
+        "investigation": [
+            "recommend",
+            "prevent fraud"
+        ],
+        "organization": [
+            "UNDP",
+            "UNDP Bratislava",
+            "United Nations"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

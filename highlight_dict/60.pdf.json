@@ -1,0 +1,73 @@
+{
+    "overview": {
+        "investigation": [
+            "allegations of conflict of interest",
+            "abuse of authority"
+        ],
+        "organization": [
+            "United Nations Mission in Liberia (UNMIL)"
+        ],
+        "company": [],
+        "individual": [
+            "senior official"
+        ],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "investigation was conducted",
+            "allegations concerning"
+        ],
+        "organization": [
+            "Office of Internal Oversight Services",
+            "United Nations Mission in Liberia (UNMIL)"
+        ],
+        "company": [],
+        "individual": [
+            "Senior Official 1"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "case_number: 0093/04",
+            "allegations of conflict of interest",
+            "abuse of authority"
+        ],
+        "organization": [
+            "UNMIL"
+        ],
+        "company": [],
+        "individual": [
+            "Senior Official 1"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "allegations of conflict of interest",
+            "abuse of authority",
+            "not substantiated"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [
+            "Senior Official"
+        ],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

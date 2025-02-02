@@ -1,0 +1,35 @@
+{
+    "document_name": "31.pdf",
+    "topics": [
+        {
+            "topic": "Financial Irregularities",
+            "entities": [
+                "Pristina International Airport",
+                "UNMIK"
+            ]
+        },
+        {
+            "topic": "Corruption in Airport Operations",
+            "entities": [
+                "Pristina International Airport",
+                "UNMIK"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "UNMIK-1999-24",
+                "UN-Staff Regulation 1.2 (b)",
+                "UN-Staff Rule 110.1"
+            ]
+        },
+        {
+            "topic": "Audit and Oversight",
+            "entities": [
+                "Pristina International Airport",
+                "Public Enterprise Airport Pristina",
+                "KFOR"
+            ]
+        }
+    ]
+}

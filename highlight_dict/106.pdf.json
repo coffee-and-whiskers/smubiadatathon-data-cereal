@@ -1,0 +1,72 @@
+{
+    "overview": {
+        "investigation": [
+            "criticisms documented",
+            "top-secret NSA report"
+        ],
+        "organization": [
+            "National Security Agency",
+            "International Energy Agency",
+            "EU"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "methodology": {
+        "investigation": [
+            "intelligence intercepts"
+        ],
+        "organization": [
+            "Japanese government"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "international criticism"
+        ],
+        "organization": [
+            "National Security Agency",
+            "Japanese Government",
+            "International Energy Agency",
+            "European Union",
+            "Ministry of Economy Trade and Industry (METI)"
+        ],
+        "company": [],
+        "individual": [
+            "Masakazu Toyoda",
+            "Fatih Birol"
+        ],
+        "statutory": []
+    },
+    "intelligence_summary": {
+        "investigation": [
+            "warnings",
+            "misinterpretations"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [
+            "Fatih Birol",
+            "Masakazu Toyoda"
+        ],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

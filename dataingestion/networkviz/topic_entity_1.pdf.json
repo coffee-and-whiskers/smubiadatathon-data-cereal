@@ -1,0 +1,26 @@
+{
+    "document_name": "1.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina Airport",
+                "Vendor 3",
+                "Vendor 4"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "Procurement Regulation 1999/2"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "Kosovo Organised Crime Bureau",
+                "UNMIK Investigation Task Force"
+            ]
+        }
+    ]
+}

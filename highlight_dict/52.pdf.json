@@ -1,0 +1,88 @@
+{
+    "overview": {
+        "investigation": [
+            "final investigation report",
+            "alleged irregularities"
+        ],
+        "organization": [
+            "UNMIK Investigation Task Force",
+            "United Nations Interim Administration Mission in Kosovo"
+        ],
+        "company": [
+            "Air BP"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Abusing Official Position of Authority",
+            "Misappropriation in Office",
+            "Fraud in Office"
+        ]
+    },
+    "background": {
+        "investigation": [
+            "Investigations focused",
+            "forensic audit report"
+        ],
+        "organization": [
+            "United Nations Interim Administration Mission in Kosovo (UNMIK)",
+            "Provisional Institutions of Self-Government (PISG)",
+            "Pristina Airport",
+            "Chartered Accountants"
+        ],
+        "company": [
+            "Air BP"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Dispute and Alleged Mismanagement",
+            "allegations",
+            "findings"
+        ],
+        "organization": [
+            "UNMIK Bank Account"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "findings",
+            "No unauthorized transactions"
+        ],
+        "organization": [],
+        "company": [
+            "Air BP"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "resolve ownership disputes"
+        ],
+        "organization": [
+            "UNMIK Pillar 4 - KTA"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

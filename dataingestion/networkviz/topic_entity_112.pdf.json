@@ -1,0 +1,27 @@
+{
+    "document_name": "112.pdf",
+    "topics": [
+        {
+            "topic": "International Relations",
+            "entities": [
+                "Israel",
+                "Italy",
+                "United States"
+            ]
+        },
+        {
+            "topic": "Diplomatic Mediation",
+            "entities": [
+                "Silvio Berlusconi",
+                "Binyamin Netanyahu"
+            ]
+        },
+        {
+            "topic": "Geopolitical Tensions",
+            "entities": [
+                "East Jerusalem",
+                "Housing Construction"
+            ]
+        }
+    ]
+}

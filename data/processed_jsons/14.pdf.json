@@ -1,0 +1,135 @@
+{
+    "metadata": {
+        "classification_level": "Official Use Only",
+        "document_id": "unmik_case_0462_04",
+        "title": "CASE 462/04: Investigation into Allegations of Bribery and Favouritism in Procurement by Pristina Airport",
+        "category": "Investigation",
+        "timestamp": "2004-04-01 00:00:00",
+        "primary_source": "UNMIK Investigation Task Force"
+    },
+    "overview": "This document details an investigation conducted by the UNMIK Investigation Task Force into allegations of procurement irregularities at Pristina Airport, involving bribery and favoritism.",
+    "applicable_laws": [
+        {
+            "regulation_id": "Article 343",
+            "excerpt": "Accepting Bribes",
+            "link": ""
+        },
+        {
+            "regulation_id": "Article 344",
+            "excerpt": "Giving Bribes",
+            "link": ""
+        },
+        {
+            "regulation_id": "Section 4.3.2",
+            "excerpt": "Avoidance of Conflicts of Interest and Corruption",
+            "link": ""
+        },
+        {
+            "regulation_id": "Section 4.1",
+            "excerpt": "Full and Fair Competition",
+            "link": ""
+        },
+        {
+            "regulation_id": "Section 23.9",
+            "excerpt": "Examination and Evaluation of Tenders",
+            "link": ""
+        },
+        {
+            "regulation_id": "Article 161",
+            "excerpt": "Threat",
+            "link": ""
+        },
+        {
+            "regulation_id": "Finance Administration Instruction No. 2/1999",
+            "excerpt": "Public Procurement Using Kosovo Consolidated Budget Funds",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "Investigation commenced following an internal audit memo and involved reviewing complaint letters and interviewing involved parties.",
+        "interviews": [
+            "Procurement Officer 1",
+            "Vendor 1 Manager",
+            "Vendor 2 Employee",
+            "Vendor 2 Manager",
+            "Vendor 2 Director",
+            "Pristina Airport Official",
+            "Procurement Officer 2",
+            "Pristina Airport Civil Engineer"
+        ],
+        "documents_reviewed": [
+            "Internal Audit Unit Memorandum",
+            "Letter of complaint from Vendor 1 Manager",
+            "Procurement related documents",
+            "Memo dated 2004-06-30",
+            "Procurement Memo dated 2004-07-07"
+        ]
+    },
+    "background": {
+        "context": "The investigation was triggered by a memorandum from the Internal Audit Unit of the Kosovo Trust Agency highlighting anomalies in the uniform procurement process at Pristina Airport.",
+        "entities_involved": [
+            "Pristina Airport",
+            "Vendor 1",
+            "Vendor 2",
+            "Vendor 3",
+            "Procurement Officer 1",
+            "Finance Officer",
+            "Former Kosovo Minister"
+        ],
+        "timeline": [
+            "2004-06-28: Complaint letter by Vendor 1 Manager",
+            "2004-10-04: Internal Audit Unit Memorandum",
+            "2004-06-10: Bid Opening Committee convened",
+            "2004-06-18: Bid Evaluation Committee convened",
+            "2004-06-23: Tender cancellation and subsequent award",
+            "2004-06-30: Memo describing tender process events",
+            "2004-07-07: Single-source procurement memo"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0462/04",
+        "subject": "Allegations of Bribery and Favoritism in the Procurement Process at Pristina Airport",
+        "financial_details": {},
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Procurement Officer 1 and Finance Officer allegedly accepted bribes from Vendor 2.",
+                "findings": "The ITF did not find any evidence to support the allegation that Procurement Officer 1 and/or the Finance Officer accepted bribes from Vendor 2. The allegation is unsubstantiated."
+            },
+            {
+                "number": 2,
+                "description": "Procurement Officer 1 replaced a Bid Evaluation Committee member.",
+                "findings": "The rationale for replacing the member is reasonable. The replacement was not made for any questionable purpose."
+            },
+            {
+                "number": 3,
+                "description": "Procurement Officer 1 included Finance Officer inappropriately in the Bid Evaluation Committee.",
+                "findings": "The Finance Officer participated but there was no regulation precluding finance personnel from attendance. The allegation is unsubstantiated."
+            },
+            {
+                "number": 4,
+                "description": "Procurement Officer 1 favored Vendor 2 in the tender process.",
+                "findings": "No evidence was found to support this claim. The investigation determined that the proceeding's management was fair and objective, thus the allegation is unsubstantiated."
+            },
+            {
+                "number": 5,
+                "description": "Vendor 1 Manager threatened Procurement Officer 1.",
+                "findings": "Vendor 1 Manager confirmed he/she told Procurement Officer 1 about going to higher levels or court but denied any physical threat. Allegations of intimidation were not substantiated."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Allegations of bribery, improper committee membership, tender process favoritism, and threats largely unsubstantiated.",
+            "Document suggests improved internal controls and third-party audits might prevent future occurrences."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "Inform Procurement Officer 1 and Finance Officer that no wrongdoing was found. (IV04/462/01)",
+            "Provide the report to the Department of Justice and the Financial Investigation Unit for use in current investigations. (IV04/462/02)"
+        ]
+    },
+    "related_documents": []
+}

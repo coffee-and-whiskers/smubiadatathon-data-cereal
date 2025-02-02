@@ -1,0 +1,151 @@
+{
+    "entities": [
+        {
+            "id": "Case 0462/04",
+            "label": "Case 0462/04 - Allegations of Bribery and Favoritism",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina Airport",
+            "label": "Pristina Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Internal Audit Unit",
+            "label": "Internal Audit Unit of Kosovo Trust Agency",
+            "type": "organization"
+        },
+        {
+            "id": "Procurement Officer 1",
+            "label": "Procurement Officer 1",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Finance Officer",
+            "label": "Finance Officer",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Vendor 1",
+            "label": "Vendor 1",
+            "type": "company"
+        },
+        {
+            "id": "Vendor 2",
+            "label": "Vendor 2",
+            "type": "company"
+        },
+        {
+            "id": "Vendor 3",
+            "label": "Vendor 3",
+            "type": "company"
+        },
+        {
+            "id": "Vendor 1 Manager",
+            "label": "Vendor 1 Manager",
+            "type": "individual",
+            "outline": "allegation"
+        },
+        {
+            "id": "Article 343",
+            "label": "Article 343 - Accepting Bribes",
+            "type": "statutory"
+        },
+        {
+            "id": "Article 344",
+            "label": "Article 344 - Giving Bribes",
+            "type": "statutory"
+        },
+        {
+            "id": "Section 4.3.2",
+            "label": "Section 4.3.2 - Avoidance of Conflicts of Interest and Corruption",
+            "type": "statutory"
+        },
+        {
+            "id": "Section 4.1",
+            "label": "Section 4.1 - Full and Fair Competition",
+            "type": "statutory"
+        },
+        {
+            "id": "Section 23.9",
+            "label": "Section 23.9 - Examination and Evaluation of Tenders",
+            "type": "statutory"
+        },
+        {
+            "id": "Article 161",
+            "label": "Article 161 - Threat",
+            "type": "statutory"
+        },
+        {
+            "id": "Finance Administration Instruction No. 2/1999",
+            "label": "Finance Administration Instruction No. 2/1999",
+            "type": "statutory"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Internal Audit Unit",
+            "target": "Case 0462/04",
+            "label": "1. Investigation Triggered",
+            "tooltip": "Investigation was initiated following a memorandum from the Internal Audit Unit highlighting procurement anomalies."
+        },
+        {
+            "source": "UNMIK",
+            "target": "Case 0462/04",
+            "label": "2. Investigation Conducted By",
+            "tooltip": "UNMIK Investigation Task Force conducted the investigation."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "Case 0462/04",
+            "label": "3. Subject of Investigation",
+            "tooltip": "Pristina Airport was the focus of the investigation due to allegations of procurement irregularities."
+        },
+        {
+            "source": "Procurement Officer 1",
+            "target": "Vendor 2",
+            "label": "4. Alleged Bribery",
+            "tooltip": "Procurement Officer 1 allegedly accepted bribes from Vendor 2, but the allegation was unsubstantiated."
+        },
+        {
+            "source": "Finance Officer",
+            "target": "Vendor 2",
+            "label": "5. Alleged Bribery",
+            "tooltip": "Finance Officer allegedly accepted bribes from Vendor 2, but the allegation was unsubstantiated."
+        },
+        {
+            "source": "Procurement Officer 1",
+            "target": "Finance Officer",
+            "label": "6. Alleged Inappropriate Inclusion",
+            "tooltip": "Procurement Officer 1 allegedly included Finance Officer inappropriately in the Bid Evaluation Committee, but the allegation was unsubstantiated."
+        },
+        {
+            "source": "Vendor 1 Manager",
+            "target": "Procurement Officer 1",
+            "label": "7. Alleged Threat",
+            "tooltip": "Vendor 1 Manager allegedly threatened Procurement Officer 1, but the allegation was unsubstantiated."
+        }
+    ],
+    "allegations": {
+        "Procurement Officer 1": [
+            "Allegedly accepted bribes from Vendor 2.",
+            "Replaced a Bid Evaluation Committee member.",
+            "Included Finance Officer inappropriately in the Bid Evaluation Committee.",
+            "Favored Vendor 2 in the tender process."
+        ],
+        "Finance Officer": [
+            "Allegedly accepted bribes from Vendor 2."
+        ],
+        "Vendor 1 Manager": [
+            "Allegedly threatened Procurement Officer 1."
+        ]
+    },
+    "violations": {}
+}

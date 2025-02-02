@@ -1,0 +1,26 @@
+{
+    "document_name": "36.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina International Airport",
+                "Public Enterprise Airport Pristina",
+                "Kosovo Trust Agency"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "United Nations Interim Administration Mission in Kosovo",
+                "Department of Justice"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "UNMIK regulation 1999/2"
+            ]
+        }
+    ]
+}

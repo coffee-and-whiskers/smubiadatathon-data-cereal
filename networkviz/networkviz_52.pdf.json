@@ -1,0 +1,99 @@
+{
+    "entities": [
+        {
+            "id": "ITF_INV_2023_345",
+            "label": "UNMIK Bank Account Investigation Final Report",
+            "type": "investigation"
+        },
+        {
+            "id": "UNMIK",
+            "label": "United Nations Interim Administration Mission in Kosovo (UNMIK)",
+            "type": "organization"
+        },
+        {
+            "id": "PISG",
+            "label": "Provisional Institutions of Self-Government (PISG)",
+            "type": "organization"
+        },
+        {
+            "id": "Pristina Airport",
+            "label": "Pristina Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Air BP",
+            "label": "Air BP",
+            "type": "company"
+        },
+        {
+            "id": "Chartered Accountants",
+            "label": "Chartered Accountants (Audit)",
+            "type": "organization"
+        },
+        {
+            "id": "Regulation 339",
+            "label": "Abusing Official Position of Authority",
+            "type": "statutory"
+        },
+        {
+            "id": "Regulation 340",
+            "label": "Misappropriation in Office",
+            "type": "statutory"
+        },
+        {
+            "id": "Regulation 341",
+            "label": "Fraud in Office",
+            "type": "statutory"
+        },
+        {
+            "id": "UNMIK Bank Account",
+            "label": "UNMIK Bank Account",
+            "type": "organization"
+        }
+    ],
+    "edges": [
+        {
+            "source": "UNMIK",
+            "target": "Air BP",
+            "label": "1. Contract Signed",
+            "tooltip": "UNMIK and Air BP signed a contract for aviation fuel and refueling services on 2001-07-13."
+        },
+        {
+            "source": "UNMIK",
+            "target": "UNMIK Bank Account",
+            "label": "2. Account Opened",
+            "tooltip": "UNMIK opened a bank account in Pristina on 2001-10-11."
+        },
+        {
+            "source": "Air BP",
+            "target": "UNMIK Bank Account",
+            "label": "3. Payment Made",
+            "tooltip": "First payment to the UNMIK Bank Account via International Money Transfer on 2002-04-17."
+        },
+        {
+            "source": "Chartered Accountants",
+            "target": "UNMIK Bank Account",
+            "label": "4. Forensic Audit",
+            "tooltip": "Forensic audit report by Chartered Accountants highlighted alleged irregularities in February 2003."
+        },
+        {
+            "source": "UNMIK",
+            "target": "Pristina Airport",
+            "label": "5. Contract Amendment",
+            "tooltip": "Contract amendment to supply additional aviation fuel and refueling services on 2004-03-03."
+        },
+        {
+            "source": "UNMIK Bank Account",
+            "target": "ITF_INV_2023_345",
+            "label": "6. Investigation Subject",
+            "tooltip": "The UNMIK Bank Account was the subject of the investigation for alleged mismanagement of funds."
+        }
+    ],
+    "allegations": {
+        "UNMIK Bank Account": [
+            "Irregular ownership and management of funds originating from Pristina Airport.",
+            "Disputed legal ownership of funds affecting airport operations."
+        ]
+    },
+    "violations": {}
+}

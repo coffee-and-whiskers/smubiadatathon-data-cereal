@@ -1,0 +1,35 @@
+{
+    "document_name": "107.pdf",
+    "topics": [
+        {
+            "topic": "Climate Policy Strategy",
+            "entities": [
+                "Japanese Government",
+                "Ministry of Economy Trade and Industry",
+                "Ministry of Foreign Affairs",
+                "Ministry of Finance",
+                "Ministry of Environment"
+            ]
+        },
+        {
+            "topic": "International Summit Leadership",
+            "entities": [
+                "G-8 Summit",
+                "Chief Cabinet Secretary Nobutaka Machimura"
+            ]
+        },
+        {
+            "topic": "Intelligence Gathering",
+            "entities": [
+                "US National Security Agency",
+                "SIGINT operations"
+            ]
+        },
+        {
+            "topic": "Diplomatic Relations",
+            "entities": [
+                "Five Eyes partners"
+            ]
+        }
+    ]
+}

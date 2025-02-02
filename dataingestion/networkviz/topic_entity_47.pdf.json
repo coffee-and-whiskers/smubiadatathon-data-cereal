@@ -1,0 +1,32 @@
+{
+    "document_name": "47.pdf",
+    "topics": [
+        {
+            "topic": "Revenue Evasion",
+            "entities": [
+                "Pristina Airport",
+                "The Airline"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "Pristina Airport",
+                "UNMIK"
+            ]
+        },
+        {
+            "topic": "Airport Operations",
+            "entities": [
+                "Pristina Airport",
+                "Passenger Handling Services"
+            ]
+        },
+        {
+            "topic": "System Integration",
+            "entities": [
+                "Pristina Airport"
+            ]
+        }
+    ]
+}

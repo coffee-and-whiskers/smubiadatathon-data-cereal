@@ -1,0 +1,30 @@
+{
+    "document_name": "114.pdf",
+    "topics": [
+        {
+            "topic": "Climate Change Leadership",
+            "entities": [
+                "EU",
+                "UNSYG",
+                "German Chancellor",
+                "UN Climate Change Conferences"
+            ]
+        },
+        {
+            "topic": "International Climate Negotiations",
+            "entities": [
+                "EU Summit",
+                "Poznan Talks",
+                "Copenhagen Talks",
+                "US Administration"
+            ]
+        },
+        {
+            "topic": "Carbon Trading Challenges",
+            "entities": [
+                "EU",
+                "Carbon Dioxide Trading"
+            ]
+        }
+    ]
+}

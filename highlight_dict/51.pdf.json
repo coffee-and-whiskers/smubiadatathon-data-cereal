@@ -1,0 +1,123 @@
+{
+    "overview": {
+        "investigation": [
+            "Investigation Task Force",
+            "fraudulent activities"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "Cargo Department"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "KCC Article 215 - Fraud in Service",
+            "KCC Article 219 - Embezzlement"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "investigation",
+            "interviews",
+            "examining financial records"
+        ],
+        "organization": [
+            "Pristina Airport Officials"
+        ],
+        "company": [
+            "Company Representative"
+        ],
+        "individual": [
+            "Partner 4"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "investigation targeted fraudulent financial practices"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "Customs Service"
+        ],
+        "company": [
+            "Company led by four partners"
+        ],
+        "individual": [],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Fraud allegations",
+            "case_number: 0192/04"
+        ],
+        "organization": [
+            "Pristina Airport Cargo Department"
+        ],
+        "company": [],
+        "individual": [
+            "Official 2"
+        ],
+        "statutory": []
+    },
+    "intelligence_summary": {
+        "investigation": [
+            "financial misconduct",
+            "mismanaged funds"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [
+            "Company Representative"
+        ],
+        "individual": [
+            "Partner 4"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "Fraud of \u20ac8,000.00",
+            "judicial proceedings"
+        ],
+        "organization": [
+            "Pristina Airport"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "KCC Article 215 - Fraud in Service",
+            "KCC Article 219 - Embezzlement"
+        ]
+    },
+    "recommendations": {
+        "investigation": [
+            "Department of Justice"
+        ],
+        "organization": [
+            "UNMIK Pillar IV"
+        ],
+        "company": [],
+        "individual": [
+            "Officials 1 and 2",
+            "Official 1",
+            "Official 2"
+        ],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

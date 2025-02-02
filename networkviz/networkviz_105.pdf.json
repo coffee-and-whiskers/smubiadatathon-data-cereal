@@ -1,0 +1,84 @@
+{
+    "entities": [
+        {
+            "id": "NSA",
+            "label": "National Security Agency",
+            "type": "organization"
+        },
+        {
+            "id": "Japanese Ministry of Economy, Trade and Industry",
+            "label": "Japanese Ministry of Economy, Trade and Industry",
+            "type": "organization"
+        },
+        {
+            "id": "Japanese Ministry of Foreign Affairs",
+            "label": "Japanese Ministry of Foreign Affairs",
+            "type": "organization"
+        },
+        {
+            "id": "Prime Minister Shinzo Abe",
+            "label": "Prime Minister Shinzo Abe",
+            "type": "individual"
+        },
+        {
+            "id": "United States",
+            "label": "United States",
+            "type": "organization"
+        },
+        {
+            "id": "President George W. Bush",
+            "label": "President George W. Bush",
+            "type": "individual"
+        },
+        {
+            "id": "Japanese Government's Carbon Emissions Plan",
+            "label": "Japanese Government's Carbon Emissions Plan",
+            "type": "investigation",
+            "outline": "allegation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "NSA",
+            "target": "Japanese Government's Carbon Emissions Plan",
+            "label": "1. Intelligence Intercept",
+            "tooltip": "NSA intercepted communications revealing Japan's carbon emissions plan."
+        },
+        {
+            "source": "Japanese Ministry of Economy, Trade and Industry",
+            "target": "Japanese Government's Carbon Emissions Plan",
+            "label": "2. Policy Development",
+            "tooltip": "METI was involved in pushing principles on climate change."
+        },
+        {
+            "source": "Prime Minister Shinzo Abe",
+            "target": "Japanese Government's Carbon Emissions Plan",
+            "label": "3. Decision Making",
+            "tooltip": "Prime Minister Shinzo Abe's residence was the site of the decision to state the carbon reduction goal."
+        },
+        {
+            "source": "Japanese Ministry of Foreign Affairs",
+            "target": "Japanese Government's Carbon Emissions Plan",
+            "label": "4. Strategic Communication",
+            "tooltip": "Involved in discussions on whether to inform the US about the carbon reduction plan."
+        },
+        {
+            "source": "Japanese Government's Carbon Emissions Plan",
+            "target": "United States",
+            "label": "5. Diplomatic Consideration",
+            "tooltip": "Japan considered not informing the US of their carbon emissions reduction plan."
+        },
+        {
+            "source": "United States",
+            "target": "President George W. Bush",
+            "label": "6. Presidential Involvement",
+            "tooltip": "The decision to withhold information was influenced by potential opposition from President Bush's administration."
+        }
+    ],
+    "allegations": {
+        "Japanese Government's Carbon Emissions Plan": [
+            "Considered not informing the US of their carbon emissions reduction plan."
+        ]
+    },
+    "violations": {}
+}

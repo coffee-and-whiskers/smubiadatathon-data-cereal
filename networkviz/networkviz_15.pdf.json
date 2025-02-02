@@ -1,0 +1,73 @@
+{
+    "entities": [
+        {
+            "id": "Case 0261/04",
+            "label": "Case 0261/04 - Alleged Fraud at Pristina Airport Cargo Department",
+            "type": "investigation"
+        },
+        {
+            "id": "Pristina Airport",
+            "label": "Pristina Airport",
+            "type": "organization"
+        },
+        {
+            "id": "Airline",
+            "label": "Airline",
+            "type": "organization"
+        },
+        {
+            "id": "KFOR",
+            "label": "KFOR",
+            "type": "organization"
+        },
+        {
+            "id": "Investigation Task Force (ITF)",
+            "label": "Investigation Task Force (ITF)",
+            "type": "organization"
+        },
+        {
+            "id": "Cargo Manager",
+            "label": "Cargo Manager",
+            "type": "individual",
+            "outline": "Raised initial concerns about invoice discrepancies"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Cargo Manager",
+            "target": "Pristina Airport",
+            "label": "1. Raised Concerns",
+            "tooltip": "Cargo Manager flagged a suspicious invoice related to handling KFOR mail."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "Case 0261/04",
+            "label": "2. Subject of Investigation",
+            "tooltip": "Pristina Airport's Cargo Department was investigated for alleged fraudulent activities."
+        },
+        {
+            "source": "Case 0261/04",
+            "target": "Investigation Task Force (ITF)",
+            "label": "3. Investigation Conducted By",
+            "tooltip": "The ITF conducted the investigation into the alleged fraud."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "Airline",
+            "label": "4. Revenue Collection",
+            "tooltip": "Pristina Airport managed revenue collection for the Airline, acting as cargo handlers."
+        },
+        {
+            "source": "Pristina Airport",
+            "target": "KFOR",
+            "label": "5. Handling KFOR Mail",
+            "tooltip": "Pristina Airport was responsible for handling mail for KFOR."
+        }
+    ],
+    "allegations": {
+        "Pristina Airport": [
+            "Suspected fraudulent conduct within the Cargo Department involving unresolved invoice issues and improper fee assessments."
+        ]
+    },
+    "violations": {}
+}

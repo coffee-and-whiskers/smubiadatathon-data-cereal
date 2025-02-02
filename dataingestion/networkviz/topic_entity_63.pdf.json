@@ -1,0 +1,36 @@
+{
+    "document_name": "63.pdf",
+    "topics": [
+        {
+            "topic": "Resource Mismanagement",
+            "entities": [
+                "UNMIL Fuel Cell",
+                "Fuel Expenses",
+                "Audit"
+            ]
+        },
+        {
+            "topic": "Unauthorized Sale of Assets",
+            "entities": [
+                "Bowser Drivers",
+                "Supervisor",
+                "Fuel Sales"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "Staff Regulation 1.2",
+                "ST/IC/1996/29"
+            ]
+        },
+        {
+            "topic": "Investigation and Oversight",
+            "entities": [
+                "ID/OIOS",
+                "IAD/OIOS",
+                "Special Investigation Unit"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "ITF-02-16-04",
+        "title": "CASE 216/04: Investigation of Alleged Violations of Procurement Procedures - Insurance",
+        "category": "Investigation",
+        "timestamp": "2004-07-28",
+        "primary_source": "Investigation Task Force"
+    },
+    "overview": "The report investigates the alleged violations of UNMUK procurement procedures concerning insurance procurement for Pristina Airport. Despite initial concerns of double insurance coverage, the findings indicate no breach of KTA or UNMIK procurement rules.",
+    "applicable_laws": [],
+    "methodology": {
+        "description": "Interviews and document analysis were conducted to assess the alleged violations of procurement procedures for insurance at Pristina Airport.",
+        "interviews": [
+            "Staff at Pristina Airport",
+            "ICAA representatives",
+            "KTA Internal Audit Department staff member"
+        ],
+        "documents_reviewed": [
+            "Correspondence between Pristina Airport staff and ICAA"
+        ]
+    },
+    "background": {
+        "context": "In April 2004, possible violations related to insurance procurement for Pristina Airport were reported. The Icelandic Civil Aviation Administration assisted UNMIK in obtaining this insurance.",
+        "entities_involved": [
+            "UNMIK",
+            "ICAA",
+            "KTA",
+            "Pristina Airport"
+        ],
+        "timeline": [
+            "2004-04-01: Insurance arranged by ICAA commences",
+            "2004-04-01;2004-04-30: Allegations reported",
+            "2004-07-28: Report date"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "02 16/04",
+        "subject": "Alleged Violations of Procurement Procedures - Insurance",
+        "financial_details": {},
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Possible violation of procurement procedures for Pristina Airport insurance.",
+                "findings": "The alleged violation of double insurance coverage was due to the absence of detailed policy documentation."
+            },
+            {
+                "number": 2,
+                "description": "Improper collusion or corrupted negotiations during insurance requisitioning.",
+                "findings": "No evidence of improper collusion or corrupted negotiations was found."
+            },
+            {
+                "number": 3,
+                "description": "Application of UNMIK procurement rules to the agreement with ICAA.",
+                "findings": "UNMIK procurement rules were not applicable to ICAA in this context."
+            }
+        ]
+    },
+    "intelligence_summary": {
+        "sources": [
+            "Internal communications",
+            "Interviews with involved personnel"
+        ],
+        "key_findings": [
+            "No breaches of KTA or UNMIK procurement rules were found.",
+            "Double coverage was due to missing policy details rather than procedural violations.",
+            "Comprehensive policy documents are now available."
+        ],
+        "assessments": [
+            "There was no willful misconduct by UNMIK or associated parties.",
+            "Previous insurance policy was cancelled in favor of a comprehensive new one."
+        ],
+        "risks": []
+    },
+    "conclusion": {
+        "findings": [
+            "Investigation concluded no breaches of procurement rules.",
+            "Double insurance resulted from administrative delays, not procedural violations."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "Ensure clear communication and documentation before policy changes.",
+            "Review insurance procedures to prevent future administrative errors."
+        ]
+    },
+    "related_documents": []
+}

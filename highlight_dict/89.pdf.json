@@ -1,0 +1,93 @@
+{
+    "overview": {
+        "investigation": [
+            "Global SIGINT Highlights Report"
+        ],
+        "organization": [
+            "National Security Agency"
+        ],
+        "company": [
+            "EADS",
+            "Pernod Ricard"
+        ],
+        "individual": [
+            "Nicolas Sarkozy",
+            "Barack Obama"
+        ],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "methodology": {
+        "investigation": [
+            "signals intelligence (SIGINT) intercepts"
+        ],
+        "organization": [
+            "French and U.S. diplomatic and governmental officials"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [
+            "Nicolas Sarkozy",
+            "Barack Obama",
+            "Pierre Vimont",
+            "Jean-David Levitte"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "Intercepted communications"
+        ],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "intelligence_summary": {
+        "investigation": [],
+        "organization": [
+            "National Security Agency"
+        ],
+        "company": [
+            "EADS",
+            "Pernod Ricard"
+        ],
+        "individual": [
+            "Sarkozy"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

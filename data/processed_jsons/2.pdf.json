@@ -1,0 +1,179 @@
+{
+    "metadata": {
+        "classification_level": "STRICTLY CONFIDENTIAL",
+        "document_id": "17-DEC-2004-0049",
+        "title": "CASE 0049-04: REPORT OF INVESTIGATION",
+        "category": "Investigation",
+        "timestamp": "2004-12-17 00:00:00",
+        "primary_source": "Investigation Task Force Kosovo"
+    },
+    "overview": "The Investigation Task Force (ITF) Kosovo identified several procedural irregularities in cash withdrawals from the Air Traffic Control Services' bank account. Issues included a lack of documentation for travel expenses, discrepancies in document approval timelines, and unverified petty cash expenditures.",
+    "applicable_laws": [
+        {
+            "regulation_id": "UNSCR 1244 (1999)",
+            "excerpt": "Resolution 1244 of 10 June 1999 establishing United Nations Interim Administration in Kosovo",
+            "link": ""
+        },
+        {
+            "regulation_id": "UNMIK Regulation No. 1999/1",
+            "excerpt": "Defines the authority of the Interim Administration in Kosovo under the promulgations of the SRSG",
+            "link": ""
+        },
+        {
+            "regulation_id": "UNMIK Regulation No. 2001/27",
+            "excerpt": "On Essential Labour Law In Kosovo - Section 11 - Termination of a Labour Contract",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "The ITF investigated financial irregularities by examining financial behaviors, documentation practices, and staff interviews.",
+        "interviews": [
+            "Division Manager",
+            "ATCS Official",
+            "Finance Officers 1 and 2",
+            "Official 1 at Prishtina Airport",
+            "Official 2 at Prishtina Airport",
+            "Official 4"
+        ],
+        "documents_reviewed": [
+            "46/2002",
+            "49/2002",
+            "55/2002",
+            "59/2002",
+            "01/2002",
+            "05/2002",
+            "06/2002",
+            "07/2002",
+            "08/2002"
+        ]
+    },
+    "background": {
+        "context": "Frequent bank account cash withdrawals by Air Traffic Control Services raised concerns about financial management practices.",
+        "entities_involved": [
+            "Air Traffic Control Services",
+            "Prishtina International Airport",
+            "Kosovo Trust Agency",
+            "UNMIK Pillar IV",
+            "European Union",
+            "Public Enterprise Airport Prishtina"
+        ],
+        "timeline": [
+            "2003-02-01;2003-02-28: Release of forensic audit report by Chartered Accountants",
+            "2003-10-21: Establishment of Investigation Task Force (ITF) UNMIK/ED/2003/16",
+            "2004-12-17: Release of extensive investigation report"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0049-04",
+        "subject": "Financial irregularities in cash withdrawals from ATCS account",
+        "financial_details": {},
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Irregular cash withdrawals from ATCS bank account noted due to discrepancies in authorization and documentation procedures.",
+                "findings": "The ITF investigators identified procedural shortcomings and discrepancies in the signatures on official documents when compared to staff records."
+            },
+            {
+                "number": 2,
+                "description": "Finance Officer 1's scrutiny of 'requests for cash' from 2002 revealed justifications lacking necessary expenditure documentation.",
+                "findings": "Finance Officer 1 reported absence of documentation, compounded by lack of financial oversight by the ATCS Official."
+            },
+            {
+                "number": 3,
+                "description": "Disorganized ATCS Finance Office led to ineffective financial management and inadequate documentation.",
+                "findings": "Finance Officer 2 highlighted absence of financial software and resisted improvements due to job security concerns outlined by the ATCS Official."
+            },
+            {
+                "number": 4,
+                "description": "Review of multiple requests showed insufficient supporting documentation for expenditure.",
+                "findings": "Upon examining documents (46/2002, 49/2002, 55/2002, and 59/2002), concluded funds allocation had discrepancies against the travel expenditure."
+            },
+            {
+                "number": 5,
+                "description": "Petty cash was spent often without adequate authorization or supporting evidence.",
+                "findings": "Finance Officer 2 reported insufficient oversight on expenses below \u20ac500, leading to numerous undocumented reimbursements."
+            },
+            {
+                "number": 6,
+                "description": "Petty cash expenditures from 2002 and 2003 were not properly justified.",
+                "findings": "Finance Officer 2 noted large expenditures for gifts and electronic items were signed off by the ATCS Official without proper documentation."
+            },
+            {
+                "number": 7,
+                "description": "ATCS Official self-certification of expenses, missing travel documentation, and undocumented petty cash expenditures.",
+                "findings": "ITF noted a lack of supporting documents for per-diem, flight tickets, and authorization for various personal items, raising potential misappropriation."
+            },
+            {
+                "number": 8,
+                "description": "ATCS Official insisted that petty cash expenditures on refreshments were authorized by superiors without requiring justification.",
+                "findings": "The Official argued that bills were sufficient proof, although lacking written approval."
+            },
+            {
+                "number": 9,
+                "description": "ATCS management acknowledged poor documentation standards.",
+                "findings": "The Official conceded inadequate documentation for financial operations below minimal standards."
+            },
+            {
+                "number": 10,
+                "description": "Trust in staff and lack of supervision by ATCS Official.",
+                "findings": "The Official realized supervision should have been more rigorous upon recent assessments of staff performance."
+            },
+            {
+                "number": 11,
+                "description": "Significant cash used for training opportunities for ATCS employees in various countries but with questionable travel necessity.",
+                "findings": "Investigation doubted the business justification of the ATCS Official's frequent travels; funds for employee training were not fully documented."
+            },
+            {
+                "number": 12,
+                "description": "Irregularities found in travel-related financial records with potential undocumented fund allocations.",
+                "findings": "Investigations revealed \u20ac64435 spending undocumented, with uncertain purpose of initial allocations; overpayment of \u20ac1810 in case 59/2002 noted without explanation."
+            },
+            {
+                "number": 13,
+                "description": "ATCS Official self-certified questionable travel expenses and unreturned petty cash leading to financial discrepancies.",
+                "findings": "Several claims for non-business-related expenses identified; unreturned petty cash of \u20ac99 and unaccounted DSA amount among officials for the UK trip."
+            },
+            {
+                "number": 14,
+                "description": "Finance methodologies at ATCS lacked advanced financial program, contributing to financial mismanagement.",
+                "findings": "ITF highlighted reliance on basic Excel sheets; absence of a sophisticated financial management system aggravated documentation issues."
+            },
+            {
+                "number": 15,
+                "description": "Petty cash reserve used without necessary written approvals for various items during 2002.",
+                "findings": "ITF investigation established that items like presents for staff and mobile phone payments were paid out of petty cash without necessary written approvals, raising abuse potentials."
+            },
+            {
+                "number": 16,
+                "description": "Plans to purchase an automated financial software to replace outdated 'excel' spreadsheet in progress.",
+                "findings": "KTA experiencing delays, but steps have been taken to address procurement for a comprehensive automated financial system."
+            },
+            {
+                "number": 17,
+                "description": "Authority levels for approving expenditure undergoing revision.",
+                "findings": "Official 4 proposed a 'authority list' for expenditure approval; awaiting ratification by the Airport Steering Committee as of 2004-07-16."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "ATCS management ignored fraud potential as mentioned in the 2001/02 forensic audit.",
+            "Inadequate oversight and internal controls at Prishtina Airport for monitoring expenditure.",
+            "Failure by ATCS management, especially the ATCS Official and Division Manager, to oversee financial operations effectively."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "UNMIK Pillar 4 \u2013 KTA should take appropriate action against the ATCS Official and the Division Manager for mismanagement of the ATCS finances. (IV04/049/01)",
+            "UNMIK Pillar 4 \u2013 KTA should ensure that senior management of Prishtina Airport comply with observations and recommendations provided by external auditors. Written responses and implementation plans should be produced and the management team be shown how to implement changes. (IV04/049/02)",
+            "UNMIK Pillar 4 \u2013 KTA should ensure that all airport management personnel share ownership and responsibility for effective financial probity and should be reminded of this obligation. (IV04/049/03)",
+            "UNMIK Pillar 4 \u2013 KTA should ensure that written travel policies and procedures should be prepared and issued without further delay and should include the requirement for written approval for all travel, including that undertaken by senior management. This system of travel approvals should not permit airport senior staff to authorise their own travel request and requests for reimbursement of expenses that occurred during said business travel. (IV04/049/04)",
+            "UNMIK Pillar 4 \u2013 KTA should ensure that the travel policies should include the need for documentation to be submitted by those staff on official travel, such as \u201cboarding passes\u201d, \u201cticket stubs\u201d and \u201chotel bills\u201d to demonstrate evidence that travel occurred as per the approval. (IV04/049/05)",
+            "UNMIK Pillar 4 \u2013 KTA should ensure that the introduction of new financial software should be implemented without further delay. The finalisation of this project should be monitored by the airport steering committee. (IV04/049/06)",
+            "UNMIK Pillar 4 \u2013 KTA, in collaboration with the Airport Management team, shall re-evaluate all travel claims and the funds that were not properly accounted for the period 2002-07-01 to present to identify any claims without sufficient documentation and determine what action could be taken to recover monies involved. (IV04/049/07)",
+            "The Office for Coordination of Oversight of Publicly-owned Enterprises should monitor the implementation of the ITF recommendations. (IV04/049/08)"
+        ]
+    },
+    "related_documents": []
+}

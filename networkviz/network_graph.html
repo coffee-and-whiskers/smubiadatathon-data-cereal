@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 900px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"borderWidth": 2, "borderWidthSelected": 10, "color": {"background": "#4E79A7", "border": "#000000"}, "id": "ECA", "label": "Economic Commission for Africa", "shape": "dot", "size": 40, "title": "Economic Commission for Africa"}, {"borderWidth": 2, "borderWidthSelected": 10, "color": {"background": "#4E79A7", "border": "#000000"}, "id": "ACGD", "label": "African Centre for Gender Development", "shape": "dot", "size": 40, "title": "African Centre for Gender Development"}, {"borderWidth": 8, "borderWidthSelected": 10, "color": {"background": "#F28E2B", "border": "orange"}, "id": "Unnamed ECA Staff Member", "label": "Unnamed ECA Staff Member", "shape": "dot", "size": 40, "title": "Unnamed ECA Staff Member\n\n\ud83d\udd36 Allegations:\n- Misappropriation of US$12,000 in DSA for conference participants.\n- Handling of US$49,000 with discrepancies in payments."}, {"borderWidth": 8, "borderWidthSelected": 10, "color": {"background": "#F28E2B", "border": "orange"}, "id": "ACGD Officer", "label": "ACGD Officer", "shape": "dot", "size": 40, "title": "ACGD Officer\n\n\ud83d\udd36 Allegations:\n- Involvement in handling significant sums for DSA and expenses.\n- Acknowledged receipt of unrecorded funds totaling US$50,627."}, {"borderWidth": 2, "borderWidthSelected": 10, "color": {"background": "#4E79A7", "border": "#000000"}, "id": "Barclays", "label": "Barclays Bank", "shape": "dot", "size": 40, "title": "Barclays Bank"}, {"borderWidth": 2, "borderWidthSelected": 10, "color": {"background": "#F28E2B", "border": "#000000"}, "id": "UNDP Liaison Officer", "label": "UNDP Liaison Officer", "shape": "dot", "size": 40, "title": "UNDP Liaison Officer"}, {"borderWidth": 2, "borderWidthSelected": 10, "color": {"background": "#F28E2B", "border": "#000000"}, "id": "Participant 3", "label": "Participant 3", "shape": "dot", "size": 40, "title": "Participant 3"}, {"borderWidth": 8, "borderWidthSelected": 10, "color": {"background": "#9467BD", "border": "red"}, "id": "Staff Regulation 1.2 (g)", "label": "Staff Regulation 1.2 (g)", "shape": "dot", "size": 40, "title": "Staff Regulation 1.2 (g)\n\n\ud83d\udd3a Violations:\n- Staff members shall not use their office or knowledge gained from their official functions for private gain."}, {"borderWidth": 8, "borderWidthSelected": 10, "color": {"background": "#9467BD", "border": "red"}, "id": "Financial Rule 104.9", "label": "Financial Rule 104.9 (ST/SGB/2003/7)", "shape": "dot", "size": 40, "title": "Financial Rule 104.9 (ST/SGB/2003/7)\n\n\ud83d\udd3a Violations:\n- Officials to whom cash advances are issued shall be held personally accountable and financially liable."}, {"borderWidth": 2, "borderWidthSelected": 10, "color": {"background": "#9467BD", "border": "#000000"}, "id": "Financial Rule 104.10", "label": "Financial Rule 104.10 (ST/SGB/2003/7)", "shape": "dot", "size": 40, "title": "Financial Rule 104.10 (ST/SGB/2003/7)"}, {"borderWidth": 2, "borderWidthSelected": 10, "color": {"background": "#E15759", "border": "#000000"}, "id": "Case 0202/01", "label": "Case 0202/01 - Misappropriation of Funds", "shape": "dot", "size": 40, "title": "Case 0202/01 - Misappropriation of Funds"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#555555", "from": "ECA", "label": "1. Organizational Unit", "title": "The African Centre for Gender Development is a part of the Economic Commission for Africa.", "to": "ACGD", "width": 3}, {"arrows": "to", "color": "#555555", "from": "ACGD", "label": "2. Employment", "title": "The unnamed staff member is employed under the African Centre for Gender Development.", "to": "Unnamed ECA Staff Member", "width": 3}, {"arrows": "to", "color": "#555555", "from": "Case 0202/01", "label": "3. Subject of Investigation", "title": "The investigation focuses on the alleged misappropriation of funds by the unnamed staff member.", "to": "Unnamed ECA Staff Member", "width": 3}, {"arrows": "to", "color": "#555555", "from": "Case 0202/01", "label": "4. Involvement in Fund Handling", "title": "The ACGD Officer was involved in handling and distributing funds for the conference.", "to": "ACGD Officer", "width": 3}, {"arrows": "to", "color": "#555555", "from": "Case 0202/01", "label": "5. Bank Involvement", "title": "Barclays was involved in the distribution of funds for the conference.", "to": "Barclays", "width": 3}, {"arrows": "to", "color": "#555555", "from": "Barclays", "label": "6. Fund Distribution", "title": "Barclays representatives were involved in distributing DSA funds with the ACGD Officer.", "to": "ACGD Officer", "width": 3}, {"arrows": "to", "color": "#555555", "from": "Case 0202/01", "label": "7. Attendance Discrepancy", "title": "Participant 3 was noted in discrepancies regarding attendance and DSA distribution.", "to": "Participant 3", "width": 3}, {"arrows": "to", "color": "#555555", "from": "Case 0202/01", "label": "8. Violation Identified", "title": "The investigation found a violation of Staff Regulation 1.2 (g) by the ACGD Officer.", "to": "Staff Regulation 1.2 (g)", "width": 3}, {"arrows": "to", "color": "#555555", "from": "Case 0202/01", "label": "9. Violation Identified", "title": "The investigation found a violation of Financial Rule 104.9 by the ACGD Officer.", "to": "Financial Rule 104.9", "width": 3}, {"arrows": "to", "color": "#555555", "from": "Case 0202/01", "label": "10. Financial Accountability", "title": "The investigation reviewed compliance with Financial Rule 104.10 regarding disbursement recording.", "to": "Financial Rule 104.10", "width": 3}, {"arrows": "to", "color": "#555555", "from": "UNDP Liaison Officer", "label": "11. Witness to Transactions", "title": "The UNDP Liaison Officer was present during some of the fund transactions.", "to": "Case 0202/01", "width": 3}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"borderWidth": 2, "borderWidthSelected": 4, "size": 20, "font": {"size": 15, "color": "black"}}, "edges": {"smooth": {"type": "dynamic"}, "font": {"size": 12, "color": "black"}}, "interaction": {"hover": true, "navigationButtons": true, "zoomView": true}, "physics": {"enabled": true, "barnesHut": {"gravitationalConstant": -5000, "centralGravity": 0.1, "springLength": 300, "springConstant": 0.01, "damping": 0.1}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

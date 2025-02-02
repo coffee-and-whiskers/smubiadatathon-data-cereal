@@ -1,0 +1,34 @@
+{
+    "document_name": "73.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "UNON",
+                "UNPOS",
+                "UNDP"
+            ]
+        },
+        {
+            "topic": "Financial Oversight",
+            "entities": [
+                "UNON/ITS Staff Member",
+                "UN Financial Regulations"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "Staff Regulation 1.2",
+                "Financial Regulation 5.12"
+            ]
+        },
+        {
+            "topic": "Integrity and Ethical Standards",
+            "entities": [
+                "UN Staff Members",
+                "Integrity Standards"
+            ]
+        }
+    ]
+}

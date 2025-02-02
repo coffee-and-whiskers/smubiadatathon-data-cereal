@@ -1,0 +1,73 @@
+{
+    "entities": [
+        {
+            "id": "Israel",
+            "label": "Israel",
+            "type": "organization"
+        },
+        {
+            "id": "Italy",
+            "label": "Italy",
+            "type": "organization"
+        },
+        {
+            "id": "United States",
+            "label": "United States",
+            "type": "organization"
+        },
+        {
+            "id": "Binyamin Netanyahu",
+            "label": "Binyamin Netanyahu",
+            "type": "individual"
+        },
+        {
+            "id": "Silvio Berlusconi",
+            "label": "Silvio Berlusconi",
+            "type": "individual"
+        },
+        {
+            "id": "Housing Construction in East Jerusalem",
+            "label": "Housing Construction in East Jerusalem",
+            "type": "statutory",
+            "outline": "allegation"
+        }
+    ],
+    "edges": [
+        {
+            "source": "Israel",
+            "target": "Italy",
+            "label": "1. Diplomatic Outreach",
+            "tooltip": "Israel reached out to Italy for assistance in mending relations with the U.S."
+        },
+        {
+            "source": "Italy",
+            "target": "Binyamin Netanyahu",
+            "label": "2. Support Offered",
+            "tooltip": "Italian PM Silvio Berlusconi offered support to Israeli PM Binyamin Netanyahu."
+        },
+        {
+            "source": "Binyamin Netanyahu",
+            "target": "Silvio Berlusconi",
+            "label": "3. Diplomatic Conversation",
+            "tooltip": "A conversation occurred between Israeli PM Netanyahu and Italian PM Berlusconi regarding U.S. relations."
+        },
+        {
+            "source": "Israel",
+            "target": "United States",
+            "label": "4. Tensions Over Housing",
+            "tooltip": "Tensions arose due to housing construction in East Jerusalem."
+        },
+        {
+            "source": "Housing Construction in East Jerusalem",
+            "target": "Israel",
+            "label": "5. Point of Contention",
+            "tooltip": "The construction of 1,600 homes in East Jerusalem is a contentious issue."
+        }
+    ],
+    "allegations": {
+        "Housing Construction in East Jerusalem": [
+            "The construction is a point of contention between Israel and the U.S."
+        ]
+    },
+    "violations": {}
+}

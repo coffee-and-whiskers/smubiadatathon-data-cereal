@@ -1,0 +1,99 @@
+{
+    "metadata": {
+        "classification_level": "STRICTLY CONFIDENTIAL",
+        "document_id": "OIOS-PTF-0931",
+        "title": "CASE 026/06: REPORT ON WALTER CABRERA",
+        "category": "Investigation",
+        "timestamp": "2006-07-19",
+        "primary_source": "OIOS PROCUREMENT TASK FORCE"
+    },
+    "overview": "The investigative report examines Mr. Walter Cabrera's involvement in the procurement process for DPKO CITS division's laptop computers, specifically focusing on case PD/155/02. It investigates whether Mr. Cabrera engaged in misconduct during the bidding process and contract awards, especially concerning TCIL and the selection of computer brands. Allegations include bid cancellation and 'technical issues' arguments allegedly used against La Cresta, the lowest bidder.",
+    "applicable_laws": [
+        {
+            "regulation_id": "1.2(i)",
+            "excerpt": "Prohibition against improper communication of proprietary information to unauthorized entities.",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "The Task Force reviewed the audit report findings, conducted interviews with relevant auditors and Mr. Cabrera, and examined files from the procurement department. Forensic data recovery was employed to gather missing documentation and electronic communication related to the Thunderbird and TCIL contracts.",
+        "interviews": [
+            "Auditors involved in the audit report",
+            "Mr. Walter Cabrera",
+            "Procurement department officials",
+            "Thunderbird LLC representatives"
+        ],
+        "documents_reviewed": [
+            "Procurement files for Thunderbird contract",
+            "Procurement files for TCIL contracts",
+            "Email communications",
+            "Electronically stored records"
+        ]
+    },
+    "background": {
+        "context": "The Task Force focused on potential fraudulent activities identified in a prior audit. The investigation scrutinized Mr. Cabrera's actions within the laptop procurement process, examining issues around contract cancellation and vendor communication.",
+        "entities_involved": [
+            "Walter Cabrera",
+            "DPKO CITS",
+            "TCIL",
+            "PD",
+            "CITS",
+            "ITSD",
+            "La Cresta"
+        ],
+        "timeline": [
+            "2006-01-19: Audit report AP2005/600/20 identifies potential fraud.",
+            "2002-02: DPKO CITS requests a new systems contract for laptops.",
+            "2002-02-25: PD issues an expression of interest.",
+            "2002-04-15: Invitation to bid sent to 36 vendors.",
+            "2002-04-24: Bid amendment issued specifying accepted brands.",
+            "2002-05-15: Bids read publicly.",
+            "2002-05-30: Mr. Cabrera requests resubmission from La Cresta."
+        ]
+    },
+    "investigation_details": {
+        "case_number": "PTF/026/06",
+        "subject": "Mr. Walter Cabrera",
+        "allegations": [
+            {
+                "number": 3,
+                "description": "Alleged expedited approval request for Thunderbird LLC without proper documentation, potentially involving Mr. Cabrera.",
+                "findings": "The Task Force found no precise procurement rule indicating impropriety by Mr. Cabrera. Witnesses described conditional vendor notifications as acceptable when expedited approvals were required."
+            },
+            {
+                "number": 4,
+                "description": "Mr. Bahel's involvement in notifying Thunderbird of a likely contract award in advance, raising propriety concerns.",
+                "findings": "No evidence suggested Mr. Cabrera was aware of any impropriety or shared responsibility for the expedited approval notification."
+            },
+            {
+                "number": 5,
+                "description": "Allegations that Mr. Cabrera distorted communication to cancel the initial bid for laptops, influencing the outcome in TCIL's favor.",
+                "findings": "The investigation confirmed incomplete procurement documentation but found no concrete evidence of communication distortion by Mr. Cabrera."
+            },
+            {
+                "number": 6,
+                "description": "Alleged improper handling of bid clarification and resubmission request to La Cresta.",
+                "findings": "The investigation found Mr. Cabrera acted appropriately in requesting resubmission from La Cresta to meet bid requirements."
+            },
+            {
+                "number": 7,
+                "description": "La Cresta's upgraded model acceptance potentially influenced procurement decisions unfairly.",
+                "findings": "Mr. Cabrera maintained open dialogue with La Cresta and forwarded offer updates for evaluation, ensuring compliance."
+            },
+            {
+                "number": 8,
+                "description": "Involvement in bid cancellation and re-bidding despite La Cresta's compliant status and lowest bid.",
+                "findings": "No evidence was found supporting Mr. Cabrera's involvement in the re-bidding decision. He maintained dialogue with DPKO, denying involvement in PD's reasoning."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "No substantive evidence supporting improper conduct by Mr. Cabrera.",
+            "Incomplete procurement documentation challenged the Task Force's ability to draw definitive conclusions.",
+            "The Task Force could not identify sufficient basis to support a finding that Mr. Cabrera violated UN rules."
+        ],
+        "violations": []
+    },
+    "related_documents": []
+}

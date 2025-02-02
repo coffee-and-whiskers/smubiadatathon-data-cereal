@@ -1,0 +1,119 @@
+{
+    "overview": {
+        "investigation": [
+            "investigation report",
+            "alleged administrative irregularity",
+            "X-ray tender",
+            "Case 287/04"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "UNMIK"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [
+            "Assembly of Kosovo"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Finance Administration Instruction 1999/2",
+            "Law on Public Financial Management and Accountability 2003/2",
+            "Law on Public Procurement in Kosovo 2003/17"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "investigation",
+            "interviews",
+            "reviewing documents",
+            "analyzing regulations"
+        ],
+        "organization": [
+            "KTA"
+        ],
+        "company": [],
+        "individual": [
+            "Divisional Manager",
+            "KTA Finance Official",
+            "KTA Internal Auditor 2"
+        ],
+        "statutory": []
+    },
+    "background": {
+        "investigation": [
+            "international tender",
+            "contract finalization"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "Kosovo Trust Agency (KTA)",
+            "UNMIK"
+        ],
+        "company": [
+            "Vendor"
+        ],
+        "individual": [
+            "Divisional Manager"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "case_number: 287/04",
+            "Administrative irregularities",
+            "allegations",
+            "findings"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "KTA"
+        ],
+        "company": [],
+        "individual": [
+            "Divisional Manager"
+        ],
+        "statutory": []
+    },
+    "conclusion": {
+        "investigation": [
+            "findings",
+            "minor administrative irregularity"
+        ],
+        "organization": [
+            "Pristina Airport",
+            "KTA"
+        ],
+        "company": [],
+        "individual": [
+            "Divisional Manager"
+        ],
+        "statutory": []
+    },
+    "recommendations": {
+        "investigation": [
+            "actions",
+            "procurement activities"
+        ],
+        "organization": [
+            "airport staff"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Procurement Regulations"
+        ]
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

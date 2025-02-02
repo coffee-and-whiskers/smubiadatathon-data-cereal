@@ -1,0 +1,124 @@
+{
+    "overview": {
+        "investigation": [
+            "misconduct",
+            "investigation"
+        ],
+        "organization": [
+            "UNON",
+            "ITS"
+        ],
+        "company": [],
+        "individual": [
+            "UNON/ITS staff member"
+        ],
+        "statutory": [
+            "breaches in procedures",
+            "regulations"
+        ]
+    },
+    "applicable_laws": {
+        "investigation": [],
+        "organization": [
+            "United Nations"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "Staff Regulation 1.2",
+            "Staff Regulation 101.2",
+            "Financial Regulation 5.12"
+        ]
+    },
+    "methodology": {
+        "investigation": [
+            "investigation"
+        ],
+        "organization": [
+            "UNON",
+            "UNPOS",
+            "UNDP"
+        ],
+        "company": [],
+        "individual": [],
+        "statutory": [
+            "UN rules and regulations"
+        ]
+    },
+    "background": {
+        "investigation": [
+            "investigation"
+        ],
+        "organization": [
+            "UNON",
+            "ITS",
+            "UNPOS"
+        ],
+        "company": [],
+        "individual": [
+            "UNON/ITS Staff Member",
+            "Representative of the Secretary General"
+        ],
+        "statutory": []
+    },
+    "investigation_details": {
+        "investigation": [
+            "case_number",
+            "allegations"
+        ],
+        "organization": [
+            "UNON",
+            "ITS",
+            "UNPOS"
+        ],
+        "company": [],
+        "individual": [
+            "UNON/ITS Staff Member"
+        ],
+        "statutory": [
+            "Staff Regulation 1.2",
+            "UN financial rules"
+        ]
+    },
+    "conclusion": {
+        "investigation": [
+            "findings"
+        ],
+        "organization": [
+            "UNON"
+        ],
+        "company": [],
+        "individual": [
+            "UNON/ITS Staff Member"
+        ],
+        "statutory": [
+            "staff regulations",
+            "financial rules",
+            "integrity standards",
+            "Financial Regulations"
+        ]
+    },
+    "recommendations": {
+        "investigation": [
+            "report findings"
+        ],
+        "organization": [
+            "UNON",
+            "UNPOS"
+        ],
+        "company": [],
+        "individual": [
+            "Representative of the Secretary General"
+        ],
+        "statutory": [
+            "procurement procedures"
+        ]
+    },
+    "related_documents": {
+        "investigation": [],
+        "organization": [],
+        "company": [],
+        "individual": [],
+        "statutory": []
+    }
+}

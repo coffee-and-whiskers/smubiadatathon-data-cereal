@@ -1,0 +1,41 @@
+{
+    "document_name": "51.pdf",
+    "topics": [
+        {
+            "topic": "Fraudulent Activities",
+            "entities": [
+                "Pristina Airport",
+                "Cargo Department"
+            ]
+        },
+        {
+            "topic": "Financial Misconduct",
+            "entities": [
+                "Unauthorized Payments",
+                "Unrecorded Transactions"
+            ]
+        },
+        {
+            "topic": "Regulatory Violations",
+            "entities": [
+                "KCC Article 215",
+                "PCCK Article 341",
+                "Embezzlement"
+            ]
+        },
+        {
+            "topic": "Abuse of Official Position",
+            "entities": [
+                "Misappropriation",
+                "Neglect of Duties"
+            ]
+        },
+        {
+            "topic": "Judicial Proceedings",
+            "entities": [
+                "Department of Justice",
+                "Potential Charges"
+            ]
+        }
+    ]
+}

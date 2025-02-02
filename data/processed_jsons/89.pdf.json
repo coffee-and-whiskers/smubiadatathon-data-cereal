@@ -1,0 +1,61 @@
+{
+    "metadata": {
+        "classification_level": "TOP SECRET//SIGINT/NOFORN",
+        "document_id": "wikileaks_nsa_france_2015",
+        "title": "Global SIGINT Highlights (Executive Version): Sensitive Issues on the Agenda When French, U.S. Presidents Meet Next Week in Washington",
+        "category": "Intelligence",
+        "timestamp": "2010-03-24",
+        "primary_source": "National Security Agency (NSA)"
+    },
+    "overview": "A top-secret report from the National Security Agency detailing communications intercepted from high-level French governmental entities. It focuses on French President Nicolas Sarkozy's planned discussions with U.S. President Barack Obama, highlighting topics such as bilateral intelligence cooperation, military commitments in Afghanistan, an EADS contract, and a trademark dispute involving Pernod Ricard.",
+    "applicable_laws": [],
+    "methodology": {
+        "description": "The report is compiled from signals intelligence (SIGINT) intercepts, concentrating on strategic communications between French and U.S. diplomatic and governmental officials.",
+        "interviews": [],
+        "documents_reviewed": []
+    },
+    "background": {
+        "context": "This report provides insight into the anticipated discourse between French and U.S. leaders during a diplomatic meeting.",
+        "entities_involved": [
+            "Nicolas Sarkozy",
+            "Barack Obama",
+            "Pierre Vimont",
+            "Jean-David Levitte"
+        ],
+        "timeline": [
+            "2015-06-23: WikiLeaks releases the document.",
+            "2010-03-24: Intercept summary compiled."
+        ]
+    },
+    "investigation_details": {
+        "case_number": "Z-3/OO/507179-10",
+        "subject": "Intercepted communications between French and U.S. officials.",
+        "financial_details": {},
+        "allegations": []
+    },
+    "intelligence_summary": {
+        "sources": [
+            "National Security Agency (NSA)"
+        ],
+        "key_findings": [
+            "French President Sarkozy's frustration over the U.S. retracting from a bilateral intelligence agreement.",
+            "Potential commitment of French military trainers to Afghanistan discussed.",
+            "EADS's prospect for a tanker aircraft contract with the U.S. military.",
+            "Pernod Ricard involved in a trademark dispute requiring intervention."
+        ],
+        "assessments": [],
+        "risks": []
+    },
+    "conclusion": {
+        "findings": [
+            "The document exposes critical French positions and strategic intents prior to an upcoming diplomatic meeting with the U.S."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": []
+    },
+    "related_documents": [
+        "https://wikileaks.org/nsa-france/"
+    ]
+}

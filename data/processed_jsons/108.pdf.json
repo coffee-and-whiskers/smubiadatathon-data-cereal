@@ -1,0 +1,64 @@
+{
+    "metadata": {
+        "classification_level": "TOP SECRET//COMINT//ORCON/NOFORN",
+        "document_id": "Z-3/OO/515570-09",
+        "title": "Japanese Strive to Avoid Damage to U.S. Relations Over Cherry Imports",
+        "category": "Intelligence",
+        "timestamp": "2009-01-01",
+        "primary_source": "National Security Agency (NSA)"
+    },
+    "overview": "This report details the National Security Agency's interception of communications within the Japanese Ministry of Agriculture, Forestry and Fisheries concerning strategies to mitigate a trade dispute with the United States over cherry imports, emphasizing Japan's desire to avoid politicization of the issue in Washington.",
+    "applicable_laws": [],
+    "methodology": {
+        "description": "The report is derived from intelligence intercepts of officials within the Japanese Ministry of Agriculture, Forestry and Fisheries.",
+        "interviews": [],
+        "documents_reviewed": []
+    },
+    "background": {
+        "context": "Amid a trade dispute between the US and Japan concerning cherry imports, the National Security Agency monitored communication channels within the Japanese Ministry to understand their negotiation strategies with the US.",
+        "entities_involved": [
+            "National Security Agency",
+            "Japanese Ministry of Agriculture, Forestry and Fisheries",
+            "US Department of Agriculture"
+        ],
+        "timeline": []
+    },
+    "investigation_details": {
+        "case_number": "Z-3/OO/515570-09",
+        "subject": "Trade Dispute: Import of US Cherries",
+        "financial_details": {},
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Interception of communications to gain insights into Japan's trade negotiation strategies.",
+                "findings": "Japan considered using back channels to share information with Washington to maintain diplomatic relations."
+            }
+        ]
+    },
+    "intelligence_summary": {
+        "sources": [
+            "WikiLeaks",
+            "NSA Intelligence Intercepts"
+        ],
+        "key_findings": [
+            "Japan's main incentive was avoiding politicization of the cherry trade issue.",
+            "Back channel communications were considered to maintain relations with Washington."
+        ],
+        "assessments": [],
+        "risks": []
+    },
+    "conclusion": {
+        "findings": [
+            "Japanese Ministry was developing strategies to prevent the politicization of the cherry import dispute in Washington."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "Consider notifying the U.S. through back channels about political pressures influencing cherry import decisions."
+        ]
+    },
+    "related_documents": [
+        "https://wikileaks.org/nsa-japan"
+    ]
+}

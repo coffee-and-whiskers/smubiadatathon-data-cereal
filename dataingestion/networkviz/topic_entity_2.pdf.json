@@ -1,0 +1,38 @@
+{
+    "document_name": "2.pdf",
+    "topics": [
+        {
+            "topic": "Financial Management and Oversight",
+            "entities": [
+                "Air Traffic Control Services",
+                "Prishtina International Airport",
+                "Kosovo Trust Agency",
+                "UNMIK Pillar IV"
+            ]
+        },
+        {
+            "topic": "Procurement and Documentation Irregularities",
+            "entities": [
+                "ATCS Official",
+                "Finance Officers",
+                "Public Enterprise Airport Prishtina"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "UNSCR 1244 (1999)",
+                "UNMIK Regulation No. 1999/1",
+                "UNMIK Regulation No. 2001/27"
+            ]
+        },
+        {
+            "topic": "Internal Controls and Fraud Prevention",
+            "entities": [
+                "Investigation Task Force Kosovo",
+                "Division Manager",
+                "European Union"
+            ]
+        }
+    ]
+}

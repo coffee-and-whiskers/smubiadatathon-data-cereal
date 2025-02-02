@@ -1,0 +1,90 @@
+{
+    "metadata": {
+        "classification_level": "STRICTLY CONFIDENTIAL",
+        "document_id": "id-case-no-0374-04",
+        "title": "CASE 374/04: Report of Investigation",
+        "category": "Investigation",
+        "timestamp": "2005-02-28 00:00:00",
+        "primary_source": "Office of Internal Oversight Services - Investigations Division"
+    },
+    "overview": "The investigation examined alleged irregularities in UNMIK\u2019s procurement process for Personal Digital Assistants (PDAs) required for field operations by the Directorate of Rural Affairs in Kosovo. The investigation focused on procurement discrepancies, particularly issues of technical compliance, value considerations, and adherence to UN procurement policies.",
+    "applicable_laws": [
+        {
+            "regulation_id": "UN Financial Rules and Regulations",
+            "excerpt": "Governs procurement processes within UN environments",
+            "link": ""
+        },
+        {
+            "regulation_id": "UNMIK Finance Administrative Instruction 2/1999",
+            "excerpt": "Relates to public procurements using KCB funds",
+            "link": ""
+        }
+    ],
+    "methodology": {
+        "description": "Investigators conducted interviews with key witnesses and collected and analyzed all relevant documentation pertaining to the procurement process.",
+        "interviews": [
+            "Witnesses relevant to the procurement",
+            "Alleged subjects"
+        ],
+        "documents_reviewed": [
+            "All bids submitted",
+            "Bid evaluation documents",
+            "SPUVESEK project details"
+        ]
+    },
+    "background": {
+        "context": "The investigation was prompted by allegations of irregularities in the procurement process conducted by UNMIK for PDAs needed for animal identification and registration tasks in Kosovo.",
+        "entities_involved": [
+            "Directorate of Rural Affairs (DRA)",
+            "UNMIK Civil Administration",
+            "Policy Review and Internal Oversight Unit (PRIO)",
+            "European Agency for Reconstruction (EAR)"
+        ],
+        "timeline": [
+            "2004-04: Procurement exercise",
+            "2001-10: Formation of DRA from the Department of Agriculture"
+        ]
+    },
+    "investigation_details": {
+        "case_number": "0374/04",
+        "subject": "",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Irregularities in the procurement process for PDAs by UNMIK's Directorate of Rural Affairs, focusing on bid evaluation issues.",
+                "findings": "The logistics officer of the DRA disqualified two vendors for exceeding the price ceiling."
+            },
+            {
+                "number": 2,
+                "description": "All bids exceeded the financial limit for PDA procurement, leading to a tender cancellation.",
+                "findings": "Vendors 2 and 3 had bids that surpassed the price ceiling due to additional charges."
+            },
+            {
+                "number": 3,
+                "description": "Discrepancy in Vendor 1's bid regarding compliance with environmental sealing features.",
+                "findings": "Vendor 1's typed bid responses did not meet the required technical specifications."
+            },
+            {
+                "number": 4,
+                "description": "Concerns about Vendor 4's selection despite other vendors offering lower bids.",
+                "findings": "Vendor 4's bid was chosen due to additional services and compliance with specifications."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "The technical specifications initially proposed were inconsistent with field requirements.",
+            "Notable discrepancies were identified in the bid evaluation process.",
+            "Vendor 4 was selected due to added features matching operational needs."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "Review and clearly define technical specifications before initiating procurement.",
+            "Implement more stringent compliance checks to verify bid conditions are met.",
+            "Communicate investigation results to DRA staff, including DRA employee 2 and logistics officer 1."
+        ]
+    },
+    "related_documents": []
+}

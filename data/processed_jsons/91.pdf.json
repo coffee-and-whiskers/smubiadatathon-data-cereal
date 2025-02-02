@@ -1,0 +1,65 @@
+{
+    "metadata": {
+        "classification_level": "TOP SECRET//COMINT//REL TO USA, AUS, CAN, GBR and NZL",
+        "document_id": "NSA_Global_SIGINT_2004_0001",
+        "title": "NSA Global SIGINT Highlights: French Envoy Plans to Release List of U.S. Firms Who Allegedly Profited from OFF(2004)",
+        "category": "Intelligence",
+        "timestamp": "",
+        "primary_source": "National Security Agency (NSA)"
+    },
+    "overview": "This intelligence report details the interception of French Ambassador Jean-David Levitte's communications, revealing his intent to expose U.S. firms allegedly profiting from the UN Oil-for-food program, despite only French companies being named in the Iraq Survey Group report.",
+    "applicable_laws": [],
+    "methodology": {
+        "description": "Signals Intelligence (SIGINT) collection method was used.",
+        "interviews": [],
+        "documents_reviewed": []
+    },
+    "background": {
+        "context": "The NSA intercepted communications from the French Ambassador expressing dissatisfaction with the Iraq Survey Group's report, which named French companies but not U.S. firms, despite alleged connections.",
+        "entities_involved": [
+            "NSA",
+            "French Ambassador",
+            "Jean-David Levitte",
+            "U.S. Congress",
+            "UN Oil-for-food program",
+            "Iraq Survey Group"
+        ],
+        "timeline": []
+    },
+    "investigation_details": {
+        "case_number": "3/OO/27079-04",
+        "subject": "Interception of French Ambassador's Communications",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Allegation that French companies acted as subsidiaries of U.S. firms, benefiting from the UN Oil-for-food program.",
+                "findings": "Intercepted communications confirm Ambassador's plan to expose these allegations to U.S. Congress and media."
+            }
+        ]
+    },
+    "intelligence_summary": {
+        "sources": [
+            "WikiLeaks",
+            "Internal NSA Documents"
+        ],
+        "key_findings": [
+            "Ambassador Levitte criticized the omission of U.S. firms in the report.",
+            "He intended to present evidence to U.S. Congress and media."
+        ],
+        "risks": [
+            "Potential diplomatic tensions between the U.S. and France."
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "NSA successfully gathered intelligence that could lead to diplomatic challenges."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": []
+    },
+    "related_documents": [
+        "https://wikileaks.org/nsa-france/"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "document_name": "44.pdf",
+    "topics": [
+        {
+            "topic": "Procurement Irregularities",
+            "entities": [
+                "Pristina Airport",
+                "Vendor 1",
+                "Vendor 2"
+            ]
+        },
+        {
+            "topic": "Conflict of Interest",
+            "entities": [
+                "Vendor 2 Representative",
+                "PEAP Official"
+            ]
+        },
+        {
+            "topic": "Regulatory Compliance",
+            "entities": [
+                "Financial Agreement 1999/2",
+                "Procurement Regulations"
+            ]
+        },
+        {
+            "topic": "Management Oversight",
+            "entities": [
+                "Pristina Airport Management",
+                "PEAP Official"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "document_name": "113.pdf",
+    "topics": [
+        {
+            "topic": "Climate Change Commitments",
+            "entities": [
+                "Japan",
+                "G-8",
+                "Germany",
+                "U.S.",
+                "Emerging Economies"
+            ]
+        },
+        {
+            "topic": "International Negotiations",
+            "entities": [
+                "Japan",
+                "Germany",
+                "U.S.",
+                "China",
+                "India",
+                "Brazil"
+            ]
+        },
+        {
+            "topic": "Global Economic Dynamics",
+            "entities": [
+                "G-8",
+                "Emerging Markets",
+                "South Korea",
+                "South Africa",
+                "Mexico"
+            ]
+        }
+    ]
+}

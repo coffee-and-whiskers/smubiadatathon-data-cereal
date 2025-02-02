@@ -1,0 +1,65 @@
+{
+    "metadata": {
+        "classification_level": "Confidential",
+        "document_id": "IV04-377",
+        "title": "CASE 277/04: Allegations of Bribes/Kickbacks for Employment at Pristina Airport",
+        "category": "Investigation",
+        "timestamp": "2023-01-05",
+        "primary_source": "United Nations Interim Administration Mission in Kosovo"
+    },
+    "overview": "The report outlines the investigation into allegations of bribery and kickbacks at Pristina Airport to secure employment, as detailed by the Investigation Task Force. New information reveals multiple bribes were paid by non-staff members to officials for job procurement.",
+    "applicable_laws": [],
+    "background": {
+        "context": "The case involves allegations of bribery at Pristina Airport, initially reported to Kosovo Police Service by Non Staff member 1. The matter has been referred to the Department of Justice and is subject to ongoing judicial investigations.",
+        "entities_involved": [
+            "Non Staff member 1",
+            "Non Staff member 2",
+            "Non Staff member 3",
+            "Official 1",
+            "Official 2's Secretary",
+            "Pristina Airport employees",
+            "Kosovo Police Service",
+            "Non Staff member 4",
+            "Non Staff member 5",
+            "KPS Officer 2"
+        ],
+        "timeline": [
+            "2004-07-25;2004-07-26: Alleged meeting of Non Staff member 1 with Official 1 at Pristina Airport to discuss employment opportunities.",
+            "2004-07-30;2004-07-31: Non Staff member 1 was contacted by Official 1\u2019s daughter and met at Restaurant 1 in Hajvali, where payments were made.",
+            "2004-09-06: Alleged case of kickbacks for Pristina Airport employment involving Non Staff member 5 and Non Staff member 4."
+        ]
+    },
+    "investigation_details": {
+        "case_number": "377/04",
+        "subject": "Allegations of Bribes/Kickbacks for Employment at Pristina Airport",
+        "allegations": [
+            {
+                "number": 1,
+                "description": "Kickbacks alleged to have been paid to secure employment at Pristina Airport."
+            },
+            {
+                "number": 2,
+                "description": "Non Staff member 1 and others paid significant sums to officials in exchange for prospective employment."
+            },
+            {
+                "number": 3,
+                "description": "Non Staff member 5, working at a clothing boutique, offered to secure a job at the airport for Non Staff member 4 for a fee of \u20ac3,000.00."
+            }
+        ]
+    },
+    "conclusion": {
+        "findings": [
+            "Multiple instances of bribery occurred as individuals sought employment at Pristina Airport.",
+            "Known entities involved facilitated the payment process at various public locations.",
+            "As the case has been referred to the Department of Justice, no further conclusions can be made by ITF."
+        ],
+        "violations": []
+    },
+    "recommendations": {
+        "actions": [
+            "The ITF recommends that UNMIK Pillar IV take no administrative action against airport staff until the judicial process is finalized.",
+            "Should the airport staff not be criminally charged, UNMIK Pillar IV should consider appropriate administrative action against implicated airport staff in light of the Department of Justice's findings."
+        ]
+    },
+    "related_documents": []
+}
