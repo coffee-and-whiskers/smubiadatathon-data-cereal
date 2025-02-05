@@ -4,377 +4,182 @@ import json
 import os
 import re
 from openai import OpenAI
-from supabase import create_client
 from dotenv import load_dotenv
 
-# Load environment variables
 load_dotenv()
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")
-
-# Initialize Supabase and OpenAI clients
-supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=OPENAI_API_KEY)
 
-#========================================================================================
-#JSON TO NETWORK GRAPH CONVERSION
-#========================================================================================
+# ========================================================================================
+# JSON TO NETWORK GRAPH CONVERSION
+# ========================================================================================
 
-# # Define the folder for saving network visualization JSONs
-# NETWORKVIZ_FOLDER = "networkviz"
-# os.makedirs(NETWORKVIZ_FOLDER, exist_ok=True)  # Ensure the folder exists
+NETWORKVIZ_FOLDER = "networkviz"
+os.makedirs(NETWORKVIZ_FOLDER, exist_ok=True) 
 
-# prompt = """
-#         You are an expert in data extraction, investigative analysis, and network visualization. Your task is to extract key entities, relationships, allegations, and violations from an investigation report JSON and structure them into a network graph format suitable for visualization.
-#         You are outlining a network graph that will allow users to understand quickly and comprehensively the report details.
-#         ---
+prompt = """
+        You are an expert in data extraction, investigative analysis, and network visualization. Your task is to extract key entities, relationships, allegations, and violations from an investigation report JSON and structure them into a network graph format suitable for visualization.
+        You are outlining a network graph that will allow users to understand quickly and comprehensively the report details.
+        ---
 
-#         ### **Objective:**
-#         Given an **investigation report in JSON format**, analyze the data and extract:
-#         1. **Key entities** (organizations, individuals, companies, laws, and investigations). 
-#         2. **Relationships** (connections between entities such as audits, procurement involvement, violations, etc.).
-#         3. **Allegations & violations** (flag entities that are accused of or have committed regulatory breaches).
-#         4. **Chronological order** (assign event numbers to relationships to indicate the flow of events).
-#         5. If there are any entities without any edges, add in a rough description of their role or function in the investigation or report for when mouse over.
-#         ONLY RETURN THE JSON 
-#         ---
+        ### **Objective:**
+        Given an **investigation report in JSON format**, analyze the data and extract:
+        1. **Key entities** (organizations, individuals, companies, laws, and investigations). 
+        2. **Relationships** (connections between entities such as audits, procurement involvement, violations, etc.).
+        3. **Allegations & violations** (flag entities that are accused of or have committed regulatory breaches).
+        4. **Chronological order** (assign event numbers to relationships to indicate the flow of events).
+        5. If there are any entities without any edges, add in a rough description of their role or function in the investigation or report for when mouse over.
+        ONLY RETURN THE JSON 
+        ---
 
-#         ### **Schema Format for Output**
-#         **Return ONLY THE data in the following structured JSON format:**
-#         ```json
-#         {
-#             "entities": [
-#                 {
-#                     "id": "Unique Entity Identifier",
-#                     "label": "Readable Entity Name",
-#                     "type": "organization | company | individual | statutory | investigation",
-#                     "outline": "allegation | violation (optional, only if applicable)"
-#                 }
-#             ],
-#             "edges": [
-#                 {
-#                     "source": "Entity ID",
-#                     "target": "Entity ID",
-#                     "label": "1. Relationship Description",
-#                     "tooltip": "Detailed explanation of the connection"
-#                 }
-#             ],
-#             "allegations": {
-#                 "Entity ID": ["List of allegations against this entity"]
-#             },
-#             "violations": {
-#                 "Entity ID": ["List of confirmed violations for this entity"]
-#             }
-#         }
+        ### **Schema Format for Output**
+        **Return ONLY THE data in the following structured JSON format:**
+        ```json
+        {
+            "entities": [
+                {
+                    "id": "Unique Entity Identifier",
+                    "label": "Readable Entity Name",
+                    "type": "organization | company | individual | statutory | investigation",
+                    "outline": "allegation | violation (optional, only if applicable)"
+                }
+            ],
+            "edges": [
+                {
+                    "source": "Entity ID",
+                    "target": "Entity ID",
+                    "label": "1. Relationship Description",
+                    "tooltip": "Detailed explanation of the connection"
+                }
+            ],
+            "allegations": {
+                "Entity ID": ["List of allegations against this entity"]
+            },
+            "violations": {
+                "Entity ID": ["List of confirmed violations for this entity"]
+            }
+        }
 
-#         Rough Example, be more detailed if you can:
-#         {
-#             "entities": [
-#                 {"id": "Case 0280/04", "label": "Case 0280/04 - Tender Irregularities", "type": "investigation"},
-#                 {"id": "UNMIK", "label": "United Nations Mission in Kosovo (UNMIK)", "type": "organization"},
-#                 {"id": "Pristina International Airport", "label": "Pristina International Airport", "type": "organization"},
-#                 {"id": "Chartered Accountants", "label": "Chartered Accountants (Audit)", "type": "organization"},
+        Rough Example, be more detailed if you can:
+        {
+            "entities": [
+                {"id": "Case 0280/04", "label": "Case 0280/04 - Tender Irregularities", "type": "investigation"},
+                {"id": "UNMIK", "label": "United Nations Mission in Kosovo (UNMIK)", "type": "organization"},
+                {"id": "Pristina International Airport", "label": "Pristina International Airport", "type": "organization"},
+                {"id": "Chartered Accountants", "label": "Chartered Accountants (Audit)", "type": "organization"},
                 
-#                 # Allegations (Orange border - Individuals)
-#                 {"id": "DOTI Official 1", "label": "DOTI Official (Left UNMIK 2002-06-30)", "type": "individual", "outline": "allegation"},
+                # Allegations (Orange border - Individuals)
+                {"id": "DOTI Official 1", "label": "DOTI Official (Left UNMIK 2002-06-30)", "type": "individual", "outline": "allegation"},
                 
-#                 # Companies (Green for procurement-related entities)
-#                 {"id": "Tender Process", "label": "Tender Process for Cleaning Machines", "type": "company", "outline": "allegation"},
+                # Companies (Green for procurement-related entities)
+                {"id": "Tender Process", "label": "Tender Process for Cleaning Machines", "type": "company", "outline": "allegation"},
                 
-#                 # Statutory Violations (Purple for regulatory breaches)
-#                 {"id": "Finance Admin Instruction 1999/2", "label": "Finance Admin Instruction 1999/2", "type": "statutory", "outline": "violation"}
-#             ],
-#             "edges": [
-#                 {"source": "Pristina International Airport", "target": "Chartered Accountants", 
-#                 "label": "1. Audit Conducted", "tooltip": "Financial audit was conducted at Pristina International Airport to review procurement processes."},
+                # Statutory Violations (Purple for regulatory breaches)
+                {"id": "Finance Admin Instruction 1999/2", "label": "Finance Admin Instruction 1999/2", "type": "statutory", "outline": "violation"}
+            ],
+            "edges": [
+                {"source": "Pristina International Airport", "target": "Chartered Accountants", 
+                "label": "1. Audit Conducted", "tooltip": "Financial audit was conducted at Pristina International Airport to review procurement processes."},
 
-#                 {"source": "Chartered Accountants", "target": "Case 0280/04", 
-#                 "label": "2. Audit Triggered Investigation", "tooltip": "The audit found irregularities, leading to an official investigation (Case 0280/04)."},
+                {"source": "Chartered Accountants", "target": "Case 0280/04", 
+                "label": "2. Audit Triggered Investigation", "tooltip": "The audit found irregularities, leading to an official investigation (Case 0280/04)."},
 
-#                 {"source": "Case 0280/04", "target": "UNMIK", 
-#                 "label": "3. Investigation Conducted By", "tooltip": "UNMIK initiated the formal investigation based on audit findings."},
+                {"source": "Case 0280/04", "target": "UNMIK", 
+                "label": "3. Investigation Conducted By", "tooltip": "UNMIK initiated the formal investigation based on audit findings."},
 
-#                 {"source": "UNMIK", "target": "Pristina International Airport", 
-#                 "label": "4. Oversight Authority", "tooltip": "UNMIK was responsible for overseeing compliance at Pristina International Airport."},
+                {"source": "UNMIK", "target": "Pristina International Airport", 
+                "label": "4. Oversight Authority", "tooltip": "UNMIK was responsible for overseeing compliance at Pristina International Airport."},
 
-#                 {"source": "Pristina International Airport", "target": "Tender Process", 
-#                 "label": "5. Procurement Involved", "tooltip": "The airport managed the tendering process for cleaning machines, which raised concerns about favoritism."},
+                {"source": "Pristina International Airport", "target": "Tender Process", 
+                "label": "5. Procurement Involved", "tooltip": "The airport managed the tendering process for cleaning machines, which raised concerns about favoritism."},
 
-#                 {"source": "Tender Process", "target": "DOTI Official 1", 
-#                 "label": "6. Irregularities Identified", "tooltip": "DOTI Official 1 was linked to irregularities in the tender process, including bid manipulation."},
+                {"source": "Tender Process", "target": "DOTI Official 1", 
+                "label": "6. Irregularities Identified", "tooltip": "DOTI Official 1 was linked to irregularities in the tender process, including bid manipulation."},
 
-#                 {"source": "Case 0280/04", "target": "Finance Admin Instruction 1999/2", 
-#                 "label": "7. Violation Found", "tooltip": "The investigation concluded that the procurement process violated Finance Admin Instruction 1999/2."}
-#             ],
-#             "allegations": {
-#                 "DOTI Official 1": [
-#                     "Potential involvement in irregularities during procurement.",
-#                     "Resigned from UNMIK before the investigation concluded."
-#                 ],
-#                 "Tender Process": [
-#                     "The first tender was canceled due to non-specific machine cabin descriptions.",
-#                     "Second tender specifications copied from a supplier’s brochure, giving unfair advantage."
-#                 ]
-#             },
-#             "violations": {
-#                 "Finance Admin Instruction 1999/2": [
-#                     "Technical specifications should be drawn up with a view to fair competition and not unduly favor any particular supplier."
-#                 ]
-#             }
-#         }
-#         """
+                {"source": "Case 0280/04", "target": "Finance Admin Instruction 1999/2", 
+                "label": "7. Violation Found", "tooltip": "The investigation concluded that the procurement process violated Finance Admin Instruction 1999/2."}
+            ],
+            "allegations": {
+                "DOTI Official 1": [
+                    "Potential involvement in irregularities during procurement.",
+                    "Resigned from UNMIK before the investigation concluded."
+                ],
+                "Tender Process": [
+                    "The first tender was canceled due to non-specific machine cabin descriptions.",
+                    "Second tender specifications copied from a supplier’s brochure, giving unfair advantage."
+                ]
+            },
+            "violations": {
+                "Finance Admin Instruction 1999/2": [
+                    "Technical specifications should be drawn up with a view to fair competition and not unduly favor any particular supplier."
+                ]
+            }
+        }
+        """
 
-# def call_openai_for_graph(report_json):
-#     """
-#     Calls OpenAI GPT-4o-mini to process a JSON report and extract structured network graph data.
-#     """
-#     try:
-#         response = client.chat.completions.create(
-#             model="gpt-4o",
-#             messages=[
-#                 {"role": "system", "content": "You are an expert in investigative data extraction."},
-#                 {"role": "user", "content": prompt},
-#                 {"role": "user", "content": json.dumps(report_json, indent=2)}
-#             ],
-#             response_format={ "type": "json_object" },
-#             temperature=0.3
-#         )
-
-        
-#         response_content = response.choices[0].message.content
-#         logging.info("Received response from OpenAI.")
-#         logging.debug(f"OpenAI Raw Response:\n{response_content}")
-#         return json.loads(response_content)
-
-#     except Exception as e:
-#         logging.error(f"Error processing document with OpenAI: {e}")
-#         return None
-
-# def process_and_save_jsons():
-#     """
-#     Fetches JSON reports from Supabase, processes them via OpenAI to extract network graphs,
-#     and saves the results locally in 'networkviz' folder.
-#     """
-#     logging.info("Fetching JSON reports from Supabase...")
-#     try:
-#         response = supabase.table("ssot_reports1").select("document_name, report_data").execute()
-#         documents = response.data if response.data else []
-#     except Exception as e:
-#         logging.error(f"Failed to retrieve documents: {e}")
-#         return
-
-#     for doc in documents:
-#         doc_name = doc["document_name"].replace(".json", "")  # Remove .json for document ID consistency
-#         output_file = os.path.join(NETWORKVIZ_FOLDER, f"networkviz_{doc_name}.json")  # Define output path
-
-#         try:
-#             report_data = json.loads(doc["report_data"])  # Convert stored JSON string into a Python dict
-
-#             # Call OpenAI API to process the report
-#             graph_data = call_openai_for_graph(report_data)
-
-#             if not graph_data:
-#                 logging.warning(f"Skipping {doc_name} due to OpenAI processing failure.")
-#                 continue
-
-#             # Save the extracted network graph data locally
-#             with open(output_file, "w", encoding="utf-8") as f:
-#                 json.dump(graph_data, f, indent=4)
-
-#             logging.info(f"Successfully saved {output_file} with extracted graph data.")
-
-#         except Exception as e:
-#             logging.error(f"Error processing document {doc_name}: {e}")
-
-# if __name__ == "__main__":
-#     logging.basicConfig(level=logging.INFO)
-#     process_and_save_jsons()
-
-
-#========================================================================================
-#GLOBAL ENTITIES AND TOPICS 
-#========================================================================================
-
-# Define folders for saving outputs and global state file
-OUTPUT_FOLDER = "networkviz"
-GLOBAL_STATE_FILE = os.path.join(OUTPUT_FOLDER, "global_topics_entities.json")
-os.makedirs(OUTPUT_FOLDER, exist_ok=True)  # Ensure output folder exists
-
-# Function to call OpenAI for topic and entity extraction.
-def call_openai_for_topic_entity_extraction(document_content, document_name, known_topics=None):
+def call_openai_for_graph(report_json):
     """
-    Calls the OpenAI API to extract broad topics and entities from the provided document content.
-    Optionally includes a list of known (global) topics.
+    Calls OpenAI GPT-4o-mini to process a JSON report and extract structured network graph data.
     """
     try:
         response = client.chat.completions.create(
-            model="gpt-4o",  # Adjust as needed.
+            model="gpt-4o",
             messages=[
-                {
-                    "role": "system",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": "You are an expert in extracting broad topics and entities from investigative documents."
-                        }
-                    ]
-                },
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": (
-                                "You are an expert in dynamic topic and entity extraction from investigative PDF documents.\n"
-                                "Your task is to extract broad topics and key entities that represent themes common across multiple cases.\n"
-                                "Avoid extracting overly case-specific details such as specific names only mentioned in a given 'entities_involved' field.\n"
-                                "Focus on general categories, recurring issues, regulatory topics, or common themes that can apply broadly.\n"
-                                "When in doubt, lean toward more generic, cross-cutting topics (e.g. \"Procurement Irregularities\", \"Financial Oversight\", \"Regulatory Violations\").\n\n"
-                                "Return ONLY a structured JSON in the following format (do not include any extra explanation):\n\n"
-                                "{\n"
-                                "    \"document_name\": \"Name of the document\",\n"
-                                "    \"topics\": [\n"
-                                "        {\n"
-                                "            \"topic\": \"Broad Topic Name\",\n"
-                                "            \"entities\": [\"Entity1\", \"Entity2\", \"...\"]\n"
-                                "        }\n"
-                                "    ]\n"
-                                "}"
-                            )
-                        }
-                    ]
-                },
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": json.dumps({
-                                "document_name": document_name,
-                                "document_json": document_content
-                            }, indent=2)
-                        }
-                    ]
-                }
+                {"role": "system", "content": "You are an expert in investigative data extraction."},
+                {"role": "user", "content": prompt},
+                {"role": "user", "content": json.dumps(report_json, indent=2)}
             ],
+            response_format={ "type": "json_object" },
             temperature=0.3
         )
 
+        
         response_content = response.choices[0].message.content
-        # Print raw response for debugging
-        print(response_content)
-
-        # Remove markdown code fences if present
-        cleaned_response = re.sub(r"^```(?:json)?\s*", "", response_content).strip()
-        cleaned_response = re.sub(r"\s*```$", "", cleaned_response).strip()
-
-        extraction = json.loads(cleaned_response)
-        return extraction
+        logging.info("Received response from OpenAI.")
+        logging.debug(f"OpenAI Raw Response:\n{response_content}")
+        return json.loads(response_content)
 
     except Exception as e:
-        logging.error(f"Error processing document {document_name} with OpenAI: {e}")
+        logging.error(f"Error processing document with OpenAI: {e}")
         return None
-
-def load_global_state():
-    """Load the global topics state if it exists; otherwise return an empty list."""
-    if os.path.exists(GLOBAL_STATE_FILE):
-        try:
-            with open(GLOBAL_STATE_FILE, "r", encoding="utf-8") as f:
-                state = json.load(f)
-            return state.get("known_topics", [])
-        except Exception as e:
-            logging.error(f"Error loading global state: {e}")
-            return []
-    else:
-        return []
-
-def save_global_state(known_topics):
-    """Save the known topics to the global state file."""
-    state = {"known_topics": known_topics}
-    try:
-        with open(GLOBAL_STATE_FILE, "w", encoding="utf-8") as f:
-            json.dump(state, f, indent=4)
-        logging.info("Global state updated.")
-    except Exception as e:
-        logging.error(f"Error saving global state: {e}")
-
-def update_known_topics(existing_topics, new_topics):
-    """
-    Compare existing_topics (list) with new_topics (list of dicts, each with key 'topic')
-    and return an updated list along with a flag indicating if any new topic was added.
-    """
-    updated = False
-    topics_set = set(existing_topics)
-    for topic_entry in new_topics:
-        topic = topic_entry.get("topic")
-        if topic and topic not in topics_set:
-            topics_set.add(topic)
-            updated = True
-    return list(topics_set), updated
-
-def get_json_files_from_folder(folder_path):
-    """Retrieve all JSON file paths from the specified folder."""
-    json_files = []
-    for file in os.listdir(folder_path):
-        if file.lower().endswith(".json"):
-            json_files.append(os.path.join(folder_path, file))
-    return json_files
 
 def process_and_save_jsons():
     """
-    Processes JSON documents from the local folder, extracts broad topics and entities via OpenAI,
-    and saves the results locally. If a new broad topic is discovered, all documents are reprocessed
-    to incorporate the updated global context.
+    Fetches JSON reports from Supabase, processes them via OpenAI to extract network graphs,
+    and saves the results locally in 'networkviz' folder.
     """
-    json_files = get_json_files_from_folder(r"C:\Users\nicho\OneDrive\Desktop\smubiadatathon\data\processed_jsons")
-    if not json_files:
-        logging.error("No JSON files found in the specified folder.")
+    logging.info("Fetching JSON reports from Supabase...")
+    try:
+        response = supabase.table("ssot_reports1").select("document_name, report_data").execute()
+        documents = response.data if response.data else []
+    except Exception as e:
+        logging.error(f"Failed to retrieve documents: {e}")
         return
 
-    # Load existing global (broad) topics.
-    known_topics = load_global_state()
-    reprocess_needed = True
-    iteration = 1
+    for doc in documents:
+        doc_name = doc["document_name"].replace(".json", "")  # Remove .json for document ID consistency
+        output_file = os.path.join(NETWORKVIZ_FOLDER, f"networkviz_{doc_name}.json")  # Define output path
 
-    while reprocess_needed:
-        logging.info(f"Processing iteration {iteration} with known global topics: {known_topics}")
-        reprocess_needed = False  # Assume no new topics until discovered in this round.
+        try:
+            report_data = json.loads(doc["report_data"])  # Convert stored JSON string into a Python dict
 
-        for file_path in json_files:
-            try:
-                with open(file_path, "r", encoding="utf-8") as f:
-                    document_content = json.load(f)
-                # Use the file name (without extension) as the document name.
-                document_name = os.path.splitext(os.path.basename(file_path))[0]
-                output_file = os.path.join(OUTPUT_FOLDER, f"topic_entity_{document_name}.json")
+            # Call OpenAI API to process the report
+            graph_data = call_openai_for_graph(report_data)
 
-                extraction = call_openai_for_topic_entity_extraction(document_content, document_name, known_topics)
-                if not extraction:
-                    logging.warning(f"Skipping {document_name} due to extraction failure.")
-                    continue
+            if not graph_data:
+                logging.warning(f"Skipping {doc_name} due to OpenAI processing failure.")
+                continue
 
-                # Update known topics based on this extraction.
-                extracted_topics = extraction.get("topics", [])
-                updated_topics, updated_flag = update_known_topics(known_topics, extracted_topics)
-                if updated_flag:
-                    new_topics = set(updated_topics) - set(known_topics)
-                    logging.info(f"New broad topics discovered in {document_name}: {new_topics}")
-                    known_topics = updated_topics
-                    save_global_state(known_topics)
-                    reprocess_needed = True  # A new topic was found; reprocess all documents.
-                
-                # Save the extraction for this document.
-                with open(output_file, "w", encoding="utf-8") as out_f:
-                    json.dump(extraction, out_f, indent=4)
-                logging.info(f"Successfully saved extraction to {output_file}.")
+            # Save the extracted network graph data locally
+            with open(output_file, "w", encoding="utf-8") as f:
+                json.dump(graph_data, f, indent=4)
 
-            except Exception as e:
-                logging.error(f"Error processing file {file_path}: {e}")
+            logging.info(f"Successfully saved {output_file} with extracted graph data.")
 
-        iteration += 1
-
-    logging.info("Processing complete. No new global topics found in the last iteration.")
+        except Exception as e:
+            logging.error(f"Error processing document {doc_name}: {e}")
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     process_and_save_jsons()
+

@@ -15,7 +15,9 @@ import random
 import re
 import streamlit as st
 import unicodedata
-
+import plotly.graph_objects as go
+import numpy as np
+import datetime
 
 #===========================================================================================
 #Env and Path
@@ -249,40 +251,47 @@ def get_timeline_from_supabase(doc_name):
         return report_data.get("background", {}).get("timeline", [])
     return []
 
-# 📌 Function to process and standardize timeline events
 def process_timeline_for_vis(timeline_events):
-    """Processes timeline data into a structured format for visualization."""
+    """
+    Processes timeline data into a structured format for visualization.
+    If an event is already a dict (i.e. already processed), it is passed as is.
+    Otherwise, it is assumed to be a string and processed accordingly.
+    """
     processed_events = []
     for event in timeline_events:
-        date_part, content = event.split(":", 1) if ":" in event else (event, "")
-        date_part = date_part.strip()
-        content = content.strip()
-
-        # Handle date ranges (YYYY-MM-DD, YYYY-MM, YYYY)
-        if ";" in date_part:
-            start_date, end_date = [d.strip() for d in date_part.split(";")]
+        if isinstance(event, dict):
+            processed_events.append(event)
         else:
-            start_date, end_date = date_part, None
+            # Expecting event as a string like "YYYY-MM-DD: some content"
+            if ":" in event:
+                date_part, content = event.split(":", 1)
+            else:
+                date_part, content = event, ""
+            date_part = date_part.strip()
+            content = content.strip()
 
-        def standardize_date(date_str, is_end=False):
-            """Converts various date formats into YYYY-MM-DD."""
-            if re.match(r"^\d{4}-\d{2}-\d{2}$", date_str):
-                return date_str
-            elif re.match(r"^\d{4}-\d{2}$", date_str):
-                year, month = map(int, date_str.split("-"))
-                last_day = calendar.monthrange(year, month)[1] if is_end else 1
-                return f"{year}-{month:02d}-{last_day:02d}"
-            elif re.match(r"^\d{4}$", date_str):
-                year = int(date_str)
-                return f"{year}-12-31" if is_end else f"{year}-01-01"
-            return None
+            if ";" in date_part:
+                start_date, end_date = [d.strip() for d in date_part.split(";")]
+            else:
+                start_date, end_date = date_part, None
 
-        start_date = standardize_date(start_date, is_end=False)
-        end_date = standardize_date(end_date, is_end=True) if end_date else standardize_date(start_date, is_end=True)
+            def standardize_date(date_str, is_end=False):
+                if re.match(r"^\d{4}-\d{2}-\d{2}$", date_str):
+                    return date_str
+                elif re.match(r"^\d{4}-\d{2}$", date_str):
+                    year, month = map(int, date_str.split("-"))
+                    last_day = calendar.monthrange(year, month)[1] if is_end else 1
+                    return f"{year}-{month:02d}-{last_day:02d}"
+                elif re.match(r"^\d{4}$", date_str):
+                    year = int(date_str)
+                    return f"{year}-12-31" if is_end else f"{year}-01-01"
+                return None
 
-        if start_date and end_date:
-            processed_events.append({"start": start_date, "end": end_date if end_date != start_date else None, "content": content})
+            start_date = standardize_date(start_date, is_end=False)
+            end_date = standardize_date(end_date, is_end=True) if end_date else standardize_date(start_date, is_end=True)
 
+            if start_date and end_date:
+                processed_events.append({"start": start_date, "end": end_date if end_date != start_date else None, "content": content})
     return processed_events
 
 # 📌 Function to create an interactive timeline
@@ -534,6 +543,321 @@ def clean_text(text):
     text = " ".join(text.split())  # Remove extra spaces between words
     
     return text
+CATEGORY_COLORS = {
+    "Pristina Airport": "#1f77b4",   # Blue
+    "Procurement Irregularities": "#ff7f0e",  # Orange
+    "Bribery and Corruption": "#2ca02c",  # Green
+    "Climate Change": "#d62728",  # Red
+    "NSA Reports": "#9467bd",  # Purple
+    "International Relations": "#8c564b",  # Brown
+    "UN Investigations": "#e377c2",  # Pink
+    "Fraud and Misconduct": "#7f7f7f"  # Gray
+}
+
+def create_interactive_network_category(graph_data):
+    """Generates an improved interactive Pyvis network graph with optimized spacing and visual clarity."""
+    if not graph_data or "entities" not in graph_data or "edges" not in graph_data:
+        st.warning("⚠️ No network data available.")
+        return None
+
+    g = Network(height='900px', width='100%', notebook=False, directed=False)
+
+    document_counts = {}  # Track occurrences of documents in multiple categories
+    node_ids = set()  # Track added nodes to prevent duplicates
+
+    # Count document occurrences
+    for edge in graph_data["edges"]:
+        doc_id = edge["target"]  # Document is always the target
+        document_counts[doc_id] = document_counts.get(doc_id, 0) + 1
+
+    # Filter out single-category documents
+    multi_category_docs = {doc for doc, count in document_counts.items() if count > 1}
+
+    # Add nodes (categories + multi-category documents)
+    for entity in graph_data["entities"]:
+        node_id = entity["id"]
+        node_label = entity["label"]
+        node_type = entity.get("type", "document")
+
+        # Skip single-category documents
+        if node_type == "document" and node_id not in multi_category_docs:
+            continue  
+
+        # Determine node properties
+        if node_id in CATEGORY_COLORS:  # Categories
+            node_color = CATEGORY_COLORS[node_id]
+            node_size = 80  # Increase size for categories
+        else:  # Multi-category documents
+            node_color = "#ffcc00"  # Default yellow for documents
+            node_size = 25  # Medium size for multi-category documents
+
+        # Add node only if it hasn't been added before
+        if node_id not in node_ids:
+            g.add_node(
+                node_id,
+                label=node_label,
+                title=node_label,
+                color=node_color,
+                shape="dot",
+                size=node_size,
+                borderWidth=4,  # Thicker borders for emphasis
+                borderWidthSelected=6
+            )
+            node_ids.add(node_id)
+
+    # **Add edges, but only for multi-category documents**
+    for edge in graph_data["edges"]:
+        source = edge["source"]
+        target = edge["target"]
+
+        if target in multi_category_docs and source in node_ids:
+            g.add_edge(
+                source,
+                target,
+                color="#999999",  # Light gray for readability
+                width=2,
+                arrows="middle",  # Makes connections more clear
+            )
+
+    # **Optimize layout & spacing**
+    g.set_options('''
+    {
+      "nodes": {
+        "borderWidth": 3,
+        "borderWidthSelected": 6,
+        "font": {
+          "size": 16,
+          "color": "black"
+        }
+      },
+      "edges": {
+        "smooth": {
+          "type": "curvedCW"
+        },
+        "color": {
+          "inherit": "from"
+        },
+        "font": {
+          "size": 12,
+          "color": "#666"
+        }
+      },
+      "interaction": {
+        "hover": true,
+        "navigationButtons": true,
+        "zoomView": true
+      },
+      "physics": {
+        "enabled": true,
+        "barnesHut": {
+          "gravitationalConstant": -6000,
+          "centralGravity": 0.3,
+          "springLength": 250,
+          "springConstant": 0.02,
+          "damping": 0.15,
+          "avoidOverlap": 0.5
+        }
+      }
+    }
+    ''')
+
+    # Define output file path
+    graph_html_path = "network_graph.html"
+
+    try:
+        # Save graph HTML
+        g.write_html(graph_html_path)
+
+        # Read the HTML content and return it
+        with open(graph_html_path, "r", encoding="utf-8") as f:
+            html_content = f.read()
+
+        return html_content  # Return only the graph
+
+    except Exception as e:
+        st.error(f"🚨 Error rendering graph: {e}")
+        return None
+    
+def create_circular_chord_diagram(document_categories):
+    """
+    Generates an improved Circular Chord Diagram with separated labels for clarity.
+    """
+    import numpy as np  # Ensure numpy is imported
+
+    # List of categories and documents
+    category_list = list(document_categories.keys())
+    document_list = sorted(set(doc for docs in document_categories.values() for doc in docs))
+
+    num_categories = len(category_list)
+    num_documents = len(document_list)
+
+    # Generate evenly spaced angles for categories and documents
+    category_angles = np.linspace(0, 360, num_categories, endpoint=False)
+    doc_spacing = 360 / num_documents if num_documents else 360
+    document_angles = [i * doc_spacing for i in range(num_documents)]
+
+    # Define positions (r, theta) for nodes:
+    # Categories will be at a slightly higher radius than documents.
+    node_positions = {}
+    for i, cat in enumerate(category_list):
+        node_positions[cat] = (category_angles[i], 1.2)
+    for i, doc in enumerate(document_list):
+        node_positions[doc] = (document_angles[i], 1.0)
+
+    fig = go.Figure()
+
+    # --- Add Category Nodes (Markers + Separated Labels) ---
+    for cat in category_list:
+        angle, radius = node_positions[cat]
+        color = CATEGORY_COLORS.get(cat, "#CCCCCC")
+        # Marker for the category node
+        fig.add_trace(go.Scatterpolar(
+            r=[radius],
+            theta=[angle],
+            mode='markers',
+            marker=dict(size=15, color=color),
+            hoverinfo="text",
+            text=[cat],
+            showlegend=False
+        ))
+        # Separate text label trace with a slight radial offset to avoid overlap
+        fig.add_trace(go.Scatterpolar(
+            r=[radius + 0.2],
+            theta=[angle],
+            mode='text',
+            text=[cat],
+            textfont=dict(size=12, color=color),
+            hoverinfo="none",
+            showlegend=False
+        ))
+
+    # --- Add Document Nodes ---
+    for doc in document_list:
+        angle, radius = node_positions[doc]
+        fig.add_trace(go.Scatterpolar(
+            r=[radius],
+            theta=[angle],
+            mode='markers',
+            marker=dict(size=7, color="#ffcc00"),
+            hoverinfo="none",
+            showlegend=False
+        ))
+
+    # --- Add Connections (Links between Categories and Documents) ---
+    for cat, docs in document_categories.items():
+        for doc in docs:
+            cat_angle, cat_radius = node_positions[cat]
+            doc_angle, doc_radius = node_positions[doc]
+            fig.add_trace(go.Scatterpolar(
+                r=[cat_radius, doc_radius],
+                theta=[cat_angle, doc_angle],
+                mode='lines',
+                line=dict(width=1, color="rgba(150,150,150,0.5)"),
+                hoverinfo="none",
+                showlegend=False
+            ))
+
+    # --- Adjust Layout ---
+    fig.update_layout(
+        polar=dict(
+            radialaxis=dict(visible=False, range=[0, 1.6]),
+            angularaxis=dict(showline=False, showticklabels=False)
+        ),
+        margin=dict(l=20, r=20, t=40, b=20),
+        showlegend=False,
+        title="📂 Document Categorization - Circular Chord Diagram"
+    )
+    return fig
+
+def generate_graph_data_from_categories(document_categories):
+    """Converts document categories into a network graph format for visualization."""
+    graph_data = {"entities": [], "edges": []}
+    document_counts = {}
+
+    # Create category nodes
+    for category in document_categories.keys():
+        graph_data["entities"].append({"id": category, "label": category, "type": "category"})
+
+    # Create document nodes and edges
+    for category, documents in document_categories.items():
+        for doc in documents:
+            # Track how many times a document appears in multiple categories
+            if doc not in document_counts:
+                document_counts[doc] = 1
+                graph_data["entities"].append({"id": doc, "label": doc, "type": "document"})
+            else:
+                document_counts[doc] += 1  # Increase count for shared documents
+
+            # Create edges from category → document
+            graph_data["edges"].append({
+                "source": category, "target": doc, "label": "contains", "tooltip": f"{category} → {doc}"
+            })
+
+    return graph_data
+
+# ---------------------------
+# Helper functions for timeline events by document duration
+# ---------------------------
+def get_document_timeline_length(doc):
+    """
+    For a given document ID, retrieve its timeline events, process them,
+    and return a single timeline item that spans from the earliest event
+    to its latest event.
+
+    The timeline event content uses the document's metadata title (if available)
+    instead of the raw document name.
+    
+    If no properly formatted date is found among the events, returns None.
+    If the computed start and end dates are the same, returns an event with no range.
+    """
+    events = get_timeline_from_supabase(doc)
+    processed = process_timeline_for_vis(events)
+    if processed:
+        start_dates = []
+        end_dates = []
+        for e in processed:
+            try:
+                start_dt = datetime.datetime.strptime(e["start"], "%Y-%m-%d")
+                start_dates.append(start_dt)
+            except Exception as err:
+                print(f"Error parsing start date for {doc}: {err}")
+            try:
+                end_str = e.get("end") or e["start"]
+                end_dt = datetime.datetime.strptime(end_str, "%Y-%m-%d")
+                end_dates.append(end_dt)
+            except Exception as err:
+                print(f"Error parsing end date for {doc}: {err}")
+        # If there are no valid dates, do not produce a timeline item.
+        if not start_dates or not end_dates:
+            return None
+
+        overall_start = min(start_dates).strftime("%Y-%m-%d")
+        overall_end = max(end_dates).strftime("%Y-%m-%d")
+        metadata = get_document_metadata(doc)
+        # Always use the metadata title if available and not "Untitled"
+        title_str = metadata.title if metadata and metadata.title and metadata.title != "Untitled" else doc
+        content = f"{title_str} ({len(processed)} events)"
+        
+        # If start and end are the same, return a single date event (no range)
+        if overall_start == overall_end:
+            return {"start": overall_start, "end": None, "content": content}
+        else:
+            return {"start": overall_start, "end": overall_end, "content": content}
+    return None
+
+
+def get_timeline_for_category_by_length(category):
+    """
+    For a given category, loops over all documents in that category and returns
+    a list of timeline items, one per document (based on the document's event duration).
+    """
+    timeline_events = []
+    if category in document_categories:
+        for doc in document_categories[category]:
+            item = get_document_timeline_length(doc)
+            if item:
+                timeline_events.append(item)
+    return timeline_events
 
 document_categories = {
     "Pristina Airport": [
@@ -653,12 +977,94 @@ def landing_page():
             
 classified_docs = load_classified_documents(CLASSIFIED_DOCS_PATH)
 
-# 📌 Main Page
+
 def main_page():
     st.title("📑 Document Repository")
 
-    # Category Selection Dropdown
-    selected_category = st.selectbox("📂 Select Category", ["All"] + list(document_categories.keys()), key="category")
+    # -------------------------------------------------------------------------
+    # Document Filtering & Category Selection
+    # -------------------------------------------------------------------------
+    st.subheader("📌 Explore document relationships across multiple categories")
+    if "selected_category" not in st.session_state:
+        st.session_state["selected_category"] = "All"
+    if "selected_node" in st.session_state and st.session_state["selected_node"] in document_categories:
+        st.session_state["selected_category"] = st.session_state["selected_node"]
+
+    with st.sidebar:
+        st.subheader("📂 Select Category")
+        selected_category_dropdown = st.selectbox(
+            "Choose a category:",
+            ["All"] + list(document_categories.keys()),
+            index=(["All"] + list(document_categories.keys())).index(st.session_state["selected_category"])
+        )
+    if selected_category_dropdown != st.session_state["selected_category"]:
+        st.session_state["selected_category"] = selected_category_dropdown
+        st.rerun()
+    selected_category = st.session_state["selected_category"]
+
+    # -------------------------------------------------------------------------
+    # Hide Top Visualizations when a specific category is selected
+    # -------------------------------------------------------------------------
+    if selected_category == "All":
+        documents = get_documents()
+        total_docs = len(documents)
+        leak_values = [leak_data[doc] for doc in documents if doc in leak_data]
+        overall_leak_percentage = sum(leak_values) / len(leak_values) if leak_values else 0
+
+        category_labels = list(document_categories.keys())
+        category_counts = [len(document_categories[cat]) for cat in category_labels]
+
+        bar_categories = []
+        leak_percentages = []
+        for cat, docs in document_categories.items():
+            leak_vals = [leak_data[doc] for doc in docs if doc in leak_data]
+            avg_leak = sum(leak_vals) / len(leak_vals) if leak_vals else 0
+            bar_categories.append(cat)
+            leak_percentages.append(avg_leak)
+
+        col_left, col_right = st.columns([2, 1])
+        with col_left:
+            st.subheader("Document Categorization")
+            chord_fig = create_circular_chord_diagram(document_categories)
+            chord_fig.update_layout(height=1000)
+            st.plotly_chart(chord_fig, use_container_width=True)
+        with col_right:
+            st.subheader("Document Overview")
+            donut_fig = go.Figure(data=[go.Pie(
+                labels=category_labels,
+                values=category_counts,
+                hole=0.6,
+                marker=dict(colors=[CATEGORY_COLORS.get(cat, "#CCCCCC") for cat in category_labels]),
+                textinfo='percent'
+            )])
+            donut_fig.update_layout(
+                title_text="Documents per Category",
+                annotations=[dict(text=f"{total_docs}", x=0.5, y=0.5, font_size=24, showarrow=False)],
+                margin=dict(l=20, r=20, t=40, b=20)
+            )
+            st.plotly_chart(donut_fig, use_container_width=True)
+            st.metric("Overall Average Leak %", f"{overall_leak_percentage:.2f}%")
+            bar_fig = go.Figure(data=[go.Bar(
+                x=bar_categories,
+                y=leak_percentages,
+                marker_color=[CATEGORY_COLORS.get(cat, "#CCCCCC") for cat in bar_categories],
+                text=[f"{val:.1f}%" for val in leak_percentages],
+                textposition='auto'
+            )])
+            bar_fig.update_layout(
+                title="Average Leak % by Category",
+                xaxis_title="Category",
+                yaxis_title="Average Leak Percentage",
+                yaxis=dict(range=[0, 100]),
+                template="plotly_white",
+                margin=dict(l=20, r=20, t=40, b=20)
+            )
+            st.plotly_chart(bar_fig, use_container_width=True)
+        st.markdown("---")
+
+    # -------------------------------------------------------------------------
+    # Show Relevant Articles if a specific category is selected
+    # -------------------------------------------------------------------------
     if selected_category != "All":
         top_category_articles = get_top_articles_by_category(classified_docs, selected_category)
         if top_category_articles:
@@ -666,51 +1072,89 @@ def main_page():
         else:
             st.markdown("⚠️ No articles found for this category.")
 
-
-    # Toggle for Showing Filename vs. Document Name
-    show_filename = st.toggle("📄 Show Filenames Only", value=(st.session_state["user_clearance"] == "Limited Access"))
-
-    # Search Bar
-    search_query = st.text_input("🔍 Search Reports", key="report_search")
-
-    # Fetch & Filter Documents
+    # -------------------------------------------------------------------------
+    # Document Search & Filtering
+    # -------------------------------------------------------------------------
     documents = get_documents()
     if selected_category != "All":
-        filtered_documents = {key: key for key, value in documents.items() if key in document_categories[selected_category]}
+        filtered_documents = {key: value for key,value in documents.items() if key in document_categories[selected_category]}
     else:
         filtered_documents = documents
 
-    filtered_documents = {key: key for key, value in filtered_documents.items() if search_query.lower() in value.lower() or search_query.lower() in get_overview(key)}
-    # Display List of Documents as Cards with Metadata
+    search_query = st.text_input("🔍 Search Reports", key="report_search")
+    filtered_documents = {
+        key: key for key in filtered_documents
+        if search_query.lower() in key.lower() or search_query.lower() in get_overview(key).lower()
+    }
+    show_filename = st.toggle("📄 Show Filenames Only", value=(st.session_state["user_clearance"] == "Limited Access"))
+
+    # -------------------------------------------------------------------------
+    # Timeline Visualization for Selected Documents
+    # -------------------------------------------------------------------------
+    if selected_category != "All" and filtered_documents:
+        st.markdown("## 📊 Timeline Visualization")
+        
+        # Create a mapping of document names to their metadata titles
+        doc_options = {doc: get_document_metadata(doc).title if get_document_metadata(doc).title != "Untitled" else doc
+                    for doc in sorted(filtered_documents.keys(), key=lambda x: int(x.split(".")[0]))}
+        
+        # Optionally, preselect a subset (e.g., first 5 documents)
+        selected_docs_for_timeline = st.multiselect(
+            "Select documents to include in the timeline:",
+            options=list(doc_options.values()),  # Display only the titles
+            default=list(doc_options.values())[:5] if len(doc_options) > 5 else list(doc_options.values())
+        )
+
+        # Map selected titles back to document names
+        selected_doc_ids = [doc for doc, title in doc_options.items() if title in selected_docs_for_timeline]
+
+        # Generate timeline events
+        timeline_events = []
+        for doc in selected_doc_ids:
+            event_item = get_document_timeline_length(doc)
+            if event_item:
+                timeline_events.append(event_item)
+
+        # Display the timeline
+        if timeline_events:
+            create_timeline(timeline_events)
+        else:
+            st.warning("⚠️ No timeline available for the selected documents.")
+
+
+    # -------------------------------------------------------------------------
+    # Document Listing with Subtle Category Tags
+    # -------------------------------------------------------------------------
     if filtered_documents:
         st.subheader("📄 Available Reports")
-
-        for doc in sorted(filtered_documents.keys(), key=lambda x: int(x.split(".")[0])):
-            metadata = get_document_metadata(doc)  # Fetch metadata for each document
-
+        for index, doc in enumerate(sorted(filtered_documents.keys(), key=lambda x: int(x.split(".")[0]))):
+            metadata = get_document_metadata(doc)
             document_display_name = doc if show_filename else metadata.title
-
             with st.container():
                 with st.expander(f"📄 {document_display_name}"):
-                    col1, col2 = st.columns([0.2, 0.8])
-
+                    doc_tags = [cat for cat, docs in document_categories.items() if doc in docs]
+                    if doc_tags:
+                        tags_str = " ".join([
+                            f'<span style="background-color: {CATEGORY_COLORS.get(tag, "#f0f0f0")}; color: white; border-radius: 4px; padding: 2px 4px; font-size: 12px; margin-right: 4px;">{tag}</span>'
+                            for tag in doc_tags
+                        ])
+                        st.markdown(tags_str, unsafe_allow_html=True)
+                    col_left_doc, col_right_doc = st.columns([0.2, 0.8])
                     if st.session_state["user_clearance"] == "Full Access":
-                        with col1:
-                            st.markdown(f"**🛡 Classification:** `{metadata.classification_level}`")
-                            st.markdown(f"**📜 ID:** `{metadata.document_id}`")
-
-                        with col2:
-                            st.markdown(f"**📂 Category:** `{metadata.category or 'N/A'}`")
-                            st.markdown(f"**📅 Date:** `{metadata.timestamp or 'Unknown'}`")
-                            st.markdown(f"**🏛 Source:** `{metadata.primary_source or 'N/A'}`")
-
-                    # Button to open document
-                    if st.button(f"🔎 View Report", key=doc, use_container_width=True):
+                        with col_left_doc:
+                            st.markdown(f"**🛡 Classification:** {metadata.classification_level}")
+                            st.markdown(f"**📜 ID:** {metadata.document_id}")
+                        with col_right_doc:
+                            st.markdown(f"**📂 Category:** {metadata.category or 'N/A'}")
+                            st.markdown(f"**📅 Date:** {metadata.timestamp or 'Unknown'}")
+                            st.markdown(f"**🏛 Source:** {metadata.primary_source or 'N/A'}")
+                    if st.button(f"🔎 View Report", key=f"{selected_category}_{doc}_{index}", use_container_width=True):
                         st.session_state["selected_doc"] = doc
                         st.session_state["page"] = "document"
                         st.rerun()
     else:
         st.warning("⚠️ No matching reports found.")
+
 
 def document_page():
     # Back Button

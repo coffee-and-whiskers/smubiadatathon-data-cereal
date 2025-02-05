@@ -18,7 +18,8 @@
         {
             "id": "G-8",
             "label": "Group of Eight (G-8)",
-            "type": "organization"
+            "type": "organization",
+            "outline": "allegation"
         },
         {
             "id": "China",
@@ -100,14 +101,11 @@
             "target": "Lake Toya Summit",
             "label": "4. Hosting the Summit",
             "tooltip": "Japan is hosting the G-8 summit at Lake Toya in July 2008."
-        },
-        {
-            "source": "G-8",
-            "target": "Emerging Economies",
-            "label": "5. Negotiation Dynamics",
-            "tooltip": "Emerging economies are hesitant to commit beyond the Bali framework."
         }
     ],
-    "allegations": {},
+    "allegations": {
+        "G-8" : ["Emerging economies are hesitant to commit beyond the Bali framework."]
+    },
     "violations": {}
 }
+

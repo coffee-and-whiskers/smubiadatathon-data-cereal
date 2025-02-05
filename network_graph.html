@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 900px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"borderWidth": 4, "borderWidthSelected": 6, "color": "#1f77b4", "id": "Pristina Airport", "label": "Pristina Airport", "shape": "dot", "size": 80, "title": "Pristina Airport"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ff7f0e", "id": "Procurement Irregularities", "label": "Procurement Irregularities", "shape": "dot", "size": 80, "title": "Procurement Irregularities"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#2ca02c", "id": "Bribery and Corruption", "label": "Bribery and Corruption", "shape": "dot", "size": 80, "title": "Bribery and Corruption"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#d62728", "id": "Climate Change", "label": "Climate Change", "shape": "dot", "size": 80, "title": "Climate Change"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#9467bd", "id": "NSA Reports", "label": "NSA Reports", "shape": "dot", "size": 80, "title": "NSA Reports"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#8c564b", "id": "International Relations", "label": "International Relations", "shape": "dot", "size": 80, "title": "International Relations"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#e377c2", "id": "UN Investigations", "label": "UN Investigations", "shape": "dot", "size": 80, "title": "UN Investigations"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#7f7f7f", "id": "Fraud and Misconduct", "label": "Fraud and Misconduct", "shape": "dot", "size": 80, "title": "Fraud and Misconduct"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "1.pdf", "label": "1.pdf", "shape": "dot", "size": 25, "title": "1.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "10.pdf", "label": "10.pdf", "shape": "dot", "size": 25, "title": "10.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "11.pdf", "label": "11.pdf", "shape": "dot", "size": 25, "title": "11.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "13.pdf", "label": "13.pdf", "shape": "dot", "size": 25, "title": "13.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "14.pdf", "label": "14.pdf", "shape": "dot", "size": 25, "title": "14.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "15.pdf", "label": "15.pdf", "shape": "dot", "size": 25, "title": "15.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "16.pdf", "label": "16.pdf", "shape": "dot", "size": 25, "title": "16.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "31.pdf", "label": "31.pdf", "shape": "dot", "size": 25, "title": "31.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "35.pdf", "label": "35.pdf", "shape": "dot", "size": 25, "title": "35.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "36.pdf", "label": "36.pdf", "shape": "dot", "size": 25, "title": "36.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "38.pdf", "label": "38.pdf", "shape": "dot", "size": 25, "title": "38.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "39.pdf", "label": "39.pdf", "shape": "dot", "size": 25, "title": "39.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "4.pdf", "label": "4.pdf", "shape": "dot", "size": 25, "title": "4.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "43.pdf", "label": "43.pdf", "shape": "dot", "size": 25, "title": "43.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "44.pdf", "label": "44.pdf", "shape": "dot", "size": 25, "title": "44.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "45.pdf", "label": "45.pdf", "shape": "dot", "size": 25, "title": "45.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "49.pdf", "label": "49.pdf", "shape": "dot", "size": 25, "title": "49.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "5.pdf", "label": "5.pdf", "shape": "dot", "size": 25, "title": "5.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "51.pdf", "label": "51.pdf", "shape": "dot", "size": 25, "title": "51.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "8.pdf", "label": "8.pdf", "shape": "dot", "size": 25, "title": "8.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "9.pdf", "label": "9.pdf", "shape": "dot", "size": 25, "title": "9.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "27.pdf", "label": "27.pdf", "shape": "dot", "size": 25, "title": "27.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "105.pdf", "label": "105.pdf", "shape": "dot", "size": 25, "title": "105.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "106.pdf", "label": "106.pdf", "shape": "dot", "size": 25, "title": "106.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "107.pdf", "label": "107.pdf", "shape": "dot", "size": 25, "title": "107.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "113.pdf", "label": "113.pdf", "shape": "dot", "size": 25, "title": "113.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "114.pdf", "label": "114.pdf", "shape": "dot", "size": 25, "title": "114.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "108.pdf", "label": "108.pdf", "shape": "dot", "size": 25, "title": "108.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "60.pdf", "label": "60.pdf", "shape": "dot", "size": 25, "title": "60.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "63.pdf", "label": "63.pdf", "shape": "dot", "size": 25, "title": "63.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "69.pdf", "label": "69.pdf", "shape": "dot", "size": 25, "title": "69.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "73.pdf", "label": "73.pdf", "shape": "dot", "size": 25, "title": "73.pdf"}, {"borderWidth": 4, "borderWidthSelected": 6, "color": "#ffcc00", "id": "82.pdf", "label": "82.pdf", "shape": "dot", "size": 25, "title": "82.pdf"}]);
+                  edges = new vis.DataSet([{"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "1.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "10.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "11.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "13.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "14.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "15.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "16.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "31.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "35.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "36.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "38.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "39.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "4.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "43.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "44.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "45.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "49.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "5.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "51.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "8.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Pristina Airport", "to": "9.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "1.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "10.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "14.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "16.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "35.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "36.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "38.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "39.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "4.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "43.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "44.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "45.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "5.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "8.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Procurement Irregularities", "to": "9.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Bribery and Corruption", "to": "11.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Bribery and Corruption", "to": "13.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Bribery and Corruption", "to": "14.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Bribery and Corruption", "to": "15.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Bribery and Corruption", "to": "27.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Bribery and Corruption", "to": "31.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Bribery and Corruption", "to": "49.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Climate Change", "to": "105.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Climate Change", "to": "106.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Climate Change", "to": "107.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Climate Change", "to": "113.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Climate Change", "to": "114.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "NSA Reports", "to": "105.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "NSA Reports", "to": "106.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "NSA Reports", "to": "107.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "NSA Reports", "to": "108.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "International Relations", "to": "108.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "International Relations", "to": "113.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "International Relations", "to": "114.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "UN Investigations", "to": "27.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "UN Investigations", "to": "60.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "UN Investigations", "to": "63.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "UN Investigations", "to": "69.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "UN Investigations", "to": "73.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "UN Investigations", "to": "82.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Fraud and Misconduct", "to": "15.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Fraud and Misconduct", "to": "27.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Fraud and Misconduct", "to": "51.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Fraud and Misconduct", "to": "60.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Fraud and Misconduct", "to": "63.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Fraud and Misconduct", "to": "69.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Fraud and Misconduct", "to": "73.pdf", "width": 2}, {"arrows": "middle", "color": "#999999", "from": "Fraud and Misconduct", "to": "82.pdf", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"borderWidth": 3, "borderWidthSelected": 6, "font": {"size": 16, "color": "black"}}, "edges": {"smooth": {"type": "curvedCW"}, "color": {"inherit": "from"}, "font": {"size": 12, "color": "#666"}}, "interaction": {"hover": true, "navigationButtons": true, "zoomView": true}, "physics": {"enabled": true, "barnesHut": {"gravitationalConstant": -6000, "centralGravity": 0.3, "springLength": 250, "springConstant": 0.02, "damping": 0.15, "avoidOverlap": 0.5}}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
