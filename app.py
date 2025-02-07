@@ -991,59 +991,76 @@ def landing_page():
             
 classified_docs = load_classified_documents(CLASSIFIED_DOCS_PATH)
 
-
 def chat_with_report(report_context):
     """
-    Displays a chat interface that allows users to ask questions about the report.
-    The report_context (for example, the report overview) is provided to the model
-    so that responses are grounded in the report’s content.
+    Displays an improved chat interface that allows users to ask questions about the report.
+    Uses a multi-line text area inside a form (which clears on submit) and displays the conversation in a styled container.
     """
     client = OpenAI(api_key=OPENAI_API_KEY)
     st.markdown("### 💬 Chat with This Report")
     
-    # Initialize chat history in session_state if not present
+    # Initialize chat history if not already present
     if "chat_history" not in st.session_state:
         st.session_state["chat_history"] = []
     
-    # Create a text input for the user's question
-    user_message = st.text_input("Ask a question about the report:", key="chat_input")
+    # Use a form for the chat input so that the text area clears automatically on submit
+    with st.form("chat_form", clear_on_submit=True):
+        user_message = st.text_area("Your question:", height=100, key="chat_input")
+        submitted = st.form_submit_button("Send Message")
     
-    if st.button("Send", key="chat_send") and user_message:
+    if submitted and user_message.strip():
         # Append the user's message to the chat history
-        st.session_state["chat_history"].append({"role": "user", "content": user_message})
+        st.session_state["chat_history"].append({"role": "user", "content": user_message.strip()})
         
-        # Prepare the conversation with a system prompt including the report context
+        # Build the message list with a system prompt that includes the report context
         messages = [
-            {"role": "system", "content": 
-                f"""You are a helpful assistant. Answer questions based solely on the report content provided. 
-                Do not include information that is not in the report. 
-                Here is the report context: {report_context}"""
+            {
+                "role": "system",
+                "content": (
+                    "You are a helpful assistant. Answer questions based solely on the report content provided. "
+                    "Do not include information that is not in the report. "
+                    "Here is the report context:\n\n" + report_context
+                )
             }
         ]
-        # Append the previous conversation
         messages.extend(st.session_state["chat_history"])
         
         try:
-            # Call the OpenAI Chat Completion API
+            # Call the OpenAI Chat API (using your desired model)
             response = client.chat.completions.create(
-                model="gpt-4o-mini",  # Change the model as needed
+                model="gpt-4o-mini",  # Adjust model as needed
                 messages=messages
             )
-            # Extract the assistant's reply
+            # Extract and store the assistant's reply
             reply = response.choices[0].message.content.strip()
-            # Append the reply to the chat history
             st.session_state["chat_history"].append({"role": "assistant", "content": reply})
         except Exception as e:
             st.error(f"Error contacting the OpenAI API: {e}")
+        st.rerun()  # Rerun to update the displayed conversation
     
-    # Display the conversation history
+    # Display the conversation in a styled container for better spacing
+    st.markdown(
+        """
+        <div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+        """, unsafe_allow_html=True
+    )
+    
     if st.session_state["chat_history"]:
-        st.markdown("#### Conversation:")
         for msg in st.session_state["chat_history"]:
             if msg["role"] == "user":
-                st.markdown(f"**User:** {msg['content']}")
+                st.markdown(
+                    f"<p style='color: #0077cc;'><strong>User:</strong> {msg['content']}</p>",
+                    unsafe_allow_html=True
+                )
             else:
-                st.markdown(f"**Assistant:** {msg['content']}")
+                st.markdown(
+                    f"<p style='color: #444;'><strong>Assistant:</strong> {msg['content']}</p>",
+                    unsafe_allow_html=True
+                )
+    else:
+        st.markdown("<p style='color: #777;'>No conversation yet. Ask a question!</p>", unsafe_allow_html=True)
+    
+    st.markdown("</div>", unsafe_allow_html=True)
 
 def main_page():
     st.title("📑 Document Repository")
@@ -1311,29 +1328,26 @@ def document_page():
             st.markdown(f"**Date:** `{report.metadata.timestamp or 'Unknown'}`")
             st.markdown(f"**Source:** `{report.metadata.primary_source or 'N/A'}`")
 
-    # ---- Chat Button Below Metadata ----
-    if "show_chat" not in st.session_state:
-        st.session_state["show_chat"] = False
-
-    if st.button("💬 Chat with Report", key="toggle_chat_button"):
-        st.session_state["show_chat"] = not st.session_state["show_chat"]
-        st.rerun()
-
-    # When toggled, display the chat interface
-    if st.session_state["show_chat"]:
-        # Use the report overview as context (or choose another appropriate section)
-        report_context = report 
+    col_view, col_chat = st.columns(2)
+    
+    with col_view:
+        if st.button("📄 View Document", key="toggle_doc", use_container_width=True):
+            st.session_state["show_document"] = not st.session_state.get("show_document", False)
+            st.rerun()
+    
+    with col_chat:
+        if st.button("💬 Chat with Report", key="toggle_chat", use_container_width=True):
+            st.session_state["show_chat"] = not st.session_state.get("show_chat", False)
+            st.rerun()
+    
+    # Display the chat interface if toggled on
+    if st.session_state.get("show_chat", False):
+        # Use the report overview as context (or any other suitable text from the report)
+        report_context = clean_text(report.overview) if report.overview else "No report overview available."
         chat_with_report(report_context)
-
-    # 📄 Toggle Document Viewer
-    if "show_document" not in st.session_state:
-        st.session_state["show_document"] = False
-
-    if st.button("📄 View Document" if not st.session_state["show_document"] else "❌ Close Document Viewer"):
-        st.session_state["show_document"] = not st.session_state["show_document"]
-        st.rerun()
-
-    if st.session_state["show_document"]:
+    
+    # Display the document viewer if toggled on
+    if st.session_state.get("show_document", False):
         st.markdown("## 🖼️ Document Viewer")
         images = load_document_images(doc_name)
         if images:
@@ -1341,8 +1355,6 @@ def document_page():
                 st.image(Image.open(img_path), caption=os.path.basename(img_path), use_column_width=True)
         else:
             st.error("🚫 Document not available for display.")
-
-    
 
     # 🔗 Network Graph 
     graph_data = load_graph_data(f"networkviz_{doc_name}.json")
