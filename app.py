@@ -1,23 +1,24 @@
 from annotated_text import annotated_text
 from dataingestion.validation_schema import GeneralReport, DocumentMetadata
 from dotenv import load_dotenv
+from openai import OpenAI
 from PIL import Image
 from pyvis.network import Network
 from streamlit_timeline import st_timeline
 from supabase import create_client
 import calendar
+import datetime
 import json
 import matplotlib.pyplot as plt
 import networkx as nx
+import numpy as np
 import os
 import pandas as pd
+import plotly.graph_objects as go
 import random
 import re
 import streamlit as st
 import unicodedata
-import plotly.graph_objects as go
-import numpy as np
-import datetime
 
 #===========================================================================================
 #Env and Path
@@ -26,6 +27,7 @@ import datetime
 load_dotenv()
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 NETWORKVIZ_FOLDER = os.path.join(BASE_DIR, "networkviz")
@@ -680,9 +682,18 @@ def create_interactive_network_category(graph_data):
     
 def create_circular_chord_diagram(document_categories):
     """
-    Generates an improved Circular Chord Diagram with separated labels for clarity.
+    Generates an improved Circular Chord Diagram with separated labels for clarity,
+    colored edges based on category, document nodes in black,
+    and topic (category) nodes and text in their respective colors.
     """
     import numpy as np  # Ensure numpy is imported
+    import plotly.graph_objects as go
+
+    # Utility function to convert a hex color to rgba with a given alpha value.
+    def hex_to_rgba(hex_str, alpha=0.5):
+        hex_str = hex_str.lstrip('#')
+        r, g, b = tuple(int(hex_str[i:i+2], 16) for i in (0, 2, 4))
+        return f"rgba({r}, {g}, {b}, {alpha})"
 
     # List of categories and documents
     category_list = list(document_categories.keys())
@@ -696,7 +707,7 @@ def create_circular_chord_diagram(document_categories):
     doc_spacing = 360 / num_documents if num_documents else 360
     document_angles = [i * doc_spacing for i in range(num_documents)]
 
-    # Define positions (r, theta) for nodes:
+    # Define positions (theta, r) for nodes:
     # Categories will be at a slightly higher radius than documents.
     node_positions = {}
     for i, cat in enumerate(category_list):
@@ -706,11 +717,11 @@ def create_circular_chord_diagram(document_categories):
 
     fig = go.Figure()
 
-    # --- Add Category Nodes (Markers + Separated Labels) ---
+    # --- Add Category Nodes (Topic Nodes) ---
     for cat in category_list:
         angle, radius = node_positions[cat]
         color = CATEGORY_COLORS.get(cat, "#CCCCCC")
-        # Marker for the category node
+        # Topic node marker using the category's color.
         fig.add_trace(go.Scatterpolar(
             r=[radius],
             theta=[angle],
@@ -720,7 +731,7 @@ def create_circular_chord_diagram(document_categories):
             text=[cat],
             showlegend=False
         ))
-        # Separate text label trace with a slight radial offset to avoid overlap
+        # Topic text label (colored) with a slight radial offset.
         fig.add_trace(go.Scatterpolar(
             r=[radius + 0.2],
             theta=[angle],
@@ -738,24 +749,27 @@ def create_circular_chord_diagram(document_categories):
             r=[radius],
             theta=[angle],
             mode='markers',
-            marker=dict(size=7, color="#ffcc00"),
+            marker=dict(size=7, color="#000000"),  # Document nodes in black
             hoverinfo="none",
             showlegend=False
         ))
 
-    # --- Add Connections (Links between Categories and Documents) ---
+    # --- Add Connections (Edges with color based on the category) ---
     for cat, docs in document_categories.items():
+        # Get an RGBA color for the current category edge.
+        edge_color = hex_to_rgba(CATEGORY_COLORS.get(cat, "#CCCCCC"), alpha=0.5)
         for doc in docs:
-            cat_angle, cat_radius = node_positions[cat]
-            doc_angle, doc_radius = node_positions[doc]
-            fig.add_trace(go.Scatterpolar(
-                r=[cat_radius, doc_radius],
-                theta=[cat_angle, doc_angle],
-                mode='lines',
-                line=dict(width=1, color="rgba(150,150,150,0.5)"),
-                hoverinfo="none",
-                showlegend=False
-            ))
+            if cat in node_positions and doc in node_positions:
+                cat_angle, cat_radius = node_positions[cat]
+                doc_angle, doc_radius = node_positions[doc]
+                fig.add_trace(go.Scatterpolar(
+                    r=[cat_radius, doc_radius],
+                    theta=[cat_angle, doc_angle],
+                    mode='lines',
+                    line=dict(width=1, color=edge_color),
+                    hoverinfo="none",
+                    showlegend=False
+                ))
 
     # --- Adjust Layout ---
     fig.update_layout(
@@ -978,6 +992,59 @@ def landing_page():
 classified_docs = load_classified_documents(CLASSIFIED_DOCS_PATH)
 
 
+def chat_with_report(report_context):
+    """
+    Displays a chat interface that allows users to ask questions about the report.
+    The report_context (for example, the report overview) is provided to the model
+    so that responses are grounded in the report’s content.
+    """
+    client = OpenAI(api_key=OPENAI_API_KEY)
+    st.markdown("### 💬 Chat with This Report")
+    
+    # Initialize chat history in session_state if not present
+    if "chat_history" not in st.session_state:
+        st.session_state["chat_history"] = []
+    
+    # Create a text input for the user's question
+    user_message = st.text_input("Ask a question about the report:", key="chat_input")
+    
+    if st.button("Send", key="chat_send") and user_message:
+        # Append the user's message to the chat history
+        st.session_state["chat_history"].append({"role": "user", "content": user_message})
+        
+        # Prepare the conversation with a system prompt including the report context
+        messages = [
+            {"role": "system", "content": 
+                f"""You are a helpful assistant. Answer questions based solely on the report content provided. 
+                Do not include information that is not in the report. 
+                Here is the report context: {report_context}"""
+            }
+        ]
+        # Append the previous conversation
+        messages.extend(st.session_state["chat_history"])
+        
+        try:
+            # Call the OpenAI Chat Completion API
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",  # Change the model as needed
+                messages=messages
+            )
+            # Extract the assistant's reply
+            reply = response.choices[0].message.content.strip()
+            # Append the reply to the chat history
+            st.session_state["chat_history"].append({"role": "assistant", "content": reply})
+        except Exception as e:
+            st.error(f"Error contacting the OpenAI API: {e}")
+    
+    # Display the conversation history
+    if st.session_state["chat_history"]:
+        st.markdown("#### Conversation:")
+        for msg in st.session_state["chat_history"]:
+            if msg["role"] == "user":
+                st.markdown(f"**User:** {msg['content']}")
+            else:
+                st.markdown(f"**Assistant:** {msg['content']}")
+
 def main_page():
     st.title("📑 Document Repository")
 
@@ -1077,15 +1144,17 @@ def main_page():
     # -------------------------------------------------------------------------
     documents = get_documents()
     if selected_category != "All":
-        filtered_documents = {key: value for key,value in documents.items() if key in document_categories[selected_category]}
+        filtered_documents = {key: key for key in documents if key in document_categories[selected_category]}
     else:
         filtered_documents = documents
 
     search_query = st.text_input("🔍 Search Reports", key="report_search")
-    filtered_documents = {
-        key: key for key in filtered_documents
-        if search_query.lower() in key.lower() or search_query.lower() in get_overview(key).lower()
-    }
+    # Only apply search filtering if a query was entered
+    if search_query.strip():
+        filtered_documents = {
+            key: key for key in filtered_documents
+            if search_query.lower() in key.lower() or search_query.lower() in get_overview(key).lower()
+        }
     show_filename = st.toggle("📄 Show Filenames Only", value=(st.session_state["user_clearance"] == "Limited Access"))
 
     # -------------------------------------------------------------------------
@@ -1242,6 +1311,19 @@ def document_page():
             st.markdown(f"**Date:** `{report.metadata.timestamp or 'Unknown'}`")
             st.markdown(f"**Source:** `{report.metadata.primary_source or 'N/A'}`")
 
+    # ---- Chat Button Below Metadata ----
+    if "show_chat" not in st.session_state:
+        st.session_state["show_chat"] = False
+
+    if st.button("💬 Chat with Report", key="toggle_chat_button"):
+        st.session_state["show_chat"] = not st.session_state["show_chat"]
+        st.rerun()
+
+    # When toggled, display the chat interface
+    if st.session_state["show_chat"]:
+        # Use the report overview as context (or choose another appropriate section)
+        report_context = report 
+        chat_with_report(report_context)
 
     # 📄 Toggle Document Viewer
     if "show_document" not in st.session_state:
