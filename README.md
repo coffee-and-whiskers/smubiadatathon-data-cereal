@@ -1,7 +1,11 @@
+```md
 # SMU BIADatathon Project
 
-**Deployed Demo:**  
+**Deployed Demo:**
 We have deployed our application here: [https://smubiadatathon-data-cereal-tbfxrucchd6kvyta2eperz.streamlit.app/](https://smubiadatathon-data-cereal-tbfxrucchd6kvyta2eperz.streamlit.app/)
+
+**Demo Video:**
+You can view a recorded demo of the project here: [Demo Video](https://github.com/user-attachments/assets/7cbbdf06-2f30-47fb-b8d6-9bed83d71d42)
 
 ## Overview
 Our goal is to help ISD personnel quickly process and analyze intelligence reports without getting overwhelmed by lengthy, complex documents. Given time and expertise constraints, manually reviewing large volumes of information can be inefficient. This solution streamlines report consumption, improves searchability, and provides useful visualizations to make reports more accessible and actionable. The application is hosted through Streamlit.
