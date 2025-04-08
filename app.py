@@ -1,26 +1,26 @@
+import calendar
+import datetime
+import json
+import os
+import re
+import sys
+import unicodedata
+
+import matplotlib.pyplot as plt
+import networkx as nx
+import numpy as np
+import pandas as pd
+import plotly.graph_objects as go
+import streamlit as st
+# Removed OpenAI import
+# from openai import OpenAI
 from annotated_text import annotated_text
 from dataingestion.validation_schema import GeneralReport, DocumentMetadata
 from dotenv import load_dotenv
-from openai import OpenAI
 from PIL import Image
 from pyvis.network import Network
 from streamlit_timeline import st_timeline
 from supabase import create_client
-import calendar
-import datetime
-import json
-import matplotlib.pyplot as plt
-import networkx as nx
-import numpy as np
-import os
-import pandas as pd
-import plotly.graph_objects as go
-import random
-import re
-import streamlit as st
-import unicodedata
-import sys 
-import pkg_resources
 
 #===========================================================================================
 #Env and Path
@@ -30,7 +30,8 @@ load_dotenv()
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+# Removed OPENAI_API_KEY loading
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 NETWORKVIZ_FOLDER = os.path.join(BASE_DIR, "networkviz")
@@ -227,7 +228,11 @@ def create_interactive_network(graph_data):
     ''')
 
     # Define output file path
+    # Ensure NETWORKVIZ_FOLDER exists
+    if not os.path.exists(NETWORKVIZ_FOLDER):
+        os.makedirs(NETWORKVIZ_FOLDER)
     graph_html_path = os.path.join(NETWORKVIZ_FOLDER, "network_graph.html")
+
 
     try:
         # Save graph HTML
@@ -306,7 +311,7 @@ def create_timeline(timeline_events):
         return None
 
     processed_events = process_timeline_for_vis(timeline_events)
-    
+
     # Create timeline items without any inline style (no color)
     items = [{
         "id": i + 1,
@@ -327,7 +332,7 @@ def create_timeline(timeline_events):
         "showTooltips": True,
         "orientation": "top"
     }
-    
+
     return st_timeline(
         items,
         groups=[{"id": i + 1, "content": ""} for i in range(len(items))],
@@ -345,18 +350,18 @@ def fetch_table_counts():
         "news_excerpts": "excerpt_id"
     }
     table_counts = {}
-    
+
     # Iterate over key-value pairs correctly
     for table, column in tables.items():
         response = supabase.table(table).select(column).execute()
         table_counts[table] = len(response.data) if response.data else 0
-    
+
     return table_counts
 
 def get_document_metadata(doc_id):
     """Fetches the document metadata."""
     doc_details = get_document_details(doc_id)
-    
+
     if doc_details:
         report_data = json.loads(doc_details["report_data"])
         metadata = report_data.get("metadata", {})
@@ -381,30 +386,42 @@ def get_document_metadata(doc_id):
 
 def load_classified_documents(filepath):
     """Loads the classified documents JSON file."""
-    with open(filepath, "r", encoding="utf-8") as f:
-        return json.load(f)
+    if not os.path.exists(filepath):
+        st.error(f"Classified documents file not found: {filepath}")
+        return {}
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        st.error(f"Error decoding JSON from {filepath}")
+        return {}
+    except Exception as e:
+        st.error(f"Error loading classified documents: {e}")
+        return {}
 
 # Get top N articles for a given category
 def get_top_articles_by_category(classified_docs, selected_category, top_n=5):
     """Finds the top N articles with the highest category similarity for a given category."""
+    if not classified_docs: return []
     category_articles = [
         (url, data["category_similarity"])
         for url, data in classified_docs.items()
         if data.get("category") == selected_category and data.get("category_similarity") > 0.84
     ]
-    
+
     # Sort articles by category similarity (descending order) and return the top N
     return sorted(category_articles, key=lambda x: x[1], reverse=True)[:top_n]
 
 # Get top N articles for a given document
 def get_top_articles_by_document(classified_docs, doc_name, top_n=5):
     """Finds the top N articles with the highest document similarity for a given document."""
+    if not classified_docs: return []
     document_articles = [
         (url, data["document_similarity"])
         for url, data in classified_docs.items()
         if data.get("best_match_doc") == doc_name and data.get("document_similarity") > 0.83
     ]
-    
+
     # Sort articles by document similarity (descending order) and return the top N
     return sorted(document_articles, key=lambda x: x[1], reverse=True)[:top_n]
 
@@ -473,9 +490,9 @@ def load_highlight_dict(json_path):
 
             if not flattened_dict:
                 print(f"⚠️ Warning: Flattened highlight dictionary is empty! {json_path}")
-            else:
-                print(f"✅ Successfully flattened highlight dictionary: {json_path}")
-                print(f"🔹 Sample Data: {json.dumps(flattened_dict, indent=2)[:500]}")  # Print first 500 chars
+            # else: # Reduce console noise
+                # print(f"✅ Successfully flattened highlight dictionary: {json_path}")
+                # print(f"🔹 Sample Data: {json.dumps(flattened_dict, indent=2)[:500]}")  # Print first 500 chars
 
             return flattened_dict
     except FileNotFoundError:
@@ -484,7 +501,7 @@ def load_highlight_dict(json_path):
     except json.JSONDecodeError:
         print(f"❌ Error: Failed to decode JSON: {json_path}")
         return {}
-    
+
 def get_highlight_color(category):
     """Return the RGBA color (with transparency) for a given category."""
     color_mapping = {
@@ -511,29 +528,37 @@ def highlight_text(text, highlight_dict):
     # Sort terms by length (longest first) so that multi-word phrases are prioritized.
     sorted_terms = sorted(highlight_dict.keys(), key=len, reverse=True)
     # Build a regex pattern to match any of these terms (case-insensitive).
+    # Handle potential empty sorted_terms list
+    if not sorted_terms:
+        return [text]
     pattern = r'(' + '|'.join(map(re.escape, sorted_terms)) + r')'
-    print(f"🔍 Highlight Regex Pattern: {pattern}")
+    # print(f"🔍 Highlight Regex Pattern: {pattern}") # Reduce console noise
 
     annotated = []
     last_end = 0
-    for match in re.finditer(pattern, text, flags=re.IGNORECASE):
-        start, end = match.start(), match.end()
-        # Append the text between the end of the last match and the start of the current match.
-        if start > last_end:
-            annotated.append(text[last_end:start])
-        matched_text = text[start:end]
-        key = matched_text.lower()
-        category = highlight_dict.get(key, None)
-        # If no exact match, try substring matching.
-        if category is None:
-            for term, cat in highlight_dict.items():
-                if term in key:
-                    category = cat
-                    break
-        color = get_highlight_color(category) if category else "rgba(255,204,0,0.3)"
-        # Return a tuple with an empty label ("") so the annotation label isn't shown.
-        annotated.append((matched_text, "", color))
-        last_end = end
+    try:
+        for match in re.finditer(pattern, text, flags=re.IGNORECASE):
+            start, end = match.start(), match.end()
+            # Append the text between the end of the last match and the start of the current match.
+            if start > last_end:
+                annotated.append(text[last_end:start])
+            matched_text = text[start:end]
+            key = matched_text.lower()
+            category = highlight_dict.get(key, None)
+            # If no exact match, try substring matching (less precise, use carefully).
+            # if category is None:
+            #     for term, cat in highlight_dict.items():
+            #         if term in key:
+            #             category = cat
+            #             break
+            color = get_highlight_color(category) if category else "rgba(255,204,0,0.3)" # Default highlight if no category found
+            # Return a tuple with an empty label ("") so the annotation label isn't shown.
+            annotated.append((matched_text, "", color))
+            last_end = end
+    except re.error as e:
+        print(f"❌ Regex Error: {e} with pattern: {pattern}")
+        return [text] # Return original text if regex fails
+
     if last_end < len(text):
         annotated.append(text[last_end:])
     return annotated
@@ -542,11 +567,11 @@ def clean_text(text):
     """Removes unwanted spaces, normalizes encoding, and ensures clean display."""
     if not text:
         return "No overview available"
-    
+
     text = unicodedata.normalize("NFKC", text)  # Normalize Unicode characters
     text = text.replace("\n", " ").replace("\r", " ")  # Remove unnecessary newlines
     text = " ".join(text.split())  # Remove extra spaces between words
-    
+
     return text
 CATEGORY_COLORS = {
     "Pristina Airport": "#1f77b4",   # Blue
@@ -586,7 +611,7 @@ def create_interactive_network_category(graph_data):
 
         # Skip single-category documents
         if node_type == "document" and node_id not in multi_category_docs:
-            continue  
+            continue
 
         # Determine node properties
         if node_id in CATEGORY_COLORS:  # Categories
@@ -667,7 +692,7 @@ def create_interactive_network_category(graph_data):
     ''')
 
     # Define output file path
-    graph_html_path = "network_graph.html"
+    graph_html_path = "network_graph.html" # Save locally, Streamlit handles serving
 
     try:
         # Save graph HTML
@@ -682,7 +707,7 @@ def create_interactive_network_category(graph_data):
     except Exception as e:
         st.error(f"🚨 Error rendering graph: {e}")
         return None
-    
+
 def create_circular_chord_diagram(document_categories):
     """
     Generates an improved Circular Chord Diagram with separated labels for clarity,
@@ -753,7 +778,8 @@ def create_circular_chord_diagram(document_categories):
             theta=[angle],
             mode='markers',
             marker=dict(size=7, color="#000000"),  # Document nodes in black
-            hoverinfo="none",
+            hoverinfo="none", # Hover handled by edges or category nodes
+            text=[f"Doc: {doc}"], # Add hover text for clarity if needed
             showlegend=False
         ))
 
@@ -770,7 +796,8 @@ def create_circular_chord_diagram(document_categories):
                     theta=[cat_angle, doc_angle],
                     mode='lines',
                     line=dict(width=1, color=edge_color),
-                    hoverinfo="none",
+                    hoverinfo="text", # Show connection info on hover
+                    text=f"{cat} ↔ {doc}",
                     showlegend=False
                 ))
 
@@ -823,7 +850,7 @@ def get_document_timeline_length(doc):
 
     The timeline event content uses the document's metadata title (if available)
     instead of the raw document name.
-    
+
     If no properly formatted date is found among the events, returns None.
     If the computed start and end dates are the same, returns an event with no range.
     """
@@ -854,7 +881,7 @@ def get_document_timeline_length(doc):
         # Always use the metadata title if available and not "Untitled"
         title_str = metadata.title if metadata and metadata.title and metadata.title != "Untitled" else doc
         content = f"{title_str} ({len(processed)} events)"
-        
+
         # If start and end are the same, return a single date event (no range)
         if overall_start == overall_end:
             return {"start": overall_start, "end": None, "content": content}
@@ -876,6 +903,7 @@ def get_timeline_for_category_by_length(category):
                 timeline_events.append(item)
     return timeline_events
 
+# Hardcoded data (as in original script)
 document_categories = {
     "Pristina Airport": [
         "1.pdf", "10.pdf", "11.pdf", "13.pdf", "14.pdf",
@@ -927,145 +955,27 @@ leak_data = {
 }
 
 
-# 📌 Landing Page
-def landing_page():
-    st.set_page_config(page_title="🔐 Government Knowledge Base", layout="wide")
+# ---------------------------
+# Landing Page REMOVED
+# ---------------------------
+# def landing_page():
+#     st.set_page_config(page_title="🔐 Government Knowledge Base", layout="wide")
+#     # ... (rest of landing page code removed) ...
 
-    st.markdown(
-        """
-        <div style="text-align: center;">
-            <h1>🔐 <b>Government Knowledge Base</b></h1>
-            <h3 style="color:gray;">Secure Access to Classified Reports & Intelligence Insights</h3>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    st.write("")  # Spacing
-
-    # Authentication Container
-    with st.container():
-        st.subheader("🔑 Enter Your Access Key")
-
-        access_key = st.text_input(
-            "", type="password", placeholder="Enter Access Key Here", help="Required for authentication"
-        )
-
-        if "authenticated" not in st.session_state:
-            st.session_state["authenticated"] = False
-
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
-            if st.button("🔓 Authenticate", use_container_width=True):
-                if access_key:
-                    if access_key == "limitedaccess":
-                        st.session_state["user_clearance"] ="Limited Access"
-                        st.session_state["authenticated"] = True
-                        st.toast("✅ Access Granted", icon="🔓")
-                    elif access_key == "fullaccess":
-                        st.session_state["user_clearance"] ="Full Access"
-                        st.session_state["authenticated"] = True
-                        st.toast("✅ Access Granted", icon="🔓")
-                else:
-                    st.warning("⚠️ Please enter a valid access key.")
-
-    # Clearance Level Card
-    if st.session_state["authenticated"]:
-        st.markdown(
-            f"""
-            <div style="background-color: #f4f4f4; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
-                <h3 style="color: green;">✅ Clearance Level: <b>{st.session_state['user_clearance']}</b></h3>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
-    st.write("")  # Spacing
-
-    # Proceed Button
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col2:
-        if st.session_state["authenticated"]:
-            if st.button("🔍 Proceed to Main Page", use_container_width=True):
-                st.session_state["page"] = "main"
-                st.rerun()
-        else:
-            st.button("🔍 Proceed to Main Page", disabled=True, use_container_width=True)
-            
+# Load classified documents once at the start
 classified_docs = load_classified_documents(CLASSIFIED_DOCS_PATH)
 
-def chat_with_report(report_context):
-    """
-    Displays an improved chat interface that allows users to ask questions about the report.
-    Uses a multi-line text area inside a form (which clears on submit) and displays the conversation in a styled container.
-    """
-    client = OpenAI(api_key=OPENAI_API_KEY)
-    st.markdown("### 💬 Chat with This Report")
-    
-    # Initialize chat history if not already present
-    if "chat_history" not in st.session_state:
-        st.session_state["chat_history"] = []
-    
-    # Use a form for the chat input so that the text area clears automatically on submit
-    with st.form("chat_form", clear_on_submit=True):
-        user_message = st.text_area("Your question:", height=100, key="chat_input")
-        submitted = st.form_submit_button("Send Message")
-    
-    if submitted and user_message.strip():
-        # Append the user's message to the chat history
-        st.session_state["chat_history"].append({"role": "user", "content": user_message.strip()})
-        
-        # Build the message list with a system prompt that includes the report context
-        messages = [
-            {
-                "role": "system",
-                "content": (
-                    "You are a helpful assistant. Answer questions based solely on the report content provided. "
-                    "Do not include information that is not in the report. "
-                    "Here is the report context:\n\n" + report_context
-                )
-            }
-        ]
-        messages.extend(st.session_state["chat_history"])
-        
-        try:
-            # Call the OpenAI Chat API (using your desired model)
-            response = client.chat.completions.create(
-                model="gpt-4o-mini",  # Adjust model as needed
-                messages=messages
-            )
-            # Extract and store the assistant's reply
-            reply = response.choices[0].message.content.strip()
-            st.session_state["chat_history"].append({"role": "assistant", "content": reply})
-        except Exception as e:
-            st.error(f"Error contacting the OpenAI API: {e}")
-        st.rerun()  # Rerun to update the displayed conversation
-    
-    # Display the conversation in a styled container for better spacing
-    st.markdown(
-        """
-        <div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
-        """, unsafe_allow_html=True
-    )
-    
-    if st.session_state["chat_history"]:
-        for msg in st.session_state["chat_history"]:
-            if msg["role"] == "user":
-                st.markdown(
-                    f"<p style='color: #0077cc;'><strong>User:</strong> {msg['content']}</p>",
-                    unsafe_allow_html=True
-                )
-            else:
-                st.markdown(
-                    f"<p style='color: #444;'><strong>Assistant:</strong> {msg['content']}</p>",
-                    unsafe_allow_html=True
-                )
-    else:
-        st.markdown("<p style='color: #777;'>No conversation yet. Ask a question!</p>", unsafe_allow_html=True)
-    
-    st.markdown("</div>", unsafe_allow_html=True)
+# ---------------------------
+# Chat Functionality REMOVED
+# ---------------------------
+# def chat_with_report(report_context):
+#     # ... (chat function code removed) ...
 
+# ---------------------------
+# Main Application Page
+# ---------------------------
 def main_page():
+    st.set_page_config(page_title="📑 Government Knowledge Base", layout="wide") # Set config here
     st.title("📑 Document Repository")
 
     # -------------------------------------------------------------------------
@@ -1074,15 +984,25 @@ def main_page():
     st.subheader("📌 Explore document relationships across multiple categories")
     if "selected_category" not in st.session_state:
         st.session_state["selected_category"] = "All"
-    if "selected_node" in st.session_state and st.session_state["selected_node"] in document_categories:
-        st.session_state["selected_category"] = st.session_state["selected_node"]
+    # Removed node selection logic as it depends on graph interaction state which might not be reliable
+    # if "selected_node" in st.session_state and st.session_state["selected_node"] in document_categories:
+    #     st.session_state["selected_category"] = st.session_state["selected_node"]
 
     with st.sidebar:
         st.subheader("📂 Select Category")
+        # Ensure the index is valid if session state holds an invalid category
+        available_categories = ["All"] + list(document_categories.keys())
+        current_selection = st.session_state["selected_category"]
+        try:
+            current_index = available_categories.index(current_selection)
+        except ValueError:
+            current_index = 0 # Default to "All" if category not found
+            st.session_state["selected_category"] = "All"
+
         selected_category_dropdown = st.selectbox(
             "Choose a category:",
-            ["All"] + list(document_categories.keys()),
-            index=(["All"] + list(document_categories.keys())).index(st.session_state["selected_category"])
+            available_categories,
+            index=current_index
         )
     if selected_category_dropdown != st.session_state["selected_category"]:
         st.session_state["selected_category"] = selected_category_dropdown
@@ -1164,34 +1084,54 @@ def main_page():
     # -------------------------------------------------------------------------
     documents = get_documents()
     if selected_category != "All":
-        filtered_documents = {key: key for key in documents if key in document_categories[selected_category]}
+        # Ensure category exists before filtering
+        if selected_category in document_categories:
+             filtered_documents = {key: val for key, val in documents.items() if key in document_categories[selected_category]}
+        else:
+             filtered_documents = {} # Handle case where category might be invalid
+             st.warning(f"Category '{selected_category}' not found in data.")
     else:
         filtered_documents = documents
 
     search_query = st.text_input("🔍 Search Reports", key="report_search")
     # Only apply search filtering if a query was entered
     if search_query.strip():
-        filtered_documents = {
-            key: key for key in filtered_documents
-            if search_query.lower() in key.lower() or search_query.lower() in get_overview(key).lower()
-        }
-    show_filename = st.toggle("📄 Show Filenames Only", value=(st.session_state["user_clearance"] == "Limited Access"))
+        search_lower = search_query.lower()
+        temp_filtered = {}
+        for key, title in filtered_documents.items():
+             # Check title first (faster)
+             if search_lower in title.lower() or search_lower in key.lower():
+                 temp_filtered[key] = title
+                 continue
+             # Check overview only if not found in title/key (slower)
+             overview = get_overview(key).lower()
+             if search_lower in overview:
+                 temp_filtered[key] = title
+        filtered_documents = temp_filtered
+
+    # Removed show_filename toggle - always show full title now
+    # show_filename = st.toggle("📄 Show Filenames Only", value=(st.session_state["user_clearance"] == "Limited Access"))
 
     # -------------------------------------------------------------------------
     # Timeline Visualization for Selected Documents
     # -------------------------------------------------------------------------
     if selected_category != "All" and filtered_documents:
         st.markdown("## 📊 Timeline Visualization")
-        
+
         # Create a mapping of document names to their metadata titles
-        doc_options = {doc: get_document_metadata(doc).title if get_document_metadata(doc).title != "Untitled" else doc
-                    for doc in sorted(filtered_documents.keys(), key=lambda x: int(x.split(".")[0]))}
-        
+        doc_options = {}
+        for doc in sorted(filtered_documents.keys(), key=lambda x: int(x.split(".")[0])):
+             metadata = get_document_metadata(doc)
+             display_title = metadata.title if metadata and metadata.title != "Untitled" else doc
+             doc_options[doc] = display_title
+
         # Optionally, preselect a subset (e.g., first 5 documents)
+        default_selection = list(doc_options.values())[:5] if len(doc_options) > 5 else list(doc_options.values())
+
         selected_docs_for_timeline = st.multiselect(
             "Select documents to include in the timeline:",
             options=list(doc_options.values()),  # Display only the titles
-            default=list(doc_options.values())[:5] if len(doc_options) > 5 else list(doc_options.values())
+            default=default_selection
         )
 
         # Map selected titles back to document names
@@ -1216,9 +1156,17 @@ def main_page():
     # -------------------------------------------------------------------------
     if filtered_documents:
         st.subheader("📄 Available Reports")
-        for index, doc in enumerate(sorted(filtered_documents.keys(), key=lambda x: int(x.split(".")[0]))):
+        # Sort documents numerically if possible, otherwise alphabetically
+        try:
+            sorted_docs = sorted(filtered_documents.keys(), key=lambda x: int(re.match(r"(\d+)", x).group(1)) if re.match(r"(\d+)", x) else float('inf'))
+        except:
+            sorted_docs = sorted(filtered_documents.keys())
+
+        for index, doc in enumerate(sorted_docs):
             metadata = get_document_metadata(doc)
-            document_display_name = doc if show_filename else metadata.title
+            # Always show title if available, otherwise filename
+            document_display_name = metadata.title if metadata and metadata.title != "Untitled" else doc
+
             with st.container():
                 with st.expander(f"📄 {document_display_name}"):
                     doc_tags = [cat for cat, docs in document_categories.items() if doc in docs]
@@ -1228,15 +1176,17 @@ def main_page():
                             for tag in doc_tags
                         ])
                         st.markdown(tags_str, unsafe_allow_html=True)
-                    col_left_doc, col_right_doc = st.columns([0.2, 0.8])
-                    if st.session_state["user_clearance"] == "Full Access":
-                        with col_left_doc:
-                            st.markdown(f"**🛡 Classification:** {metadata.classification_level}")
-                            st.markdown(f"**📜 ID:** {metadata.document_id}")
-                        with col_right_doc:
-                            st.markdown(f"**📂 Category:** {metadata.category or 'N/A'}")
-                            st.markdown(f"**📅 Date:** {metadata.timestamp or 'Unknown'}")
-                            st.markdown(f"**🏛 Source:** {metadata.primary_source or 'N/A'}")
+
+                    # Always show metadata since access is always full
+                    col_left_doc, col_right_doc = st.columns([0.3, 0.7]) # Adjusted ratio
+                    with col_left_doc:
+                        st.markdown(f"**🛡 Classification:** {metadata.classification_level}")
+                        st.markdown(f"**📜 ID:** {metadata.document_id}")
+                    with col_right_doc:
+                        st.markdown(f"**📂 Category:** {metadata.category or 'N/A'}")
+                        st.markdown(f"**📅 Date:** {metadata.timestamp or 'Unknown'}")
+                        st.markdown(f"**🏛 Source:** {metadata.primary_source or 'N/A'}")
+
                     if st.button(f"🔎 View Report", key=f"{selected_category}_{doc}_{index}", use_container_width=True):
                         st.session_state["selected_doc"] = doc
                         st.session_state["page"] = "document"
@@ -1245,22 +1195,32 @@ def main_page():
         st.warning("⚠️ No matching reports found.")
 
 
+# ---------------------------
+# Document Detail Page
+# ---------------------------
 def document_page():
     # Back Button
     col1, col2, col3 = st.columns([2, 2, 1])
     with col1:
         if st.button("🔙 Back to Main Page", use_container_width=True):
+            # Clear document-specific state if needed
+            if "show_document" in st.session_state: del st.session_state["show_document"]
+            # if "show_chat" in st.session_state: del st.session_state["show_chat"] # Chat removed
+            if "selected_doc" in st.session_state: del st.session_state["selected_doc"]
             st.session_state["page"] = "main"
             st.rerun()
 
     doc_name = st.session_state.get("selected_doc")
     documents = get_documents()
+
+    if not doc_name or doc_name not in documents:
+        st.warning("⚠️ No document selected or document not found.")
+        st.stop() # Stop execution if no valid doc
+
      # Load JSON highlight dictionary for this document
     json_path = os.path.join(HIGHLIGHT_DICT_PATH, f"{doc_name}.json")
     highlight_dict = load_highlight_dict(json_path)
-    if not doc_name or doc_name not in documents:
-        st.warning("⚠️ No document selected.")
-        return
+
     leak_percentage = leak_data.get(doc_name, None)
 
     # 📌 Leak Meter Styling
@@ -1278,6 +1238,7 @@ def document_page():
             color: #d9534f;
             text-align: center;
             font-size: 16px;  /* Increased font size */
+            z-index: 10; /* Ensure it's above other elements */
         }
         .wikileaks-text {
             font-size: 11px;  /* Slightly larger */
@@ -1295,10 +1256,11 @@ def document_page():
             <div class="wikileaks-text">*Based on Wikileaks tracking*</div>
         </div>
         """, unsafe_allow_html=True)
-        
+
 
     metadata = get_document_metadata(doc_name)
-    document_display_name = doc_name if st.session_state["user_clearance"] == "Limited Access" else metadata.title
+    # Always display title if available, otherwise filename
+    document_display_name = metadata.title if metadata and metadata.title != "Untitled" else doc_name
 
     st.title(f"📄 {document_display_name}")
 
@@ -1307,20 +1269,27 @@ def document_page():
     if not doc_details:
         st.error("⚠️ Document details could not be retrieved.")
         return
-    
 
-    report_data = json.loads(doc_details["report_data"])
-    report = GeneralReport(**report_data)
+    try:
+        report_data = json.loads(doc_details["report_data"])
+        report = GeneralReport(**report_data)
+    except json.JSONDecodeError:
+        st.error("⚠️ Failed to parse report data (JSON).")
+        return
+    except Exception as e: # Catch pydantic validation errors etc.
+        st.error(f"⚠️ Failed to load report structure: {e}")
+        return
+
 
     # 📋 Document Summary (Only if Available)
     if report.overview:
         st.markdown("## 🔎 Document Summary")
         st.info(clean_text(report.overview))
 
-    # If Limited Access, stop here
-    if st.session_state["user_clearance"] == "Limited Access":
-        st.warning("⚠️ Limited Access: Only the overview is visible.")
-        return
+    # Removed Limited Access check - all users have full access now
+    # if st.session_state["user_clearance"] == "Limited Access":
+    #     st.warning("⚠️ Limited Access: Only the overview is visible.")
+    #     return
 
     # 🛡 Metadata (Only if Available)
     if report.metadata:
@@ -1331,43 +1300,55 @@ def document_page():
             st.markdown(f"**Date:** `{report.metadata.timestamp or 'Unknown'}`")
             st.markdown(f"**Source:** `{report.metadata.primary_source or 'N/A'}`")
 
-    col_view, col_chat = st.columns(2)
-    
-    with col_view:
-        if st.button("📄 View Document", key="toggle_doc", use_container_width=True):
-            st.session_state["show_document"] = not st.session_state.get("show_document", False)
-            st.rerun()
-    
-    with col_chat:
-        if st.button("💬 Chat with Report", key="toggle_chat", use_container_width=True):
-            st.session_state["show_chat"] = not st.session_state.get("show_chat", False)
-            st.rerun()
-    
-    # Display the chat interface if toggled on
-    if st.session_state.get("show_chat", False):
-        # Use the report overview as context (or any other suitable text from the report)
-        report_context = clean_text(report.overview) if report.overview else "No report overview available."
-        chat_with_report(report_context)
-    
+    # --- Removed Chat Button and Logic ---
+    # col_view, col_chat = st.columns(2)
+    # with col_view:
+    #     if st.button("📄 View Document", key="toggle_doc", use_container_width=True):
+    #         st.session_state["show_document"] = not st.session_state.get("show_document", False)
+    #         st.rerun()
+    # with col_chat:
+    #     if st.button("💬 Chat with Report", key="toggle_chat", use_container_width=True):
+    #         st.session_state["show_chat"] = not st.session_state.get("show_chat", False)
+    #         st.rerun()
+    # if st.session_state.get("show_chat", False):
+    #     report_context = clean_text(report.overview) if report.overview else "No report overview available."
+    #     # chat_with_report(report_context) # Chat function removed
+
+    # --- Simplified View Document Button ---
+    if st.button("📄 View Document Images", key="toggle_doc", use_container_width=True):
+        st.session_state["show_document"] = not st.session_state.get("show_document", False)
+        # No rerun needed here, just toggle the state for the section below
+
     # Display the document viewer if toggled on
     if st.session_state.get("show_document", False):
         st.markdown("## 🖼️ Document Viewer")
         images = load_document_images(doc_name)
         if images:
-            for img_path in images:
-                st.image(Image.open(img_path), caption=os.path.basename(img_path), use_column_width=True)
+            # Use columns for better layout if many pages
+            cols = st.columns(2) # Adjust number of columns as needed
+            for i, img_path in enumerate(images):
+                with cols[i % len(cols)]:
+                    try:
+                        st.image(Image.open(img_path), caption=os.path.basename(img_path), use_column_width=True)
+                    except Exception as e:
+                        st.error(f"Error loading image {os.path.basename(img_path)}: {e}")
         else:
-            st.error("🚫 Document not available for display.")
+            st.error("🚫 Document images not available for display.")
 
-    # 🔗 Network Graph 
+    # 🔗 Network Graph
     graph_data = load_graph_data(f"networkviz_{doc_name}.json")
     if graph_data:
         st.markdown("## 🔗 Investigation Network Graph")
         graph_html = create_interactive_network(graph_data)
-        st.components.v1.html(graph_html, height=900)
+        if graph_html: # Check if graph generation was successful
+             st.components.v1.html(graph_html, height=900)
+        else:
+             st.warning("Could not generate network graph.") # Show warning if generation failed
+
+    # Legend for Highlight Colors (moved from network graph function)
     legend_html = """
-    <div style="width: 100%; margin-bottom: 20px; background-color: #f2f2f2; border: 1px solid #ccc; border-radius: 8px; padding: 15px;">
-    <h3 style="text-align: center; margin-bottom: 10px;">Legend</h3>
+    <div style="width: 100%; margin-top: 20px; margin-bottom: 20px; background-color: #f2f2f2; border: 1px solid #ccc; border-radius: 8px; padding: 15px;">
+    <h3 style="text-align: center; margin-bottom: 10px;">Highlight Legend</h3>
     <div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap;">
         <div style="flex: 1; text-align: center; min-width: 150px; margin: 5px;">
         <div style="font-weight: bold;">Investigation</div>
@@ -1397,20 +1378,23 @@ def document_page():
     </div>
     <div style="text-align: center; font-size: 14px; color: #555; margin-top: 15px;">
         <p>
-        This legend shows the color-coding for different categories in the document analysis.
+        This legend shows the color-coding for different categories highlighted in the document text below.
         Each color corresponds to a distinct category, helping you quickly identify key information.
         </p>
+        <!-- Removed Network Graph Outline info as it's part of the graph legend now -->
+        <!--
         <p style="font-weight: bold; color: #333;">Network Graph Outlines:</p>
         <p>
         Outlines in <span style="color: #ffcc00; font-weight: bold;">yellow</span> indicate allegations,
         while outlines in <span style="color: red; font-weight: bold;">red</span> indicate violations.
         </p>
+        -->
     </div>
     </div>
     """
-
     st.markdown(legend_html, unsafe_allow_html=True)
-    # 📅 Timeline 
+
+    # 📅 Timeline
     timeline_events = get_timeline_from_supabase(doc_name)
     st.markdown("## 📊 Timeline Visualization")
     if timeline_events:
@@ -1418,25 +1402,28 @@ def document_page():
     else:
         st.warning("⚠️ No timeline available.")
 
+    # --- Display Report Sections with Highlighting ---
+    st.markdown("---")
+    st.markdown("## 📝 Report Details (Highlighted)")
 
     if report.background and (report.background.context or report.background.entities_involved or report.background.timeline):
-        with st.expander("📚 **Background**"):
+        with st.expander("📚 **Background**", expanded=True): # Expand by default
             if report.background.context:
-                # Highlight the context text
+                st.markdown("**Context:**")
                 annotated_text(*highlight_text(report.background.context, highlight_dict))
             if report.background.entities_involved:
                 st.markdown("**Entities Involved:**")
-                # Join the list into a single string and highlight
                 annotated_text(*highlight_text(", ".join(report.background.entities_involved), highlight_dict))
-            if report.background.timeline:
-                st.markdown("**Timeline:**")
-                # Join the timeline events (each on a new line) and highlight
-                annotated_text(*highlight_text("\n".join(report.background.timeline), highlight_dict))
+            # Timeline is visualized separately, maybe don't repeat raw text here?
+            # if report.background.timeline:
+            #     st.markdown("**Timeline:**")
+            #     annotated_text(*highlight_text("\n".join(report.background.timeline), highlight_dict))
 
     # 🔬 Methodology (Only if Available)
     if report.methodology and (report.methodology.description or report.methodology.interviews or report.methodology.documents_reviewed):
         with st.expander("🔬 **Methodology**"):
             if report.methodology.description:
+                st.markdown("**Description:**")
                 annotated_text(*highlight_text(report.methodology.description, highlight_dict))
             if report.methodology.interviews:
                 st.markdown("**👥 Interviews Conducted:**")
@@ -1454,21 +1441,24 @@ def document_page():
                 # Highlight the excerpt text
                 annotated_text(*highlight_text(law.excerpt or 'No excerpt available', highlight_dict))
                 if law.link:
-                    st.markdown(f"[🔗 Read More]({law.link})")
+                    st.markdown(f"  [🔗 Read More]({law.link})")
 
     # 🚨 Allegations (Only if Available)
     if report.investigation_details and report.investigation_details.allegations:
         with st.expander("🚨 **Allegations**"):
-            for allegation in report.investigation_details.allegations:
+            for i, allegation in enumerate(report.investigation_details.allegations):
+                st.markdown(f"**Allegation {i+1}:**")
                 # Highlight the allegation description
                 annotated_text(*highlight_text(allegation.description or 'No description available', highlight_dict))
                 if allegation.findings:
                     st.markdown("**Findings:**")
                     annotated_text(*highlight_text(allegation.findings, highlight_dict))
+                st.markdown("---") # Separator between allegations
 
     # 💰 Financial Details (Only if Available)
     if report.investigation_details and report.investigation_details.financial_details:
         with st.expander("💰 **Financial Details**"):
+            # Display JSON nicely formatted
             st.json(report.investigation_details.financial_details)
 
     # 🕵️ Intelligence Summary (Only if Available)
@@ -1479,52 +1469,72 @@ def document_page():
                 annotated_text(*highlight_text(", ".join(report.intelligence_summary.sources), highlight_dict))
             if report.intelligence_summary.key_findings:
                 st.markdown("**Key Findings:**")
-                annotated_text(*highlight_text("\n".join(report.intelligence_summary.key_findings), highlight_dict))
+                # Display as list
+                for finding in report.intelligence_summary.key_findings:
+                     st.markdown("- ", unsafe_allow_html=True) # Start bullet point
+                     annotated_text(*highlight_text(finding, highlight_dict)) # Highlight finding
             if report.intelligence_summary.assessments:
                 st.markdown("**Assessments:**")
-                annotated_text(*highlight_text("\n".join(report.intelligence_summary.assessments), highlight_dict))
+                for assessment in report.intelligence_summary.assessments:
+                     st.markdown("- ", unsafe_allow_html=True)
+                     annotated_text(*highlight_text(assessment, highlight_dict))
             if report.intelligence_summary.risks:
                 st.markdown("**Risks & Implications:**")
-                annotated_text(*highlight_text("\n".join(report.intelligence_summary.risks), highlight_dict))
+                for risk in report.intelligence_summary.risks:
+                     st.markdown("- ", unsafe_allow_html=True)
+                     annotated_text(*highlight_text(risk, highlight_dict))
 
     # 🏛 Conclusion (Only if Available)
     if report.conclusion and (report.conclusion.findings or report.conclusion.violations):
         with st.expander("🏛 **Conclusion**"):
             if report.conclusion.findings:
                 st.markdown("**Findings:**")
-                annotated_text(*highlight_text("\n".join(report.conclusion.findings), highlight_dict))
+                for finding in report.conclusion.findings:
+                     st.markdown("- ", unsafe_allow_html=True)
+                     annotated_text(*highlight_text(finding, highlight_dict))
             if report.conclusion.violations:
                 st.markdown("**Regulatory Violations:**")
                 for violation in report.conclusion.violations:
+                    st.markdown(f"- **{violation.regulation_id or 'Violation Details'}:**")
                     annotated_text(*highlight_text(violation.excerpt or 'No details available', highlight_dict))
                     if violation.link:
-                        st.markdown(f"[🔗 Read More]({violation.link})")
+                        st.markdown(f"  [🔗 Read More]({violation.link})")
 
     # ✅ Recommendations (Only if Available)
     if report.recommendations and report.recommendations.actions:
         with st.expander("✅ **Recommendations**"):
-            for action in report.recommendations.actions:
+            for i, action in enumerate(report.recommendations.actions):
+                st.markdown(f"**Recommendation {i+1}:**")
                 annotated_text(*highlight_text(action, highlight_dict))
+                st.markdown("---")
 
     # 🔗 Related Documents (Only if Available)
     if report.related_documents:
         with st.expander("🔗 **Related Documents**"):
-            for doc in report.related_documents:
-                st.markdown(f"- {doc}")  # ✅ Display as bullet points instead of JSON
+            for doc_ref in report.related_documents:
+                st.markdown(f"- {doc_ref}")  # Display as bullet points
 
+    # Display related news articles at the bottom
     top_document_articles = get_top_articles_by_document(classified_docs, doc_name)
     if top_document_articles:
-        display_news_articles(top_document_articles, f"📰 Similar Articles for **{doc_name}**")
+        display_news_articles(top_document_articles, f"📰 Similar Articles for **{document_display_name}**")
     else:
-        st.markdown("⚠️ No articles found for this category.")
+        st.markdown("---")
+        st.markdown("⚠️ No similar news articles found for this document.")
 
-# 🔄 Routing System
+# ---------------------------
+# Routing System
+# ---------------------------
 if "page" not in st.session_state:
-    st.session_state["page"] = "landing"
+    st.session_state["page"] = "main" # Start directly at the main page
 
-if st.session_state["page"] == "landing":
-    landing_page()
-elif st.session_state["page"] == "main":
+# Removed landing page route
+# if st.session_state["page"] == "landing":
+#     landing_page()
+if st.session_state["page"] == "main":
     main_page()
 elif st.session_state["page"] == "document":
     document_page()
+else: # Default to main page if state is invalid
+    st.session_state["page"] = "main"
+    main_page()
