@@ -19,12 +19,15 @@ import random
 import re
 import streamlit as st
 import unicodedata
+import sys 
+import pkg_resources
 
 #===========================================================================================
 #Env and Path
 #===========================================================================================
 
 load_dotenv()
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
