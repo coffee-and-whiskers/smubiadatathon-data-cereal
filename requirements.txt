@@ -14,3 +14,4 @@ openai==1.59.7
 pydantic==2.9.2
 pymupdf==1.24.10
 st-annotated-text
+setuptools>=65.0.0
