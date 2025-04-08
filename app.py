@@ -77,10 +77,9 @@ except Exception as e:
     st.error(f"Failed to initialize Supabase client: {e}")
     supabase = None # Set to None to handle gracefully later
 
-try:
+if OPENAI_API_KEY:
     client = OpenAI(api_key=OPENAI_API_KEY)
-except Exception as e:
-    st.error(f"Failed to initialize OpenAI client: {e}")
+else: 
     client = None # Set to None
 
 # --- Visualization Constants ---
