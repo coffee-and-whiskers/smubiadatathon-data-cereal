@@ -1,4 +1,3 @@
-```md
 # SMU BIADatathon Project
 
 **Deployed Demo:**
