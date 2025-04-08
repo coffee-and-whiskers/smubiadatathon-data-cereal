@@ -5,7 +5,11 @@ We have deployed our application here: [https://smubiadatathon-data-cereal-tbfxr
 
 **Demo Video:**
 You can view a recorded demo of the project here: 
-https://github.com/user-attachments/assets/7cbbdf06-2f30-47fb-b8d6-9bed83d71d42
+
+
+https://github.com/user-attachments/assets/a8fda503-3ab7-4136-88a3-57581ffccc8e
+
+
 
 ## Overview
 Our goal is to help ISD personnel quickly process and analyze intelligence reports without getting overwhelmed by lengthy, complex documents. Given time and expertise constraints, manually reviewing large volumes of information can be inefficient. This solution streamlines report consumption, improves searchability, and provides useful visualizations to make reports more accessible and actionable. The application is hosted through Streamlit.
@@ -36,7 +40,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Set Up Environment Variables
-Create a `.env` file in the root directory and add the necessary credentials (e.g., `SUPABASE_URL`, `SUPABASE_KEY`).  
+Create a `.env` file in the root directory and add the necessary credentials (e.g., `SUPABASE_URL`, `SUPABASE_KEY`).  #This has already been done to faciliate deployment
 We are using Supabase as a centralized database to store processed data. The free-tier plan for Supabase has limited requests, so use it sparingly.
 
 > **Note:** A GPT API key is **not** required because there is no on-demand AI generation in this release.
