@@ -10,6 +10,10 @@ If the application isn't available (or if you're facing performance issues), you
 
 https://github.com/user-attachments/assets/a8fda503-3ab7-4136-88a3-57581ffccc8e
 
+**Blog Post:**
+https://coffeenwhiskers.hashnode.dev/smu-bia-datathon-2025
+
+[Code refactoring in progress]
 ---
 
 ## Overview
