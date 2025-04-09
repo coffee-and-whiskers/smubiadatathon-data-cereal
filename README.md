@@ -21,7 +21,7 @@ Our goal is to help ISD personnel quickly process and analyze intelligence repor
 
 > **Note:** In the finals, a "Chat with Your Document" feature was implemented, but it has since been **removed** due to concerns around usage, maintenance, and data privacy. Consequently, there is no on-demand GPT generation in this current solution.
 
-For more information on the technical details, refer to the project documentation.
+For more information on the technical details, refer to the blog post.
 
 ---
 
