@@ -1,10 +1,11 @@
 # SMU BIADatathon 2024 2nd Place
 
 **Deployed Demo:**
-We have deployed our application here: [https://smubiadatathon-data-cereal-tbfxrucchd6kvyta2eperz.streamlit.app/](https://smubiadatathon-data-cereal-tbfxrucchd6kvyta2eperz.streamlit.app/) 
+We have deployed our application through Streamlit Community Cloud here: [https://smubiadatathon-data-cereal-tbfxrucchd6kvyta2eperz.streamlit.app/](https://smubiadatathon-data-cereal-tbfxrucchd6kvyta2eperz.streamlit.app/) 
+
 
 **Demo Video:**
-If the application isn't available, you can view a recorded demo of the project here: 
+If the application isn't available (or if you're facing performance issues), you can view a recorded demo of the project here: 
 
 
 https://github.com/user-attachments/assets/a8fda503-3ab7-4136-88a3-57581ffccc8e
