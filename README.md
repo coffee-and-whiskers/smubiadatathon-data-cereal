@@ -1,6 +1,9 @@
 # SMU BIADatathon 2025 2nd Place
 [Code refactoring in progress]
 
+**Blog Post:**
+Here is a blog post reflecting on the experience and covering a bit more on our solution : https://coffeenwhiskers.hashnode.dev/smu-bia-datathon-2025
+
 **Deployed Demo:**
 We have deployed our application through Streamlit Community Cloud here: [https://smubiadatathon-data-cereal-tbfxrucchd6kvyta2eperz.streamlit.app/](https://smubiadatathon-data-cereal-tbfxrucchd6kvyta2eperz.streamlit.app/) 
 
@@ -10,9 +13,6 @@ If the application isn't available (or if you're facing performance issues), you
 
 
 https://github.com/user-attachments/assets/a8fda503-3ab7-4136-88a3-57581ffccc8e
-
-**Blog Post:**
-Here is a blog post reflecting on the experience and covering a bit more on our solution : https://coffeenwhiskers.hashnode.dev/smu-bia-datathon-2025
 
 ---
 
