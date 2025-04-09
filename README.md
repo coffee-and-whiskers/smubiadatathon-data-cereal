@@ -1,4 +1,4 @@
-# SMU BIADatathon 2024 2nd Place
+# SMU BIADatathon 2025 2nd Place
 
 **Deployed Demo:**
 We have deployed our application through Streamlit Community Cloud here: [https://smubiadatathon-data-cereal-tbfxrucchd6kvyta2eperz.streamlit.app/](https://smubiadatathon-data-cereal-tbfxrucchd6kvyta2eperz.streamlit.app/) 
